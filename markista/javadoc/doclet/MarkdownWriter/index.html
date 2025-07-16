@@ -842,6 +842,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formattaggedtext" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedText
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattaggedlinkplain" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedLinkPlain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattaggedlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedLink
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#escape" class="md-nav__link">
     <span class="md-ellipsis">
       escape
@@ -1318,6 +1345,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1356,6 +1387,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../util/LinkResolver.Link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LinkResolver.Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../util/LinkResolver.Type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LinkResolver.Type
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1735,6 +1812,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formattaggedtext" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedText
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattaggedlinkplain" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedLinkPlain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formattaggedlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatTaggedLink
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#escape" class="md-nav__link">
     <span class="md-ellipsis">
       escape
@@ -1809,13 +1913,8 @@
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../model/TypeNode/">TypeNode</a></td>
+<td>private <a href="../../model/Node/">Node</a></td>
 <td>linkFrom</td>
-<td></td>
-</tr>
-<tr>
-<td>private <a href="../../model/Api/">Api</a></td>
-<td>api</td>
 <td></td>
 </tr>
 <tr>
@@ -1937,7 +2036,7 @@
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#mdautolink">mdAutoLink</a>(String identifier, boolean qualify)</td>
+<td><a href="#mdautolink">mdAutoLink</a>(String identifier, boolean simplify)</td>
 <td>Create a markdown link, automatically deciding where it needs to link to</td>
 </tr>
 <tr>
@@ -1962,6 +2061,21 @@
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#formattaggedtext">formatTaggedText</a>(List parsedSegments)</td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#formattaggedlinkplain">formatTaggedLinkPlain</a>(DocTree link)</td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#formattaggedlink">formatTaggedLink</a>(DocTree link)</td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#escape">escape</a>(String str)</td>
 <td></td>
 </tr>
@@ -1973,13 +2087,16 @@
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a></td>
 <td><a href="#buildcontainingdirpath">buildContainingDirPath</a>(String outputDirectory, String packageName)</td>
-<td>[]</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>
 <p><code>void writeDocs(Api api)</code></p>
+<p>Ouput the documentation files for the specified API</p>
+<p>Parameters:</p>
+<p><code>api</code> - Ouput the documentation files for the specified API</p>
 <h3 id="pathseparator">pathSeparator</h3>
 <p><code>private char pathSeparator()</code></p>
 <h3 id="outputtypedoc">outputTypeDoc</h3>
@@ -2011,7 +2128,11 @@
 <h3 id="mdautolink">mdAutoLink</h3>
 <p><code>private String mdAutoLink(String identifier)</code></p>
 <h3 id="mdautolink_1">mdAutoLink</h3>
-<p><code>private String mdAutoLink(String identifier, boolean qualify)</code></p>
+<p><code>private String mdAutoLink(String identifier, boolean simplify)</code></p>
+<p>Create a markdown link, automatically deciding where it needs to link to</p>
+<p>Parameters:</p>
+<p><code>identifier</code> - Create a markdown link, automatically deciding where it needs to link to</p>
+<p><code>simplify</code> - Create a markdown link, automatically deciding where it needs to link to</p>
 <p>Returns:</p>
 <p>[markdown text for a link to a document for the specified identifier or an anchor link]</p>
 <h3 id="mdanchorlink">mdAnchorLink</h3>
@@ -2022,13 +2143,18 @@
 <p><code>private boolean isNullOrEmpty(String s)</code></p>
 <h3 id="inoneline">inOneLine</h3>
 <p><code>private static String inOneLine(String text)</code></p>
+<h3 id="formattaggedtext">formatTaggedText</h3>
+<p><code>private String formatTaggedText(List parsedSegments)</code></p>
+<h3 id="formattaggedlinkplain">formatTaggedLinkPlain</h3>
+<p><code>private String formatTaggedLinkPlain(DocTree link)</code></p>
+<h3 id="formattaggedlink">formatTaggedLink</h3>
+<p><code>private String formatTaggedLink(DocTree link)</code></p>
 <h3 id="escape">escape</h3>
 <p><code>private String escape(String str)</code></p>
 <h3 id="createfile">createFile</h3>
 <p><code>private Writer createFile(String className, String packageName)</code></p>
 <h3 id="buildcontainingdirpath">buildContainingDirPath</h3>
 <p><code>private File buildContainingDirPath(String outputDirectory, String packageName)</code></p>
-<p>[]</p>
 
 
 
