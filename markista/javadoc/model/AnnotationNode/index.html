@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/model/AnnotationNode/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../AbstractTypeOwner/">
       
       
         <link rel="next" href="../Api/">
@@ -461,12 +461,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../doclet/ApiCollector/" class="md-nav__link">
+      <a href="../../doclet/ApiScanner/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ApiCollector
+    ApiScanner
     
   </span>
   
@@ -651,6 +651,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -689,6 +699,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AbstractTypeOwner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AbstractTypeOwner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1002,6 +1035,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../OverriddenMethodNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OverriddenMethodNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PackageMember/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PackageMember
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../PackageNode/" class="md-nav__link">
         
   
@@ -1140,12 +1219,58 @@
   
   
     <li class="md-nav__item">
+      <a href="../TypeNode.Kind/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeNode.Kind
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeOwner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeOwner
     
   </span>
   
@@ -1175,8 +1300,6 @@
       
         
           
-        
-      
         
       
         
@@ -1236,29 +1359,6 @@
   
   <span class="md-ellipsis">
     LinkResolver
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/NameUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    NameUtils
     
   </span>
   
@@ -1425,8 +1525,9 @@
 <h1 id="class-annotationnode">Class AnnotationNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.AnnotationNode<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.AnnotationNode<br/>
 <br/></p>
 <hr />
 <h2 id="constructor-summary">Constructor Summary</h2>
@@ -1439,7 +1540,7 @@
 </thead>
 <tbody>
 <tr>
-<td>AnnotationNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</td>
+<td>AnnotationNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
 <td></td>
 </tr>
 </tbody>
