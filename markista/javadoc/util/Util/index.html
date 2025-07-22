@@ -1457,6 +1457,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#simplifynamesloop" class="md-nav__link">
+    <span class="md-ellipsis">
+      simplifyNamesLoop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shouldreplacequalifiedwithsimple" class="md-nav__link">
+    <span class="md-ellipsis">
+      shouldReplaceQualifiedWithSimple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacequalifiedwithsimple" class="md-nav__link">
+    <span class="md-ellipsis">
+      replaceQualifiedWithSimple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#isvalidsimplenamechar" class="md-nav__link">
     <span class="md-ellipsis">
       isValidSimpleNameChar
@@ -1747,6 +1774,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#simplifynamesloop" class="md-nav__link">
+    <span class="md-ellipsis">
+      simplifyNamesLoop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shouldreplacequalifiedwithsimple" class="md-nav__link">
+    <span class="md-ellipsis">
+      shouldReplaceQualifiedWithSimple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacequalifiedwithsimple" class="md-nav__link">
+    <span class="md-ellipsis">
+      replaceQualifiedWithSimple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#isvalidsimplenamechar" class="md-nav__link">
     <span class="md-ellipsis">
       isValidSimpleNameChar
@@ -1919,6 +1973,21 @@
 <td>Changes all qualified names in a string into unqualified names.</td>
 </tr>
 <tr>
+<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#simplifynamesloop">simplifyNamesLoop</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> input)</td>
+<td></td>
+</tr>
+<tr>
+<td>private static boolean</td>
+<td><a href="#shouldreplacequalifiedwithsimple">shouldReplaceQualifiedWithSimple</a>(int qualifiedStart, int simpleStart, int i, int length, char c)</td>
+<td></td>
+</tr>
+<tr>
+<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#replacequalifiedwithsimple">replaceQualifiedWithSimple</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</td>
+<td></td>
+</tr>
+<tr>
 <td>static boolean</td>
 <td><a href="#isvalidsimplenamechar">isValidSimpleNameChar</a>(char c)</td>
 <td>Checks if the given character is valid in an unqualified name.</td>
@@ -2004,6 +2073,12 @@
 <p><code>str</code> - A string that may contain one or more qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>The input string, with all qualified names changed to unqualified names.</p>
+<h3 id="simplifynamesloop">simplifyNamesLoop</h3>
+<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplifyNamesLoop(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> input)</p>
+<h3 id="shouldreplacequalifiedwithsimple">shouldReplaceQualifiedWithSimple</h3>
+<p>private static boolean shouldReplaceQualifiedWithSimple(int qualifiedStart, int simpleStart, int i, int length, char c)</p>
+<h3 id="replacequalifiedwithsimple">replaceQualifiedWithSimple</h3>
+<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> replaceQualifiedWithSimple(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</p>
 <h3 id="isvalidsimplenamechar">isValidSimpleNameChar</h3>
 <p>static boolean isValidSimpleNameChar(char c)</p>
 <p>Checks if the given character is valid in an unqualified name.</p>
