@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/util/TypeUtils/">
       
       
-        <link rel="prev" href="../ModuleDirectiveGenerator/">
+        <link rel="prev" href="../ModuleDirectives/">
       
       
         <link rel="next" href="../Utils/">
@@ -1617,12 +1617,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModuleDirectiveGenerator/" class="md-nav__link">
+      <a href="../ModuleDirectives/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ModuleDirectiveGenerator
+    ModuleDirectives
     
   </span>
   
@@ -2006,6 +2006,15 @@
   <a href="#setmodifiers" class="md-nav__link">
     <span class="md-ellipsis">
       setModifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setthrowntypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      setThrownTypes
     </span>
   </a>
   
@@ -2556,6 +2565,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setthrowntypes" class="md-nav__link">
+    <span class="md-ellipsis">
+      setThrownTypes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setdeprecationstatus" class="md-nav__link">
     <span class="md-ellipsis">
       setDeprecationStatus
@@ -2793,7 +2811,7 @@
 <tr>
 <td>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#getoverriddennativemethod">getOverriddenNativeMethod</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName, <a href="../../model/MethodNode/">MethodNode</a> method)</td>
-<td></td>
+<td>Returns a method that is overridden by the specified method when the  overridden method belongs to a Java native type.</td>
 </tr>
 <tr>
 <td>static void</td>
@@ -2833,7 +2851,7 @@
 <tr>
 <td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt;</td>
 <td><a href="#getreferences">getReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</td>
-<td></td>
+<td>Returns a list of <code>Reference</code> objects.</td>
 </tr>
 <tr>
 <td>static <a href="../../model/Text/">Text</a></td>
@@ -2848,6 +2866,11 @@
 <tr>
 <td>static void</td>
 <td><a href="#setmodifiers">setModifiers</a>(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Modifier.html">Modifier</a>&gt; modifiers)</td>
+<td></td>
+</tr>
+<tr>
+<td>static void</td>
+<td><a href="#setthrowntypes">setThrownTypes</a>(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a>&gt; thrownTypes)</td>
 <td></td>
 </tr>
 <tr>
@@ -2872,7 +2895,7 @@
 </tr>
 <tr>
 <td>static <a href="../../model/TypeNode/">TypeNode</a></td>
-<td><a href="#getfieldtype">getFieldType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/Elements.html">Elements</a> elementUtils, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
+<td><a href="#getfieldtype">getFieldType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
 <td></td>
 </tr>
 <tr>
@@ -2935,6 +2958,8 @@
 <p>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> superclass, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
 <h3 id="getoverriddennativemethod">getOverriddenNativeMethod</h3>
 <p>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenNativeMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName, <a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<p>Returns a method that is overridden by the specified method when the 
+overridden method belongs to a Java native type.</p>
 <h3 id="addconstantfieldvaluesreference">addConstantFieldValuesReference</h3>
 <p>static void addConstantFieldValuesReference(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
 <h3 id="isinterface">isInterface</h3>
@@ -2951,12 +2976,16 @@
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ParamTree.html">ParamTree</a> getParamTree(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> parameter)</p>
 <h3 id="getreferences">getReferences</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt; getReferences(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
+<p>Returns a list of <code>Reference</code> objects. Each one represents an
+occurrence of <code>@see</code> in a Javadoc comment.</p>
 <h3 id="getsince">getSince</h3>
 <p>static <a href="../../model/Text/">Text</a> getSince(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
 <h3 id="geturl">getUrl</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getUrl(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> html)</p>
 <h3 id="setmodifiers">setModifiers</h3>
 <p>static void setModifiers(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Modifier.html">Modifier</a>&gt; modifiers)</p>
+<h3 id="setthrowntypes">setThrownTypes</h3>
+<p>static void setThrownTypes(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a>&gt; thrownTypes)</p>
 <h3 id="setdeprecationstatus">setDeprecationStatus</h3>
 <p>static void setDeprecationStatus(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dct)</p>
 <h3 id="isincludedinapi">isIncludedInApi</h3>
@@ -2966,7 +2995,7 @@
 <h3 id="setimplementations">setImplementations</h3>
 <p>static void setImplementations(<a href="../../model/DirectiveNode/">DirectiveNode</a> directiveNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a>&gt; implementations)</p>
 <h3 id="getfieldtype">getFieldType</h3>
-<p>static <a href="../../model/TypeNode/">TypeNode</a> getFieldType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/Elements.html">Elements</a> elementUtils, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
+<p>static <a href="../../model/TypeNode/">TypeNode</a> getFieldType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
 <h3 id="getparamtype">getParamType</h3>
 <p>static <a href="../../model/TypeNode/">TypeNode</a> getParamType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
 <h3 id="getpackagename">getPackageName</h3>

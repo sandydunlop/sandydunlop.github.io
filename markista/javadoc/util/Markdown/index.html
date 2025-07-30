@@ -16,7 +16,7 @@
         <link rel="prev" href="../LinkResolver/">
       
       
-        <link rel="next" href="../ModuleDirectiveGenerator/">
+        <link rel="next" href="../ModuleDirectives/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -1708,9 +1708,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formatmarkdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatMarkdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#formatlink" class="md-nav__link">
     <span class="md-ellipsis">
       formatLink
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolvelinks" class="md-nav__link">
+    <span class="md-ellipsis">
+      resolveLinks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processmarkdownlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      processMarkdownLink
     </span>
   </a>
   
@@ -1854,12 +1881,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModuleDirectiveGenerator/" class="md-nav__link">
+      <a href="../ModuleDirectives/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ModuleDirectiveGenerator
+    ModuleDirectives
     
   </span>
   
@@ -2085,9 +2112,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formatmarkdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      formatMarkdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#formatlink" class="md-nav__link">
     <span class="md-ellipsis">
       formatLink
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolvelinks" class="md-nav__link">
+    <span class="md-ellipsis">
+      resolveLinks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processmarkdownlink" class="md-nav__link">
+    <span class="md-ellipsis">
+      processMarkdownLink
     </span>
   </a>
   
@@ -2284,7 +2338,22 @@
 </tr>
 <tr>
 <td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#formatmarkdown">formatMarkdown</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</td>
+<td></td>
+</tr>
+<tr>
+<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#formatlink">formatLink</a>(<a href="../../model/Text.Segment/">Text.Segment</a> segment)</td>
+<td></td>
+</tr>
+<tr>
+<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#resolvelinks">resolveLinks</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</td>
+<td></td>
+</tr>
+<tr>
+<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#processmarkdownlink">processMarkdownLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown, int openBracket, int closeBracket, int openParenthesis, int closeParenthesis)</td>
 <td></td>
 </tr>
 <tr>
@@ -2363,8 +2432,14 @@
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatReference(<a href="../../model/Reference/">Reference</a> ref)</p>
 <h3 id="formattext">formatText</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatText(<a href="../../model/Text/">Text</a> text)</p>
+<h3 id="formatmarkdown">formatMarkdown</h3>
+<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatMarkdown(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</p>
 <h3 id="formatlink">formatLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatLink(<a href="../../model/Text.Segment/">Text.Segment</a> segment)</p>
+<h3 id="resolvelinks">resolveLinks</h3>
+<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> resolveLinks(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</p>
+<h3 id="processmarkdownlink">processMarkdownLink</h3>
+<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> processMarkdownLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown, int openBracket, int closeBracket, int openParenthesis, int closeParenthesis)</p>
 <h3 id="mdautolink">mdAutoLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAutoLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> identifier)</p>
 <h3 id="mdautolink_1">mdAutoLink</h3>
