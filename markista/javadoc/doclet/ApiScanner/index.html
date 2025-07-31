@@ -600,6 +600,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#includednames" class="md-nav__link">
+    <span class="md-ellipsis">
+      includedNames
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -619,6 +628,42 @@
   <a href="#scan" class="md-nav__link">
     <span class="md-ellipsis">
       scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listelements" class="md-nav__link">
+    <span class="md-ellipsis">
+      listElements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processincludedelements" class="md-nav__link">
+    <span class="md-ellipsis">
+      processIncludedElements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincludedelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      isIncludedElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincludedelement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      isIncludedElement
     </span>
   </a>
   
@@ -2072,6 +2117,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#includednames" class="md-nav__link">
+    <span class="md-ellipsis">
+      includedNames
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2091,6 +2145,42 @@
   <a href="#scan" class="md-nav__link">
     <span class="md-ellipsis">
       scan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listelements" class="md-nav__link">
+    <span class="md-ellipsis">
+      listElements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processincludedelements" class="md-nav__link">
+    <span class="md-ellipsis">
+      processIncludedElements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincludedelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      isIncludedElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincludedelement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      isIncludedElement
     </span>
   </a>
   
@@ -2231,6 +2321,11 @@
 <td><a href="#currentmodule">currentModule</a></td>
 <td></td>
 </tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashSet.html">HashSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td><a href="#includednames">includedNames</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="constructor-summary">Constructor Summary</h2>
@@ -2244,7 +2339,7 @@
 <tbody>
 <tr>
 <td>ApiScanner(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</td>
-<td></td>
+<td>Initializes the ApiScanner with access to the doclet environment.</td>
 </tr>
 </tbody>
 </table>
@@ -2261,6 +2356,26 @@
 <tr>
 <td><a href="../../model/Api/">Api</a></td>
 <td><a href="#scan">scan</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
+<td>The starting point for a scan of the API structure.</td>
+</tr>
+<tr>
+<td>private void</td>
+<td><a href="#listelements">listElements</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
+<td></td>
+</tr>
+<tr>
+<td>private void</td>
+<td><a href="#processincludedelements">processIncludedElements</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
+<td></td>
+</tr>
+<tr>
+<td>private boolean</td>
+<td><a href="#isincludedelement">isIncludedElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</td>
+<td></td>
+</tr>
+<tr>
+<td>private boolean</td>
+<td><a href="#isincludedelement">isIncludedElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</td>
 <td></td>
 </tr>
 <tr>
@@ -2310,9 +2425,20 @@
 <h3 id="environment">environment</h3>
 <h3 id="unnamedmodule">unnamedModule</h3>
 <h3 id="currentmodule">currentModule</h3>
+<h3 id="includednames">includedNames</h3>
 <h2 id="method-details">Method Details</h2>
 <h3 id="scan">scan</h3>
 <p><a href="../../model/Api/">Api</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<p>The starting point for a scan of the API structure. This method sets up
+the environment and begins the scan of the API.</p>
+<h3 id="listelements">listElements</h3>
+<p>private void listElements(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<h3 id="processincludedelements">processIncludedElements</h3>
+<p>private void processIncludedElements(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<h3 id="isincludedelement">isIncludedElement</h3>
+<p>private boolean isIncludedElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</p>
+<h3 id="isincludedelement_1">isIncludedElement</h3>
+<p>private boolean isIncludedElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
 <h3 id="scan_1">scan</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
