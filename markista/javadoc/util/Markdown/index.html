@@ -2287,7 +2287,7 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-markdown">Class Markdown</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.Markdown<br/>
 <br/></p>
 <hr />
@@ -2368,7 +2368,7 @@
 </tr>
 <tr>
 <td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#mdreflink">mdRefLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> pre, <a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> post, boolean isMethod)</td>
+<td><a href="#mdreflink">mdRefLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> pre, <a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> post)</td>
 <td></td>
 </tr>
 <tr>
@@ -2426,22 +2426,31 @@
 <h2 id="method-details">Method Details</h2>
 <h3 id="fullsignature">fullSignature</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature(<a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<hr />
 <h3 id="formatparams">formatParams</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatParams(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/">ParamNode</a>&gt; params)</p>
+<hr />
 <h3 id="formatreference">formatReference</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatReference(<a href="../../model/Reference/">Reference</a> ref)</p>
+<hr />
 <h3 id="formattext">formatText</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatText(<a href="../../model/Text/">Text</a> text)</p>
+<hr />
 <h3 id="formatmarkdown">formatMarkdown</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatMarkdown(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</p>
+<hr />
 <h3 id="formatlink">formatLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatLink(<a href="../../model/Text.Segment/">Text.Segment</a> segment)</p>
+<hr />
 <h3 id="resolvelinks">resolveLinks</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> resolveLinks(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown)</p>
+<hr />
 <h3 id="processmarkdownlink">processMarkdownLink</h3>
 <p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> processMarkdownLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> markdown, int openBracket, int closeBracket, int openParenthesis, int closeParenthesis)</p>
+<hr />
 <h3 id="mdautolink">mdAutoLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAutoLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> identifier)</p>
+<hr />
 <h3 id="mdautolink_1">mdAutoLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAutoLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> identifier, boolean simplify)</p>
 <p>Create a markdown link, automatically deciding what kind of link to make</p>
@@ -2450,10 +2459,13 @@
 <p><code>simplify</code> - if true, the fully simplified version of the identifier is shown</p>
 <p><strong>Returns:</strong></p>
 <p>markdown text for a link to a document for the specified identifier or an anchor link</p>
+<hr />
 <h3 id="mdreflink">mdRefLink</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdRefLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> pre, <a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> post, boolean isMethod)</p>
+<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdRefLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> pre, <a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> post)</p>
+<hr />
 <h3 id="mdreflink_1">mdRefLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdRefLink(<a href="../../model/Reference/">Reference</a> link)</p>
+<hr />
 <h3 id="linkgenerics">linkGenerics</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> linkGenerics(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Changes qualified generic type names to unqualified generic type names and adds links to their API documentation.</p>
@@ -2461,22 +2473,31 @@
 <p><code>str</code> - A string containing a qualified generic name.</p>
 <p><strong>Returns:</strong></p>
 <p>A string with the qualified names changed to unqualified names and links to types added</p>
+<hr />
 <h3 id="splitandlink">splitAndLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> splitAndLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> typesString)</p>
+<hr />
 <h3 id="mdanchor">mdAnchor</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAnchor(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase)</p>
+<hr />
 <h3 id="mdanchorlink">mdAnchorLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAnchorLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase)</p>
+<hr />
 <h3 id="mddocumentlink">mdDocumentLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdDocumentLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> docName)</p>
+<hr />
 <h3 id="mddocumentlink_1">mdDocumentLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdDocumentLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> docName)</p>
+<hr />
 <h3 id="mdfolderlink">mdFolderLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdFolderLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> docName)</p>
+<hr />
 <h3 id="mdfolderlink_1">mdFolderLink</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdFolderLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> docName)</p>
+<hr />
 <h3 id="escape">escape</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> escape(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<hr />
 
 
 

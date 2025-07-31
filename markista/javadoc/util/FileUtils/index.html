@@ -2155,7 +2155,7 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-fileutils">Class FileUtils</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.FileUtils<br/>
 <br/></p>
 <hr />
@@ -2255,42 +2255,53 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="outputdirectory">outputDirectory</h3>
+<hr />
 <h3 id="flatteneddirectories">flattenedDirectories</h3>
+<hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getflatteneddirectories">getFlattenedDirectories</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getFlattenedDirectories()</p>
+<hr />
 <h3 id="setflatteneddirectories">setFlattenedDirectories</h3>
 <p>void setFlattenedDirectories(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
+<hr />
 <h3 id="commonbase">commonBase</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> commonBase(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; packageNames)</p>
+<hr />
 <h3 id="countdots">countDots</h3>
 <p>static int countDots(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Utility method that counts the amounts of dots in a <code>String</code>.</p>
+<hr />
 <h3 id="buildcontainingdirpath">buildContainingDirPath</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> buildContainingDirPath(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> outputDirectory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</p>
 <p>Creates a filesystem path based on the specified output directory
 and the fully qualified name of a package. Each section of the package
-name becomes a directory unless FlattenedDirectories has been
+name becomes a directory unless <a href="./#setflatteneddirectories">FileUtils.setFlattenedDirectories</a> has been
 called, in which case only the directories which will contain
 documentation for types will be created.</p>
 <p><strong>Parameters:</strong></p>
 <p><code>outputDirectory</code> - output path specified by the <code>-d</code> command line parameter</p>
 <p><code>packageName</code> - the name of the package being documented</p>
+<hr />
 <h3 id="pathseparator">pathSeparator</h3>
 <p>static char pathSeparator()</p>
 <p>Returns the character used to separate parts of a filesystem path.
 This method is necessary because Java's built-in <code>File.pathSeparatorChar</code>
 has a bug where it returns the wrong character on macOS.</p>
+<hr />
 <h3 id="createfile">createFile</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> createFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
 <h3 id="createmodulefile">createModuleFile</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> createModuleFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fileName)</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
 <h3 id="joinpaths">joinPaths</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> joinPaths(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> base, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> part)</p>
+<hr />
 
 
 

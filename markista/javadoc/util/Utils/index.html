@@ -2089,7 +2089,7 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-utils">Class Utils</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.Utils<br/>
 <br/></p>
 <hr />
@@ -2179,6 +2179,7 @@
 <p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>The string with the generic type and surrounding &lt;&gt; removed</p>
+<hr />
 <h3 id="removeparentheses">removeParentheses</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> removeParentheses(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> expression)</p>
 <p>Removes parentheses and what they contain from an expression</p>
@@ -2186,6 +2187,7 @@
 <p><code>expression</code> - An expression such as <code>classname.method(parameter)</code>.</p>
 <p><strong>Returns:</strong></p>
 <p>The expression with the parentheses removed</p>
+<hr />
 <h3 id="simplifynames">simplifyNames</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplifyNames(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Changes all qualified names in a string into unqualified names.</p>
@@ -2193,12 +2195,16 @@
 <p><code>str</code> - A string that may contain one or more qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>The input string, with all qualified names changed to unqualified names.</p>
+<hr />
 <h3 id="simplifynamesloop">simplifyNamesLoop</h3>
 <p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplifyNamesLoop(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> input)</p>
+<hr />
 <h3 id="shouldreplacequalifiedwithsimple">shouldReplaceQualifiedWithSimple</h3>
 <p>private static boolean shouldReplaceQualifiedWithSimple(int qualifiedStart, int simpleStart, int i, int length, char c)</p>
+<hr />
 <h3 id="replacequalifiedwithsimple">replaceQualifiedWithSimple</h3>
 <p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> replaceQualifiedWithSimple(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</p>
+<hr />
 <h3 id="isvalidsimplenamechar">isValidSimpleNameChar</h3>
 <p>static boolean isValidSimpleNameChar(char c)</p>
 <p>Checks if the given character is valid in an unqualified name.</p>
@@ -2206,6 +2212,7 @@
 <p><code>c</code> - The character to check.</p>
 <p><strong>Returns:</strong></p>
 <p>Whether or not the character is valid in an unqualified name.</p>
+<hr />
 <h3 id="isvalidqualifiednamechar">isValidQualifiedNameChar</h3>
 <p>static boolean isValidQualifiedNameChar(char c)</p>
 <p>Checks if the given character is valid in a qualified name.</p>
@@ -2213,6 +2220,7 @@
 <p><code>c</code> - The character to check.</p>
 <p><strong>Returns:</strong></p>
 <p>Whether or not the character is valid in a qualified name.</p>
+<hr />
 <h3 id="isnullorempty">isNullOrEmpty</h3>
 <p>static boolean isNullOrEmpty(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Checks if a string is null or empty</p>
@@ -2220,6 +2228,7 @@
 <p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>True if the string either null or empty</p>
+<hr />
 <h3 id="inoneline">inOneLine</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> inOneLine(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Removes new line characters from a string, replacing them with spaces</p>
@@ -2227,6 +2236,7 @@
 <p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>The string, with newlines converted to spaces</p>
+<hr />
 
 
 
