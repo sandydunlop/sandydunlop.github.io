@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/model/">
       
       
-        <link rel="prev" href="../doclet/PackageWriter/">
+        <link rel="prev" href="../doclet/TypeWriter/">
       
       
         <link rel="next" href="AbstractTypeOwner/">
@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -1792,7 +1817,7 @@
 
 
 <h1 id="package-iogithubsandydunlopmarkistamodel">Package io.github.sandydunlop.markista.model</h1>
-<p>The classes used to store structure and docuemntation information in the API tree.</p>
+<p>The types used to store structure and documentation information of the API.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Classes</label><label for="__tabbed_1_2">Interfaces</label><label for="__tabbed_1_3">Enum Classes</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1818,7 +1843,7 @@
 </tr>
 <tr>
 <td><a href="AnnotationNode/">AnnotationNode</a></td>
-<td></td>
+<td>A <a href="Node/">Node</a> that represents an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/Annotation.html">Annotation</a> class</td>
 </tr>
 <tr>
 <td><a href="OverriddenMethodNode/">OverriddenMethodNode</a></td>
@@ -1826,15 +1851,15 @@
 </tr>
 <tr>
 <td><a href="ModuleNode/">ModuleNode</a></td>
-<td></td>
+<td>Represents a module node that contains directives, packages, and constant values.</td>
 </tr>
 <tr>
 <td><a href="DirectiveNode/">DirectiveNode</a></td>
-<td></td>
+<td>Represents a directive within a module declaration, such as requires, exports, or provides.</td>
 </tr>
 <tr>
 <td><a href="EnumNode/">EnumNode</a></td>
-<td></td>
+<td>Represents an enum type node with its constants.</td>
 </tr>
 <tr>
 <td><a href="FieldNode/">FieldNode</a></td>
@@ -1846,11 +1871,11 @@
 </tr>
 <tr>
 <td><a href="TypeNode/">TypeNode</a></td>
-<td></td>
+<td>Represents a type in the API model, including its kind (class, interface, enum, annotation), supertypes, implemented interfaces, constructors, methods, fields, ownership, and relevant metadata.</td>
 </tr>
 <tr>
 <td><a href="AbstractTypeOwner/">AbstractTypeOwner</a></td>
-<td></td>
+<td>An abstract class with a set of methods useful to other subclasses of <a href="Node/">Node</a> that can be owners of types.</td>
 </tr>
 <tr>
 <td><a href="ParamNode/">ParamNode</a></td>
@@ -1862,7 +1887,7 @@
 </tr>
 <tr>
 <td><a href="Api/">Api</a></td>
-<td></td>
+<td>Represents the API being documented, encapsulating its modules and packages.</td>
 </tr>
 <tr>
 <td><a href="Node/">Node</a></td>
@@ -1890,7 +1915,7 @@
 <tbody>
 <tr>
 <td><a href="PackageMember/">PackageMember</a></td>
-<td></td>
+<td>Represents a member belonging to a package, such as a class, interface, or sub-package.</td>
 </tr>
 <tr>
 <td><a href="TypeOwner/">TypeOwner</a></td>
@@ -1898,7 +1923,7 @@
 </tr>
 <tr>
 <td><a href="PackageOwner/">PackageOwner</a></td>
-<td></td>
+<td>Interface representing an owner of packages.</td>
 </tr>
 </tbody>
 </table>
@@ -1914,11 +1939,11 @@
 <tbody>
 <tr>
 <td><a href="Modifier/">Modifier</a></td>
-<td></td>
+<td>Enum representing Java language modifiers with their string  representations.</td>
 </tr>
 <tr>
 <td><a href="Deprecation/">Deprecation</a></td>
-<td></td>
+<td>Enum representing the deprecation status of an element</td>
 </tr>
 </tbody>
 </table>

@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2227,13 +2252,15 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-modulenode">Class ModuleNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.ModuleNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="../PackageOwner/">PackageOwner</a></p>
 <hr />
+<p>Represents a module node that contains directives, packages, and constant values. 
+Implements the PackageOwner interface to manage contained packages.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2272,7 +2299,7 @@ All Implemented Interfaces:<br/>
 <tbody>
 <tr>
 <td>ModuleNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</td>
-<td></td>
+<td>Constructs a ModuleNode with the given module name.</td>
 </tr>
 </tbody>
 </table>
@@ -2289,62 +2316,62 @@ All Implemented Interfaces:<br/>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
-<td></td>
+<td>Returns the name (qualified name) of this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
-<td></td>
+<td>Returns the list of packages contained in this module.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/">PackageNode</a> packageNode)</td>
-<td></td>
+<td>Adds a package to this module.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#adddirective">addDirective</a>(<a href="../DirectiveNode/">DirectiveNode</a> directive)</td>
-<td></td>
+<td>Adds a directive to this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getdirectives">getDirectives</a>()</td>
-<td></td>
+<td>Returns the list of directives declared in this module.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addconstantvalue">addConstantValue</a>(<a href="../FieldNode/">FieldNode</a> constant)</td>
-<td></td>
+<td>Adds a constant field value to this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
 <td><a href="#getconstantvalues">getConstantValues</a>()</td>
-<td></td>
+<td>Returns the list of constant values defined in this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getexports">getExports</a>()</td>
-<td></td>
+<td>Returns the list of 'exports' directives in this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getrequires">getRequires</a>()</td>
-<td></td>
+<td>Returns the list of 'requires' directives in this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getopens">getOpens</a>()</td>
-<td></td>
+<td>Returns the list of 'opens' directives in this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getuses">getUses</a>()</td>
-<td></td>
+<td>Returns the list of 'uses' directives in this module.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
 <td><a href="#getprovides">getProvides</a>()</td>
-<td></td>
+<td>Returns the list of 'provides' directives in this module.</td>
 </tr>
 </tbody>
 </table>
@@ -2358,43 +2385,79 @@ All Implemented Interfaces:<br/>
 <h2 id="method-details">Method Details</h2>
 <h3 id="getname">getName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>Returns the name (qualified name) of this module.</p>
+<p><strong>Returns:</strong></p>
+<p>The module name.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
+<p>Returns the list of packages contained in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of PackageMember objects.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">PackageOwner</a></p>
+<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
 <p>void addPackage(<a href="../PackageNode/">PackageNode</a> packageNode)</p>
+<p>Adds a package to this module.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>packageNode</code> - The PackageNode to add.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">PackageOwner</a></p>
+<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
 <hr />
 <h3 id="adddirective">addDirective</h3>
 <p>void addDirective(<a href="../DirectiveNode/">DirectiveNode</a> directive)</p>
+<p>Adds a directive to this module.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>directive</code> - The DirectiveNode to add.</p>
 <hr />
 <h3 id="getdirectives">getDirectives</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getDirectives()</p>
+<p>Returns the list of directives declared in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects.</p>
 <hr />
 <h3 id="addconstantvalue">addConstantValue</h3>
 <p>void addConstantValue(<a href="../FieldNode/">FieldNode</a> constant)</p>
+<p>Adds a constant field value to this module.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>constant</code> - The FieldNode representing the constant.</p>
 <hr />
 <h3 id="getconstantvalues">getConstantValues</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; getConstantValues()</p>
+<p>Returns the list of constant values defined in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of FieldNode objects.</p>
 <hr />
 <h3 id="getexports">getExports</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getExports()</p>
+<p>Returns the list of 'exports' directives in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects filtered by EXPORTS kind.</p>
 <hr />
 <h3 id="getrequires">getRequires</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getRequires()</p>
+<p>Returns the list of 'requires' directives in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects filtered by REQUIRES kind.</p>
 <hr />
 <h3 id="getopens">getOpens</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getOpens()</p>
+<p>Returns the list of 'opens' directives in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects filtered by OPENS kind.</p>
 <hr />
 <h3 id="getuses">getUses</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getUses()</p>
+<p>Returns the list of 'uses' directives in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects filtered by USES kind.</p>
 <hr />
 <h3 id="getprovides">getProvides</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; getProvides()</p>
+<p>Returns the list of 'provides' directives in this module.</p>
+<p><strong>Returns:</strong></p>
+<p>List of DirectiveNode objects filtered by PROVIDES kind.</p>
 <hr />
 
 

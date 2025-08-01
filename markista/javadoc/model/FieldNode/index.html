@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2029,9 +2054,9 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-fieldnode">Class FieldNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../ParamNode/">ParamNode</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../ParamNode/">io.github.sandydunlop.markista.model.ParamNode</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.FieldNode<br/>
 <br/></p>
 <hr />
@@ -2049,7 +2074,7 @@
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></td>
 <td><a href="#constantvalue">constantValue</a></td>
-<td></td>
+<td>The constant value assigned to this field, if any.</td>
 </tr>
 </tbody>
 </table>
@@ -2064,7 +2089,7 @@
 <tbody>
 <tr>
 <td>FieldNode(<a href="../TypeNode/">TypeNode</a> type, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Constructs a FieldNode with the given type and name.</td>
 </tr>
 </tbody>
 </table>
@@ -2081,32 +2106,42 @@
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></td>
 <td><a href="#getconstantvalue">getConstantValue</a>()</td>
-<td></td>
+<td>Returns the constant value of this field.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setconstantvalue">setConstantValue</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</td>
-<td></td>
+<td>Sets the constant value of this field.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#fullsignature">fullSignature</a>()</td>
-<td></td>
+<td>Returns the full signature of the field including modifiers and name.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="constantvalue">constantValue</h3>
+<p>The constant value assigned to this field, if any.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getconstantvalue">getConstantValue</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> getConstantValue()</p>
+<p>Returns the constant value of this field.</p>
+<p><strong>Returns:</strong></p>
+<p>The constant value of the field or null if none.</p>
 <hr />
 <h3 id="setconstantvalue">setConstantValue</h3>
 <p>void setConstantValue(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</p>
+<p>Sets the constant value of this field.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>constantValue</code> - The constant value to set.</p>
 <hr />
 <h3 id="fullsignature">fullSignature</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature()</p>
+<p>Returns the full signature of the field including modifiers and name.</p>
+<p><strong>Returns:</strong></p>
+<p>The string representing the full signature.</p>
 <hr />
 
 

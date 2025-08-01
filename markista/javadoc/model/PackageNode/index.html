@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2101,9 +2126,9 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-packagenode">Class PackageNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.PackageNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -2142,7 +2167,7 @@ All Implemented Interfaces:<br/>
 <tbody>
 <tr>
 <td>PackageNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</td>
-<td></td>
+<td>Constructs a PackageNode with the specified qualified package name.</td>
 </tr>
 </tbody>
 </table>
@@ -2159,32 +2184,32 @@ All Implemented Interfaces:<br/>
 <tr>
 <td>void</td>
 <td><a href="#setmodule">setModule</a>(<a href="../ModuleNode/">ModuleNode</a> module)</td>
-<td></td>
+<td>Sets the module for this package.</td>
 </tr>
 <tr>
 <td><a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#getmodule">getModule</a>()</td>
-<td></td>
+<td>Returns the module that owns this package.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
-<td></td>
+<td>Returns the list of package members owned by this package.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="./">PackageNode</a> packageNode)</td>
-<td></td>
+<td>Adds a subpackage to this package.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
-<td></td>
+<td>Returns the name (qualified name) of this package.</td>
 </tr>
 <tr>
 <td><a href="../Text/">Text</a></td>
 <td><a href="#getdescription">getDescription</a>()</td>
-<td></td>
+<td>Returns the description text for this package, typically the first sentence.</td>
 </tr>
 </tbody>
 </table>
@@ -2196,29 +2221,47 @@ All Implemented Interfaces:<br/>
 <h2 id="method-details">Method Details</h2>
 <h3 id="setmodule">setModule</h3>
 <p>void setModule(<a href="../ModuleNode/">ModuleNode</a> module)</p>
+<p>Sets the module for this package.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>module</code> - The ModuleNode that owns this package.</p>
 <hr />
 <h3 id="getmodule">getModule</h3>
 <p><a href="../ModuleNode/">ModuleNode</a> getModule()</p>
+<p>Returns the module that owns this package.</p>
+<p><strong>Returns:</strong></p>
+<p>The ModuleNode instance.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
+<p>Returns the list of package members owned by this package.</p>
+<p><strong>Returns:</strong></p>
+<p>List of PackageMember objects.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">PackageOwner</a></p>
+<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
 <p>void addPackage(<a href="./">PackageNode</a> packageNode)</p>
+<p>Adds a subpackage to this package.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>packageNode</code> - The PackageNode to add as a member.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">PackageOwner</a></p>
+<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
 <hr />
 <h3 id="getname">getName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>Returns the name (qualified name) of this package.</p>
+<p><strong>Returns:</strong></p>
+<p>The qualified package name.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
+<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
 <p><a href="../Text/">Text</a> getDescription()</p>
+<p>Returns the description text for this package, typically the first sentence.</p>
+<p><strong>Returns:</strong></p>
+<p>The Text object representing the description.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
+<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
 <hr />
 
 

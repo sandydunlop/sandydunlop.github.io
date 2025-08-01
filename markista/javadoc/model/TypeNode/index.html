@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2587,14 +2612,16 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-typenode">Class TypeNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.TypeNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="../PackageMember/">PackageMember</a></p>
 <hr />
+<p>Represents a type in the API model, including its kind (class, interface, enum, annotation),
+supertypes, implemented interfaces, constructors, methods, fields, ownership, and relevant metadata.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2608,42 +2635,42 @@ All Implemented Interfaces:<br/>
 <tr>
 <td>private <a href="../TypeOwner/">TypeOwner</a></td>
 <td><a href="#owner">owner</a></td>
-<td></td>
+<td>The owner of this type, usually another type or module.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#implementedinterfaces">implementedInterfaces</a></td>
-<td></td>
+<td>List of qualified names of interfaces implemented by this type.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#supertypes">supertypes</a></td>
-<td></td>
+<td>List of qualified names of this type's supertypes.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#arraybrackets">arrayBrackets</a></td>
-<td></td>
+<td>String representation of array brackets if this type is an array (e.g., "").</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
 <td><a href="#constructors">constructors</a></td>
-<td></td>
+<td>List of constructor methods belonging to this type.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
 <td><a href="#methods">methods</a></td>
-<td></td>
+<td>List of methods belonging to this type.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
 <td><a href="#fields">fields</a></td>
-<td></td>
+<td>List of fields belonging to this type.</td>
 </tr>
 <tr>
 <td>protected <a href="../TypeNode.Kind/">TypeNode.Kind</a></td>
 <td><a href="#kind">kind</a></td>
-<td></td>
+<td>The kind of this type (e.g., class, interface, enum, annotation).</td>
 </tr>
 </tbody>
 </table>
@@ -2658,7 +2685,7 @@ All Implemented Interfaces:<br/>
 <tbody>
 <tr>
 <td>TypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
-<td></td>
+<td>Constructs a TypeNode with the specified qualified name, simple name, and package.</td>
 </tr>
 </tbody>
 </table>
@@ -2675,242 +2702,337 @@ All Implemented Interfaces:<br/>
 <tr>
 <td>void</td>
 <td><a href="#setarraybrackets">setArrayBrackets</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> brackets)</td>
-<td></td>
+<td>Sets the array brackets representation for this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getarraybrackets">getArrayBrackets</a>()</td>
-<td></td>
+<td>Returns the array brackets representation for this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setimplementedinterfaces">setImplementedInterfaces</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; implementedInterfaces)</td>
-<td></td>
+<td>Sets the list of implemented interfaces by qualified names.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setsupertypes">setSupertypes</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; supertypes)</td>
-<td></td>
+<td>Sets the list of supertypes by qualified names.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getsupertypes">getSupertypes</a>()</td>
-<td></td>
+<td>Returns the list of supertypes by qualified names.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getimplementedinterfaces">getImplementedInterfaces</a>()</td>
-<td></td>
+<td>Returns the list of implemented interfaces by qualified names.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setowner">setOwner</a>(<a href="../TypeOwner/">TypeOwner</a> owner)</td>
-<td></td>
+<td>Sets the owner of this type.</td>
 </tr>
 <tr>
 <td><a href="../TypeOwner/">TypeOwner</a></td>
 <td><a href="#getowner">getOwner</a>()</td>
-<td></td>
+<td>Returns the owner of this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setsimplename">setSimpleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the simple name of this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getsimplename">getSimpleName</a>()</td>
-<td></td>
+<td>Returns the simple name of this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setqualifiedname">setQualifiedName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the qualified name of this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getqualifiedname">getQualifiedName</a>()</td>
-<td></td>
+<td>Returns the qualified name of this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getpackagename">getPackageName</a>()</td>
-<td></td>
+<td>Returns the package name for this type.</td>
 </tr>
 <tr>
 <td><a href="../PackageNode/">PackageNode</a></td>
 <td><a href="#getpackage">getPackage</a>()</td>
-<td></td>
+<td>Returns the package node this type belongs to.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setkind">setKind</a>(<a href="../TypeNode.Kind/">TypeNode.Kind</a> kind)</td>
-<td></td>
+<td>Sets the kind (class, interface, enum, annotation) of this type.</td>
 </tr>
 <tr>
 <td><a href="../TypeNode.Kind/">TypeNode.Kind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
-<td></td>
+<td>Returns the kind of this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addmethod">addMethod</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
-<td></td>
+<td>Adds a method to this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
 <td><a href="#getmethods">getMethods</a>()</td>
-<td></td>
+<td>Returns the list of methods of this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addconstructor">addConstructor</a>(<a href="../MethodNode/">MethodNode</a> constructor)</td>
-<td></td>
+<td>Adds a constructor method to this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
 <td><a href="#getconstructors">getConstructors</a>()</td>
-<td></td>
+<td>Returns the list of constructors of this type.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addfield">addField</a>(<a href="../FieldNode/">FieldNode</a> field)</td>
-<td></td>
+<td>Adds a field to this type.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
 <td><a href="#getfields">getFields</a>()</td>
-<td></td>
+<td>Returns the list of fields of this type.</td>
 </tr>
 <tr>
 <td><a href="../FieldNode/">FieldNode</a></td>
 <td><a href="#getfield">getField</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
-<td></td>
+<td>Retrieves a field by its simple name.</td>
 </tr>
 <tr>
 <td><a href="../MethodNode/">MethodNode</a></td>
 <td><a href="#getmethod">getMethod</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
-<td></td>
+<td>Retrieves a method matching the signature of a given MethodNode.</td>
 </tr>
 <tr>
 <td><a href="../MethodNode/">MethodNode</a></td>
 <td><a href="#getconstructor">getConstructor</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
-<td></td>
+<td>Retrieves a constructor matching the signature of a given MethodNode.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
-<td></td>
+<td>Returns the name of the type.</td>
 </tr>
 <tr>
 <td><a href="../Text/">Text</a></td>
 <td><a href="#getdescription">getDescription</a>()</td>
-<td></td>
+<td>Returns the description of this type.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="owner">owner</h3>
+<p>The owner of this type, usually another type or module.</p>
 <hr />
 <h3 id="implementedinterfaces">implementedInterfaces</h3>
+<p>List of qualified names of interfaces implemented by this type.</p>
 <hr />
 <h3 id="supertypes">supertypes</h3>
+<p>List of qualified names of this type's supertypes.</p>
 <hr />
 <h3 id="arraybrackets">arrayBrackets</h3>
+<p>String representation of array brackets if this type is an array (e.g., "").</p>
 <hr />
 <h3 id="constructors">constructors</h3>
+<p>List of constructor methods belonging to this type.</p>
 <hr />
 <h3 id="methods">methods</h3>
+<p>List of methods belonging to this type.</p>
 <hr />
 <h3 id="fields">fields</h3>
+<p>List of fields belonging to this type.</p>
 <hr />
 <h3 id="kind">kind</h3>
+<p>The kind of this type (e.g., class, interface, enum, annotation).</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setarraybrackets">setArrayBrackets</h3>
 <p>void setArrayBrackets(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> brackets)</p>
+<p>Sets the array brackets representation for this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>brackets</code> - string representing array dimension brackets (e.g., "").</p>
 <hr />
 <h3 id="getarraybrackets">getArrayBrackets</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getArrayBrackets()</p>
+<p>Returns the array brackets representation for this type.</p>
+<p><strong>Returns:</strong></p>
+<p>string representing array dimension brackets.</p>
 <hr />
 <h3 id="setimplementedinterfaces">setImplementedInterfaces</h3>
 <p>void setImplementedInterfaces(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; implementedInterfaces)</p>
+<p>Sets the list of implemented interfaces by qualified names.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>implementedInterfaces</code> - list of qualified interface names.</p>
 <hr />
 <h3 id="setsupertypes">setSupertypes</h3>
 <p>void setSupertypes(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; supertypes)</p>
+<p>Sets the list of supertypes by qualified names.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>supertypes</code> - list of qualified supertype names.</p>
 <hr />
 <h3 id="getsupertypes">getSupertypes</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getSupertypes()</p>
+<p>Returns the list of supertypes by qualified names.</p>
+<p><strong>Returns:</strong></p>
+<p>list of qualified supertype names.</p>
 <hr />
 <h3 id="getimplementedinterfaces">getImplementedInterfaces</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getImplementedInterfaces()</p>
+<p>Returns the list of implemented interfaces by qualified names.</p>
+<p><strong>Returns:</strong></p>
+<p>list of qualified interface names.</p>
 <hr />
 <h3 id="setowner">setOwner</h3>
 <p>void setOwner(<a href="../TypeOwner/">TypeOwner</a> owner)</p>
+<p>Sets the owner of this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>owner</code> - the TypeOwner that owns this type.</p>
 <hr />
 <h3 id="getowner">getOwner</h3>
 <p><a href="../TypeOwner/">TypeOwner</a> getOwner()</p>
+<p>Returns the owner of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the TypeOwner that owns this type.</p>
 <hr />
 <h3 id="setsimplename">setSimpleName</h3>
 <p>void setSimpleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the simple name of this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - the simple name to set.</p>
 <hr />
 <h3 id="getsimplename">getSimpleName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSimpleName()</p>
+<p>Returns the simple name of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the simple name.</p>
 <hr />
 <h3 id="setqualifiedname">setQualifiedName</h3>
 <p>void setQualifiedName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the qualified name of this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - the qualified name to set.</p>
 <hr />
 <h3 id="getqualifiedname">getQualifiedName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getQualifiedName()</p>
+<p>Returns the qualified name of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the qualified name.</p>
 <hr />
 <h3 id="getpackagename">getPackageName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName()</p>
+<p>Returns the package name for this type.</p>
+<p><strong>Returns:</strong></p>
+<p>fully qualified package name, or null if no package node.</p>
 <hr />
 <h3 id="getpackage">getPackage</h3>
 <p><a href="../PackageNode/">PackageNode</a> getPackage()</p>
+<p>Returns the package node this type belongs to.</p>
+<p><strong>Returns:</strong></p>
+<p>the PackageNode instance.</p>
 <hr />
 <h3 id="setkind">setKind</h3>
 <p>void setKind(<a href="../TypeNode.Kind/">TypeNode.Kind</a> kind)</p>
+<p>Sets the kind (class, interface, enum, annotation) of this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>kind</code> - the Kind enum value.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
 <p><a href="../TypeNode.Kind/">TypeNode.Kind</a> getKind()</p>
+<p>Returns the kind of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the Kind enum value.</p>
 <hr />
 <h3 id="addmethod">addMethod</h3>
 <p>void addMethod(<a href="../MethodNode/">MethodNode</a> method)</p>
+<p>Adds a method to this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>method</code> - the MethodNode to add.</p>
 <hr />
 <h3 id="getmethods">getMethods</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; getMethods()</p>
+<p>Returns the list of methods of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>list of MethodNode instances.</p>
 <hr />
 <h3 id="addconstructor">addConstructor</h3>
 <p>void addConstructor(<a href="../MethodNode/">MethodNode</a> constructor)</p>
+<p>Adds a constructor method to this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>constructor</code> - the MethodNode constructor to add.</p>
 <hr />
 <h3 id="getconstructors">getConstructors</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; getConstructors()</p>
+<p>Returns the list of constructors of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>list of MethodNode constructors.</p>
 <hr />
 <h3 id="addfield">addField</h3>
 <p>void addField(<a href="../FieldNode/">FieldNode</a> field)</p>
+<p>Adds a field to this type.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>field</code> - the FieldNode to add.</p>
 <hr />
 <h3 id="getfields">getFields</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; getFields()</p>
+<p>Returns the list of fields of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>list of FieldNode instances.</p>
 <hr />
 <h3 id="getfield">getField</h3>
 <p><a href="../FieldNode/">FieldNode</a> getField(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
+<p>Retrieves a field by its simple name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>fieldName</code> - the simple name of the field.</p>
+<p><strong>Returns:</strong></p>
+<p>the FieldNode if found, otherwise null.</p>
 <hr />
 <h3 id="getmethod">getMethod</h3>
 <p><a href="../MethodNode/">MethodNode</a> getMethod(<a href="../MethodNode/">MethodNode</a> method)</p>
+<p>Retrieves a method matching the signature of a given MethodNode.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>method</code> - the MethodNode whose signature to match.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching MethodNode if found, otherwise null.</p>
 <hr />
 <h3 id="getconstructor">getConstructor</h3>
 <p><a href="../MethodNode/">MethodNode</a> getConstructor(<a href="../MethodNode/">MethodNode</a> method)</p>
+<p>Retrieves a constructor matching the signature of a given MethodNode.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>method</code> - the MethodNode whose signature to match.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching constructor MethodNode if found, otherwise null.</p>
 <hr />
 <h3 id="getname">getName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>Returns the name of the type.</p>
+<p><strong>Returns:</strong></p>
+<p>the simple name.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
+<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
 <p><a href="../Text/">Text</a> getDescription()</p>
+<p>Returns the description of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>a Text object containing the first sentence or summary.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
+<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
 <hr />
 
 

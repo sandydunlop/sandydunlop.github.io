@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -938,6 +963,15 @@
   <a href="#getname" class="md-nav__link">
     <span class="md-ellipsis">
       getName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setName
     </span>
   </a>
   
@@ -2097,6 +2131,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#addmodule" class="md-nav__link">
     <span class="md-ellipsis">
       addModule
@@ -2209,12 +2252,14 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-api">Class Api</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Api<br/>
 <br/></p>
 <hr />
+<p>Represents the API being documented, encapsulating its modules and packages.
+Provides methods to add and retrieve modules, packages, and types, as well as sorting them.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2228,17 +2273,17 @@
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ModuleNode/">ModuleNode</a>&gt;</td>
 <td><a href="#modules">modules</a></td>
-<td></td>
+<td>List of modules included in the API.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt;</td>
 <td><a href="#packages">packages</a></td>
-<td></td>
+<td>List of packages included in the API.</td>
 </tr>
 <tr>
 <td>private <a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#unnamedmodule">unnamedModule</a></td>
-<td></td>
+<td>Represents the unnamed module in the API.</td>
 </tr>
 </tbody>
 </table>
@@ -2253,7 +2298,7 @@
 <tbody>
 <tr>
 <td>Api()</td>
-<td></td>
+<td>Constructs an empty Api instance.</td>
 </tr>
 </tbody>
 </table>
@@ -2270,100 +2315,153 @@
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
-<td></td>
+<td>Returns the name of the API.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><a href="#setname">setName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the name of the API.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addmodule">addModule</a>(<a href="../ModuleNode/">ModuleNode</a> node)</td>
-<td></td>
+<td>Adds a module to the API.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ModuleNode/">ModuleNode</a>&gt;</td>
 <td><a href="#getmodules">getModules</a>()</td>
-<td></td>
+<td>Returns the list of modules in the API.</td>
 </tr>
 <tr>
 <td><a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#getmodulenode">getModuleNode</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</td>
-<td></td>
+<td>Retrieves a module matching the specified qualified name.</td>
 </tr>
 <tr>
 <td><a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#getunnamedmodulenode">getUnnamedModuleNode</a>()</td>
-<td></td>
+<td>Returns the unnamed module of the API.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/">PackageNode</a> node)</td>
-<td></td>
+<td>Adds a package to the API.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
-<td></td>
+<td>Returns the list of packages in the API.</td>
 </tr>
 <tr>
 <td><a href="../PackageNode/">PackageNode</a></td>
 <td><a href="#getpackagenode">getPackageNode</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</td>
-<td></td>
+<td>Retrieves a package matching the specified qualified name.</td>
 </tr>
 <tr>
 <td><a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#gettypenode">getTypeNode</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</td>
-<td></td>
+<td>Retrieves a TypeNode based on its fully qualified name.</td>
 </tr>
 <tr>
 <td><a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#gettypenode">getTypeNode</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> type)</td>
-<td></td>
+<td>Retrieves a TypeNode based on a TypeElement.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#sort">sort</a>()</td>
-<td></td>
+<td>Sorts the packages in descending order by qualified name and sorts all child types recursively.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="modules">modules</h3>
+<p>List of modules included in the API.</p>
 <hr />
 <h3 id="packages">packages</h3>
+<p>List of packages included in the API.</p>
 <hr />
 <h3 id="unnamedmodule">unnamedModule</h3>
+<p>Represents the unnamed module in the API.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getname">getName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>Returns the name of the API.</p>
+<p><strong>Returns:</strong></p>
+<p>The name of the API</p>
+<hr />
+<h3 id="setname">setName</h3>
+<p>void setName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the name of the API.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The name of the API</p>
 <hr />
 <h3 id="addmodule">addModule</h3>
 <p>void addModule(<a href="../ModuleNode/">ModuleNode</a> node)</p>
+<p>Adds a module to the API.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>node</code> - the ModuleNode instance to add.</p>
 <hr />
 <h3 id="getmodules">getModules</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ModuleNode/">ModuleNode</a>&gt; getModules()</p>
+<p>Returns the list of modules in the API.</p>
+<p><strong>Returns:</strong></p>
+<p>List of ModuleNode objects representing the modules.</p>
 <hr />
 <h3 id="getmodulenode">getModuleNode</h3>
 <p><a href="../ModuleNode/">ModuleNode</a> getModuleNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</p>
+<p>Retrieves a module matching the specified qualified name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>qualifiedName</code> - the fully qualified name of the module.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching ModuleNode if found, or null otherwise.</p>
 <hr />
 <h3 id="getunnamedmodulenode">getUnnamedModuleNode</h3>
 <p><a href="../ModuleNode/">ModuleNode</a> getUnnamedModuleNode()</p>
+<p>Returns the unnamed module of the API.</p>
+<p><strong>Returns:</strong></p>
+<p>the unnamed ModuleNode.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
 <p>void addPackage(<a href="../PackageNode/">PackageNode</a> node)</p>
+<p>Adds a package to the API.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>node</code> - the PackageNode instance to add.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt; getPackages()</p>
+<p>Returns the list of packages in the API.</p>
+<p><strong>Returns:</strong></p>
+<p>List of PackageNode objects representing the packages.</p>
 <hr />
 <h3 id="getpackagenode">getPackageNode</h3>
 <p><a href="../PackageNode/">PackageNode</a> getPackageNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</p>
+<p>Retrieves a package matching the specified qualified name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>qualifiedName</code> - the fully qualified name of the package.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching PackageNode if found, or null otherwise.</p>
 <hr />
 <h3 id="gettypenode">getTypeNode</h3>
 <p><a href="../TypeNode/">TypeNode</a> getTypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</p>
+<p>Retrieves a TypeNode based on its fully qualified name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>qualifiedName</code> - the fully qualified name of the type.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching TypeNode if found, or null otherwise.</p>
 <hr />
 <h3 id="gettypenode_1">getTypeNode</h3>
 <p><a href="../TypeNode/">TypeNode</a> getTypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> type)</p>
+<p>Retrieves a TypeNode based on a TypeElement.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>type</code> - the TypeElement to match.</p>
+<p><strong>Returns:</strong></p>
+<p>the matching TypeNode if found, or null if type is null or no match found.</p>
 <hr />
 <h3 id="sort">sort</h3>
 <p>void sort()</p>
+<p>Sorts the packages in descending order by qualified name and sorts all child types recursively.</p>
 <p><strong>Overrides:</strong></p>
 <p><a href="../AbstractTypeOwner/#sort">AbstractTypeOwner.sort</a> from <a href="../AbstractTypeOwner/">AbstractTypeOwner</a></p>
 <hr />

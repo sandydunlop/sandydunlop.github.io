@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -1993,12 +2018,13 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-nodemodifiersorter">Class Node.ModifierSorter</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Node.ModifierSorter<br/>
 <br/>
 Enclosing Class:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a></p>
 <hr />
+<p>Utility class to sort modifiers according to Java language conventions.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2012,7 +2038,7 @@ Enclosing Class:<br/>
 <tr>
 <td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#order">ORDER</a></td>
-<td></td>
+<td>The fixed order of modifiers as per Java language specification.</td>
 </tr>
 </tbody>
 </table>
@@ -2027,7 +2053,7 @@ Enclosing Class:<br/>
 <tbody>
 <tr>
 <td>Node.ModifierSorter()</td>
-<td></td>
+<td>Private constructor to prevent instantiation.</td>
 </tr>
 </tbody>
 </table>
@@ -2044,16 +2070,22 @@ Enclosing Class:<br/>
 <tr>
 <td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#sortmodifiers">sortModifiers</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; modifierSet)</td>
-<td></td>
+<td>Sort the given set of modifiers into the standard order.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="order">ORDER</h3>
+<p>The fixed order of modifiers as per Java language specification.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="sortmodifiers">sortModifiers</h3>
 <p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt; sortModifiers(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; modifierSet)</p>
+<p>Sort the given set of modifiers into the standard order.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>modifierSet</code> - The set of modifiers to sort.</p>
+<p><strong>Returns:</strong></p>
+<p>List of modifiers sorted in the defined order.</p>
 <hr />
 
 

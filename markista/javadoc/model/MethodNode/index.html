@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2371,8 +2396,8 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-methodnode">Class MethodNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.MethodNode<br/>
 <br/></p>
 <hr />
@@ -2389,37 +2414,37 @@
 <tr>
 <td>private <a href="../Text/">Text</a></td>
 <td><a href="#returndescription">returnDescription</a></td>
-<td></td>
+<td>Description of the method's return value.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#specifiedby">specifiedBy</a></td>
-<td></td>
+<td>Name of the interface or specification this method is specified by.</td>
 </tr>
 <tr>
 <td>private <a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#returntype">returnType</a></td>
-<td></td>
+<td>The return type of this method.</td>
 </tr>
 <tr>
 <td>private <a href="../OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#overrides">overrides</a></td>
-<td></td>
+<td>Information about the method that this method overrides, if any.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ParamNode/">ParamNode</a>&gt;</td>
 <td><a href="#params">params</a></td>
-<td></td>
+<td>List of parameters for this method.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#throwntypes">thrownTypes</a></td>
-<td></td>
+<td>List of exception types that this method declares it can throw.</td>
 </tr>
 <tr>
 <td>private <a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#owner">owner</a></td>
-<td></td>
+<td>The type (class/interface) that owns this method.</td>
 </tr>
 </tbody>
 </table>
@@ -2434,7 +2459,7 @@
 <tbody>
 <tr>
 <td>MethodNode(<a href="../TypeNode/">TypeNode</a> returnType, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Constructs a MethodNode with the specified return type and method name.</td>
 </tr>
 </tbody>
 </table>
@@ -2451,148 +2476,204 @@
 <tr>
 <td>void</td>
 <td><a href="#setoverriddenmethod">setOverriddenMethod</a>(<a href="../OverriddenMethodNode/">OverriddenMethodNode</a> overrides)</td>
-<td></td>
+<td>Sets the overridden method information that this method overrides.</td>
 </tr>
 <tr>
 <td><a href="../OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#getoverriddenmethod">getOverriddenMethod</a>()</td>
-<td></td>
+<td>Returns the overridden method information, if any.</td>
 </tr>
 <tr>
 <td><a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#getreturntype">getReturnType</a>()</td>
-<td></td>
+<td>Returns the return type of this method.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addparam">addParam</a>(<a href="../ParamNode/">ParamNode</a> param)</td>
-<td></td>
+<td>Adds a parameter to this method.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ParamNode/">ParamNode</a>&gt;</td>
 <td><a href="#getparams">getParams</a>()</td>
-<td></td>
+<td>Returns the list of parameters of this method.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#addthrowntype">addThrownType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Adds an exception type that this method declares it throws.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getthrowntypes">getThrownTypes</a>()</td>
-<td></td>
+<td>Returns the list of exception types declared by this method.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setowner">setOwner</a>(<a href="../TypeNode/">TypeNode</a> owner)</td>
-<td></td>
+<td>Sets the owning type (class/interface) of this method.</td>
 </tr>
 <tr>
 <td><a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#getowner">getOwner</a>()</td>
-<td></td>
+<td>Returns the owning type of this method.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setspecifiedby">setSpecifiedBy</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> interfaceName)</td>
-<td></td>
+<td>Sets the interface or specification name this method is specified by.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getspecifiedby">getSpecifiedBy</a>()</td>
-<td></td>
+<td>Returns the name of the interface or specification this method is specified by.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setreturndescription">setReturnDescription</a>(<a href="../Text/">Text</a> text)</td>
-<td></td>
+<td>Sets the description of the method's return value.</td>
 </tr>
 <tr>
 <td><a href="../Text/">Text</a></td>
 <td><a href="#getreturndescription">getReturnDescription</a>()</td>
-<td></td>
+<td>Returns the description of the method's return value.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#signature">signature</a>()</td>
-<td></td>
+<td>Computes and returns the method signature string, including return type, name, and parameters.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setsimplename">setSimpleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the simple name of the method.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getsimplename">getSimpleName</a>()</td>
-<td></td>
+<td>Returns the simple name of the method.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="returndescription">returnDescription</h3>
+<p>Description of the method's return value.</p>
 <hr />
 <h3 id="specifiedby">specifiedBy</h3>
+<p>Name of the interface or specification this method is specified by.</p>
 <hr />
 <h3 id="returntype">returnType</h3>
+<p>The return type of this method.</p>
 <hr />
 <h3 id="overrides">overrides</h3>
+<p>Information about the method that this method overrides, if any.</p>
 <hr />
 <h3 id="params">params</h3>
+<p>List of parameters for this method.</p>
 <hr />
 <h3 id="throwntypes">thrownTypes</h3>
+<p>List of exception types that this method declares it can throw.</p>
 <hr />
 <h3 id="owner">owner</h3>
+<p>The type (class/interface) that owns this method.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setoverriddenmethod">setOverriddenMethod</h3>
 <p>void setOverriddenMethod(<a href="../OverriddenMethodNode/">OverriddenMethodNode</a> overrides)</p>
+<p>Sets the overridden method information that this method overrides.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>overrides</code> - an OverriddenMethodNode representing the overridden method.</p>
 <hr />
 <h3 id="getoverriddenmethod">getOverriddenMethod</h3>
 <p><a href="../OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod()</p>
+<p>Returns the overridden method information, if any.</p>
+<p><strong>Returns:</strong></p>
+<p>the OverriddenMethodNode representing the overridden method, or null if none.</p>
 <hr />
 <h3 id="getreturntype">getReturnType</h3>
 <p><a href="../TypeNode/">TypeNode</a> getReturnType()</p>
+<p>Returns the return type of this method.</p>
+<p><strong>Returns:</strong></p>
+<p>the TypeNode representing the return type.</p>
 <hr />
 <h3 id="addparam">addParam</h3>
 <p>void addParam(<a href="../ParamNode/">ParamNode</a> param)</p>
+<p>Adds a parameter to this method.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>param</code> - a ParamNode representing the parameter to add.</p>
 <hr />
 <h3 id="getparams">getParams</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../ParamNode/">ParamNode</a>&gt; getParams()</p>
+<p>Returns the list of parameters of this method.</p>
+<p><strong>Returns:</strong></p>
+<p>List of ParamNode objects representing the method parameters.</p>
 <hr />
 <h3 id="addthrowntype">addThrownType</h3>
 <p>void addThrownType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Adds an exception type that this method declares it throws.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - the fully qualified name of the exception type.</p>
 <hr />
 <h3 id="getthrowntypes">getThrownTypes</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getThrownTypes()</p>
+<p>Returns the list of exception types declared by this method.</p>
+<p><strong>Returns:</strong></p>
+<p>List of exception type names as Strings.</p>
 <hr />
 <h3 id="setowner">setOwner</h3>
 <p>void setOwner(<a href="../TypeNode/">TypeNode</a> owner)</p>
+<p>Sets the owning type (class/interface) of this method.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>owner</code> - the TypeNode representing the owner.</p>
 <hr />
 <h3 id="getowner">getOwner</h3>
 <p><a href="../TypeNode/">TypeNode</a> getOwner()</p>
+<p>Returns the owning type of this method.</p>
+<p><strong>Returns:</strong></p>
+<p>the TypeNode representing the owner.</p>
 <hr />
 <h3 id="setspecifiedby">setSpecifiedBy</h3>
 <p>void setSpecifiedBy(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> interfaceName)</p>
+<p>Sets the interface or specification name this method is specified by.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>interfaceName</code> - the name of the specifying interface or specification.</p>
 <hr />
 <h3 id="getspecifiedby">getSpecifiedBy</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSpecifiedBy()</p>
+<p>Returns the name of the interface or specification this method is specified by.</p>
+<p><strong>Returns:</strong></p>
+<p>the specifying interface or specification name.</p>
 <hr />
 <h3 id="setreturndescription">setReturnDescription</h3>
 <p>void setReturnDescription(<a href="../Text/">Text</a> text)</p>
+<p>Sets the description of the method's return value.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>text</code> - a Text object describing the return value.</p>
 <hr />
 <h3 id="getreturndescription">getReturnDescription</h3>
 <p><a href="../Text/">Text</a> getReturnDescription()</p>
+<p>Returns the description of the method's return value.</p>
+<p><strong>Returns:</strong></p>
+<p>a Text object containing the return description.</p>
 <hr />
 <h3 id="signature">signature</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> signature()</p>
+<p>Computes and returns the method signature string, including return type, name, and parameters.
+Example format: "java.lang.String methodName(int, java.util.List)"</p>
+<p><strong>Returns:</strong></p>
+<p>the method signature as a String.</p>
 <hr />
 <h3 id="setsimplename">setSimpleName</h3>
 <p>void setSimpleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the simple name of the method.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - the simple name to set.</p>
 <hr />
 <h3 id="getsimplename">getSimpleName</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSimpleName()</p>
+<p>Returns the simple name of the method.</p>
+<p><strong>Returns:</strong></p>
+<p>the simple name as a String.</p>
 <hr />
 
 

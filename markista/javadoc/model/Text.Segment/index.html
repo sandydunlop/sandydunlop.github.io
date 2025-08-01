@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2155,12 +2180,13 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-textsegment">Class Text.Segment</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Text.Segment<br/>
 <br/>
 Enclosing Class:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="../Text/">Text</a></p>
 <hr />
+<p>Represents a segment of the Text with its kind, content, and optional link.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2174,17 +2200,17 @@ Enclosing Class:<br/>
 <tr>
 <td>private <a href="../Text.SegmentKind/">Text.SegmentKind</a></td>
 <td><a href="#kind">kind</a></td>
-<td></td>
+<td>The kind/type of this segment.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#text">text</a></td>
-<td></td>
+<td>The textual content of this segment.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#link">link</a></td>
-<td></td>
+<td>The associated link if the segment represents a link.</td>
 </tr>
 </tbody>
 </table>
@@ -2199,7 +2225,7 @@ Enclosing Class:<br/>
 <tbody>
 <tr>
 <td>Text.Segment()</td>
-<td></td>
+<td>Private constructor to restrict instantiation.</td>
 </tr>
 </tbody>
 </table>
@@ -2216,76 +2242,110 @@ Enclosing Class:<br/>
 <tr>
 <td>static <a href="./">Text.Segment</a></td>
 <td><a href="#empty">empty</a>()</td>
-<td></td>
+<td>Creates an empty segment instance.</td>
 </tr>
 <tr>
 <td><a href="./">Text.Segment</a></td>
 <td><a href="#setkind">setKind</a>(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</td>
-<td></td>
+<td>Sets the kind of this segment.</td>
 </tr>
 <tr>
 <td><a href="../Text.SegmentKind/">Text.SegmentKind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
-<td></td>
+<td>Returns the kind of this segment.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#tostring">toString</a>()</td>
-<td></td>
+<td>Returns the string representation of this segment.</td>
 </tr>
 <tr>
 <td><a href="./">Text.Segment</a></td>
 <td><a href="#settext">setText</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</td>
-<td></td>
+<td>Sets the text content of this segment.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#gettext">getText</a>()</td>
-<td></td>
+<td>Returns the text content of this segment.</td>
 </tr>
 <tr>
 <td><a href="./">Text.Segment</a></td>
 <td><a href="#setlink">setLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link)</td>
-<td></td>
+<td>Sets the link value of this segment.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getlink">getLink</a>()</td>
-<td></td>
+<td>Returns the link associated with this segment.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="kind">kind</h3>
+<p>The kind/type of this segment.</p>
 <hr />
 <h3 id="text">text</h3>
+<p>The textual content of this segment.</p>
 <hr />
 <h3 id="link">link</h3>
+<p>The associated link if the segment represents a link.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="empty">empty</h3>
 <p>static <a href="./">Text.Segment</a> empty()</p>
+<p>Creates an empty segment instance.</p>
+<p><strong>Returns:</strong></p>
+<p>A new empty Segment object.</p>
 <hr />
 <h3 id="setkind">setKind</h3>
 <p><a href="./">Text.Segment</a> setKind(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</p>
+<p>Sets the kind of this segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>k</code> - The SegmentKind value.</p>
+<p><strong>Returns:</strong></p>
+<p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
 <p><a href="../Text.SegmentKind/">Text.SegmentKind</a> getKind()</p>
+<p>Returns the kind of this segment.</p>
+<p><strong>Returns:</strong></p>
+<p>The current SegmentKind.</p>
 <hr />
 <h3 id="tostring">toString</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p>Returns the string representation of this segment.
+If text is null or empty, returns the link value.</p>
+<p><strong>Returns:</strong></p>
+<p>The text or link of this segment.</p>
 <hr />
 <h3 id="settext">setText</h3>
 <p><a href="./">Text.Segment</a> setText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</p>
+<p>Sets the text content of this segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>text</code> - The text to set.</p>
+<p><strong>Returns:</strong></p>
+<p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="gettext">getText</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getText()</p>
+<p>Returns the text content of this segment.</p>
+<p><strong>Returns:</strong></p>
+<p>The text string.</p>
 <hr />
 <h3 id="setlink">setLink</h3>
 <p><a href="./">Text.Segment</a> setLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link)</p>
+<p>Sets the link value of this segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>link</code> - The link to set.</p>
+<p><strong>Returns:</strong></p>
+<p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getlink">getLink</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getLink()</p>
+<p>Returns the link associated with this segment.</p>
+<p><strong>Returns:</strong></p>
+<p>The link string.</p>
 <hr />
 
 

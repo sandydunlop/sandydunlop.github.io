@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2011,13 +2036,14 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-enumnode">Class EnumNode</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../TypeNode/">TypeNode</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.EnumNode<br/>
 <br/></p>
 <hr />
+<p>Represents an enum type node with its constants.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2046,7 +2072,7 @@
 <tbody>
 <tr>
 <td>EnumNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
-<td></td>
+<td>Constructs an EnumNode with the specified qualified name, simple name, and package.</td>
 </tr>
 </tbody>
 </table>
@@ -2063,12 +2089,12 @@
 <tr>
 <td>void</td>
 <td><a href="#addconstant">addConstant</a>(<a href="../FieldNode/">FieldNode</a> constant)</td>
-<td></td>
+<td>Adds a constant field to this enum.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
 <td><a href="#getconstants">getConstants</a>()</td>
-<td></td>
+<td>Returns the list of enum constants.</td>
 </tr>
 </tbody>
 </table>
@@ -2078,9 +2104,15 @@
 <h2 id="method-details">Method Details</h2>
 <h3 id="addconstant">addConstant</h3>
 <p>void addConstant(<a href="../FieldNode/">FieldNode</a> constant)</p>
+<p>Adds a constant field to this enum.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>constant</code> - The FieldNode representing the enum constant.</p>
 <hr />
 <h3 id="getconstants">getConstants</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; getConstants()</p>
+<p>Returns the list of enum constants.</p>
+<p><strong>Returns:</strong></p>
+<p>List of FieldNode constants.</p>
 <hr />
 
 

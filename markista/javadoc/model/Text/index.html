@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -2119,7 +2144,7 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-text">Class Text</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Text<br/>
 <br/></p>
 <hr />
@@ -2136,7 +2161,7 @@
 <tr>
 <td>static</td>
 <td><a href="../Text.Segment/">Text.Segment</a></td>
-<td></td>
+<td>Represents a segment of the Text with its kind, content, and optional link.</td>
 </tr>
 </tbody>
 </table>
@@ -2153,7 +2178,7 @@
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt;</td>
 <td><a href="#segments">segments</a></td>
-<td></td>
+<td>List of text segments composing this Text instance.</td>
 </tr>
 </tbody>
 </table>
@@ -2168,7 +2193,7 @@
 <tbody>
 <tr>
 <td>Text()</td>
-<td></td>
+<td>Private constructor to prevent external instantiation.</td>
 </tr>
 </tbody>
 </table>
@@ -2185,64 +2210,90 @@
 <tr>
 <td>static <a href="./">Text</a></td>
 <td><a href="#empty">empty</a>()</td>
-<td></td>
+<td>Creates an empty Text instance.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#tostring">toString</a>()</td>
-<td></td>
+<td>Returns the combined string representation of all segments.</td>
 </tr>
 <tr>
 <td>boolean</td>
 <td><a href="#isempty">isEmpty</a>()</td>
-<td></td>
+<td>Checks whether this Text instance is empty.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt;</td>
 <td><a href="#getsegments">getSegments</a>()</td>
-<td></td>
+<td>Returns the list of segments composing this Text.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#set">set</a>(<a href="./">Text</a> text)</td>
-<td></td>
+<td>Sets the segments of this Text to match another Text.</td>
 </tr>
 <tr>
 <td><a href="./">Text</a></td>
 <td><a href="#append">append</a>(<a href="../Text.Segment/">Text.Segment</a> segment)</td>
-<td></td>
+<td>Appends a single segment to this Text.</td>
 </tr>
 <tr>
 <td><a href="./">Text</a></td>
 <td><a href="#append">append</a>(<a href="./">Text</a> text)</td>
-<td></td>
+<td>Appends all segments from another Text instance.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="segments">segments</h3>
+<p>List of text segments composing this Text instance.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="empty">empty</h3>
 <p>static <a href="./">Text</a> empty()</p>
+<p>Creates an empty Text instance.</p>
+<p><strong>Returns:</strong></p>
+<p>A new empty Text object.</p>
 <hr />
 <h3 id="tostring">toString</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p>Returns the combined string representation of all segments.</p>
+<p><strong>Returns:</strong></p>
+<p>Concatenated string of all segment texts.</p>
 <hr />
 <h3 id="isempty">isEmpty</h3>
 <p>boolean isEmpty()</p>
+<p>Checks whether this Text instance is empty.</p>
+<p><strong>Returns:</strong></p>
+<p>true if there are no segments or the segment list is null.</p>
 <hr />
 <h3 id="getsegments">getSegments</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt; getSegments()</p>
+<p>Returns the list of segments composing this Text.</p>
+<p><strong>Returns:</strong></p>
+<p>List of Text.Segment objects.</p>
 <hr />
 <h3 id="set">set</h3>
 <p>void set(<a href="./">Text</a> text)</p>
+<p>Sets the segments of this Text to match another Text.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>text</code> - The Text source to copy from.</p>
 <hr />
 <h3 id="append">append</h3>
 <p><a href="./">Text</a> append(<a href="../Text.Segment/">Text.Segment</a> segment)</p>
+<p>Appends a single segment to this Text.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>segment</code> - The segment to add.</p>
+<p><strong>Returns:</strong></p>
+<p>This Text instance for chaining.</p>
 <hr />
 <h3 id="append_1">append</h3>
 <p><a href="./">Text</a> append(<a href="./">Text</a> text)</p>
+<p>Appends all segments from another Text instance.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>text</code> - The Text whose segments should be appended.</p>
+<p><strong>Returns:</strong></p>
+<p>This Text instance for chaining.</p>
 <hr />
 
 

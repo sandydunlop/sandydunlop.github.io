@@ -429,6 +429,8 @@
       
         
       
+        
+      
     
     
     
@@ -620,6 +622,29 @@
   
   <span class="md-ellipsis">
     PackageWriter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../doclet/TypeWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeWriter
     
   </span>
   
@@ -1394,9 +1419,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
+  <a href="#displayname" class="md-nav__link">
     <span class="md-ellipsis">
-      name
+      displayName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classname" class="md-nav__link">
+    <span class="md-ellipsis">
+      className
     </span>
   </a>
   
@@ -1472,18 +1506,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setname" class="md-nav__link">
+  <a href="#setdisplayname" class="md-nav__link">
     <span class="md-ellipsis">
-      setName
+      setDisplayName
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getname" class="md-nav__link">
+  <a href="#getdisplayname" class="md-nav__link">
     <span class="md-ellipsis">
-      getName
+      getDisplayName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setclassname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setClassName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclassname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getClassName
     </span>
   </a>
   
@@ -2073,9 +2125,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
+  <a href="#displayname" class="md-nav__link">
     <span class="md-ellipsis">
-      name
+      displayName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classname" class="md-nav__link">
+    <span class="md-ellipsis">
+      className
     </span>
   </a>
   
@@ -2151,18 +2212,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setname" class="md-nav__link">
+  <a href="#setdisplayname" class="md-nav__link">
     <span class="md-ellipsis">
-      setName
+      setDisplayName
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getname" class="md-nav__link">
+  <a href="#getdisplayname" class="md-nav__link">
     <span class="md-ellipsis">
-      getName
+      getDisplayName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setclassname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setClassName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclassname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getClassName
     </span>
   </a>
   
@@ -2227,7 +2306,7 @@
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-reference">Class Reference</h1>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a><br/>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Reference<br/>
 <br/></p>
 <hr />
@@ -2253,7 +2332,12 @@
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#name">name</a></td>
+<td><a href="#displayname">displayName</a></td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#classname">className</a></td>
 <td></td>
 </tr>
 <tr>
@@ -2279,19 +2363,19 @@
 <tbody>
 <tr>
 <td>Reference()</td>
-<td></td>
+<td>Default constructor creates an empty reference with kind and scope set to NONE.</td>
 </tr>
 <tr>
 <td>Reference(<a href="../Reference.Kind/">Reference.Kind</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> uri)</td>
-<td></td>
+<td>Constructs a Reference with given kind, name, and URI.</td>
 </tr>
 <tr>
 <td>Reference(<a href="../Reference.Scope/">Reference.Scope</a> scope, <a href="../Reference.Kind/">Reference.Kind</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Constructs a Reference with given scope, kind, and name.</td>
 </tr>
 <tr>
 <td>Reference(<a href="../Reference.Scope/">Reference.Scope</a> scope, <a href="../Reference.Kind/">Reference.Kind</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> uri)</td>
-<td></td>
+<td>Constructs a Reference with full specification: scope, kind, name, and URI.</td>
 </tr>
 </tbody>
 </table>
@@ -2308,52 +2392,62 @@
 <tr>
 <td>void</td>
 <td><a href="#setkind">setKind</a>(<a href="../Reference.Kind/">Reference.Kind</a> kind)</td>
-<td></td>
+<td>Sets the kind/type of the reference.</td>
 </tr>
 <tr>
 <td><a href="../Reference.Kind/">Reference.Kind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
-<td></td>
+<td>Returns the kind/type of the reference.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setscope">setScope</a>(<a href="../Reference.Scope/">Reference.Scope</a> scope)</td>
-<td></td>
+<td>Sets the scope of the reference.</td>
 </tr>
 <tr>
 <td><a href="../Reference.Scope/">Reference.Scope</a></td>
 <td><a href="#getscope">getScope</a>()</td>
-<td></td>
+<td>Returns the scope of the reference.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="#setname">setName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td><a href="#setdisplayname">setDisplayName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the display name of the reference.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#getname">getName</a>()</td>
-<td></td>
+<td><a href="#getdisplayname">getDisplayName</a>()</td>
+<td>Returns the display name of the reference.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><a href="#setclassname">setClassName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the class name associated with the reference.</td>
+</tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#getclassname">getClassName</a>()</td>
+<td>Returns the class name associated with the reference.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#seturi">setUri</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> uri)</td>
-<td></td>
+<td>Sets the URI of the reference.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#geturi">getUri</a>()</td>
-<td></td>
+<td>Returns the URI of the reference.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setanchor">setAnchor</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> anchor)</td>
-<td></td>
+<td>Sets the anchor part of the URI.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getanchor">getAnchor</a>()</td>
-<td></td>
+<td>Returns the anchor part of the URI.</td>
 </tr>
 </tbody>
 </table>
@@ -2362,7 +2456,9 @@
 <hr />
 <h3 id="scope">scope</h3>
 <hr />
-<h3 id="name">name</h3>
+<h3 id="displayname">displayName</h3>
+<hr />
+<h3 id="classname">className</h3>
 <hr />
 <h3 id="uri">uri</h3>
 <hr />
@@ -2371,33 +2467,75 @@
 <h2 id="method-details">Method Details</h2>
 <h3 id="setkind">setKind</h3>
 <p>void setKind(<a href="../Reference.Kind/">Reference.Kind</a> kind)</p>
+<p>Sets the kind/type of the reference.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>kind</code> - The kind to set.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
 <p><a href="../Reference.Kind/">Reference.Kind</a> getKind()</p>
+<p>Returns the kind/type of the reference.</p>
+<p><strong>Returns:</strong></p>
+<p>The reference kind.</p>
 <hr />
 <h3 id="setscope">setScope</h3>
 <p>void setScope(<a href="../Reference.Scope/">Reference.Scope</a> scope)</p>
+<p>Sets the scope of the reference.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>scope</code> - The scope to set.</p>
 <hr />
 <h3 id="getscope">getScope</h3>
 <p><a href="../Reference.Scope/">Reference.Scope</a> getScope()</p>
+<p>Returns the scope of the reference.</p>
+<p><strong>Returns:</strong></p>
+<p>The reference scope.</p>
 <hr />
-<h3 id="setname">setName</h3>
-<p>void setName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<h3 id="setdisplayname">setDisplayName</h3>
+<p>void setDisplayName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the display name of the reference.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The display name to set.</p>
 <hr />
-<h3 id="getname">getName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<h3 id="getdisplayname">getDisplayName</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDisplayName()</p>
+<p>Returns the display name of the reference.</p>
+<p><strong>Returns:</strong></p>
+<p>The display name.</p>
+<hr />
+<h3 id="setclassname">setClassName</h3>
+<p>void setClassName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the class name associated with the reference.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The class name to set.</p>
+<hr />
+<h3 id="getclassname">getClassName</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getClassName()</p>
+<p>Returns the class name associated with the reference.</p>
+<p><strong>Returns:</strong></p>
+<p>The class name.</p>
 <hr />
 <h3 id="seturi">setUri</h3>
 <p>void setUri(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> uri)</p>
+<p>Sets the URI of the reference.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>uri</code> - The URI to set.</p>
 <hr />
 <h3 id="geturi">getUri</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getUri()</p>
+<p>Returns the URI of the reference.</p>
+<p><strong>Returns:</strong></p>
+<p>The URI string.</p>
 <hr />
 <h3 id="setanchor">setAnchor</h3>
 <p>void setAnchor(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> anchor)</p>
+<p>Sets the anchor part of the URI.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>anchor</code> - The anchor to set.</p>
 <hr />
 <h3 id="getanchor">getAnchor</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getAnchor()</p>
+<p>Returns the anchor part of the URI.</p>
+<p><strong>Returns:</strong></p>
+<p>The anchor string.</p>
 <hr />
 
 
