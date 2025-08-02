@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/constant-values/">
+        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markdown/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../doclet/MarkdownDoclet/">
       
       
-        <link rel="next" href="../doclet/">
+        <link rel="next" href="MarkdownTable.Column/">
       
       
       <link rel="icon" href="../../../assets/penguin.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Constant Field Values - Sandy Dunlop</title>
+        <title>Package io.github.sandydunlop.markista.markdown - Sandy Dunlop</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#constant-field-values" class="md-skip">
+        <a href="#package-iogithubsandydunlopmarkistamarkdown" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Constant Field Values
+              Package io.github.sandydunlop.markista.markdown
             
           </span>
         </div>
@@ -385,19 +385,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../constant-values/" class="md-nav__link">
         
   
   
@@ -408,7 +399,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -529,6 +519,8 @@
                 
   
   
+    
+  
   
   
     
@@ -552,15 +544,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../markdown/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -573,13 +565,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_4">
             <span class="md-nav__icon md-icon"></span>
             Markdown
@@ -595,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/MarkdownTable.Column/" class="md-nav__link">
+      <a href="MarkdownTable.Column/" class="md-nav__link">
         
   
   
@@ -618,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/MarkdownTable/" class="md-nav__link">
+      <a href="MarkdownTable/" class="md-nav__link">
         
   
   
@@ -641,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/ModuleWriter/" class="md-nav__link">
+      <a href="ModuleWriter/" class="md-nav__link">
         
   
   
@@ -664,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/PackageWriter/" class="md-nav__link">
+      <a href="PackageWriter/" class="md-nav__link">
         
   
   
@@ -687,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../markdown/TypeWriter/" class="md-nav__link">
+      <a href="TypeWriter/" class="md-nav__link">
         
   
   
@@ -1987,168 +1979,46 @@
 
 
 
-<h1 id="constant-field-values">Constant Field Values</h1>
+<h1 id="package-iogithubsandydunlopmarkistamarkdown">Package io.github.sandydunlop.markista.markdown</h1>
+<p>This package contains the classes responsible for writing the Markdown file.
+<a href="ModuleWriter/">ModuleWriter</a> handles the top-level module documentation including constant
+field values for the module. It uses <a href="PackageWriter/">PackageWriter</a> to output the Markdown
+files for each <a href="../model/PackageNode/">PackageNode</a> 
+contained within, which in turn uses <a href="TypeWriter/">TypeWriter</a> to output the Markdown 
+files for each <a href="../model/TypeNode/">TypeNode</a> 
+contained within.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Classes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
-<th>Modifier and Type</th>
-<th>Constant Field</th>
-<th>Value</th>
+<th>Class</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>DOT_HTML</td>
-<td>.html</td>
+<td><a href="ModuleWriter/">ModuleWriter</a></td>
+<td>A class that outputs a module's API documentation as Markdown.</td>
 </tr>
 <tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>JAVA_24_URL</td>
-<td>https://docs.oracle.com/en/java/javase/24/docs/api/</td>
+<td><a href="MarkdownTable/">MarkdownTable</a></td>
+<td>A utility class for creating tables in Markdown documents.</td>
 </tr>
 <tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>FORMAT_SIMPLE_LINK</td>
-<td>[%s](%s)</td>
+<td><a href="PackageWriter/">PackageWriter</a></td>
+<td>A class that outputs API package documentation as Markdown.</td>
 </tr>
 <tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>DEFAULT_OUTPUT_DIRECTORY</td>
-<td>build/md-docs</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_API</td>
-<td>API</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_CONSTANT_FIELD</td>
-<td>Constant Field</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_CONSTANT_FIELD_VALUES</td>
-<td>Constant Field Values</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_DESCRIPTION</td>
-<td>Description</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_EXPORTS</td>
-<td>Exports</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_IMPLEMENTATIONS</td>
-<td>Implementations</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_INTERFACE</td>
-<td>Interface</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_MODIFIER_AND_TYPE</td>
-<td>Modifier and Type</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_MODULE</td>
-<td>Module</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_OPENS</td>
-<td>Opens</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_PACKAGE</td>
-<td>Package</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_PACKAGES</td>
-<td>Packages</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_PROVIDES</td>
-<td>Provides</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_REQUIRES</td>
-<td>Requires</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_USES</td>
-<td>Uses</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TITLE_VALUE</td>
-<td>Value</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TEXT_CLASS</td>
-<td>Class</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TEXT_DESCRIPTION</td>
-<td>Description</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TEXT_CLASS</td>
-<td>Class</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TEXT_DESCRIPTION</td>
-<td>Description</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>TEXT_MODIFIER_AND_TYPE</td>
-<td>Modifier and Type</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>BR</td>
-<td><br/></td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>NBSP</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>static final  boolean</td>
-<td>OK</td>
-<td>true</td>
-</tr>
-<tr>
-<td>private static final  boolean</td>
-<td>FAILED</td>
-<td>false</td>
-</tr>
-<tr>
-<td>private static final  <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td>UNUSED_OPTION_DESCRIPTION</td>
-<td>Unused option</td>
+<td><a href="TypeWriter/">TypeWriter</a></td>
+<td>A class that outputs API type documentation as Markdown.</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 
 
 
