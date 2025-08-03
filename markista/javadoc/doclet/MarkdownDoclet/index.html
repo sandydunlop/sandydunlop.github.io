@@ -589,6 +589,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ctx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ctx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ok" class="md-nav__link">
     <span class="md-ellipsis">
       OK
@@ -972,8 +981,6 @@
       
         
       
-        
-      
     
     
     
@@ -1188,29 +1195,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1747,8 +1731,6 @@
       
         
       
-        
-      
     
     
     
@@ -1848,29 +1830,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2216,6 +2175,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#ctx" class="md-nav__link">
+    <span class="md-ellipsis">
+      ctx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ok" class="md-nav__link">
     <span class="md-ellipsis">
       OK
@@ -2344,10 +2312,10 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.doclet</a></p>
 <h1 id="class-markdowndoclet">Class MarkdownDoclet</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.doclet.MarkdownDoclet<br/>
+        io.github.sandydunlop.markista.doclet.MarkdownDoclet<br/>
 <br/>
 All Implemented Interfaces:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">Doclet</a></p>
+    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">Doclet</a></p>
 <hr />
 <p>A doclet that renders javadoc comments as Markdown</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
@@ -2378,14 +2346,19 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
+<td>private <a href="../../util/Context/">Context</a></td>
+<td><a href="#ctx">ctx</a></td>
+<td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
+</tr>
+<tr>
 <td>static final boolean</td>
 <td><a href="#ok">OK</a></td>
-<td></td>
+<td>Indicates success</td>
 </tr>
 <tr>
 <td>private static final boolean</td>
 <td><a href="#failed">FAILED</a></td>
-<td></td>
+<td>Indicates failure</td>
 </tr>
 <tr>
 <td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
@@ -2457,11 +2430,17 @@ All Implemented Interfaces:<br/>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
+<h3 id="ctx">ctx</h3>
+<p>The Context singleton instance providing access to the current documentation generation context,
+including configuration, current module/package/type names, and reporting utilities.</p>
+<hr />
 <h3 id="ok">OK</h3>
+<p>Indicates success</p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="failed">FAILED</h3>
+<p>Indicates failure</p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />

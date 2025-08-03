@@ -774,8 +774,6 @@
       
         
       
-        
-      
     
     
     
@@ -990,29 +988,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1909,8 +1884,6 @@
       
         
       
-        
-      
     
     
     
@@ -2010,29 +1983,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2668,9 +2618,10 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-node">Class Node</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Node<br/>
+        io.github.sandydunlop.markista.model.Node<br/>
 <br/></p>
 <hr />
+<p>The base class for all types of nodes in the API model.</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
 <thead>
@@ -2701,57 +2652,57 @@
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#simplename">simpleName</a></td>
-<td></td>
+<td>The simple form of the node's name</td>
 </tr>
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#qualifiedname">qualifiedName</a></td>
-<td></td>
+<td>The canonical form of the node's name</td>
 </tr>
 <tr>
 <td>protected <a href="../PackageNode/">PackageNode</a></td>
 <td><a href="#packagenode">packageNode</a></td>
-<td></td>
+<td>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#modifiers">modifiers</a></td>
-<td></td>
+<td>A list of the modifiers a node has</td>
 </tr>
 <tr>
 <td>private <a href="../Deprecation/">Deprecation</a></td>
 <td><a href="#deprecation">deprecation</a></td>
-<td></td>
+<td>The deprecation status of the node</td>
 </tr>
 <tr>
 <td>private <a href="../Text/">Text</a></td>
 <td><a href="#deprecationtext">deprecationText</a></td>
-<td></td>
+<td>Text describing the deprecation state of the node</td>
 </tr>
 <tr>
 <td>private <a href="../Text/">Text</a></td>
 <td><a href="#since">since</a></td>
-<td></td>
+<td>Text showing when this node was added to the API</td>
 </tr>
 <tr>
 <td>protected <a href="../Text/">Text</a></td>
 <td><a href="#firstsentence">firstSentence</a></td>
-<td></td>
+<td>The first sentence of the Javadoc for this node</td>
 </tr>
 <tr>
 <td>private <a href="../Text/">Text</a></td>
 <td><a href="#body">body</a></td>
-<td></td>
+<td>The body text of the Javadoc for this node</td>
 </tr>
 <tr>
 <td>private <a href="../Text/">Text</a></td>
 <td><a href="#fullbody">fullBody</a></td>
-<td></td>
+<td>The full text of the Javadoc for this node</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt;</td>
 <td><a href="#references">references</a></td>
-<td></td>
+<td>A list of references specified in this node's Javadoc</td>
 </tr>
 </tbody>
 </table>
@@ -2766,7 +2717,7 @@
 <tbody>
 <tr>
 <td>Node()</td>
-<td></td>
+<td>The default constructor</td>
 </tr>
 </tbody>
 </table>
@@ -2869,26 +2820,37 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="simplename">simpleName</h3>
+<p>The simple form of the node's name</p>
 <hr />
 <h3 id="qualifiedname">qualifiedName</h3>
+<p>The canonical form of the node's name</p>
 <hr />
 <h3 id="packagenode">packageNode</h3>
+<p>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</p>
 <hr />
 <h3 id="modifiers">modifiers</h3>
+<p>A list of the modifiers a node has</p>
 <hr />
 <h3 id="deprecation">deprecation</h3>
+<p>The deprecation status of the node</p>
 <hr />
 <h3 id="deprecationtext">deprecationText</h3>
+<p>Text describing the deprecation state of the node</p>
 <hr />
 <h3 id="since">since</h3>
+<p>Text showing when this node was added to the API</p>
 <hr />
 <h3 id="firstsentence">firstSentence</h3>
+<p>The first sentence of the Javadoc for this node</p>
 <hr />
 <h3 id="body">body</h3>
+<p>The body text of the Javadoc for this node</p>
 <hr />
 <h3 id="fullbody">fullBody</h3>
+<p>The full text of the Javadoc for this node</p>
 <hr />
 <h3 id="references">references</h3>
+<p>A list of references specified in this node's Javadoc</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addmodifier">addModifier</h3>

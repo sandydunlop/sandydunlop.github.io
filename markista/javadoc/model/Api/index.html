@@ -774,8 +774,6 @@
       
         
       
-        
-      
     
     
     
@@ -1105,6 +1103,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#commonbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      commonBase
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1224,29 +1231,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1783,8 +1767,6 @@
       
         
       
-        
-      
     
     
     
@@ -1884,29 +1866,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2392,6 +2351,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#commonbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      commonBase
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2416,9 +2384,9 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-api">Class Api</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.model.Api<br/>
+        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+                <a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
+                        io.github.sandydunlop.markista.model.Api<br/>
 <br/></p>
 <hr />
 <p>Represents the API being documented, encapsulating its modules and packages.
@@ -2535,6 +2503,11 @@ Provides methods to add and retrieve modules, packages, and types, as well as so
 <td><a href="#sort">sort</a>()</td>
 <td>Sorts the packages in descending order by qualified name and sorts all child types recursively.</td>
 </tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#commonbase">commonBase</a>()</td>
+<td>Computes the longest common base package prefix shared by all packages in this API.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
@@ -2627,6 +2600,14 @@ Provides methods to add and retrieve modules, packages, and types, as well as so
 <p>Sorts the packages in descending order by qualified name and sorts all child types recursively.</p>
 <p><strong>Overrides:</strong></p>
 <p><a href="../AbstractTypeOwner/#sort">AbstractTypeOwner.sort</a> from <a href="../AbstractTypeOwner/">AbstractTypeOwner</a></p>
+<hr />
+<h3 id="commonbase">commonBase</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> commonBase()</p>
+<p>Computes the longest common base package prefix shared by all packages in this API.</p>
+<p>This method iterates through the list of packages and determines the common package name prefix,
+truncated at the nearest dot ('.') boundary. If no common base exists, returns an empty string.</p>
+<p><strong>Returns:</strong></p>
+<p>The longest common base package name shared by all packages, or an empty string if none.</p>
 <hr />
 
 

@@ -864,9 +864,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fileutils" class="md-nav__link">
+  <a href="#ctx" class="md-nav__link">
     <span class="md-ellipsis">
-      fileUtils
+      ctx
     </span>
   </a>
   
@@ -1056,8 +1056,6 @@
       
         
           
-        
-      
         
       
         
@@ -1332,29 +1330,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1891,8 +1866,6 @@
       
         
       
-        
-      
     
     
     
@@ -1992,29 +1965,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2495,9 +2445,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fileutils" class="md-nav__link">
+  <a href="#ctx" class="md-nav__link">
     <span class="md-ellipsis">
-      fileUtils
+      ctx
     </span>
   </a>
   
@@ -2632,7 +2582,7 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.markdown</a></p>
 <h1 id="class-modulewriter">Class ModuleWriter</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.markdown.ModuleWriter<br/>
+        io.github.sandydunlop.markista.markdown.ModuleWriter<br/>
 <br/></p>
 <hr />
 <p>A class that outputs a module's API documentation as Markdown.</p>
@@ -2727,19 +2677,19 @@
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../util/FileUtils/">FileUtils</a></td>
-<td><a href="#fileutils">fileUtils</a></td>
-<td></td>
+<td>private <a href="../../util/Context/">Context</a></td>
+<td><a href="#ctx">ctx</a></td>
+<td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
 <td><a href="#writer">writer</a></td>
-<td></td>
+<td>The Writer used to output the generated markdown content for the current document.</td>
 </tr>
 <tr>
 <td>private <a href="../../model/Api/">Api</a></td>
 <td><a href="#api">api</a></td>
-<td></td>
+<td>The Api model representing the entire documented API structure, including modules, packages, types, and members used for cross-referencing and navigation.</td>
 </tr>
 </tbody>
 </table>
@@ -2753,7 +2703,7 @@
 </thead>
 <tbody>
 <tr>
-<td>ModuleWriter(<a href="../../util/FileUtils/">FileUtils</a> fileUtils)</td>
+<td>ModuleWriter()</td>
 <td>Constructor that sets up the locations API documents will be written to.</td>
 </tr>
 </tbody>
@@ -2875,11 +2825,17 @@
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
-<h3 id="fileutils">fileUtils</h3>
+<h3 id="ctx">ctx</h3>
+<p>The Context singleton instance providing access to the current documentation generation context,
+including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h3 id="writer">writer</h3>
+<p>The Writer used to output the generated markdown content for the current document.
+It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h3 id="api">api</h3>
+<p>The Api model representing the entire documented API structure,
+including modules, packages, types, and members used for cross-referencing and navigation.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>

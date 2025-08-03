@@ -811,18 +811,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#writer" class="md-nav__link">
+  <a href="#ctx" class="md-nav__link">
     <span class="md-ellipsis">
-      writer
+      ctx
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fileutils" class="md-nav__link">
+  <a href="#writer" class="md-nav__link">
     <span class="md-ellipsis">
-      fileUtils
+      writer
     </span>
   </a>
   
@@ -1020,8 +1020,6 @@
       
         
           
-        
-      
         
       
         
@@ -1296,29 +1294,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1855,8 +1830,6 @@
       
         
       
-        
-      
     
     
     
@@ -1956,29 +1929,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2360,18 +2310,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#writer" class="md-nav__link">
+  <a href="#ctx" class="md-nav__link">
     <span class="md-ellipsis">
-      writer
+      ctx
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#fileutils" class="md-nav__link">
+  <a href="#writer" class="md-nav__link">
     <span class="md-ellipsis">
-      fileUtils
+      writer
     </span>
   </a>
   
@@ -2560,7 +2510,7 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.markdown</a></p>
 <h1 id="class-typewriter">Class TypeWriter</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.markdown.TypeWriter<br/>
+        io.github.sandydunlop.markista.markdown.TypeWriter<br/>
 <br/></p>
 <hr />
 <p>A class that outputs API type documentation as Markdown.</p>
@@ -2600,14 +2550,14 @@
 <td></td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
-<td><a href="#writer">writer</a></td>
-<td></td>
+<td>private <a href="../../util/Context/">Context</a></td>
+<td><a href="#ctx">ctx</a></td>
+<td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
 <tr>
-<td>private <a href="../../util/FileUtils/">FileUtils</a></td>
-<td><a href="#fileutils">fileUtils</a></td>
-<td></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
+<td><a href="#writer">writer</a></td>
+<td>The Writer used to output the generated markdown content for the current document.</td>
 </tr>
 </tbody>
 </table>
@@ -2621,7 +2571,7 @@
 </thead>
 <tbody>
 <tr>
-<td>TypeWriter(<a href="../../util/FileUtils/">FileUtils</a> fileUtils)</td>
+<td>TypeWriter()</td>
 <td>Constructor that sets up the locations API documents will be written to.</td>
 </tr>
 </tbody>
@@ -2736,18 +2686,22 @@
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="nbsp">NBSP</h3>
-<p><strong>See Also:</strong></p>
-<p><a href="../../constant-values/">Constant Field Values</a></p>
+<hr />
+<h3 id="ctx">ctx</h3>
+<p>The Context singleton instance providing access to the current documentation generation context,
+including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h3 id="writer">writer</h3>
-<hr />
-<h3 id="fileutils">fileUtils</h3>
+<p>The Writer used to output the generated markdown content for the current document.
+It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedoc">writeDoc</h3>
 <p>void writeDoc(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
 <p>Tells the <a href="../../util/LinkResolver/">LinkResolver</a> what class is about to be documented then 
 calls the appropriate method do begin the documentation process.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>typeNode</code> - The type to be documented</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />

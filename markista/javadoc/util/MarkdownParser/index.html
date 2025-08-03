@@ -772,8 +772,6 @@
       
         
       
-        
-      
     
     
     
@@ -988,29 +986,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1549,8 +1524,6 @@
       
         
       
-        
-      
     
     
     
@@ -1650,29 +1623,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2506,9 +2456,17 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-markdownparser">Class MarkdownParser</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.MarkdownParser<br/>
+        io.github.sandydunlop.markista.util.MarkdownParser<br/>
 <br/></p>
 <hr />
+<p>Parses a Markdown string into a sequence of segments representing text and special markup such as brackets and parentheses.</p>
+<p>This parser is designed to tokenize the Markdown content by identifying textual parts and segments enclosed in brackets  and parentheses ().
+It also handles inline code spans denoted by backticks (`) to avoid parsing markup inside code.</p>
+<p>The parsed segments can be iterated in sequence starting from the firstSegment() method.
+Each segment carries its type (kind) which specifies how it should be interpreted or rendered.</p>
+<p>Segment kinds include TEXT for normal text, BRACKETS_TAG for content inside square brackets,
+PARENS_TAG for content inside parentheses following brackets (typical Markdown link syntax),
+and END indicating the end of the sequence.</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
 <thead>
@@ -2522,7 +2480,7 @@
 <tr>
 <td></td>
 <td><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a></td>
-<td></td>
+<td>Represents a segment of the parsed Markdown input.</td>
 </tr>
 </tbody>
 </table>
@@ -2594,7 +2552,7 @@
 <tbody>
 <tr>
 <td>MarkdownParser(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> md)</td>
-<td></td>
+<td>Creates a new MarkdownParser and immediately parses the provided Markdown string.</td>
 </tr>
 </tbody>
 </table>
@@ -2611,52 +2569,52 @@
 <tr>
 <td>private void</td>
 <td><a href="#processcharingeneral">processCharInGeneral</a>()</td>
-<td></td>
+<td>Handles a character encountered when not in code or special markup.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#handleopenbracket">handleOpenBracket</a>()</td>
-<td></td>
+<td>Handles the open bracket 'Handles the open bracket '[' encountered in the markdown.</td>
 </tr>
 <tr>
 <td>private boolean</td>
 <td><a href="#handleopenparenthesis">handleOpenParenthesis</a>(char prevChar)</td>
-<td></td>
+<td>Handles an open parenthesis '(' encountered immediately after closing bracket '.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#handleclosebracket">handleCloseBracket</a>()</td>
-<td></td>
+<td>Handles the close bracket ' encountered in the markdown.</td>
 </tr>
 <tr>
 <td>private boolean</td>
 <td><a href="#handlecloseparenthesis">handleCloseParenthesis</a>(boolean parensFollowBrackets)</td>
-<td></td>
+<td>Handles the close parenthesis ')' encountered.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#savetext">saveText</a>()</td>
-<td></td>
+<td>Saves any text from the tail position up to the current head as a TEXT segment.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#savebracketstag">saveBracketsTag</a>()</td>
-<td></td>
+<td>Saves the content between the most recent pair of brackets as a BRACKETS_TAG segment.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#saveparenstag">saveParensTag</a>()</td>
-<td></td>
+<td>Saves the content between the most recent pair of parentheses as a PARENS_TAG segment.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#savesegment">saveSegment</a>(<a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> segment)</td>
-<td></td>
+<td>Adds the specified segment to the list and links it to the previously saved segment.</td>
 </tr>
 <tr>
 <td><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a></td>
 <td><a href="#firstsegment">firstSegment</a>()</td>
-<td></td>
+<td>Returns the first Segment in the parsed sequence.</td>
 </tr>
 </tbody>
 </table>
@@ -2682,33 +2640,61 @@
 <h2 id="method-details">Method Details</h2>
 <h3 id="processcharingeneral">processCharInGeneral</h3>
 <p>private void processCharInGeneral()</p>
+<p>Handles a character encountered when not in code or special markup.
+Currently a placeholder for any general character processing.</p>
 <hr />
 <h3 id="handleopenbracket">handleOpenBracket</h3>
 <p>private void handleOpenBracket()</p>
+<p>Handles the open bracket 'Handles the open bracket '[' encountered in the markdown.
+Saves any preceding text segment before marking the position of the open bracket.</p>
 <hr />
 <h3 id="handleopenparenthesis">handleOpenParenthesis</h3>
 <p>private boolean handleOpenParenthesis(char prevChar)</p>
+<p>Handles an open parenthesis '(' encountered immediately after closing bracket '.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>prevChar</code> - The previous character before '(' to determine if parentheses follow brackets.</p>
+<p><strong>Returns:</strong></p>
+<p>true if parentheses follow brackets, false otherwise.</p>
 <hr />
 <h3 id="handleclosebracket">handleCloseBracket</h3>
 <p>private void handleCloseBracket()</p>
+<p>Handles the close bracket ' encountered in the markdown.
+Records the position and saves a bracket-tag segment.</p>
 <hr />
 <h3 id="handlecloseparenthesis">handleCloseParenthesis</h3>
 <p>private boolean handleCloseParenthesis(boolean parensFollowBrackets)</p>
+<p>Handles the close parenthesis ')' encountered.
+If parentheses follow brackets, saves a parentheses-tag segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>parensFollowBrackets</code> - True if parentheses are following brackets (indicating a link).</p>
+<p><strong>Returns:</strong></p>
+<p>Always returns false to reset parsing state for parentheses.</p>
 <hr />
 <h3 id="savetext">saveText</h3>
 <p>private void saveText()</p>
+<p>Saves any text from the tail position up to the current head as a TEXT segment.
+Does nothing if no text is available in that range.</p>
 <hr />
 <h3 id="savebracketstag">saveBracketsTag</h3>
 <p>private void saveBracketsTag()</p>
+<p>Saves the content between the most recent pair of brackets as a BRACKETS_TAG segment.</p>
 <hr />
 <h3 id="saveparenstag">saveParensTag</h3>
 <p>private void saveParensTag()</p>
+<p>Saves the content between the most recent pair of parentheses as a PARENS_TAG segment.</p>
 <hr />
 <h3 id="savesegment">saveSegment</h3>
 <p>private void saveSegment(<a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> segment)</p>
+<p>Adds the specified segment to the list and links it to the previously saved segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>segment</code> - The Segment to save and link.</p>
 <hr />
 <h3 id="firstsegment">firstSegment</h3>
 <p><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> firstSegment()</p>
+<p>Returns the first Segment in the parsed sequence.
+If no segments exist, returns an END kind Segment.</p>
+<p><strong>Returns:</strong></p>
+<p>The first Segment or an END Segment if none exist.</p>
 <hr />
 
 

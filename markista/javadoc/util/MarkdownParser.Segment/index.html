@@ -772,8 +772,6 @@
       
         
       
-        
-      
     
     
     
@@ -988,29 +986,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1549,8 +1524,6 @@
       
         
       
-        
-      
     
     
     
@@ -1650,29 +1623,6 @@
   
   <span class="md-ellipsis">
     Context
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
     
   </span>
   
@@ -2308,11 +2258,13 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-markdownparsersegment">Class MarkdownParser.Segment</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.MarkdownParser.Segment<br/>
+        io.github.sandydunlop.markista.util.MarkdownParser.Segment<br/>
 <br/>
 Enclosing Class:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="../MarkdownParser/">MarkdownParser</a></p>
+    <a href="../MarkdownParser/">MarkdownParser</a></p>
 <hr />
+<p>Represents a segment of the parsed Markdown input.
+A segment has a kind and associated text content, and links to the next segment in sequence.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2351,7 +2303,7 @@ Enclosing Class:<br/>
 <tbody>
 <tr>
 <td>MarkdownParser.Segment(<a href="../MarkdownParser.SegmentKind/">MarkdownParser.SegmentKind</a> k)</td>
-<td></td>
+<td>Creates a Segment with the specified kind.</td>
 </tr>
 </tbody>
 </table>
@@ -2368,32 +2320,32 @@ Enclosing Class:<br/>
 <tr>
 <td>void</td>
 <td><a href="#setkind">setKind</a>(<a href="../MarkdownParser.SegmentKind/">MarkdownParser.SegmentKind</a> k)</td>
-<td></td>
+<td>Sets the Segment kind.</td>
 </tr>
 <tr>
 <td><a href="../MarkdownParser.SegmentKind/">MarkdownParser.SegmentKind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
-<td></td>
+<td>Returns the Segment kind.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#settext">setText</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> t)</td>
-<td></td>
+<td>Sets the text content of the Segment.</td>
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#gettext">getText</a>()</td>
-<td></td>
+<td>Returns the text content of the Segment.</td>
 </tr>
 <tr>
 <td>void</td>
 <td><a href="#setnext">setNext</a>(<a href="./">MarkdownParser.Segment</a> segment)</td>
-<td></td>
+<td>Sets the next Segment in the sequence.</td>
 </tr>
 <tr>
 <td><a href="./">MarkdownParser.Segment</a></td>
 <td><a href="#getnext">getNext</a>()</td>
-<td></td>
+<td>Returns the next Segment, or an END Segment if none exists.</td>
 </tr>
 </tbody>
 </table>
@@ -2407,21 +2359,39 @@ Enclosing Class:<br/>
 <h2 id="method-details">Method Details</h2>
 <h3 id="setkind">setKind</h3>
 <p>void setKind(<a href="../MarkdownParser.SegmentKind/">MarkdownParser.SegmentKind</a> k)</p>
+<p>Sets the Segment kind.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>k</code> - The SegmentKind to set.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
 <p><a href="../MarkdownParser.SegmentKind/">MarkdownParser.SegmentKind</a> getKind()</p>
+<p>Returns the Segment kind.</p>
+<p><strong>Returns:</strong></p>
+<p>The SegmentKind.</p>
 <hr />
 <h3 id="settext">setText</h3>
 <p>void setText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> t)</p>
+<p>Sets the text content of the Segment.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>t</code> - The text string.</p>
 <hr />
 <h3 id="gettext">getText</h3>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getText()</p>
+<p>Returns the text content of the Segment.</p>
+<p><strong>Returns:</strong></p>
+<p>The text string.</p>
 <hr />
 <h3 id="setnext">setNext</h3>
 <p>void setNext(<a href="./">MarkdownParser.Segment</a> segment)</p>
+<p>Sets the next Segment in the sequence.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>segment</code> - The next Segment.</p>
 <hr />
 <h3 id="getnext">getNext</h3>
 <p><a href="./">MarkdownParser.Segment</a> getNext()</p>
+<p>Returns the next Segment, or an END Segment if none exists.</p>
+<p><strong>Returns:</strong></p>
+<p>The next Segment or an END Segment.</p>
 <hr />
 
 

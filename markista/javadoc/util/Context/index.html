@@ -16,7 +16,7 @@
         <link rel="prev" href="../Configuration/">
       
       
-        <link rel="next" href="../FileUtils/">
+        <link rel="next" href="../LinkResolver/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -772,8 +772,6 @@
       
         
       
-        
-      
     
     
     
@@ -988,29 +986,6 @@
   
   <span class="md-ellipsis">
     EnumNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/ExceptionNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ExceptionNode
     
   </span>
   
@@ -1549,8 +1524,6 @@
       
         
       
-        
-      
     
     
     
@@ -1731,9 +1704,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#default_output_directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEFAULT_OUTPUT_DIRECTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reporter" class="md-nav__link">
     <span class="md-ellipsis">
       reporter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      api
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputDirectory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatteneddirectories" class="md-nav__link">
+    <span class="md-ellipsis">
+      flattenedDirectories
     </span>
   </a>
   
@@ -1798,6 +1816,42 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      getInstance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      setApi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      getApi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoutputdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      setOutputDirectory
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#setreporter" class="md-nav__link">
@@ -1943,6 +1997,51 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#getdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      getDirectory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      createFile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createmodulefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      createModuleFile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createfileinternal" class="md-nav__link">
+    <span class="md-ellipsis">
+      createFileInternal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      pathSeparator
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1952,29 +2051,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FileUtils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileUtils
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2306,9 +2382,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#default_output_directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      DEFAULT_OUTPUT_DIRECTORY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reporter" class="md-nav__link">
     <span class="md-ellipsis">
       reporter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      api
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outputdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputDirectory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flatteneddirectories" class="md-nav__link">
+    <span class="md-ellipsis">
+      flattenedDirectories
     </span>
   </a>
   
@@ -2373,6 +2494,42 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getinstance" class="md-nav__link">
+    <span class="md-ellipsis">
+      getInstance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      setApi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      getApi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoutputdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      setOutputDirectory
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#setreporter" class="md-nav__link">
@@ -2518,6 +2675,51 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#getdirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      getDirectory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      createFile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createmodulefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      createModuleFile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createfileinternal" class="md-nav__link">
+    <span class="md-ellipsis">
+      createFileInternal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pathseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      pathSeparator
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2542,9 +2744,16 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.util</a></p>
 <h1 id="class-context">Class Context</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;io.github.sandydunlop.markista.util.Context<br/>
+        io.github.sandydunlop.markista.util.Context<br/>
 <br/></p>
 <hr />
+<p>Singleton class that maintains the current context during documentation generation.</p>
+<p>This class tracks the current API model, output directory, current module, package, type, method, and field names,
+as well as the reporter used for reporting messages such as INFO, WARNING, and ERROR.</p>
+<p>It provides utilities to create directories and files for output, report errors or warnings with location information,
+and manage the structure of output paths in relation to package and module names.</p>
+<p>The Context instance should be obtained via getInstance(), and its fields configured as the documentation generation progresses.
+This class is not thread-safe.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
 <thead>
@@ -2556,34 +2765,59 @@
 </thead>
 <tbody>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a></td>
+<td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#default_output_directory">DEFAULT_OUTPUT_DIRECTORY</a></td>
+<td>The default output directory</td>
+</tr>
+<tr>
+<td>private static <a href="./">Context</a></td>
+<td><a href="#instance">instance</a></td>
+<td>The instance of this class that is returned to callers of getInstance()</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a></td>
 <td><a href="#reporter">reporter</a></td>
-<td></td>
+<td>The  used for logging messages</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="../../model/Api/">Api</a></td>
+<td><a href="#api">api</a></td>
+<td>The Api model representing the entire documented API structure, including modules, packages, types, and members used for cross-referencing and navigation.</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#outputdirectory">outputDirectory</a></td>
+<td>The directory the documentation is being generated in</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#flatteneddirectories">flattenedDirectories</a></td>
+<td>The base section of the directory structure that contains no  documentation and can be skipped when creating directories.</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#modulename">moduleName</a></td>
-<td></td>
+<td>The name of the module currently being documented</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#packagename">packageName</a></td>
-<td></td>
+<td>The name of the package currently being documented</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#typename">typeName</a></td>
-<td></td>
+<td>The name of the type currently being documented</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#methodname">methodName</a></td>
-<td></td>
+<td>The name of the method currently being documented</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#fieldname">fieldName</a></td>
-<td></td>
+<td>The name of the field currently being documented</td>
 </tr>
 </tbody>
 </table>
@@ -2598,7 +2832,7 @@
 <tbody>
 <tr>
 <td>Context()</td>
-<td></td>
+<td>The default constructor</td>
 </tr>
 </tbody>
 </table>
@@ -2613,148 +2847,337 @@
 </thead>
 <tbody>
 <tr>
-<td>static void</td>
-<td><a href="#setreporter">setReporter</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> r)</td>
-<td></td>
+<td>static <a href="./">Context</a></td>
+<td><a href="#getinstance">getInstance</a>()</td>
+<td>Returns the singleton instance of this Context.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a></td>
+<td>void</td>
+<td><a href="#setapi">setApi</a>(<a href="../../model/Api/">Api</a> api)</td>
+<td>Sets the Api model associated with this context, also initializing the flattened directories string.</td>
+</tr>
+<tr>
+<td><a href="../../model/Api/">Api</a></td>
+<td><a href="#getapi">getApi</a>()</td>
+<td>Returns the Api model associated with this context.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><a href="#setoutputdirectory">setOutputDirectory</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> outputDirectory)</td>
+<td>Sets the output directory path where documentation files will be written.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><a href="#setreporter">setReporter</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</td>
+<td>Sets the reporter used for reporting messages and diagnostics during doc generation.</td>
+</tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a></td>
 <td><a href="#getreporter">getReporter</a>()</td>
-<td></td>
+<td>Returns the currently set reporter instance.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#setmodulename">setModuleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the current module name and resets the package name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getmodulename">getModuleName</a>()</td>
-<td></td>
+<td>Returns the current module name.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#setpackagename">setPackageName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the current package name and resets the type name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getpackagename">getPackageName</a>()</td>
-<td></td>
+<td>Returns the current package name.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#settypename">setTypeName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the current type name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#gettypename">getTypeName</a>()</td>
-<td></td>
+<td>Returns the current type name.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#setmethodname">setMethodName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the current method name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getmethodname">getMethodName</a>()</td>
-<td></td>
+<td>Returns the current method name.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#setfieldname">setFieldName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>Sets the current field name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getfieldname">getFieldName</a>()</td>
-<td></td>
+<td>Returns the current field name.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#reportinfo">reportInfo</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
-<td></td>
+<td>Reports an informational message through the reporter.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#reportwarning">reportWarning</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
-<td></td>
+<td>Reports a warning message including location information.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>void</td>
 <td><a href="#reporterror">reportError</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
-<td></td>
+<td>Reports an error message including location information.</td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#location">location</a>()</td>
-<td></td>
+<td>Returns a string describing the current location context in module, package, type, method, and field.</td>
+</tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a></td>
+<td><a href="#getdirectory">getDirectory</a>()</td>
+<td>Constructs a File object representing the directory path corresponding to the current output directory, module, and fully qualified package name.</td>
+</tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
+<td><a href="#createfile">createFile</a>()</td>
+<td>Creates a Writer for writing a file corresponding to the current context (type name, package, module).</td>
+</tr>
+<tr>
+<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
+<td><a href="#createmodulefile">createModuleFile</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fileName)</td>
+<td>Creates a Writer for writing a module-level file inside the module's directory.</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a></td>
+<td><a href="#createfileinternal">createFileInternal</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> containingDir, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fileName)</td>
+<td>Helper method that creates a Writer for a file inside the specified directory.</td>
+</tr>
+<tr>
+<td>private char</td>
+<td><a href="#pathseparator">pathSeparator</a>()</td>
+<td>Returns the character used to separate parts of filesystem paths for output directory construction.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
+<h3 id="default_output_directory">DEFAULT_OUTPUT_DIRECTORY</h3>
+<p>The default output directory</p>
+<p><strong>See Also:</strong></p>
+<p><a href="../../constant-values/">Constant Field Values</a></p>
+<hr />
+<h3 id="instance">instance</h3>
+<p>The instance of this class that is returned to callers of getInstance()</p>
+<hr />
 <h3 id="reporter">reporter</h3>
+<p>The  used for logging messages</p>
+<hr />
+<h3 id="api">api</h3>
+<p>The Api model representing the entire documented API structure,
+including modules, packages, types, and members used for cross-referencing and navigation.</p>
+<hr />
+<h3 id="outputdirectory">outputDirectory</h3>
+<p>The directory the documentation is being generated in</p>
+<hr />
+<h3 id="flatteneddirectories">flattenedDirectories</h3>
+<p>The base section of the directory structure that contains no 
+documentation and can be skipped when creating directories.</p>
 <hr />
 <h3 id="modulename">moduleName</h3>
+<p>The name of the module currently being documented</p>
 <hr />
 <h3 id="packagename">packageName</h3>
+<p>The name of the package currently being documented</p>
 <hr />
 <h3 id="typename">typeName</h3>
+<p>The name of the type currently being documented</p>
 <hr />
 <h3 id="methodname">methodName</h3>
+<p>The name of the method currently being documented</p>
 <hr />
 <h3 id="fieldname">fieldName</h3>
+<p>The name of the field currently being documented</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
+<h3 id="getinstance">getInstance</h3>
+<p>static <a href="./">Context</a> getInstance()</p>
+<p>Returns the singleton instance of this Context.</p>
+<p><strong>Returns:</strong></p>
+<p>The Context singleton instance.</p>
+<hr />
+<h3 id="setapi">setApi</h3>
+<p>void setApi(<a href="../../model/Api/">Api</a> api)</p>
+<p>Sets the Api model associated with this context, also initializing the flattened directories string.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>api</code> - The Api instance.</p>
+<hr />
+<h3 id="getapi">getApi</h3>
+<p><a href="../../model/Api/">Api</a> getApi()</p>
+<p>Returns the Api model associated with this context.</p>
+<p><strong>Returns:</strong></p>
+<p>The current Api model.</p>
+<hr />
+<h3 id="setoutputdirectory">setOutputDirectory</h3>
+<p>void setOutputDirectory(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> outputDirectory)</p>
+<p>Sets the output directory path where documentation files will be written.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>outputDirectory</code> - The output directory path as a String.</p>
+<hr />
 <h3 id="setreporter">setReporter</h3>
-<p>static void setReporter(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> r)</p>
+<p>void setReporter(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</p>
+<p>Sets the reporter used for reporting messages and diagnostics during doc generation.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>reporter</code> - The Reporter instance.</p>
 <hr />
 <h3 id="getreporter">getReporter</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> getReporter()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> getReporter()</p>
+<p>Returns the currently set reporter instance.</p>
+<p><strong>Returns:</strong></p>
+<p>The Reporter.</p>
 <hr />
 <h3 id="setmodulename">setModuleName</h3>
-<p>static void setModuleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>void setModuleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the current module name and resets the package name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The module name to set.</p>
 <hr />
 <h3 id="getmodulename">getModuleName</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModuleName()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModuleName()</p>
+<p>Returns the current module name.</p>
+<p><strong>Returns:</strong></p>
+<p>The module name.</p>
 <hr />
 <h3 id="setpackagename">setPackageName</h3>
-<p>static void setPackageName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>void setPackageName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the current package name and resets the type name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The package name to set.</p>
 <hr />
 <h3 id="getpackagename">getPackageName</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName()</p>
+<p>Returns the current package name.</p>
+<p><strong>Returns:</strong></p>
+<p>The package name.</p>
 <hr />
 <h3 id="settypename">setTypeName</h3>
-<p>static void setTypeName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>void setTypeName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the current type name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The type name to set.</p>
 <hr />
 <h3 id="gettypename">getTypeName</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getTypeName()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getTypeName()</p>
+<p>Returns the current type name.</p>
+<p><strong>Returns:</strong></p>
+<p>The type name.</p>
 <hr />
 <h3 id="setmethodname">setMethodName</h3>
-<p>static void setMethodName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>void setMethodName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the current method name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The method name to set.</p>
 <hr />
 <h3 id="getmethodname">getMethodName</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getMethodName()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getMethodName()</p>
+<p>Returns the current method name.</p>
+<p><strong>Returns:</strong></p>
+<p>The method name.</p>
 <hr />
 <h3 id="setfieldname">setFieldName</h3>
-<p>static void setFieldName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>void setFieldName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the current field name.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>name</code> - The field name to set.</p>
 <hr />
 <h3 id="getfieldname">getFieldName</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getFieldName()</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getFieldName()</p>
+<p>Returns the current field name.</p>
+<p><strong>Returns:</strong></p>
+<p>The field name.</p>
 <hr />
 <h3 id="reportinfo">reportInfo</h3>
-<p>static void reportInfo(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>void reportInfo(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>Reports an informational message through the reporter.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>message</code> - The message to report.</p>
 <hr />
 <h3 id="reportwarning">reportWarning</h3>
-<p>static void reportWarning(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>void reportWarning(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>Reports a warning message including location information.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>message</code> - The warning message to report.</p>
 <hr />
 <h3 id="reporterror">reportError</h3>
-<p>static void reportError(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>void reportError(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</p>
+<p>Reports an error message including location information.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>message</code> - The error message to report.</p>
 <hr />
 <h3 id="location">location</h3>
-<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> location()</p>
+<p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> location()</p>
+<p>Returns a string describing the current location context in module, package, type, method, and field.
+Used to append context details to diagnostic messages.</p>
+<p><strong>Returns:</strong></p>
+<p>A formatted multi-line string describing the current location, or empty if no location info.</p>
+<hr />
+<h3 id="getdirectory">getDirectory</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> getDirectory()</p>
+<p>Constructs a File object representing the directory path corresponding to the current output directory,
+module, and fully qualified package name.
+If flattenDirectories is enabled, only directories containing documentation for types are created according to the flattenedDirectories prefix.</p>
+<p><strong>Returns:</strong></p>
+<p>The File object representing the directory.</p>
+<hr />
+<h3 id="createfile">createFile</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> createFile()</p>
+<p>Creates a Writer for writing a file corresponding to the current context (type name, package, module).
+Creates directories as necessary. Defaults of output directory are applied if not set.</p>
+<p><strong>Returns:</strong></p>
+<p>A Writer object for writing the file.</p>
+<p><strong>Throws:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
+<h3 id="createmodulefile">createModuleFile</h3>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> createModuleFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fileName)</p>
+<p>Creates a Writer for writing a module-level file inside the module's directory.
+Creates directories as necessary. Defaults of output directory are applied if not set.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>fileName</code> - The file name to create inside the module directory.</p>
+<p><strong>Returns:</strong></p>
+<p>A Writer object for writing the file.</p>
+<p><strong>Throws:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
+<h3 id="createfileinternal">createFileInternal</h3>
+<p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> createFileInternal(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> containingDir, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fileName)</p>
+<p>Helper method that creates a Writer for a file inside the specified directory.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>containingDir</code> - The directory where the file is created.</p>
+<p><code>fileName</code> - The filename of the file to create.</p>
+<p><strong>Returns:</strong></p>
+<p>A Writer for the file.</p>
+<p><strong>Throws:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
+<h3 id="pathseparator">pathSeparator</h3>
+<p>private char pathSeparator()</p>
+<p>Returns the character used to separate parts of filesystem paths for output directory construction.
+This method works around a macOS bug where <code>File.pathSeparatorChar</code> wrongly returns ':' instead of '/'.</p>
+<p><strong>Returns:</strong></p>
+<p>The platform-appropriate character for separating path components.</p>
 <hr />
 
 
