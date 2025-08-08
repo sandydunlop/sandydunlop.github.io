@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/model/FieldNode/">
       
       
-        <link rel="prev" href="../EnumNode/">
+        <link rel="prev" href="../EnumTypeNode/">
       
       
-        <link rel="next" href="../InterfaceNode/">
+        <link rel="next" href="../InterfaceTypeNode/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1092,6 +1142,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#qualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      qualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#constantvalue" class="md-nav__link">
     <span class="md-ellipsis">
       constantValue
@@ -1114,6 +1173,24 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getQualifiedName
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#getconstantvalue" class="md-nav__link">
@@ -1163,12 +1240,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2094,6 +2171,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#qualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      qualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#constantvalue" class="md-nav__link">
     <span class="md-ellipsis">
       constantValue
@@ -2116,6 +2202,24 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getQualifiedName
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#getconstantvalue" class="md-nav__link">
@@ -2168,11 +2272,12 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-fieldnode">Class FieldNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../ParamNode/">io.github.sandydunlop.markista.model.ParamNode</a><br/>
+        <a href="../Node/">Node</a><br/>
+                <a href="../ParamNode/">ParamNode</a><br/>
                         io.github.sandydunlop.markista.model.FieldNode<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>FieldNode</strong></span></p>
 <p>A class to hold information about fields within a class, interface, or enum.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2184,6 +2289,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#qualifiedname">qualifiedName</a></td>
+<td>The canonical form of the node's name</td>
+</tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></td>
 <td><a href="#constantvalue">constantValue</a></td>
@@ -2217,41 +2327,62 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></td>
+<td>public void</td>
+<td><a href="#setqualifiedname">setQualifiedName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the qualified name of this parameter.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#getqualifiedname">getQualifiedName</a>()</td>
+<td>Returns the qualified name of this parameter.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></td>
 <td><a href="#getconstantvalue">getConstantValue</a>()</td>
 <td>Returns the constant value of this field.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setconstantvalue">setConstantValue</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</td>
 <td>Sets the constant value of this field.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#fullsignature">fullSignature</a>()</td>
 <td>Returns the full signature of the field including modifiers and name.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
+<h3 id="qualifiedname">qualifiedName</h3>
+<p>The canonical form of the node's name</p>
+<hr />
 <h3 id="constantvalue">constantValue</h3>
 <p>The constant value assigned to this field, if any.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
+<h3 id="setqualifiedname">setQualifiedName</h3>
+<p>public void setQualifiedName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>Sets the qualified name of this parameter.</p>
+<hr />
+<h3 id="getqualifiedname">getQualifiedName</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getQualifiedName()</p>
+<p>Returns the qualified name of this parameter.</p>
+<p><strong>Returns:</strong></p>
+<p>The qualified name.</p>
+<hr />
 <h3 id="getconstantvalue">getConstantValue</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> getConstantValue()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> getConstantValue()</p>
 <p>Returns the constant value of this field.</p>
 <p><strong>Returns:</strong></p>
 <p>The constant value of the field or null if none.</p>
 <hr />
 <h3 id="setconstantvalue">setConstantValue</h3>
-<p>void setConstantValue(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</p>
+<p>public void setConstantValue(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</p>
 <p>Sets the constant value of this field.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>constantValue</code> - The constant value to set.</p>
 <hr />
 <h3 id="fullsignature">fullSignature</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature()</p>
 <p>Returns the full signature of the field including modifiers and name.</p>
 <p><strong>Returns:</strong></p>
 <p>The string representing the full signature.</p>

@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2069,6 +2119,7 @@
         io.github.sandydunlop.markista.model.PackageOwner<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public abstract Interface <strong>PackageOwner</strong></span></p>
 <p>Interface representing an owner of packages. public interface</p>
 <h2 id="method-summary">Method Summary</h2>
 <table>
@@ -2081,12 +2132,12 @@
 </thead>
 <tbody>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
 <td>Returns the list of packages owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract void</td>
+<td>public abstract void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/">PackageNode</a> packageNode)</td>
 <td>Adds a package to the owned packages.</td>
 </tr>
@@ -2094,16 +2145,14 @@
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="getpackages">getPackages</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
 <p>Returns the list of packages owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>List of PackageMember objects representing owned packages.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p>abstract void addPackage(<a href="../PackageNode/">PackageNode</a> packageNode)</p>
+<p>public abstract void addPackage(<a href="../PackageNode/">PackageNode</a> packageNode)</p>
 <p>Adds a package to the owned packages.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>packageNode</code> - The PackageNode to add.</p>
 <hr />
 
 

@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../AnnotationNode/">
+        <link rel="next" href="../AnnotationElement/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1051,12 +1055,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1097,12 +1124,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1189,12 +1239,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1235,12 +1285,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2312,12 +2362,13 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-abstracttypeowner">Class AbstractTypeOwner</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+        <a href="../Node/">Node</a><br/>
                 io.github.sandydunlop.markista.model.AbstractTypeOwner<br/>
 <br/>
 All Implemented Interfaces:<br/>
     <a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
+<p><span style="font-family: monospace;">public abstract Class <strong>AbstractTypeOwner</strong></span></p>
 <p>An abstract class with a set of methods useful to other subclasses of <a href="../Node/">Node</a>
 that can be owners of types.</p>
 <h2 id="field-summary">Field Summary</h2>
@@ -2363,57 +2414,57 @@ that can be owners of types.</p>
 </thead>
 <tbody>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#addtype">addType</a>(<a href="../TypeNode/">TypeNode</a> typeNode)</td>
 <td>Adds a type to the list of types <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#gettypes">getTypes</a>()</td>
 <td>Gets the list of types <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getclasses">getClasses</a>()</td>
 <td>Gets the list of classes <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getinterfaces">getInterfaces</a>()</td>
 <td>Gets the list of interfaces <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getenums">getEnums</a>()</td>
 <td>Gets the list of enums <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getannotations">getAnnotations</a>()</td>
 <td>Gets the list of annotations <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>void</td>
-<td><a href="#addclass">addClass</a>(<a href="../ClassNode/">ClassNode</a> node)</td>
+<td>public void</td>
+<td><a href="#addclass">addClass</a>(<a href="../ClassTypeNode/">ClassTypeNode</a> node)</td>
 <td>Adds a class to the list of classes <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>void</td>
-<td><a href="#addinterface">addInterface</a>(<a href="../InterfaceNode/">InterfaceNode</a> node)</td>
+<td>public void</td>
+<td><a href="#addinterface">addInterface</a>(<a href="../InterfaceTypeNode/">InterfaceTypeNode</a> node)</td>
 <td>Adds a interface to the list of interfaces <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>void</td>
-<td><a href="#addenum">addEnum</a>(<a href="../EnumNode/">EnumNode</a> node)</td>
+<td>public void</td>
+<td><a href="#addenum">addEnum</a>(<a href="../EnumTypeNode/">EnumTypeNode</a> node)</td>
 <td>Adds a enum to the list of enums <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>void</td>
-<td><a href="#addannotation">addAnnotation</a>(<a href="../AnnotationNode/">AnnotationNode</a> node)</td>
+<td>public void</td>
+<td><a href="#addannotation">addAnnotation</a>(<a href="../AnnotationTypeNode/">AnnotationTypeNode</a> node)</td>
 <td>Adds a annotation to the list of annotations <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#sort">sort</a>()</td>
 <td>Sorts the nodes owned by this instance into alphabetical order.</td>
 </tr>
@@ -2425,69 +2476,59 @@ that can be owners of types.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addtype">addType</h3>
-<p>void addType(<a href="../TypeNode/">TypeNode</a> typeNode)</p>
+<p>public void addType(<a href="../TypeNode/">TypeNode</a> typeNode)</p>
 <p>Adds a type to the list of types <em>owned</em> by this instance.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - the type to add</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="gettypes">getTypes</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getTypes()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getTypes()</p>
 <p>Gets the list of types <em>owned</em> by this instance.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="getclasses">getClasses</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getClasses()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getClasses()</p>
 <p>Gets the list of classes <em>owned</em> by this instance.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="getinterfaces">getInterfaces</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getInterfaces()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getInterfaces()</p>
 <p>Gets the list of interfaces <em>owned</em> by this instance.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="getenums">getEnums</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getEnums()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getEnums()</p>
 <p>Gets the list of enums <em>owned</em> by this instance.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="getannotations">getAnnotations</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getAnnotations()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getAnnotations()</p>
 <p>Gets the list of annotations <em>owned</em> by this instance.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../TypeOwner/">io.github.sandydunlop.markista.model.TypeOwner</a></p>
+<p><a href="../TypeOwner/">TypeOwner</a></p>
 <hr />
 <h3 id="addclass">addClass</h3>
-<p>void addClass(<a href="../ClassNode/">ClassNode</a> node)</p>
+<p>public void addClass(<a href="../ClassTypeNode/">ClassTypeNode</a> node)</p>
 <p>Adds a class to the list of classes <em>owned</em> by this instance.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - the class to add</p>
 <hr />
 <h3 id="addinterface">addInterface</h3>
-<p>void addInterface(<a href="../InterfaceNode/">InterfaceNode</a> node)</p>
+<p>public void addInterface(<a href="../InterfaceTypeNode/">InterfaceTypeNode</a> node)</p>
 <p>Adds a interface to the list of interfaces <em>owned</em> by this instance.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - the interface to add</p>
 <hr />
 <h3 id="addenum">addEnum</h3>
-<p>void addEnum(<a href="../EnumNode/">EnumNode</a> node)</p>
+<p>public void addEnum(<a href="../EnumTypeNode/">EnumTypeNode</a> node)</p>
 <p>Adds a enum to the list of enums <em>owned</em> by this instance.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - the enum to add</p>
 <hr />
 <h3 id="addannotation">addAnnotation</h3>
-<p>void addAnnotation(<a href="../AnnotationNode/">AnnotationNode</a> node)</p>
+<p>public void addAnnotation(<a href="../AnnotationTypeNode/">AnnotationTypeNode</a> node)</p>
 <p>Adds a annotation to the list of annotations <em>owned</em> by this instance.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - the annotation to add</p>
 <hr />
 <h3 id="sort">sort</h3>
-<p>void sort()</p>
+<p>public void sort()</p>
 <p>Sorts the nodes owned by this instance into alphabetical order.</p>
 <hr />
 

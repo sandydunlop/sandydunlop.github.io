@@ -772,6 +772,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -842,12 +846,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -888,12 +915,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -980,12 +1030,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1026,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2159,6 +2209,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setappliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      setAppliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setappliedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      setAppliedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markcustomannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      markCustomAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setthrowntypes" class="md-nav__link">
     <span class="md-ellipsis">
       setThrownTypes
@@ -2721,6 +2798,33 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setappliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      setAppliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setappliedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      setAppliedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markcustomannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      markCustomAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setthrowntypes" class="md-nav__link">
     <span class="md-ellipsis">
       setThrownTypes
@@ -2837,6 +2941,7 @@
         io.github.sandydunlop.markista.util.TypeUtils<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>TypeUtils</strong></span></p>
 <p>Utility class providing static methods to create and manipulate TypeNodes, MethodNodes, FieldNodes, and other API model objects
 from language model elements and Javadoc doc trees obtained from the Java source code.</p>
 <p>This class bridges the Java language model and the internal API representation used for generating documentation.
@@ -2899,177 +3004,192 @@ It includes methods to extract element details, ownership, modifiers, supertypes
 </thead>
 <tbody>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#init">init</a>(<a href="../../model/Api/">Api</a> a, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> e)</td>
 <td>Initializes this utility class to use the given API model and Doclet environment.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/TypeNode/">TypeNode</a></td>
+<td>public static <a href="../../model/TypeNode/">TypeNode</a></td>
 <td><a href="#nodefromelement">nodeFromElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</td>
 <td>Creates or retrieves a TypeNode from the supplied TypeElement.</td>
 </tr>
 <tr>
-<td>static void</td>
-<td><a href="#setenumconstants">setEnumConstants</a>(<a href="../../model/EnumNode/">EnumNode</a> enumNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e)</td>
+<td>public static void</td>
+<td><a href="#setenumconstants">setEnumConstants</a>(<a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e)</td>
 <td>Reads enum constants from the TypeElement and adds them as FieldNodes to the EnumNode.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/MethodNode/">MethodNode</a></td>
+<td>public static <a href="../../model/MethodNode/">MethodNode</a></td>
 <td><a href="#nodefromelement">nodeFromElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> element)</td>
 <td>Creates a MethodNode representation from the ExecutableElement element (method or constructor).</td>
 </tr>
 <tr>
-<td>static <a href="../../model/FieldNode/">FieldNode</a></td>
+<td>public static <a href="../../model/FieldNode/">FieldNode</a></td>
 <td><a href="#nodefromelement">nodeFromElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> element)</td>
 <td>Creates a FieldNode representation from the VariableElement element representing a field.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/TypeNode/">TypeNode</a></td>
+<td>public static <a href="../../model/TypeNode/">TypeNode</a></td>
 <td><a href="#createtypenode">createTypeNode</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../../model/PackageNode/">PackageNode</a> packageNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ElementKind.html">ElementKind</a> elementKind)</td>
 <td>Factory method to create TypeNode (ClassNode, InterfaceNode, EnumNode, or AnnotationNode) based on ElementKind.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/Text/">Text</a></td>
+<td>public static <a href="../../model/Text/">Text</a></td>
 <td><a href="#createtext">createText</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a>&gt; dtList)</td>
 <td>Creates a complete Text object by traversing a list of DocTree nodes from the Javadoc comment.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/Text.Segment/">Text.Segment</a></td>
+<td>public static <a href="../../model/Text.Segment/">Text.Segment</a></td>
 <td><a href="#createtextsegment">createTextSegment</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree)</td>
 <td>Creates a single Text.Segment from a DocTree node, setting the appropriate kind and content.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getdoctreetext">getDocTreeText</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int start)</td>
 <td>Extracts text from a DocTree to build a string from a part of its tokenized representation.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getdoctreepart">getDocTreePart</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int n)</td>
 <td>Extracts a specific part (token) from a DocTree's toString representation.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setdocumentation">setDocumentation</a>(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</td>
 <td>Sets documentation text for a Node based on the doc comment tree attached to a language model element.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#settypeownership">setTypeOwnership</a>(<a href="../../model/TypeNode/">TypeNode</a> typeNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</td>
 <td>Sets ownership of a TypeNode based on its enclosing type or package.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setmethodannotations">setMethodAnnotations</a>(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</td>
 <td>Sets annotations on the MethodNode, in particular looks for @Override annotation to set overridden methods.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setspecifiedby">setSpecifiedBy</a>(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</td>
 <td>Checks implemented interfaces of a method's owning type, and sets "specifiedBy" on the method if it implements an interface method.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
+<td>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#getoverriddenmethod">getOverriddenMethod</a>(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</td>
 <td>Recursively searches for an overridden method matching the supplied method within the supertypes of its owner.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
+<td>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#getoverriddenmethod">getOverriddenMethod</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> superclass, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</td>
 <td>Searches the given TypeElement for a method matching the supplied ExecutableElement\u2019s name.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
+<td>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a></td>
 <td><a href="#getoverriddennativemethod">getOverriddenNativeMethod</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName, <a href="../../model/MethodNode/">MethodNode</a> method)</td>
 <td>Attempts to find an overridden method defined in native Java classes (e.g., from runtime classes).</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#addconstantfieldvaluesreference">addConstantFieldValuesReference</a>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</td>
 <td>Adds references to constant field values from classes in the API to the provided module node.</td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isinterface">isInterface</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> typeMirror)</td>
 <td>Returns true if the TypeMirror represents an interface.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#findimplementedinterfaces">findImplementedInterfaces</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> typeElement, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</td>
 <td>Finds all interfaces implemented directly by the given TypeElement and adds their names to the result list.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#collectallsupertypes">collectAllSupertypes</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> t, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</td>
 <td>Collects all supertypes (classes) of the specified type recursively and adds them to the result list.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DeprecatedTree.html">DeprecatedTree</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DeprecatedTree.html">DeprecatedTree</a></td>
 <td><a href="#getdeprecation">getDeprecation</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> docComment)</td>
 <td>Finds the DeprecatedTree from a Javadoc DocCommentTree if present.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ReturnTree.html">ReturnTree</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ReturnTree.html">ReturnTree</a></td>
 <td><a href="#getreturntree">getReturnTree</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</td>
 <td>Finds the @return tag from a Javadoc DocCommentTree if present.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ParamTree.html">ParamTree</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ParamTree.html">ParamTree</a></td>
 <td><a href="#getparamtree">getParamTree</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> parameter)</td>
 <td>Finds the @param tag in a DocCommentTree matching the specified parameter variable.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt;</td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt;</td>
 <td><a href="#getreferences">getReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</td>
 <td>Extracts a list of Reference objects representing occurrences of @see tags in the Javadoc comment.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/Text/">Text</a></td>
+<td>public static <a href="../../model/Text/">Text</a></td>
 <td><a href="#getsince">getSince</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</td>
 <td>Extracts the @since tag content from a DocCommentTree, if present.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#geturl">getUrl</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> html)</td>
 <td>Extracts a URL string from html-like text, e.g., from an href attribute inside double-quotes.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setmodifiers">setModifiers</a>(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Modifier.html">Modifier</a>&gt; modifiers)</td>
 <td>Adds modifiers to a model Node based on the set of language model modifiers.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
+<td><a href="#setappliedannotations">setAppliedAnnotations</a>(<a href="../../model/TypeNode/">TypeNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> elem)</td>
+<td>Adds applied annotations to a TypeNode.</td>
+</tr>
+<tr>
+<td>public static void</td>
+<td><a href="#setappliedannotation">setAppliedAnnotation</a>(<a href="../../model/TypeNode/">TypeNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html">AnnotationMirror</a> annotationMirror)</td>
+<td>Adds an applied annotation to a TypeNode.</td>
+</tr>
+<tr>
+<td>public static void</td>
+<td><a href="#markcustomannotations">markCustomAnnotations</a>()</td>
+<td>Iterates over all annotations in the API, identifying ones that are custom and those that have the <code>@Documented</code> meta-annotation and marking them as such.</td>
+</tr>
+<tr>
+<td>public static void</td>
 <td><a href="#setthrowntypes">setThrownTypes</a>(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a>&gt; thrownTypes)</td>
 <td>Adds list of thrown types (exceptions) to a MethodNode based on Java model type mirrors.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setdeprecationstatus">setDeprecationStatus</a>(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dct)</td>
 <td>Sets the deprecation status of a Node based on element annotations and Javadoc @deprecated tag.</td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isincludedinapi">isIncludedInApi</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</td>
 <td>Returns true if the element should be included in the public API documentation based on its modifiers and configuration.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setmethodparams">setMethodParams</a>(<a href="../../model/MethodNode/">MethodNode</a> methodDoc, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee)</td>
 <td>Sets the parameters on a MethodNode by inspecting the ExecutableElement and its doc comment tags.</td>
 </tr>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setimplementations">setImplementations</a>(<a href="../../model/DirectiveNode/">DirectiveNode</a> directiveNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a>&gt; implementations)</td>
 <td>Adds implementation type names to a DirectiveNode.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/TypeNode/">TypeNode</a></td>
+<td>public static <a href="../../model/TypeNode/">TypeNode</a></td>
 <td><a href="#getfieldtype">getFieldType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
 <td>Gets the field type as a TypeNode for the specified class name and field name.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/TypeNode/">TypeNode</a></td>
+<td>public static <a href="../../model/TypeNode/">TypeNode</a></td>
 <td><a href="#getparamtype">getParamType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
 <td>Gets the parameter type as a TypeNode for the specified parameter name in the method.</td>
 </tr>
@@ -3079,12 +3199,12 @@ It includes methods to extract element details, ownership, modifiers, supertypes
 <td>Extracts the package name from a fully qualified type name.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a></td>
 <td><a href="#getenclosingpackageelement">getEnclosingPackageElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</td>
 <td>Recursively finds the enclosing PackageElement of a given element.</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a></td>
 <td><a href="#getenclosingtypeelement">getEnclosingTypeElement</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</td>
 <td>Recursively finds the enclosing TypeElement (class, interface, enum, annotation) for the given element.</td>
 </tr>
@@ -3103,312 +3223,224 @@ including modules, packages, types, and members used for cross-referencing and n
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="init">init</h3>
-<p>static void init(<a href="../../model/Api/">Api</a> a, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> e)</p>
+<p>public static void init(<a href="../../model/Api/">Api</a> a, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> e)</p>
 <p>Initializes this utility class to use the given API model and Doclet environment.
 Sets up internal references and context necessary for subsequent operations.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>a</code> - The Api instance representing the overall API model.</p>
-<p><code>e</code> - The DocletEnvironment providing access to Javadoc doc trees and processing utilities.</p>
 <hr />
 <h3 id="nodefromelement">nodeFromElement</h3>
-<p>static <a href="../../model/TypeNode/">TypeNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</p>
+<p>public static <a href="../../model/TypeNode/">TypeNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</p>
 <p>Creates or retrieves a TypeNode from the supplied TypeElement.
 This method extracts type details such as qualified name, package, kind, ownership, modifiers, supertypes, and interfaces,
 adds the new TypeNode to the API model, and returns it.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>element</code> - The language model TypeElement to create a TypeNode from.</p>
 <p><strong>Returns:</strong></p>
 <p>The corresponding TypeNode in the API model, or null if unsupported or error occurs.</p>
 <hr />
 <h3 id="setenumconstants">setEnumConstants</h3>
-<p>static void setEnumConstants(<a href="../../model/EnumNode/">EnumNode</a> enumNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e)</p>
+<p>public static void setEnumConstants(<a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e)</p>
 <p>Reads enum constants from the TypeElement and adds them as FieldNodes to the EnumNode.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>enumNode</code> - The EnumNode to populate with constants.</p>
-<p><code>e</code> - The TypeElement representing the enum type.</p>
 <hr />
 <h3 id="nodefromelement_1">nodeFromElement</h3>
-<p>static <a href="../../model/MethodNode/">MethodNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> element)</p>
+<p>public static <a href="../../model/MethodNode/">MethodNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> element)</p>
 <p>Creates a MethodNode representation from the ExecutableElement element (method or constructor).
 Sets return type, parameters, modifiers, thrown exceptions, ownership, and annotations.
 Adds the method to the owning TypeNode's method or constructor list.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>element</code> - The ExecutableElement to convert.</p>
 <p><strong>Returns:</strong></p>
 <p>The constructed MethodNode, or null if errors occur.</p>
 <hr />
 <h3 id="nodefromelement_2">nodeFromElement</h3>
-<p>static <a href="../../model/FieldNode/">FieldNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> element)</p>
+<p>public static <a href="../../model/FieldNode/">FieldNode</a> nodeFromElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> element)</p>
 <p>Creates a FieldNode representation from the VariableElement element representing a field.
 Links the field to the owning TypeNode.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>element</code> - The VariableElement to convert.</p>
 <p><strong>Returns:</strong></p>
 <p>The FieldNode, or null if errors occur.</p>
 <hr />
 <h3 id="createtypenode">createTypeNode</h3>
-<p>static <a href="../../model/TypeNode/">TypeNode</a> createTypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../../model/PackageNode/">PackageNode</a> packageNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ElementKind.html">ElementKind</a> elementKind)</p>
+<p>public static <a href="../../model/TypeNode/">TypeNode</a> createTypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../../model/PackageNode/">PackageNode</a> packageNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ElementKind.html">ElementKind</a> elementKind)</p>
 <p>Factory method to create TypeNode (ClassNode, InterfaceNode, EnumNode, or AnnotationNode) based on ElementKind.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>qualifiedName</code> - Fully qualified name of the type.</p>
-<p><code>simpleName</code> - The simple (unqualified) name of the type.</p>
-<p><code>packageNode</code> - The owning PackageNode.</p>
-<p><code>elementKind</code> - The ElementKind representing the type kind.</p>
 <p><strong>Returns:</strong></p>
 <p>A TypeNode instance corresponding to the kind, or null if unsupported.</p>
 <hr />
 <h3 id="createtext">createText</h3>
-<p>static <a href="../../model/Text/">Text</a> createText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a>&gt; dtList)</p>
+<p>public static <a href="../../model/Text/">Text</a> createText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a>&gt; dtList)</p>
 <p>Creates a complete Text object by traversing a list of DocTree nodes from the Javadoc comment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>dtList</code> - List of DocTree nodes representing a part of a Javadoc comment.</p>
 <p><strong>Returns:</strong></p>
 <p>A Text object composed of segments derived from each DocTree node.</p>
 <hr />
 <h3 id="createtextsegment">createTextSegment</h3>
-<p>static <a href="../../model/Text.Segment/">Text.Segment</a> createTextSegment(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree)</p>
+<p>public static <a href="../../model/Text.Segment/">Text.Segment</a> createTextSegment(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree)</p>
 <p>Creates a single Text.Segment from a DocTree node, setting the appropriate kind and content.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>docTree</code> - The DocTree node to convert.</p>
 <p><strong>Returns:</strong></p>
 <p>A Text.Segment representing the content and kind of the provided DocTree.</p>
 <hr />
 <h3 id="getdoctreetext">getDocTreeText</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDocTreeText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int start)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDocTreeText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int start)</p>
 <p>Extracts text from a DocTree to build a string from a part of its tokenized representation.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>docTree</code> - The DocTree to extract from.</p>
-<p><code>start</code> - The starting index for extraction.</p>
 <p><strong>Returns:</strong></p>
 <p>A string representing the extracted part or empty string if extraction fails.</p>
 <hr />
 <h3 id="getdoctreepart">getDocTreePart</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDocTreePart(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int n)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDocTreePart(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocTree.html">DocTree</a> docTree, int n)</p>
 <p>Extracts a specific part (token) from a DocTree's toString representation.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>docTree</code> - The DocTree to parse.</p>
-<p><code>n</code> - The zero-based index of the part to extract.</p>
 <p><strong>Returns:</strong></p>
 <p>The extracted string part or empty string if out of range.</p>
 <hr />
 <h3 id="setdocumentation">setDocumentation</h3>
-<p>static void setDocumentation(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
+<p>public static void setDocumentation(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
 <p>Sets documentation text for a Node based on the doc comment tree attached to a language model element.
 This populates first sentence, body, and full body texts.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - The Node to set documentation for.</p>
-<p><code>e</code> - The element whose doc comment is used.</p>
 <hr />
 <h3 id="settypeownership">setTypeOwnership</h3>
-<p>static void setTypeOwnership(<a href="../../model/TypeNode/">TypeNode</a> typeNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</p>
+<p>public static void setTypeOwnership(<a href="../../model/TypeNode/">TypeNode</a> typeNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> element)</p>
 <p>Sets ownership of a TypeNode based on its enclosing type or package.
 Updates the ownership link and qualified names accordingly.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - The TypeNode to set ownership on.</p>
-<p><code>element</code> - The TypeElement representing the type.</p>
 <hr />
 <h3 id="setmethodannotations">setMethodAnnotations</h3>
-<p>static void setMethodAnnotations(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
+<p>public static void setMethodAnnotations(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
 <p>Sets annotations on the MethodNode, in particular looks for @Override annotation to set overridden methods.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>method</code> - The MethodNode to update.</p>
-<p><code>methodElement</code> - The ExecutableElement representing the method.</p>
 <hr />
 <h3 id="setspecifiedby">setSpecifiedBy</h3>
-<p>static void setSpecifiedBy(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
+<p>public static void setSpecifiedBy(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
 <p>Checks implemented interfaces of a method's owning type, and sets "specifiedBy" on the method if it implements an interface method.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>methodNode</code> - The MethodNode to update.</p>
-<p><code>methodElement</code> - The ExecutableElement representing the method.</p>
 <hr />
 <h3 id="getoverriddenmethod">getOverriddenMethod</h3>
-<p>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
+<p>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod(<a href="../../model/MethodNode/">MethodNode</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
 <p>Recursively searches for an overridden method matching the supplied method within the supertypes of its owner.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>method</code> - The MethodNode for which to find an overridden method.</p>
-<p><code>methodElement</code> - The ExecutableElement representing the method.</p>
 <p><strong>Returns:</strong></p>
 <p>An OverriddenMethodNode if a matching override is found, else null.</p>
 <hr />
 <h3 id="getoverriddenmethod_1">getOverriddenMethod</h3>
-<p>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> superclass, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
+<p>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> superclass, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> methodElement)</p>
 <p>Searches the given TypeElement for a method matching the supplied ExecutableElement\u2019s name.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>superclass</code> - The TypeElement representing a supertype.</p>
-<p><code>methodElement</code> - The method to match by name.</p>
 <p><strong>Returns:</strong></p>
 <p>An OverriddenMethodNode if a match found, else null.</p>
 <hr />
 <h3 id="getoverriddennativemethod">getOverriddenNativeMethod</h3>
-<p>static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenNativeMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName, <a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<p>public static <a href="../../model/OverriddenMethodNode/">OverriddenMethodNode</a> getOverriddenNativeMethod(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName, <a href="../../model/MethodNode/">MethodNode</a> method)</p>
 <p>Attempts to find an overridden method defined in native Java classes (e.g., from runtime classes).</p>
-<p><strong>Parameters:</strong></p>
-<p><code>qualifiedTypeName</code> - The fully qualified name of the type.</p>
-<p><code>method</code> - The MethodNode that may override the native method.</p>
 <p><strong>Returns:</strong></p>
 <p>An OverriddenMethodNode if found, or null otherwise.</p>
 <hr />
 <h3 id="addconstantfieldvaluesreference">addConstantFieldValuesReference</h3>
-<p>static void addConstantFieldValuesReference(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
+<p>public static void addConstantFieldValuesReference(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
 <p>Adds references to constant field values from classes in the API to the provided module node.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>moduleNode</code> - The ModuleNode to which constant value references will be added.</p>
 <hr />
 <h3 id="isinterface">isInterface</h3>
-<p>static boolean isInterface(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> typeMirror)</p>
+<p>public static boolean isInterface(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> typeMirror)</p>
 <p>Returns true if the TypeMirror represents an interface.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeMirror</code> - The TypeMirror to check.</p>
 <p><strong>Returns:</strong></p>
 <p>true if the type is an interface, false otherwise.</p>
 <hr />
 <h3 id="findimplementedinterfaces">findImplementedInterfaces</h3>
-<p>static void findImplementedInterfaces(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> typeElement, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</p>
+<p>public static void findImplementedInterfaces(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> typeElement, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</p>
 <p>Finds all interfaces implemented directly by the given TypeElement and adds their names to the result list.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeElement</code> - The type to examine.</p>
-<p><code>result</code> - The list to receive the qualified interface names.</p>
 <hr />
 <h3 id="collectallsupertypes">collectAllSupertypes</h3>
-<p>static void collectAllSupertypes(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> t, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</p>
+<p>public static void collectAllSupertypes(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a> t, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; result)</p>
 <p>Collects all supertypes (classes) of the specified type recursively and adds them to the result list.
 java.lang.Object is excluded.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>t</code> - The type to examine.</p>
-<p><code>result</code> - The list to receive supertypes.</p>
 <hr />
 <h3 id="getdeprecation">getDeprecation</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DeprecatedTree.html">DeprecatedTree</a> getDeprecation(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> docComment)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DeprecatedTree.html">DeprecatedTree</a> getDeprecation(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> docComment)</p>
 <p>Finds the DeprecatedTree from a Javadoc DocCommentTree if present.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>docComment</code> - The Javadoc comment tree.</p>
 <p><strong>Returns:</strong></p>
 <p>The DeprecatedTree if found, null otherwise.</p>
 <hr />
 <h3 id="getreturntree">getReturnTree</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ReturnTree.html">ReturnTree</a> getReturnTree(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ReturnTree.html">ReturnTree</a> getReturnTree(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
 <p>Finds the @return tag from a Javadoc DocCommentTree if present.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>dcTree</code> - The DocCommentTree to search.</p>
 <p><strong>Returns:</strong></p>
 <p>The ReturnTree if found, null otherwise.</p>
 <hr />
 <h3 id="getparamtree">getParamTree</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ParamTree.html">ParamTree</a> getParamTree(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> parameter)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/ParamTree.html">ParamTree</a> getParamTree(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> parameter)</p>
 <p>Finds the @param tag in a DocCommentTree matching the specified parameter variable.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>dcTree</code> - The DocCommentTree containing block tags.</p>
-<p><code>parameter</code> - The VariableElement parameter to match.</p>
 <p><strong>Returns:</strong></p>
 <p>The matching ParamTree if found, null otherwise.</p>
 <hr />
 <h3 id="getreferences">getReferences</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt; getReferences(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Reference/">Reference</a>&gt; getReferences(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
 <p>Extracts a list of Reference objects representing occurrences of @see tags in the Javadoc comment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>dcTree</code> - The DocCommentTree to process.</p>
 <p><strong>Returns:</strong></p>
 <p>A list of Reference objects extracted from @see tags.</p>
 <hr />
 <h3 id="getsince">getSince</h3>
-<p>static <a href="../../model/Text/">Text</a> getSince(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
+<p>public static <a href="../../model/Text/">Text</a> getSince(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dcTree)</p>
 <p>Extracts the @since tag content from a DocCommentTree, if present.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>dcTree</code> - The DocCommentTree containing tags.</p>
 <p><strong>Returns:</strong></p>
 <p>A Text object representing @since content or an empty Text if none present.</p>
 <hr />
 <h3 id="geturl">getUrl</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getUrl(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> html)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getUrl(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> html)</p>
 <p>Extracts a URL string from html-like text, e.g., from an href attribute inside double-quotes.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>html</code> - The input HTML-like string.</p>
 <p><strong>Returns:</strong></p>
 <p>The extracted URL inside quotes or null if none found.</p>
 <hr />
 <h3 id="setmodifiers">setModifiers</h3>
-<p>static void setModifiers(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Modifier.html">Modifier</a>&gt; modifiers)</p>
+<p>public static void setModifiers(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Modifier.html">Modifier</a>&gt; modifiers)</p>
 <p>Adds modifiers to a model Node based on the set of language model modifiers.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - The Node to add modifiers to.</p>
-<p><code>modifiers</code> - The set of Modifier enums from language model.</p>
+<hr />
+<h3 id="setappliedannotations">setAppliedAnnotations</h3>
+<p>public static void setAppliedAnnotations(<a href="../../model/TypeNode/">TypeNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> elem)</p>
+<p>Adds applied annotations to a TypeNode.</p>
+<hr />
+<h3 id="setappliedannotation">setAppliedAnnotation</h3>
+<p>public static void setAppliedAnnotation(<a href="../../model/TypeNode/">TypeNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html">AnnotationMirror</a> annotationMirror)</p>
+<p>Adds an applied annotation to a TypeNode.</p>
+<hr />
+<h3 id="markcustomannotations">markCustomAnnotations</h3>
+<p>public static void markCustomAnnotations()</p>
+<p>Iterates over all annotations in the API, identifying ones that are custom and
+those that have the <code>@Documented</code> meta-annotation and marking them as such.</p>
 <hr />
 <h3 id="setthrowntypes">setThrownTypes</h3>
-<p>static void setThrownTypes(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a>&gt; thrownTypes)</p>
+<p>public static void setThrownTypes(<a href="../../model/MethodNode/">MethodNode</a> methodNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html">TypeMirror</a>&gt; thrownTypes)</p>
 <p>Adds list of thrown types (exceptions) to a MethodNode based on Java model type mirrors.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>methodNode</code> - The MethodNode to add thrown types to.</p>
-<p><code>thrownTypes</code> - The list of TypeMirror representing thrown exceptions.</p>
 <hr />
 <h3 id="setdeprecationstatus">setDeprecationStatus</h3>
-<p>static void setDeprecationStatus(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dct)</p>
+<p>public static void setDeprecationStatus(<a href="../../model/Node/">Node</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.compiler/com/sun/source/doctree/DocCommentTree.html">DocCommentTree</a> dct)</p>
 <p>Sets the deprecation status of a Node based on element annotations and Javadoc @deprecated tag.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>node</code> - The Node to update.</p>
-<p><code>e</code> - The language model element corresponding to the node.</p>
-<p><code>dct</code> - The DocCommentTree containing javadoc comments.</p>
 <hr />
 <h3 id="isincludedinapi">isIncludedInApi</h3>
-<p>static boolean isIncludedInApi(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
+<p>public static boolean isIncludedInApi(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
 <p>Returns true if the element should be included in the public API documentation based on its modifiers and configuration.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>e</code> - The language model element to test.</p>
 <p><strong>Returns:</strong></p>
 <p>true if element is public or protected or private member documentation is configured; false otherwise.</p>
 <hr />
 <h3 id="setmethodparams">setMethodParams</h3>
-<p>static void setMethodParams(<a href="../../model/MethodNode/">MethodNode</a> methodDoc, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee)</p>
+<p>public static void setMethodParams(<a href="../../model/MethodNode/">MethodNode</a> methodDoc, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee)</p>
 <p>Sets the parameters on a MethodNode by inspecting the ExecutableElement and its doc comment tags.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>methodDoc</code> - The MethodNode to update.</p>
-<p><code>ee</code> - The ExecutableElement representing the method or constructor.</p>
 <hr />
 <h3 id="setimplementations">setImplementations</h3>
-<p>static void setImplementations(<a href="../../model/DirectiveNode/">DirectiveNode</a> directiveNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a>&gt; implementations)</p>
+<p>public static void setImplementations(<a href="../../model/DirectiveNode/">DirectiveNode</a> directiveNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a>&gt; implementations)</p>
 <p>Adds implementation type names to a DirectiveNode.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directiveNode</code> - The DirectiveNode to update.</p>
-<p><code>implementations</code> - List of TypeElements representing implementations.</p>
 <hr />
 <h3 id="getfieldtype">getFieldType</h3>
-<p>static <a href="../../model/TypeNode/">TypeNode</a> getFieldType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
+<p>public static <a href="../../model/TypeNode/">TypeNode</a> getFieldType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
 <p>Gets the field type as a TypeNode for the specified class name and field name.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>className</code> - Fully qualified class name containing the field.</p>
-<p><code>fieldName</code> - The field name.</p>
 <p><strong>Returns:</strong></p>
 <p>A TypeNode representing the field's type, or null if not found.</p>
 <hr />
 <h3 id="getparamtype">getParamType</h3>
-<p>static <a href="../../model/TypeNode/">TypeNode</a> getParamType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
+<p>public static <a href="../../model/TypeNode/">TypeNode</a> getParamType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> method, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
 <p>Gets the parameter type as a TypeNode for the specified parameter name in the method.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>method</code> - The ExecutableElement representing the method.</p>
-<p><code>fieldName</code> - The parameter name.</p>
 <p><strong>Returns:</strong></p>
 <p>A TypeNode for the parameter's type, or null if not found.</p>
 <hr />
 <h3 id="getpackagename">getPackageName</h3>
 <p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedTypeName)</p>
 <p>Extracts the package name from a fully qualified type name.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>qualifiedTypeName</code> - The fully qualified type name.</p>
 <p><strong>Returns:</strong></p>
 <p>The package name portion or null if input null.</p>
 <hr />
 <h3 id="getenclosingpackageelement">getEnclosingPackageElement</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> getEnclosingPackageElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> getEnclosingPackageElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</p>
 <p>Recursively finds the enclosing PackageElement of a given element.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>element</code> - The language model element.</p>
 <p><strong>Returns:</strong></p>
 <p>The nearest enclosing PackageElement or null if none found.</p>
 <hr />
 <h3 id="getenclosingtypeelement">getEnclosingTypeElement</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> getEnclosingTypeElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> getEnclosingTypeElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> element)</p>
 <p>Recursively finds the enclosing TypeElement (class, interface, enum, annotation) for the given element.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>element</code> - The language model element such as a field or method.</p>
 <p><strong>Returns:</strong></p>
 <p>The enclosing TypeElement or null if none found.</p>
 <hr />

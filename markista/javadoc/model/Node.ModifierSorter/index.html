@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2137,6 +2187,7 @@
 Enclosing Class:<br/>
     <a href="../Node/">Node</a></p>
 <hr />
+<p><span style="font-family: monospace;">public static Class <strong>Node.ModifierSorter</strong></span></p>
 <p>Utility class to sort modifiers according to Java language conventions.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2181,7 +2232,7 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#sortmodifiers">sortModifiers</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; modifierSet)</td>
 <td>Sort the given set of modifiers into the standard order.</td>
 </tr>
@@ -2193,10 +2244,8 @@ Enclosing Class:<br/>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="sortmodifiers">sortModifiers</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt; sortModifiers(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; modifierSet)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Modifier/">Modifier</a>&gt; sortModifiers(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; modifierSet)</p>
 <p>Sort the given set of modifiers into the standard order.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>modifierSet</code> - The set of modifiers to sort.</p>
 <p><strong>Returns:</strong></p>
 <p>List of modifiers sorted in the defined order.</p>
 <hr />

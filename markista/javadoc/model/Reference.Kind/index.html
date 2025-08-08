@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1368,18 +1418,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#none" class="md-nav__link">
+  <a href="#unknown" class="md-nav__link">
     <span class="md-ellipsis">
-      NONE
+      UNKNOWN
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#unknown" class="md-nav__link">
+  <a href="#unsupported" class="md-nav__link">
     <span class="md-ellipsis">
-      UNKNOWN
+      UNSUPPORTED
     </span>
   </a>
   
@@ -2166,18 +2216,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#none" class="md-nav__link">
+  <a href="#unknown" class="md-nav__link">
     <span class="md-ellipsis">
-      NONE
+      UNKNOWN
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#unknown" class="md-nav__link">
+  <a href="#unsupported" class="md-nav__link">
     <span class="md-ellipsis">
-      UNKNOWN
+      UNSUPPORTED
     </span>
   </a>
   
@@ -2312,12 +2362,13 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="enum-referencekind">Enum Reference.Kind</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">io.github.sandydunlop.markista.model.Reference.Kind</a>&gt;<br/>
+        <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">Reference.Kind</a>&gt;<br/>
                 io.github.sandydunlop.markista.model.Reference.Kind<br/>
 <br/>
 Enclosing Class:<br/>
     <a href="../Reference/">Reference</a></p>
 <hr />
+<p><span style="font-family: monospace;">public static final Enum <strong>Reference.Kind</strong></span></p>
 <p>Enum representing different kinds/types of references.</p>
 <h2 id="enum-constants">Enum Constants</h2>
 <table>
@@ -2329,11 +2380,11 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td><a href="#none">NONE</a></td>
+<td><a href="#unknown">UNKNOWN</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="#unknown">UNKNOWN</a></td>
+<td><a href="#unsupported">UNSUPPORTED</a></td>
 <td></td>
 </tr>
 <tr>
@@ -2396,23 +2447,23 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>static <a href="./">Reference.Kind</a></td>
+<td>public static <a href="./">Reference.Kind</a></td>
 <td><a href="#values">values</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td>static <a href="./">Reference.Kind</a></td>
+<td>public static <a href="./">Reference.Kind</a></td>
 <td><a href="#valueof">valueOf</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="enum-constant-details">Enum Constant Details</h2>
-<h3 id="none">NONE</h3>
-<p>public static final <a href="./">Reference.Kind</a> NONE</p>
-<hr />
 <h3 id="unknown">UNKNOWN</h3>
 <p>public static final <a href="./">Reference.Kind</a> UNKNOWN</p>
+<hr />
+<h3 id="unsupported">UNSUPPORTED</h3>
+<p>public static final <a href="./">Reference.Kind</a> UNSUPPORTED</p>
 <hr />
 <h3 id="url">URL</h3>
 <p>public static final <a href="./">Reference.Kind</a> URL</p>
@@ -2440,10 +2491,10 @@ Enclosing Class:<br/>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="values">values</h3>
-<p>static <a href="./">Reference.Kind</a> values()</p>
+<p>public static <a href="./">Reference.Kind</a> values()</p>
 <hr />
 <h3 id="valueof">valueOf</h3>
-<p>static <a href="./">Reference.Kind</a> valueOf(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>public static <a href="./">Reference.Kind</a> valueOf(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
 <hr />
 
 

@@ -720,15 +720,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#title_api" class="md-nav__link">
-    <span class="md-ellipsis">
-      TITLE_API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#title_constant_field" class="md-nav__link">
     <span class="md-ellipsis">
       TITLE_CONSTANT_FIELD
@@ -1116,6 +1107,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1186,12 +1181,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1232,12 +1250,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1324,12 +1365,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1370,12 +1411,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2301,15 +2342,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#title_api" class="md-nav__link">
-    <span class="md-ellipsis">
-      TITLE_API
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#title_constant_field" class="md-nav__link">
     <span class="md-ellipsis">
       TITLE_CONSTANT_FIELD
@@ -2585,6 +2617,7 @@
         io.github.sandydunlop.markista.markdown.ModuleWriter<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>ModuleWriter</strong></span></p>
 <p>A class that outputs a module's API documentation as Markdown.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2596,11 +2629,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#title_api">TITLE_API</a></td>
-<td></td>
-</tr>
 <tr>
 <td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#title_constant_field">TITLE_CONSTANT_FIELD</a></td>
@@ -2719,7 +2747,7 @@
 </thead>
 <tbody>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#writedocs">writeDocs</a>(<a href="../../model/Api/">Api</a> api)</td>
 <td>Output the documentation files for the specified API</td>
 </tr>
@@ -2730,7 +2758,7 @@
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputmoduledirectives">outputModuleDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</td>
+<td><a href="#outputmoduledirectives">outputModuleDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives, <a href="../../model/Reference.Kind/">Reference.Kind</a> refKind)</td>
 <td>Outputs the directives declared in a module's <code>module-info.java</code> file.</td>
 </tr>
 <tr>
@@ -2761,10 +2789,6 @@
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
-<h3 id="title_api">TITLE_API</h3>
-<p><strong>See Also:</strong></p>
-<p><a href="../../constant-values/">Constant Field Values</a></p>
-<hr />
 <h3 id="title_constant_field">TITLE_CONSTANT_FIELD</h3>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
@@ -2828,6 +2852,10 @@
 <h3 id="ctx">ctx</h3>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
+<blockquote>
+<p><strong>Warning</strong><br/>
+Do not make this <code>final</code>. It will break tests with mocked <a href="../../util/Context/">Context</a>.</p>
+</blockquote>
 <hr />
 <h3 id="writer">writer</h3>
 <p>The Writer used to output the generated markdown content for the current document.
@@ -2839,38 +2867,28 @@ including modules, packages, types, and members used for cross-referencing and n
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>
-<p>void writeDocs(<a href="../../model/Api/">Api</a> api)</p>
+<p>public void writeDocs(<a href="../../model/Api/">Api</a> api)</p>
 <p>Output the documentation files for the specified API</p>
-<p><strong>Parameters:</strong></p>
-<p><code>api</code> - The API to output the documentation for</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduledoc">outputModuleDoc</h3>
 <p>private void outputModuleDoc(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
 <p>Outputs a single module's documentation as a Markdown file.
-For each module, the documentation for each <a href="../../model/PackageNode/">PackageNode</a> it contains
+For each module, the documentation for each <a href="../../model/PackageNode/">package</a> it contains
 are then written.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>moduleNode</code> - The module to write documentation for</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduledirectives">outputModuleDirectives</h3>
-<p>private void outputModuleDirectives(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</p>
+<p>private void outputModuleDirectives(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives, <a href="../../model/Reference.Kind/">Reference.Kind</a> refKind)</p>
 <p>Outputs the directives declared in a module's <code>module-info.java</code> file.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>title</code> - The title to be used in this section of the markdown page.</p>
-<p><code>kind</code> - The kind of directive being described</p>
-<p><code>directives</code> - The list of directives belonging to the module.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduleprovidesdirectives">outputModuleProvidesDirectives</h3>
 <p>private void outputModuleProvidesDirectives(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</p>
 <p>Outputs the <code>provides</code> directives declared in a module's <code>module-info.java</code> file.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directives</code> - The list of <code>provides</code> directives belonging to the module.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
@@ -2878,8 +2896,6 @@ are then written.</p>
 <p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> multiLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; names)</p>
 <p>Turns each member of a list of strings into a link to the documentation
 for the module, package, or type denoted by that list member.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>names</code> - A list of strings that represent modules, packages, or types.</p>
 <hr />
 <h3 id="formatdirectivepackagedoc">formatDirectivePackageDoc</h3>
 <p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatDirectivePackageDoc(<a href="../../model/DirectiveNode/">DirectiveNode</a> directive)</p>
@@ -2890,8 +2906,6 @@ code are rendered properly.</p>
 <h3 id="outputconstantvalues">outputConstantValues</h3>
 <p>private void outputConstantValues(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
 <p>Output the <em>Constant Field Values</em> page.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>moduleNode</code> - The API tree node representing a module.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />

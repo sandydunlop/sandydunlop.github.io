@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="AnnotationNode/" class="md-nav__link">
+      <a href="AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="ClassNode/" class="md-nav__link">
+      <a href="AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="EnumNode/" class="md-nav__link">
+      <a href="EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="InterfaceNode/" class="md-nav__link">
+      <a href="InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1943,16 +1993,16 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="InterfaceNode/">InterfaceNode</a></td>
-<td>A node representing a Java interface type</td>
-</tr>
-<tr>
 <td><a href="Reference/">Reference</a></td>
 <td><code>Reference</code> encapsulates links to web pages, markdown pages, modules, packages, types, and methods.</td>
 </tr>
 <tr>
-<td><a href="AnnotationNode/">AnnotationNode</a></td>
-<td>A <a href="Node/">Node</a> that represents an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/Annotation.html">Annotation</a> class</td>
+<td><a href="AppliedAnnotationNode/">AppliedAnnotationNode</a></td>
+<td>An annotation applied to a type</td>
+</tr>
+<tr>
+<td><a href="InterfaceTypeNode/">InterfaceTypeNode</a></td>
+<td>A node representing a Java interface type</td>
 </tr>
 <tr>
 <td><a href="OverriddenMethodNode/">OverriddenMethodNode</a></td>
@@ -1967,12 +2017,12 @@
 <td>Represents a directive within a module declaration, such as requires, exports, or provides.</td>
 </tr>
 <tr>
-<td><a href="EnumNode/">EnumNode</a></td>
-<td>Represents an enum type node with its constants.</td>
-</tr>
-<tr>
 <td><a href="FieldNode/">FieldNode</a></td>
 <td>A class to hold information about fields within a class, interface, or enum.</td>
+</tr>
+<tr>
+<td><a href="EnumTypeNode/">EnumTypeNode</a></td>
+<td>Represents an enum type node with its constants.</td>
 </tr>
 <tr>
 <td><a href="PackageNode/">PackageNode</a></td>
@@ -1987,12 +2037,12 @@
 <td>An abstract class with a set of methods useful to other subclasses of <a href="Node/">Node</a> that can be owners of types.</td>
 </tr>
 <tr>
-<td><a href="ParamNode/">ParamNode</a></td>
-<td>A class to hold information about method parameters.</td>
+<td><a href="AnnotationElement/">AnnotationElement</a></td>
+<td>An element of an annotation</td>
 </tr>
 <tr>
-<td><a href="ClassNode/">ClassNode</a></td>
-<td>Represents a JAva class that extends a type node.</td>
+<td><a href="ParamNode/">ParamNode</a></td>
+<td>A class to hold information about method parameters.</td>
 </tr>
 <tr>
 <td><a href="Api/">Api</a></td>
@@ -2001,6 +2051,14 @@
 <tr>
 <td><a href="Node/">Node</a></td>
 <td>The base class for all types of nodes in the API model.</td>
+</tr>
+<tr>
+<td><a href="AnnotationTypeNode/">AnnotationTypeNode</a></td>
+<td>A <a href="Node/">Node</a> that represents an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/Annotation.html">Annotation</a> class</td>
+</tr>
+<tr>
+<td><a href="ClassTypeNode/">ClassTypeNode</a></td>
+<td>Represents a JAva class that extends a type node.</td>
 </tr>
 <tr>
 <td><a href="MethodNode/">MethodNode</a></td>

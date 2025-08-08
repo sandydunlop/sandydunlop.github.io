@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/model/ClassNode/">
+        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/model/AnnotationTypeNode/">
       
       
-        <link rel="prev" href="../Api/">
+        <link rel="prev" href="../AnnotationElement/">
       
       
-        <link rel="next" href="../Deprecation/">
+        <link rel="next" href="../Api/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>ClassNode - Sandy Dunlop</title>
+        <title>AnnotationTypeNode - Sandy Dunlop</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-classnode" class="md-skip">
+        <a href="#class-annotationtypenode" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ClassNode
+              AnnotationTypeNode
             
           </span>
         </div>
@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,35 +848,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Api/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Api
+    AnnotationElement
     
   </span>
   
@@ -904,7 +885,7 @@
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AnnotationTypeNode
     
   </span>
   
@@ -917,7 +898,7 @@
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AnnotationTypeNode
     
   </span>
   
@@ -952,6 +933,75 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Api
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1033,12 +1083,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1079,12 +1129,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1998,17 +2048,16 @@
 
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
-<h1 id="class-classnode">Class ClassNode</h1>
+<h1 id="class-annotationtypenode">Class AnnotationTypeNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
-                        <a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a><br/>
-                                io.github.sandydunlop.markista.model.ClassNode<br/>
+        <a href="../Node/">Node</a><br/>
+                <a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
+                        <a href="../TypeNode/">TypeNode</a><br/>
+                                io.github.sandydunlop.markista.model.AnnotationTypeNode<br/>
 <br/></p>
 <hr />
-<p>Represents a JAva class that extends a type node.
-This class is intended to model a class within a program's structure.
-It inherits properties from TypeNode and specifies its own kind.</p>
+<p><span style="font-family: monospace;">public Class <strong>AnnotationTypeNode</strong></span></p>
+<p>A <a href="../Node/">Node</a> that represents an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/Annotation.html">Annotation</a> class</p>
 <h2 id="constructor-summary">Constructor Summary</h2>
 <table>
 <thead>
@@ -2019,8 +2068,8 @@ It inherits properties from TypeNode and specifies its own kind.</p>
 </thead>
 <tbody>
 <tr>
-<td>ClassNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
-<td>Constructs a new ClassNode.</td>
+<td>AnnotationTypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
+<td>Constructor that sets the minimum required information for an AnnotationTypeNode.</td>
 </tr>
 </tbody>
 </table>

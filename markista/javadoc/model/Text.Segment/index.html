@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2299,6 +2349,7 @@
 Enclosing Class:<br/>
     <a href="../Text/">Text</a></p>
 <hr />
+<p><span style="font-family: monospace;">public static Class <strong>Text.Segment</strong></span></p>
 <p>Represents a segment of the Text with its kind, content, and optional link.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2353,42 +2404,42 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>static <a href="./">Text.Segment</a></td>
+<td>public static <a href="./">Text.Segment</a></td>
 <td><a href="#empty">empty</a>()</td>
 <td>Creates an empty segment instance.</td>
 </tr>
 <tr>
-<td><a href="./">Text.Segment</a></td>
+<td>public <a href="./">Text.Segment</a></td>
 <td><a href="#setkind">setKind</a>(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</td>
 <td>Sets the kind of this segment.</td>
 </tr>
 <tr>
-<td><a href="../Text.SegmentKind/">Text.SegmentKind</a></td>
+<td>public <a href="../Text.SegmentKind/">Text.SegmentKind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
 <td>Returns the kind of this segment.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#tostring">toString</a>()</td>
 <td>Returns the string representation of this segment.</td>
 </tr>
 <tr>
-<td><a href="./">Text.Segment</a></td>
+<td>public <a href="./">Text.Segment</a></td>
 <td><a href="#settext">setText</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</td>
 <td>Sets the text content of this segment.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#gettext">getText</a>()</td>
 <td>Returns the text content of this segment.</td>
 </tr>
 <tr>
-<td><a href="./">Text.Segment</a></td>
+<td>public <a href="./">Text.Segment</a></td>
 <td><a href="#setlink">setLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link)</td>
 <td>Sets the link value of this segment.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getlink">getLink</a>()</td>
 <td>Returns the link associated with this segment.</td>
 </tr>
@@ -2406,56 +2457,50 @@ Enclosing Class:<br/>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="empty">empty</h3>
-<p>static <a href="./">Text.Segment</a> empty()</p>
+<p>public static <a href="./">Text.Segment</a> empty()</p>
 <p>Creates an empty segment instance.</p>
 <p><strong>Returns:</strong></p>
 <p>A new empty Segment object.</p>
 <hr />
 <h3 id="setkind">setKind</h3>
-<p><a href="./">Text.Segment</a> setKind(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</p>
+<p>public <a href="./">Text.Segment</a> setKind(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</p>
 <p>Sets the kind of this segment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>k</code> - The SegmentKind value.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
-<p><a href="../Text.SegmentKind/">Text.SegmentKind</a> getKind()</p>
+<p>public <a href="../Text.SegmentKind/">Text.SegmentKind</a> getKind()</p>
 <p>Returns the kind of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The current SegmentKind.</p>
 <hr />
 <h3 id="tostring">toString</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
 <p>Returns the string representation of this segment.
 If text is null or empty, returns the link value.</p>
 <p><strong>Returns:</strong></p>
 <p>The text or link of this segment.</p>
 <hr />
 <h3 id="settext">setText</h3>
-<p><a href="./">Text.Segment</a> setText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</p>
+<p>public <a href="./">Text.Segment</a> setText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</p>
 <p>Sets the text content of this segment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The text to set.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="gettext">getText</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getText()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getText()</p>
 <p>Returns the text content of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The text string.</p>
 <hr />
 <h3 id="setlink">setLink</h3>
-<p><a href="./">Text.Segment</a> setLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link)</p>
+<p>public <a href="./">Text.Segment</a> setLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link)</p>
 <p>Sets the link value of this segment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>link</code> - The link to set.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getlink">getLink</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getLink()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getLink()</p>
 <p>Returns the link associated with this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The link string.</p>

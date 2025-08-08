@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2159,6 +2209,7 @@
         io.github.sandydunlop.markista.model.TypeOwner<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public abstract Interface <strong>TypeOwner</strong></span></p>
 <p>A TypeOwner is a <a href="../Node/">Node</a> that can be set as the <em>owner</em> of another type.</p>
 <h2 id="method-summary">Method Summary</h2>
 <table>
@@ -2171,37 +2222,37 @@
 </thead>
 <tbody>
 <tr>
-<td>abstract void</td>
+<td>public abstract void</td>
 <td><a href="#addtype">addType</a>(<a href="../TypeNode/">TypeNode</a> typeNode)</td>
 <td>Adds a type node to this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#gettypes">getTypes</a>()</td>
 <td>Returns a list of all type nodes owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getclasses">getClasses</a>()</td>
 <td>Returns a list of classes owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getinterfaces">getInterfaces</a>()</td>
 <td>Returns a list of interfaces owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getenums">getEnums</a>()</td>
 <td>Returns a list of enums owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getannotations">getAnnotations</a>()</td>
 <td>Returns a list of annotations owned by this owner.</td>
 </tr>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
 <td>Returns the simple name of this owner.</td>
 </tr>
@@ -2209,43 +2260,41 @@
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="addtype">addType</h3>
-<p>abstract void addType(<a href="../TypeNode/">TypeNode</a> typeNode)</p>
+<p>public abstract void addType(<a href="../TypeNode/">TypeNode</a> typeNode)</p>
 <p>Adds a type node to this owner.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - the TypeNode to add</p>
 <hr />
 <h3 id="gettypes">getTypes</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getTypes()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getTypes()</p>
 <p>Returns a list of all type nodes owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>list of TypeNode objects</p>
 <hr />
 <h3 id="getclasses">getClasses</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getClasses()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getClasses()</p>
 <p>Returns a list of classes owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>list of PackageMember objects representing classes</p>
 <hr />
 <h3 id="getinterfaces">getInterfaces</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getInterfaces()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getInterfaces()</p>
 <p>Returns a list of interfaces owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>list of PackageMember objects representing interfaces</p>
 <hr />
 <h3 id="getenums">getEnums</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getEnums()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getEnums()</p>
 <p>Returns a list of enums owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>list of PackageMember objects representing enums</p>
 <hr />
 <h3 id="getannotations">getAnnotations</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getAnnotations()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getAnnotations()</p>
 <p>Returns a list of annotations owned by this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>list of PackageMember objects representing annotations</p>
 <hr />
 <h3 id="getname">getName</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
 <p>Returns the simple name of this owner.</p>
 <p><strong>Returns:</strong></p>
 <p>name as a String</p>

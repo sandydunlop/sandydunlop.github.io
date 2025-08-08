@@ -954,6 +954,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1024,12 +1028,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1070,12 +1097,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1162,12 +1212,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1208,12 +1258,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2261,13 +2311,14 @@
         io.github.sandydunlop.markista.doclet.MarkdownDoclet.Option<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">Doclet.Option</a></p>
+    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <p>Enclosing Class:<br/>
     <a href="../MarkdownDoclet/">MarkdownDoclet</a></p>
 <hr />
+<p><span style="font-family: monospace;">public abstract Class <strong>MarkdownDoclet.Option</strong></span></p>
 <p>A base class for declaring options.
 Subtypes for specific options should implement
-the <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html#process(java.lang.String,java.util.List)">Doclet.Option.process(java.lang.String,java.util.List)</a> method
+the <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option#process(java.lang.String,java.util.List).html">process</a> method
 to handle instances of the option found on the
 command line.</p>
 <h2 id="field-summary">Field Summary</h2>
@@ -2328,27 +2379,27 @@ command line.</p>
 </thead>
 <tbody>
 <tr>
-<td>int</td>
+<td>public int</td>
 <td><a href="#getargumentcount">getArgumentCount</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getdescription">getDescription</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.Kind.html">Doclet.Option.Kind</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.Kind.html">Doclet.Option.Kind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getnames">getNames</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getparameters">getParameters</a>()</td>
 <td></td>
 </tr>
@@ -2365,27 +2416,27 @@ command line.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getargumentcount">getArgumentCount</h3>
-<p>int getArgumentCount()</p>
+<p>public int getArgumentCount()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDescription()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDescription()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <hr />
 <h3 id="getkind">getKind</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.Kind.html">Doclet.Option.Kind</a> getKind()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.Kind.html">Doclet.Option.Kind</a> getKind()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <hr />
 <h3 id="getnames">getNames</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getNames()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getNames()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <hr />
 <h3 id="getparameters">getParameters</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getParameters()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getParameters()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.Option.html">jdk.javadoc.doclet.Doclet.Option</a></p>
 <hr />

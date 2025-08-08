@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1242,15 +1292,6 @@
   <a href="#simplename" class="md-nav__link">
     <span class="md-ellipsis">
       simpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#qualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      qualifiedName
     </span>
   </a>
   
@@ -2337,15 +2378,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#qualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      qualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#packagenode" class="md-nav__link">
     <span class="md-ellipsis">
       packageNode
@@ -2621,6 +2653,7 @@
         io.github.sandydunlop.markista.model.Node<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>Node</strong></span></p>
 <p>The base class for all types of nodes in the API model.</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
@@ -2633,7 +2666,7 @@
 </thead>
 <tbody>
 <tr>
-<td>static</td>
+<td>public static</td>
 <td><a href="../Node.ModifierSorter/">Node.ModifierSorter</a></td>
 <td>Utility class to sort modifiers according to Java language conventions.</td>
 </tr>
@@ -2655,17 +2688,12 @@
 <td>The simple form of the node's name</td>
 </tr>
 <tr>
-<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#qualifiedname">qualifiedName</a></td>
-<td>The canonical form of the node's name</td>
-</tr>
-<tr>
 <td>protected <a href="../PackageNode/">PackageNode</a></td>
 <td><a href="#packagenode">packageNode</a></td>
 <td>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#modifiers">modifiers</a></td>
 <td>A list of the modifiers a node has</td>
 </tr>
@@ -2690,12 +2718,12 @@
 <td>The first sentence of the Javadoc for this node</td>
 </tr>
 <tr>
-<td>private <a href="../Text/">Text</a></td>
+<td>private final <a href="../Text/">Text</a></td>
 <td><a href="#body">body</a></td>
 <td>The body text of the Javadoc for this node</td>
 </tr>
 <tr>
-<td>private <a href="../Text/">Text</a></td>
+<td>private final <a href="../Text/">Text</a></td>
 <td><a href="#fullbody">fullBody</a></td>
 <td>The full text of the Javadoc for this node</td>
 </tr>
@@ -2732,98 +2760,95 @@
 </thead>
 <tbody>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#addmodifier">addModifier</a>(<a href="../Modifier/">Modifier</a> mod)</td>
 <td>Adds a modifier to the set of modifiers.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#getmodifiers">getModifiers</a>()</td>
 <td>Returns the set of modifiers for this node.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setdeprecation">setDeprecation</a>(<a href="../Deprecation/">Deprecation</a> deprecation)</td>
 <td>Sets the deprecation status for this node.</td>
 </tr>
 <tr>
-<td><a href="../Deprecation/">Deprecation</a></td>
+<td>public <a href="../Deprecation/">Deprecation</a></td>
 <td><a href="#getdeprecation">getDeprecation</a>()</td>
 <td>Retrieves the deprecation status of this node.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setdeprecationtext">setDeprecationText</a>(<a href="../Text/">Text</a> text)</td>
 <td>Sets the deprecation text.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getdeprecationtext">getDeprecationText</a>()</td>
 <td>Returns the deprecation text.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setsince">setSince</a>(<a href="../Text/">Text</a> text)</td>
 <td>Sets the 'since' documentation text.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getsince">getSince</a>()</td>
 <td>Returns the 'since' documentation text.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setfirstsentence">setFirstSentence</a>(<a href="../Text/">Text</a> text)</td>
 <td>Sets the first sentence of the documentation.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getfirstsentence">getFirstSentence</a>()</td>
 <td>Returns the first sentence of the documentation.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setbody">setBody</a>(<a href="../Text/">Text</a> text)</td>
 <td>Sets the main body documentation text.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getbody">getBody</a>()</td>
 <td>Returns the main body documentation text.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setfullbody">setFullBody</a>(<a href="../Text/">Text</a> text)</td>
 <td>Sets the full body documentation text including tags.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getfullbody">getFullBody</a>()</td>
 <td>Returns the full body documentation text including tags.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setreferences">setReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; refs)</td>
 <td>Sets the list of references for this node.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt;</td>
 <td><a href="#getreferences">getReferences</a>()</td>
 <td>Returns the list of references associated with this node.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getmodifiersstring">getModifiersString</a>()</td>
-<td>Returns a string representation of modifiers, excluding 'public'.</td>
+<td>Returns a string representation of modifiers.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="simplename">simpleName</h3>
 <p>The simple form of the node's name</p>
-<hr />
-<h3 id="qualifiedname">qualifiedName</h3>
-<p>The canonical form of the node's name</p>
 <hr />
 <h3 id="packagenode">packageNode</h3>
 <p>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</p>
@@ -2854,104 +2879,88 @@
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addmodifier">addModifier</h3>
-<p>void addModifier(<a href="../Modifier/">Modifier</a> mod)</p>
+<p>public void addModifier(<a href="../Modifier/">Modifier</a> mod)</p>
 <p>Adds a modifier to the set of modifiers.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>mod</code> - The modifier to add.</p>
 <hr />
 <h3 id="getmodifiers">getModifiers</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; getModifiers()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; getModifiers()</p>
 <p>Returns the set of modifiers for this node.</p>
 <p><strong>Returns:</strong></p>
 <p>Set of modifiers.</p>
 <hr />
 <h3 id="setdeprecation">setDeprecation</h3>
-<p>void setDeprecation(<a href="../Deprecation/">Deprecation</a> deprecation)</p>
+<p>public void setDeprecation(<a href="../Deprecation/">Deprecation</a> deprecation)</p>
 <p>Sets the deprecation status for this node.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>deprecation</code> - The deprecation enum value.</p>
 <hr />
 <h3 id="getdeprecation">getDeprecation</h3>
-<p><a href="../Deprecation/">Deprecation</a> getDeprecation()</p>
+<p>public <a href="../Deprecation/">Deprecation</a> getDeprecation()</p>
 <p>Retrieves the deprecation status of this node.</p>
 <p><strong>Returns:</strong></p>
 <p>The deprecation enum value.</p>
 <hr />
 <h3 id="setdeprecationtext">setDeprecationText</h3>
-<p>void setDeprecationText(<a href="../Text/">Text</a> text)</p>
+<p>public void setDeprecationText(<a href="../Text/">Text</a> text)</p>
 <p>Sets the deprecation text.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The text describing the deprecation.</p>
 <hr />
 <h3 id="getdeprecationtext">getDeprecationText</h3>
-<p><a href="../Text/">Text</a> getDeprecationText()</p>
+<p>public <a href="../Text/">Text</a> getDeprecationText()</p>
 <p>Returns the deprecation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The deprecation descriptive text.</p>
 <hr />
 <h3 id="setsince">setSince</h3>
-<p>void setSince(<a href="../Text/">Text</a> text)</p>
+<p>public void setSince(<a href="../Text/">Text</a> text)</p>
 <p>Sets the 'since' documentation text.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The since text.</p>
 <hr />
 <h3 id="getsince">getSince</h3>
-<p><a href="../Text/">Text</a> getSince()</p>
+<p>public <a href="../Text/">Text</a> getSince()</p>
 <p>Returns the 'since' documentation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The since text.</p>
 <hr />
 <h3 id="setfirstsentence">setFirstSentence</h3>
-<p>void setFirstSentence(<a href="../Text/">Text</a> text)</p>
+<p>public void setFirstSentence(<a href="../Text/">Text</a> text)</p>
 <p>Sets the first sentence of the documentation.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The first sentence text.</p>
 <hr />
 <h3 id="getfirstsentence">getFirstSentence</h3>
-<p><a href="../Text/">Text</a> getFirstSentence()</p>
+<p>public <a href="../Text/">Text</a> getFirstSentence()</p>
 <p>Returns the first sentence of the documentation.</p>
 <p><strong>Returns:</strong></p>
 <p>The first sentence text.</p>
 <hr />
 <h3 id="setbody">setBody</h3>
-<p>void setBody(<a href="../Text/">Text</a> text)</p>
+<p>public void setBody(<a href="../Text/">Text</a> text)</p>
 <p>Sets the main body documentation text.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The body text.</p>
 <hr />
 <h3 id="getbody">getBody</h3>
-<p><a href="../Text/">Text</a> getBody()</p>
+<p>public <a href="../Text/">Text</a> getBody()</p>
 <p>Returns the main body documentation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The body text.</p>
 <hr />
 <h3 id="setfullbody">setFullBody</h3>
-<p>void setFullBody(<a href="../Text/">Text</a> text)</p>
+<p>public void setFullBody(<a href="../Text/">Text</a> text)</p>
 <p>Sets the full body documentation text including tags.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The full body text.</p>
 <hr />
 <h3 id="getfullbody">getFullBody</h3>
-<p><a href="../Text/">Text</a> getFullBody()</p>
+<p>public <a href="../Text/">Text</a> getFullBody()</p>
 <p>Returns the full body documentation text including tags.</p>
 <p><strong>Returns:</strong></p>
 <p>The full body text.</p>
 <hr />
 <h3 id="setreferences">setReferences</h3>
-<p>void setReferences(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; refs)</p>
+<p>public void setReferences(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; refs)</p>
 <p>Sets the list of references for this node.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>refs</code> - List of Reference objects.</p>
 <hr />
 <h3 id="getreferences">getReferences</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; getReferences()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; getReferences()</p>
 <p>Returns the list of references associated with this node.</p>
 <p><strong>Returns:</strong></p>
 <p>List of Reference objects.</p>
 <hr />
 <h3 id="getmodifiersstring">getModifiersString</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModifiersString()</p>
-<p>Returns a string representation of modifiers, excluding 'public'.
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModifiersString()</p>
+<p>Returns a string representation of modifiers.
 The modifiers are sorted according to a predefined order.</p>
 <p><strong>Returns:</strong></p>
 <p>A string containing sorted modifiers separated by spaces.</p>

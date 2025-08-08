@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2432,10 +2482,11 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="enum-modifier">Enum Modifier</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">io.github.sandydunlop.markista.model.Modifier</a>&gt;<br/>
+        <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">Modifier</a>&gt;<br/>
                 io.github.sandydunlop.markista.model.Modifier<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public final Enum <strong>Modifier</strong></span></p>
 <p>Enum representing Java language modifiers with their string 
 representations.</p>
 <h2 id="enum-constants">Enum Constants</h2>
@@ -2540,17 +2591,17 @@ representations.</p>
 </thead>
 <tbody>
 <tr>
-<td>static <a href="./">Modifier</a></td>
+<td>public static <a href="./">Modifier</a></td>
 <td><a href="#values">values</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td>static <a href="./">Modifier</a></td>
+<td>public static <a href="./">Modifier</a></td>
 <td><a href="#valueof">valueOf</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#tostring">toString</a>()</td>
 <td>Returns the string representation of this modifier.</td>
 </tr>
@@ -2599,18 +2650,18 @@ representations.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="values">values</h3>
-<p>static <a href="./">Modifier</a> values()</p>
+<p>public static <a href="./">Modifier</a> values()</p>
 <hr />
 <h3 id="valueof">valueOf</h3>
-<p>static <a href="./">Modifier</a> valueOf(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>public static <a href="./">Modifier</a> valueOf(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
 <hr />
 <h3 id="tostring">toString</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
 <p>Returns the string representation of this modifier.</p>
 <p><strong>Returns:</strong></p>
 <p>The string name of the modifier.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">Enum</a>&lt;<a href="./">Modifier</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">Enum</a>&lt;<a href="./">Modifier</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">Modifier</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">Modifier</a>&gt;</p>
 <hr />
 
 

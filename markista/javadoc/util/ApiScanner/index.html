@@ -772,6 +772,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -842,12 +846,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -888,12 +915,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -980,12 +1030,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1026,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2428,6 +2478,7 @@
                                                 io.github.sandydunlop.markista.util.ApiScanner<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>ApiScanner</strong></span></p>
 <p>A class that scans code and generates an API tree representing code and Javadoc comments.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2440,22 +2491,22 @@
 </thead>
 <tbody>
 <tr>
-<td>private <a href="../Context/">Context</a></td>
+<td>private final <a href="../Context/">Context</a></td>
 <td><a href="#ctx">ctx</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../model/Api/">Api</a></td>
+<td><a href="../../model/Api/">Api</a></td>
 <td><a href="#api">api</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a></td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a></td>
 <td><a href="#environment">environment</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../model/ModuleNode/">ModuleNode</a></td>
+<td>private final <a href="../../model/ModuleNode/">ModuleNode</a></td>
 <td><a href="#unnamedmodule">unnamedModule</a></td>
 <td></td>
 </tr>
@@ -2497,7 +2548,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../../model/Api/">Api</a></td>
+<td>public <a href="../../model/Api/">Api</a></td>
 <td><a href="#scan">scan</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
 <td>The starting point for a scan of the API structure.</td>
 </tr>
@@ -2517,42 +2568,42 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#scan">scan</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visitmodule">visitModule</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html">ModuleElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visitpackage">visitPackage</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visittype">visitType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visitexecutable">visitExecutable</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visitvariable">visitVariable</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> ve, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visittypeparameter">visitTypeParameter</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html">TypeParameterElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a></td>
 <td><a href="#visitrecordcomponent">visitRecordComponent</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html">RecordComponentElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</td>
 <td></td>
 </tr>
@@ -2573,11 +2624,9 @@
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="scan">scan</h3>
-<p><a href="../../model/Api/">Api</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<p>public <a href="../../model/Api/">Api</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
 <p>The starting point for a scan of the API structure. This method sets up
 the environment and begins the scan of the API.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>elements</code> - a list of language model elements</p>
 <p><strong>Returns:</strong></p>
 <p>An <a href="../../model/Api/">Api</a> object representing the entire model of the API that's being documented</p>
 <hr />
@@ -2591,44 +2640,44 @@ the environment and begins the scan of the API.</p>
 <p>private boolean isIncludedElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
 <hr />
 <h3 id="scan_1">scan</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visitmodule">visitModule</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html">ModuleElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html">ModuleElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html">ElementScanner9</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html">ElementScanner9</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html">javax.lang.model.util.ElementScanner9</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html">javax.lang.model.util.ElementScanner9</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visitpackage">visitPackage</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visittype">visitType</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visitexecutable">visitExecutable</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitExecutable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitExecutable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visitvariable">visitVariable</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitVariable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> ve, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitVariable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> ve, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html">ElementScanner7</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html">ElementScanner7</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html">javax.lang.model.util.ElementScanner7</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html">javax.lang.model.util.ElementScanner7</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visittypeparameter">visitTypeParameter</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitTypeParameter(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html">TypeParameterElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitTypeParameter(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html">TypeParameterElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 <h3 id="visitrecordcomponent">visitRecordComponent</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitRecordComponent(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html">RecordComponentElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitRecordComponent(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html">RecordComponentElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt; from <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">javax.lang.model.util.ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">java.lang.Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">java.lang.Integer</a>&gt;</p>
 <hr />
 
 

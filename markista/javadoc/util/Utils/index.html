@@ -772,6 +772,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -842,12 +846,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -888,12 +915,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -980,12 +1030,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1026,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2249,6 +2299,7 @@
         io.github.sandydunlop.markista.util.Utils<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>Utils</strong></span></p>
 <p>A set of utility methods for changing between qualified and unqualified names.</p>
 <h2 id="constructor-summary">Constructor Summary</h2>
 <table>
@@ -2276,17 +2327,17 @@
 </thead>
 <tbody>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#removegenerics">removeGenerics</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</td>
 <td>Removes the generic type and its surrounding &lt;&gt; from a string, if present</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#removeparentheses">removeParentheses</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> expression)</td>
 <td>Removes parentheses and what they contain from an expression</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#simplifynames">simplifyNames</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</td>
 <td>Changes all qualified names in a string into unqualified names.</td>
 </tr>
@@ -2306,27 +2357,27 @@
 <td></td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isvalidsimplenamechar">isValidSimpleNameChar</a>(char c)</td>
 <td>Checks if the given character is valid in an unqualified name.</td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isvalidqualifiednamechar">isValidQualifiedNameChar</a>(char c)</td>
 <td>Checks if the given character is valid in a qualified name.</td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isnullorempty">isNullOrEmpty</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</td>
 <td>Checks if a string is null or empty</td>
 </tr>
 <tr>
-<td>static boolean</td>
+<td>public static boolean</td>
 <td><a href="#isnullorempty">isNullOrEmpty</a>(<a href="../../model/Text/">Text</a> text)</td>
 <td>Checks if a Text object is null or empty</td>
 </tr>
 <tr>
-<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#inoneline">inOneLine</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</td>
 <td>Removes new line characters from a string, replacing them with spaces</td>
 </tr>
@@ -2334,26 +2385,20 @@
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="removegenerics">removeGenerics</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> removeGenerics(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> removeGenerics(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Removes the generic type and its surrounding &lt;&gt; from a string, if present</p>
-<p><strong>Parameters:</strong></p>
-<p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>The string with the generic type and surrounding &lt;&gt; removed</p>
 <hr />
 <h3 id="removeparentheses">removeParentheses</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> removeParentheses(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> expression)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> removeParentheses(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> expression)</p>
 <p>Removes parentheses and what they contain from an expression</p>
-<p><strong>Parameters:</strong></p>
-<p><code>expression</code> - An expression such as <code>classname.method(parameter)</code>.</p>
 <p><strong>Returns:</strong></p>
 <p>The expression with the parentheses removed</p>
 <hr />
 <h3 id="simplifynames">simplifyNames</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplifyNames(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplifyNames(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Changes all qualified names in a string into unqualified names.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>str</code> - A string that may contain one or more qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>The input string, with all qualified names changed to unqualified names.</p>
 <hr />
@@ -2367,42 +2412,32 @@
 <p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> replaceQualifiedWithSimple(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</p>
 <hr />
 <h3 id="isvalidsimplenamechar">isValidSimpleNameChar</h3>
-<p>static boolean isValidSimpleNameChar(char c)</p>
+<p>public static boolean isValidSimpleNameChar(char c)</p>
 <p>Checks if the given character is valid in an unqualified name.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>c</code> - The character to check.</p>
 <p><strong>Returns:</strong></p>
 <p>Whether or not the character is valid in an unqualified name.</p>
 <hr />
 <h3 id="isvalidqualifiednamechar">isValidQualifiedNameChar</h3>
-<p>static boolean isValidQualifiedNameChar(char c)</p>
+<p>public static boolean isValidQualifiedNameChar(char c)</p>
 <p>Checks if the given character is valid in a qualified name.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>c</code> - The character to check.</p>
 <p><strong>Returns:</strong></p>
 <p>Whether or not the character is valid in a qualified name.</p>
 <hr />
 <h3 id="isnullorempty">isNullOrEmpty</h3>
-<p>static boolean isNullOrEmpty(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<p>public static boolean isNullOrEmpty(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Checks if a string is null or empty</p>
-<p><strong>Parameters:</strong></p>
-<p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>True if the string is either null or empty</p>
 <hr />
 <h3 id="isnullorempty_1">isNullOrEmpty</h3>
-<p>static boolean isNullOrEmpty(<a href="../../model/Text/">Text</a> text)</p>
+<p>public static boolean isNullOrEmpty(<a href="../../model/Text/">Text</a> text)</p>
 <p>Checks if a Text object is null or empty</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The Text object</p>
 <p><strong>Returns:</strong></p>
 <p>True if the Text object is either null or empty</p>
 <hr />
 <h3 id="inoneline">inOneLine</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> inOneLine(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> inOneLine(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
 <p>Removes new line characters from a string, replacing them with spaces</p>
-<p><strong>Parameters:</strong></p>
-<p><code>str</code> - The string</p>
 <p><strong>Returns:</strong></p>
 <p>The string, with newlines converted to spaces</p>
 <hr />

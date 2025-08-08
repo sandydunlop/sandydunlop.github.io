@@ -616,6 +616,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#docletargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      docletArgs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javadocargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      javadocArgs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#unused_option_description" class="md-nav__link">
     <span class="md-ellipsis">
       UNUSED_OPTION_DESCRIPTION
@@ -647,6 +665,15 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readjavadocoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      readJavadocOptions
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#main" class="md-nav__link">
@@ -981,6 +1008,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1051,12 +1082,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1097,12 +1151,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1189,12 +1266,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1235,12 +1312,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2202,6 +2279,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#docletargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      docletArgs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javadocargs" class="md-nav__link">
+    <span class="md-ellipsis">
+      javadocArgs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#unused_option_description" class="md-nav__link">
     <span class="md-ellipsis">
       UNUSED_OPTION_DESCRIPTION
@@ -2233,6 +2328,15 @@
   
     <nav class="md-nav" aria-label="Method Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readjavadocoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      readJavadocOptions
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#main" class="md-nav__link">
@@ -2315,8 +2419,9 @@
         io.github.sandydunlop.markista.doclet.MarkdownDoclet<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">Doclet</a></p>
+    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>MarkdownDoclet</strong></span></p>
 <p>A doclet that renders javadoc comments as Markdown</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
@@ -2329,7 +2434,7 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
-<td>abstract</td>
+<td>public abstract</td>
 <td><a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a></td>
 <td>A base class for declaring options.</td>
 </tr>
@@ -2351,7 +2456,7 @@ All Implemented Interfaces:<br/>
 <td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
 <tr>
-<td>static final boolean</td>
+<td>public static final boolean</td>
 <td><a href="#ok">OK</a></td>
 <td>Indicates success</td>
 </tr>
@@ -2359,6 +2464,16 @@ All Implemented Interfaces:<br/>
 <td>private static final boolean</td>
 <td><a href="#failed">FAILED</a></td>
 <td>Indicates failure</td>
+</tr>
+<tr>
+<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[]</td>
+<td><a href="#docletargs">docletArgs</a></td>
+<td></td>
+</tr>
+<tr>
+<td>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td><a href="#javadocargs">javadocArgs</a></td>
+<td></td>
 </tr>
 <tr>
 <td>private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
@@ -2398,32 +2513,37 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
-<td>static void</td>
+<td>public static void</td>
+<td><a href="#readjavadocoptions">readJavadocOptions</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> optionsPath)</td>
+<td>Reads a javadoc.options file containing command line arguments for Javadoc.</td>
+</tr>
+<tr>
+<td>public static void</td>
 <td><a href="#main">main</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] args)</td>
 <td>The starting point of Markista if it is being used without the Javadoc command.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#init">init</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Locale.html">Locale</a> locale, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</td>
 <td>Initializes the doclet.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt;</td>
 <td><a href="#getsupportedoptions">getSupportedOptions</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a></td>
 <td><a href="#getsupportedsourceversion">getSupportedSourceVersion</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td>boolean</td>
+<td>public boolean</td>
 <td><a href="#run">run</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</td>
 <td>The <code>run</code> method is called by the Javadoc tool to begin running the doclet.</td>
 </tr>
@@ -2444,6 +2564,10 @@ including configuration, current module/package/type names, and reporting utilit
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
+<h3 id="docletargs">docletArgs</h3>
+<hr />
+<h3 id="javadocargs">javadocArgs</h3>
+<hr />
 <h3 id="unused_option_description">UNUSED_OPTION_DESCRIPTION</h3>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
@@ -2451,42 +2575,39 @@ including configuration, current module/package/type names, and reporting utilit
 <h3 id="options">options</h3>
 <hr />
 <h2 id="method-details">Method Details</h2>
+<h3 id="readjavadocoptions">readJavadocOptions</h3>
+<p>public static void readJavadocOptions(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> optionsPath)</p>
+<p>Reads a javadoc.options file containing command line arguments for Javadoc.</p>
+<hr />
 <h3 id="main">main</h3>
-<p>static void main(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] args)</p>
+<p>public static void main(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] args)</p>
 <p>The starting point of Markista if it is being used
 without the Javadoc command. This is useful for debugging.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>args</code> - this parameter is ignored.</p>
 <hr />
 <h3 id="init">init</h3>
-<p>void init(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Locale.html">Locale</a> locale, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</p>
+<p>public void init(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Locale.html">Locale</a> locale, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</p>
 <p>Initializes the doclet.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>locale</code> - The locale used for messages</p>
-<p><code>reporter</code> - The reporter used for messages</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
 <h3 id="getname">getName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
 <h3 id="getsupportedoptions">getSupportedOptions</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt; getSupportedOptions()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt; getSupportedOptions()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
 <h3 id="getsupportedsourceversion">getSupportedSourceVersion</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a> getSupportedSourceVersion()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a> getSupportedSourceVersion()</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
 <h3 id="run">run</h3>
-<p>boolean run(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</p>
+<p>public boolean run(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</p>
 <p>The <code>run</code> method is called by the Javadoc tool to begin running the doclet.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>environment</code> - Represents the operating environment of a single invocation of the doclet.</p>
 <p><strong>Returns:</strong></p>
 <p>true if completed without errors, false if errors occurred.</p>
 <p><strong>Specified By:</strong></p>

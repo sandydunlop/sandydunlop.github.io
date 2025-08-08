@@ -889,6 +889,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#outputdeclaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputDeclaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createannotationstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      createAnnotationString
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#outputnestedclasssummary" class="md-nav__link">
     <span class="md-ellipsis">
       outputNestedClassSummary
@@ -1080,6 +1098,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1150,12 +1172,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1196,12 +1241,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1288,12 +1356,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1334,12 +1402,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2388,6 +2456,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#outputdeclaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputDeclaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#createannotationstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      createAnnotationString
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#outputnestedclasssummary" class="md-nav__link">
     <span class="md-ellipsis">
       outputNestedClassSummary
@@ -2513,6 +2599,7 @@
         io.github.sandydunlop.markista.markdown.TypeWriter<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>TypeWriter</strong></span></p>
 <p>A class that outputs API type documentation as Markdown.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2587,7 +2674,7 @@
 </thead>
 <tbody>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#writedoc">writeDoc</a>(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</td>
 <td>Tells the <a href="../../util/LinkResolver/">LinkResolver</a> what class is about to be documented then  calls the appropriate method do begin the documentation process.</td>
 </tr>
@@ -2613,12 +2700,22 @@
 </tr>
 <tr>
 <td>private void</td>
+<td><a href="#outputdeclaration">outputDeclaration</a>(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</td>
+<td>Outputs the type declaration</td>
+</tr>
+<tr>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#createannotationstring">createAnnotationString</a>(<a href="../../model/AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</td>
+<td>Creates a string of the elements within an annotation</td>
+</tr>
+<tr>
+<td>private void</td>
 <td><a href="#outputnestedclasssummary">outputNestedClassSummary</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageMember/">PackageMember</a>&gt; nestedClasses)</td>
 <td>Outputs a summary of nested classes within this one as Markdown</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputenumconstantssummary">outputEnumConstantsSummary</a>(<a href="../../model/EnumNode/">EnumNode</a> enumNode)</td>
+<td><a href="#outputenumconstantssummary">outputEnumConstantsSummary</a>(<a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode)</td>
 <td>Outputs as summary of an enum's constants as Markdown</td>
 </tr>
 <tr>
@@ -2638,7 +2735,7 @@
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputenumconstantdetails">outputEnumConstantDetails</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; constants, <a href="../../model/EnumNode/">EnumNode</a> enumNode)</td>
+<td><a href="#outputenumconstantdetails">outputEnumConstantDetails</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; constants, <a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode)</td>
 <td>Outputs enum constant details as Markdown</td>
 </tr>
 <tr>
@@ -2690,6 +2787,10 @@
 <h3 id="ctx">ctx</h3>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
+<blockquote>
+<p><strong>Warning</strong><br/>
+Do not make this <code>final</code>. It will break tests with mocked <a href="../../util/Context/">Context</a>.</p>
+</blockquote>
 <hr />
 <h3 id="writer">writer</h3>
 <p>The Writer used to output the generated markdown content for the current document.
@@ -2697,36 +2798,27 @@ It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedoc">writeDoc</h3>
-<p>void writeDoc(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p>public void writeDoc(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
 <p>Tells the <a href="../../util/LinkResolver/">LinkResolver</a> what class is about to be documented then 
 calls the appropriate method do begin the documentation process.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - The type to be documented</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputtypedoc">outputTypeDoc</h3>
 <p>private void outputTypeDoc(<a href="../../model/TypeNode/">TypeNode</a> typeNode, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> typeKind)</p>
 <p>Writes a Markdown file for the Javadoc of a type</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - the type</p>
-<p><code>typeKind</code> - The name of the kind of the type eg. "Class", or "Enum"</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputsupertypes">outputSupertypes</h3>
 <p>private void outputSupertypes(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
 <p>Outputs the hierarchy of supertypes of a class</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - the class</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputimplementedinterfaces">outputImplementedInterfaces</h3>
 <p>private void outputImplementedInterfaces(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
 <p>Outputs details of any interfaces that this class implements</p>
-<p><strong>Parameters:</strong></p>
-<p><code>typeNode</code> - a TypeNode representing a class, interface, enum, or annotation</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
@@ -2736,66 +2828,64 @@ calls the appropriate method do begin the documentation process.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
+<h3 id="outputdeclaration">outputDeclaration</h3>
+<p>private void outputDeclaration(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p>Outputs the type declaration</p>
+<p><strong>Throws:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
+<hr />
+<h3 id="createannotationstring">createAnnotationString</h3>
+<p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> createAnnotationString(<a href="../../model/AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</p>
+<p>Creates a string of the elements within an annotation</p>
+<p><strong>Returns:</strong></p>
+<p>The string</p>
+<hr />
 <h3 id="outputnestedclasssummary">outputNestedClassSummary</h3>
 <p>private void outputNestedClassSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageMember/">PackageMember</a>&gt; nestedClasses)</p>
 <p>Outputs a summary of nested classes within this one as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>nestedClasses</code> - a list of the nested classes</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputenumconstantssummary">outputEnumConstantsSummary</h3>
-<p>private void outputEnumConstantsSummary(<a href="../../model/EnumNode/">EnumNode</a> enumNode)</p>
+<p>private void outputEnumConstantsSummary(<a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode)</p>
 <p>Outputs as summary of an enum's constants as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>enumNode</code> - the enum</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputfieldsummary">outputFieldSummary</h3>
 <p>private void outputFieldSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; fields)</p>
 <p>Outputs a summary of this class's fields as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>fields</code> - A list of fields belonging to this class</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputconstructorsummary">outputConstructorSummary</h3>
 <p>private void outputConstructorSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/MethodNode/">MethodNode</a>&gt; methods)</p>
 <p>Outputs a the summary of this class's constructors as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>methods</code> - A list of the constructor methods</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmethodsummary">outputMethodSummary</h3>
 <p>private void outputMethodSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/MethodNode/">MethodNode</a>&gt; methods)</p>
 <p>Writes the markdown for a class's method summary table</p>
-<p><strong>Parameters:</strong></p>
-<p><code>methods</code> - The list of methods to include in the summary table</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputenumconstantdetails">outputEnumConstantDetails</h3>
-<p>private void outputEnumConstantDetails(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; constants, <a href="../../model/EnumNode/">EnumNode</a> enumNode)</p>
+<p>private void outputEnumConstantDetails(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; constants, <a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode)</p>
 <p>Outputs enum constant details as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>constants</code> - a list of enum constants</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputdetails">outputDetails</h3>
 <p>private void outputDetails(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Node/">Node</a>&gt; nodes)</p>
 <p>Writes the markdown for a class's method or field details.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>nodes</code> - The list of methods to write the details of</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <p><strong>Since:</strong></p>
 <p>0.1.0</p>
 <p><strong>See Also:</strong></p>
 <p><a href="http://example.com">http://example.com</a></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">java.util.List</a></p>
 <hr />
 <h3 id="outputreferences">outputReferences</h3>
 <p>private void outputReferences(<a href="../../model/Node/">Node</a> node)</p>
@@ -2806,8 +2896,6 @@ calls the appropriate method do begin the documentation process.</p>
 <h3 id="outputmethoddetails">outputMethodDetails</h3>
 <p>private void outputMethodDetails(<a href="../../model/MethodNode/">MethodNode</a> method)</p>
 <p>Outputs the Javadoc of a method as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>method</code> - the method</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
@@ -2820,8 +2908,6 @@ calls the appropriate method do begin the documentation process.</p>
 <h3 id="outputdeprecation">outputDeprecation</h3>
 <p>private void outputDeprecation(<a href="../../model/Deprecation/">Deprecation</a> status, <a href="../../model/Text/">Text</a> text)</p>
 <p>Outputs the deprecation status of this type as Markdown</p>
-<p><strong>Parameters:</strong></p>
-<p><code>status</code> - The deprecation status</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />

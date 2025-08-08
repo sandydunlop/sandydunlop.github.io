@@ -772,6 +772,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -842,12 +846,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -888,12 +915,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -980,12 +1030,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1026,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2459,8 +2509,9 @@
         io.github.sandydunlop.markista.util.MarkdownParser<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>MarkdownParser</strong></span></p>
 <p>Parses a Markdown string into a sequence of segments representing text and special markup such as brackets and parentheses.</p>
-<p>This parser is designed to tokenize the Markdown content by identifying textual parts and segments enclosed in brackets  and parentheses ().
+<p>This parser is designed to tokenize the Markdown content by identifying textual parts and segments enclosed in brackets <code>[]</code> and parentheses <code>()</code>.
 It also handles inline code spans denoted by backticks (`) to avoid parsing markup inside code.</p>
 <p>The parsed segments can be iterated in sequence starting from the firstSegment() method.
 Each segment carries its type (kind) which specifies how it should be interpreted or rendered.</p>
@@ -2478,7 +2529,7 @@ and END indicating the end of the sequence.</p>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>public</td>
 <td><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a></td>
 <td>Represents a segment of the parsed Markdown input.</td>
 </tr>
@@ -2530,7 +2581,7 @@ and END indicating the end of the sequence.</p>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a>&gt;</td>
 <td><a href="#segments">segments</a></td>
 <td></td>
 </tr>
@@ -2579,12 +2630,12 @@ and END indicating the end of the sequence.</p>
 <tr>
 <td>private boolean</td>
 <td><a href="#handleopenparenthesis">handleOpenParenthesis</a>(char prevChar)</td>
-<td>Handles an open parenthesis '(' encountered immediately after closing bracket '.</td>
+<td>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#handleclosebracket">handleCloseBracket</a>()</td>
-<td>Handles the close bracket ' encountered in the markdown.</td>
+<td>Handles the close bracket '' encountered in the markdown.</td>
 </tr>
 <tr>
 <td>private boolean</td>
@@ -2612,7 +2663,7 @@ and END indicating the end of the sequence.</p>
 <td>Adds the specified segment to the list and links it to the previously saved segment.</td>
 </tr>
 <tr>
-<td><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a></td>
+<td>public <a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a></td>
 <td><a href="#firstsegment">firstSegment</a>()</td>
 <td>Returns the first Segment in the parsed sequence.</td>
 </tr>
@@ -2650,23 +2701,19 @@ Saves any preceding text segment before marking the position of the open bracket
 <hr />
 <h3 id="handleopenparenthesis">handleOpenParenthesis</h3>
 <p>private boolean handleOpenParenthesis(char prevChar)</p>
-<p>Handles an open parenthesis '(' encountered immediately after closing bracket '.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>prevChar</code> - The previous character before '(' to determine if parentheses follow brackets.</p>
+<p>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</p>
 <p><strong>Returns:</strong></p>
 <p>true if parentheses follow brackets, false otherwise.</p>
 <hr />
 <h3 id="handleclosebracket">handleCloseBracket</h3>
 <p>private void handleCloseBracket()</p>
-<p>Handles the close bracket ' encountered in the markdown.
+<p>Handles the close bracket '' encountered in the markdown.
 Records the position and saves a bracket-tag segment.</p>
 <hr />
 <h3 id="handlecloseparenthesis">handleCloseParenthesis</h3>
 <p>private boolean handleCloseParenthesis(boolean parensFollowBrackets)</p>
 <p>Handles the close parenthesis ')' encountered.
 If parentheses follow brackets, saves a parentheses-tag segment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>parensFollowBrackets</code> - True if parentheses are following brackets (indicating a link).</p>
 <p><strong>Returns:</strong></p>
 <p>Always returns false to reset parsing state for parentheses.</p>
 <hr />
@@ -2686,11 +2733,9 @@ Does nothing if no text is available in that range.</p>
 <h3 id="savesegment">saveSegment</h3>
 <p>private void saveSegment(<a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> segment)</p>
 <p>Adds the specified segment to the list and links it to the previously saved segment.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>segment</code> - The Segment to save and link.</p>
 <hr />
 <h3 id="firstsegment">firstSegment</h3>
-<p><a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> firstSegment()</p>
+<p>public <a href="../MarkdownParser.Segment/">MarkdownParser.Segment</a> firstSegment()</p>
 <p>Returns the first Segment in the parsed sequence.
 If no segments exist, returns an END kind Segment.</p>
 <p><strong>Returns:</strong></p>

@@ -936,6 +936,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1006,12 +1010,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -1052,12 +1079,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1144,12 +1194,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1190,12 +1240,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2225,6 +2275,7 @@
         io.github.sandydunlop.markista.markdown.MarkdownTable<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>MarkdownTable</strong></span></p>
 <p>A utility class for creating tables in Markdown documents.</p>
 <p>This class allows adding columns with headings and rows with data.
 It automatically calculates column widths to align the table content.</p>
@@ -2240,7 +2291,7 @@ It automatically calculates column widths to align the table content.</p>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>public</td>
 <td><a href="../MarkdownTable.Column/">MarkdownTable.Column</a></td>
 <td>A class to represent the name and width of a column within a table.</td>
 </tr>
@@ -2294,22 +2345,22 @@ It automatically calculates column widths to align the table content.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="./">MarkdownTable</a></td>
+<td>public <a href="./">MarkdownTable</a></td>
 <td><a href="#addcolumn">addColumn</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> heading)</td>
 <td>Adds a column with the specified heading to the table.</td>
 </tr>
 <tr>
-<td><a href="./">MarkdownTable</a></td>
+<td>public <a href="./">MarkdownTable</a></td>
 <td><a href="#addrow">addRow</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] valueStrings)</td>
 <td>Adds a row of data to the table.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#render">render</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer)</td>
 <td>Renders the table as Markdown text without any indentation.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#render">render</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer, int indent)</td>
 <td>Renders the table as Markdown text with a given indentation level (number of spaces).</td>
 </tr>
@@ -2322,36 +2373,27 @@ It automatically calculates column widths to align the table content.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addcolumn">addColumn</h3>
-<p><a href="./">MarkdownTable</a> addColumn(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> heading)</p>
+<p>public <a href="./">MarkdownTable</a> addColumn(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> heading)</p>
 <p>Adds a column with the specified heading to the table.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>heading</code> - String to be used as the column heading.</p>
 <p><strong>Returns:</strong></p>
 <p>The table (this) to allow method chaining.</p>
 <hr />
 <h3 id="addrow">addRow</h3>
-<p><a href="./">MarkdownTable</a> addRow(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] valueStrings)</p>
+<p>public <a href="./">MarkdownTable</a> addRow(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] valueStrings)</p>
 <p>Adds a row of data to the table.
 The number of values should match or be less than the number of columns.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>valueStrings</code> - One or more strings representing the data for this row.</p>
 <p><strong>Returns:</strong></p>
 <p>The table (this) to allow method chaining.</p>
 <hr />
 <h3 id="render">render</h3>
-<p>void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer)</p>
+<p>public void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer)</p>
 <p>Renders the table as Markdown text without any indentation.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>writer</code> - The Writer to output Markdown text to.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="render_1">render</h3>
-<p>void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer, int indent)</p>
+<p>public void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer, int indent)</p>
 <p>Renders the table as Markdown text with a given indentation level (number of spaces).</p>
-<p><strong>Parameters:</strong></p>
-<p><code>writer</code> - The Writer to output Markdown text to.</p>
-<p><code>indent</code> - The number of spaces to indent each line.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />

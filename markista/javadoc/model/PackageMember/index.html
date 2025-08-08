@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2069,6 +2119,7 @@
         io.github.sandydunlop.markista.model.PackageMember<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public abstract Interface <strong>PackageMember</strong></span></p>
 <p>Represents a member belonging to a package, such as a class, interface, or sub-package.</p>
 <h2 id="method-summary">Method Summary</h2>
 <table>
@@ -2081,12 +2132,12 @@
 </thead>
 <tbody>
 <tr>
-<td>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
 <td>Returns the simple name of this package member.</td>
 </tr>
 <tr>
-<td>abstract <a href="../Text/">Text</a></td>
+<td>public abstract <a href="../Text/">Text</a></td>
 <td><a href="#getdescription">getDescription</a>()</td>
 <td>Returns the description of this package member as a Text object.</td>
 </tr>
@@ -2094,13 +2145,13 @@
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="getname">getName</h3>
-<p>abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
 <p>Returns the simple name of this package member.</p>
 <p><strong>Returns:</strong></p>
 <p>The name as a String.</p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
-<p>abstract <a href="../Text/">Text</a> getDescription()</p>
+<p>public abstract <a href="../Text/">Text</a> getDescription()</p>
 <p>Returns the description of this package member as a Text object.</p>
 <p><strong>Returns:</strong></p>
 <p>The description text.</p>

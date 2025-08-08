@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1399,24 +1449,6 @@
   <a href="#getsimplename" class="md-nav__link">
     <span class="md-ellipsis">
       getSimpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      setQualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      getQualifiedName
     </span>
   </a>
   
@@ -2180,24 +2212,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#setqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      setQualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      getQualifiedName
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2222,10 +2236,11 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-paramnode">Class ParamNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+        <a href="../Node/">Node</a><br/>
                 io.github.sandydunlop.markista.model.ParamNode<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>ParamNode</strong></span></p>
 <p>A class to hold information about method parameters.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2240,7 +2255,7 @@
 <tr>
 <td>private <a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#type">type</a></td>
-<td></td>
+<td>The type of this parameter</td>
 </tr>
 </tbody>
 </table>
@@ -2270,76 +2285,51 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../TypeNode/">TypeNode</a></td>
+<td>public <a href="../TypeNode/">TypeNode</a></td>
 <td><a href="#gettype">getType</a>()</td>
 <td>Returns the type of this parameter.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#settype">setType</a>(<a href="../TypeNode/">TypeNode</a> type)</td>
 <td>Sets the type of this parameter.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setsimplename">setSimpleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td>Sets the simple name of this parameter.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getsimplename">getSimpleName</a>()</td>
 <td>Returns the simple name of this parameter.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><a href="#setqualifiedname">setQualifiedName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td>Sets the qualified name of this parameter.</td>
-</tr>
-<tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#getqualifiedname">getQualifiedName</a>()</td>
-<td>Returns the qualified name of this parameter.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="type">type</h3>
+<p>The type of this parameter</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="gettype">getType</h3>
-<p><a href="../TypeNode/">TypeNode</a> getType()</p>
+<p>public <a href="../TypeNode/">TypeNode</a> getType()</p>
 <p>Returns the type of this parameter.</p>
 <p><strong>Returns:</strong></p>
 <p>The TypeNode representing the parameter's type.</p>
 <hr />
 <h3 id="settype">setType</h3>
-<p>void setType(<a href="../TypeNode/">TypeNode</a> type)</p>
+<p>public void setType(<a href="../TypeNode/">TypeNode</a> type)</p>
 <p>Sets the type of this parameter.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>type</code> - The TypeNode to set as this parameter's type.</p>
 <hr />
 <h3 id="setsimplename">setSimpleName</h3>
-<p>void setSimpleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p>public void setSimpleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
 <p>Sets the simple name of this parameter.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>name</code> - The simple name to set.</p>
 <hr />
 <h3 id="getsimplename">getSimpleName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSimpleName()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSimpleName()</p>
 <p>Returns the simple name of this parameter.</p>
 <p><strong>Returns:</strong></p>
 <p>The simple name.</p>
-<hr />
-<h3 id="setqualifiedname">setQualifiedName</h3>
-<p>void setQualifiedName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
-<p>Sets the qualified name of this parameter.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>name</code> - The qualified name to set.</p>
-<hr />
-<h3 id="getqualifiedname">getQualifiedName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getQualifiedName()</p>
-<p>Returns the qualified name of this parameter.</p>
-<p><strong>Returns:</strong></p>
-<p>The qualified name.</p>
 <hr />
 
 

@@ -772,6 +772,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -842,12 +846,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../../model/AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -888,12 +915,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -980,12 +1030,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../../model/EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1026,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2243,6 +2293,7 @@
         io.github.sandydunlop.markista.util.ModuleDirectives<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>ModuleDirectives</strong></span></p>
 <p>A utility class for creating <a href="../../model/DirectiveNode/">DirectiveNode</a> objects which encapsulate 
 the information provided by <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">Directive</a> 
 objects scanned by the <a href="../ApiScanner/">ApiScanner</a>.</p>
@@ -2289,37 +2340,37 @@ objects scanned by the <a href="../ApiScanner/">ApiScanner</a>.</p>
 </thead>
 <tbody>
 <tr>
-<td>static void</td>
+<td>public static void</td>
 <td><a href="#setenvironment">setEnvironment</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> env)</td>
 <td>Sets the doclet environment where it can get access to  an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/Elements.html">Elements</a> implementation to retrieve information about scanned elements.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createfrom">createFrom</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a <a href="../../model/DirectiveNode/">DirectiveNode</a> to encapsulate the information provided by a module directive element.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createrequiresdirective">createRequiresDirective</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html">requires</a> directive.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createexportsdirective">createExportsDirective</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a DirectiveNode representing an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExportsDirective.html">exports</a> directive.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createopensdirective">createOpensDirective</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a DirectiveNode representing an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/OpensDirective.html">opens</a> directive.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createusesdirective">createUsesDirective</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/UsesDirective.html">uses</a> directive.</td>
 </tr>
 <tr>
-<td>static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
+<td>public static <a href="../../model/DirectiveNode/">DirectiveNode</a></td>
 <td><a href="#createprovidesdirective">createProvidesDirective</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</td>
 <td>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ProvidesDirective.html">provides</a> directive.</td>
 </tr>
@@ -2330,59 +2381,45 @@ objects scanned by the <a href="../ApiScanner/">ApiScanner</a>.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setenvironment">setEnvironment</h3>
-<p>static void setEnvironment(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> env)</p>
+<p>public static void setEnvironment(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> env)</p>
 <p>Sets the doclet environment where it can get access to 
 an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/Elements.html">Elements</a> implementation
 to retrieve information about scanned elements.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>env</code> - The doclet environment</p>
 <hr />
 <h3 id="createfrom">createFrom</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createFrom(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createFrom(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a <a href="../../model/DirectiveNode/">DirectiveNode</a> to encapsulate the information provided
 by a module directive element.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned module directive.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />
 <h3 id="createrequiresdirective">createRequiresDirective</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createRequiresDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createRequiresDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html">requires</a> directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html">RequiresDirective</a> element.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />
 <h3 id="createexportsdirective">createExportsDirective</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createExportsDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createExportsDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a DirectiveNode representing an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExportsDirective.html">exports</a> directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExportsDirective.html">ExportsDirective</a> element.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />
 <h3 id="createopensdirective">createOpensDirective</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createOpensDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createOpensDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a DirectiveNode representing an <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/OpensDirective.html">opens</a> directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/OpensDirective.html">OpensDirective</a> element.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />
 <h3 id="createusesdirective">createUsesDirective</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createUsesDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createUsesDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/UsesDirective.html">uses</a> directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/UsesDirective.html">UsesDirective</a> element.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />
 <h3 id="createprovidesdirective">createProvidesDirective</h3>
-<p>static <a href="../../model/DirectiveNode/">DirectiveNode</a> createProvidesDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
+<p>public static <a href="../../model/DirectiveNode/">DirectiveNode</a> createProvidesDirective(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.Directive.html">ModuleElement.Directive</a> directive)</p>
 <p>Creates a DirectiveNode representing a <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ProvidesDirective.html">provides</a> directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>directive</code> - a scanned <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ProvidesDirective.html">ProvidesDirective</a> element.</p>
 <p><strong>Returns:</strong></p>
 <p>A DirectiveNode representing the scanned directive element.</p>
 <hr />

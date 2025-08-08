@@ -16,7 +16,7 @@
         <link rel="prev" href="../DirectiveNode.Kind/">
       
       
-        <link rel="next" href="../EnumNode/">
+        <link rel="next" href="../EnumTypeNode/">
       
       
       <link rel="icon" href="../../../../assets/penguin.svg">
@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -1216,12 +1266,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1262,12 +1312,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -2369,6 +2419,7 @@
         io.github.sandydunlop.markista.model.DirectiveNode<br/>
 <br/></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>DirectiveNode</strong></span></p>
 <p>Represents a directive within a module declaration, such as requires, exports, or provides.
 Tracks the kind of directive, its name, whether it is transitive, associated packages,
 implementations, and related interface information.</p>
@@ -2383,12 +2434,12 @@ implementations, and related interface information.</p>
 </thead>
 <tbody>
 <tr>
-<td>private <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a></td>
+<td>private final <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a></td>
 <td><a href="#kind">kind</a></td>
 <td>The kind of this directive (e.g. REQUIRES, EXPORTS).</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#name">name</a></td>
 <td>The name associated with this directive.</td>
 </tr>
@@ -2398,12 +2449,12 @@ implementations, and related interface information.</p>
 <td>Indicates whether this directive is transitive.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#packages">packages</a></td>
 <td>List of package names associated with this directive.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#implementations">implementations</a></td>
 <td>List of implementation names associated with this directive.</td>
 </tr>
@@ -2444,47 +2495,47 @@ implementations, and related interface information.</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a></td>
+<td>public <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a></td>
 <td><a href="#getkind">getKind</a>()</td>
 <td>Returns the kind of this directive.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
 <td>Returns the name associated with this directive.</td>
 </tr>
 <tr>
-<td>boolean</td>
+<td>public boolean</td>
 <td><a href="#istransitive">isTransitive</a>()</td>
 <td>Indicates if this directive is transitive.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</td>
 <td>Adds a package name to this directive's package list.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
 <td>Returns the list of package names associated with this directive.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#addimplementation">addImplementation</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> implementationName)</td>
 <td>Adds the name of an implementation associated with this directive.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getimplementations">getImplementations</a>()</td>
 <td>Returns the list of implementations associated with this directive.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setinterface">setInterface</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> interfaceName)</td>
 <td>Sets the interface name related to this directive.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getinterface">getInterface</a>()</td>
 <td>Returns the interface name associated with this directive.</td>
 </tr>
@@ -2511,55 +2562,49 @@ implementations, and related interface information.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getkind">getKind</h3>
-<p><a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a> getKind()</p>
+<p>public <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a> getKind()</p>
 <p>Returns the kind of this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the directive kind.</p>
 <hr />
 <h3 id="getname">getName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
 <p>Returns the name associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the directive name.</p>
 <hr />
 <h3 id="istransitive">isTransitive</h3>
-<p>boolean isTransitive()</p>
+<p>public boolean isTransitive()</p>
 <p>Indicates if this directive is transitive.</p>
 <p><strong>Returns:</strong></p>
 <p>true if transitive; false otherwise.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p>void addPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</p>
+<p>public void addPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</p>
 <p>Adds a package name to this directive's package list.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>packageName</code> - the fully qualified package name to add.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getPackages()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getPackages()</p>
 <p>Returns the list of package names associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>list of package names.</p>
 <hr />
 <h3 id="addimplementation">addImplementation</h3>
-<p>void addImplementation(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> implementationName)</p>
+<p>public void addImplementation(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> implementationName)</p>
 <p>Adds the name of an implementation associated with this directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>implementationName</code> - the name of the implementation to add.</p>
 <hr />
 <h3 id="getimplementations">getImplementations</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getImplementations()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getImplementations()</p>
 <p>Returns the list of implementations associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>list of implementation names.</p>
 <hr />
 <h3 id="setinterface">setInterface</h3>
-<p>void setInterface(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> interfaceName)</p>
+<p>public void setInterface(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> interfaceName)</p>
 <p>Sets the interface name related to this directive.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>interfaceName</code> - the interface name to set.</p>
 <hr />
 <h3 id="getinterface">getInterface</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getInterface()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getInterface()</p>
 <p>Returns the interface name associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the interface name, or an empty string if none set.</p>

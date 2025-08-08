@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -844,12 +848,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AnnotationNode
+    AnnotationElement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnnotationTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AnnotationTypeNode
     
   </span>
   
@@ -890,12 +917,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ClassNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ClassNode
+    AppliedAnnotationNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ClassTypeNode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ClassTypeNode
     
   </span>
   
@@ -982,12 +1032,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnumNode/" class="md-nav__link">
+      <a href="../EnumTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EnumNode
+    EnumTypeNode
     
   </span>
   
@@ -1028,12 +1078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../InterfaceNode/" class="md-nav__link">
+      <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    InterfaceNode
+    InterfaceTypeNode
     
   </span>
   
@@ -1297,6 +1347,15 @@
   
     <nav class="md-nav" aria-label="Field Details">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      name
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#module" class="md-nav__link">
@@ -2130,6 +2189,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#module" class="md-nav__link">
     <span class="md-ellipsis">
       module
@@ -2240,13 +2308,14 @@
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
 <h1 id="class-packagenode">Class PackageNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
+        <a href="../Node/">Node</a><br/>
+                <a href="../AbstractTypeOwner/">AbstractTypeOwner</a><br/>
                         io.github.sandydunlop.markista.model.PackageNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
     <a href="../PackageMember/">PackageMember</a>, <a href="../PackageOwner/">PackageOwner</a></p>
 <hr />
+<p><span style="font-family: monospace;">public Class <strong>PackageNode</strong></span></p>
 <p>Represents a Java package</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2259,12 +2328,17 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#name">name</a></td>
+<td></td>
+</tr>
+<tr>
 <td>private <a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#module">module</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#packages">packages</a></td>
 <td></td>
 </tr>
@@ -2280,7 +2354,7 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
-<td>PackageNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> packageName)</td>
+<td>PackageNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td>Constructs a PackageNode with the specified qualified package name.</td>
 </tr>
 </tbody>
@@ -2296,86 +2370,84 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#setmodule">setModule</a>(<a href="../ModuleNode/">ModuleNode</a> module)</td>
 <td>Sets the module for this package.</td>
 </tr>
 <tr>
-<td><a href="../ModuleNode/">ModuleNode</a></td>
+<td>public <a href="../ModuleNode/">ModuleNode</a></td>
 <td><a href="#getmodule">getModule</a>()</td>
 <td>Returns the module that owns this package.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
 <td>Returns the list of package members owned by this package.</td>
 </tr>
 <tr>
-<td>void</td>
+<td>public void</td>
 <td><a href="#addpackage">addPackage</a>(<a href="./">PackageNode</a> packageNode)</td>
 <td>Adds a subpackage to this package.</td>
 </tr>
 <tr>
-<td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#getname">getName</a>()</td>
-<td>Returns the name (qualified name) of this package.</td>
+<td>Returns the name (canonical name) of this package.</td>
 </tr>
 <tr>
-<td><a href="../Text/">Text</a></td>
+<td>public <a href="../Text/">Text</a></td>
 <td><a href="#getdescription">getDescription</a>()</td>
 <td>Returns the description text for this package, typically the first sentence.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
+<h3 id="name">name</h3>
+<hr />
 <h3 id="module">module</h3>
 <hr />
 <h3 id="packages">packages</h3>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setmodule">setModule</h3>
-<p>void setModule(<a href="../ModuleNode/">ModuleNode</a> module)</p>
+<p>public void setModule(<a href="../ModuleNode/">ModuleNode</a> module)</p>
 <p>Sets the module for this package.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>module</code> - The ModuleNode that owns this package.</p>
 <hr />
 <h3 id="getmodule">getModule</h3>
-<p><a href="../ModuleNode/">ModuleNode</a> getModule()</p>
+<p>public <a href="../ModuleNode/">ModuleNode</a> getModule()</p>
 <p>Returns the module that owns this package.</p>
 <p><strong>Returns:</strong></p>
 <p>The ModuleNode instance.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
 <p>Returns the list of package members owned by this package.</p>
 <p><strong>Returns:</strong></p>
 <p>List of PackageMember objects.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
+<p><a href="../PackageOwner/">PackageOwner</a></p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p>void addPackage(<a href="./">PackageNode</a> packageNode)</p>
+<p>public void addPackage(<a href="./">PackageNode</a> packageNode)</p>
 <p>Adds a subpackage to this package.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>packageNode</code> - The PackageNode to add as a member.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageOwner/">io.github.sandydunlop.markista.model.PackageOwner</a></p>
+<p><a href="../PackageOwner/">PackageOwner</a></p>
 <hr />
 <h3 id="getname">getName</h3>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
-<p>Returns the name (qualified name) of this package.</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p>Returns the name (canonical name) of this package.</p>
 <p><strong>Returns:</strong></p>
-<p>The qualified package name.</p>
+<p>The package name.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
+<p><a href="../PackageMember/">PackageMember</a></p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
-<p><a href="../Text/">Text</a> getDescription()</p>
+<p>public <a href="../Text/">Text</a> getDescription()</p>
 <p>Returns the description text for this package, typically the first sentence.</p>
 <p><strong>Returns:</strong></p>
 <p>The Text object representing the description.</p>
 <p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
+<p><a href="../PackageMember/">PackageMember</a></p>
 <hr />
 
 
