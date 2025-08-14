@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sandydunlop.github.io/markista/Markista-Javadoc/markista/model/PackageOwner/">
+        <link rel="canonical" href="https://sandydunlop.github.io/markista/Markista-Javadoc/markista/model/PackageOrTypeNode/">
       
       
         <link rel="prev" href="../PackageNode/">
       
       
-        <link rel="next" href="../ParamNode/">
+        <link rel="next" href="../PackageOwnerInterface/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>PackageOwner - Sandy Dunlop</title>
+        <title>PackageOrTypeNode - Sandy Dunlop</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interface-packageowner" class="md-skip">
+        <a href="#class-packageortypenode" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PackageOwner
+              PackageOrTypeNode
             
           </span>
         </div>
@@ -398,8 +398,6 @@
       
         
           
-        
-      
         
       
         
@@ -849,6 +847,8 @@
       
         
       
+        
+      
     
     
     
@@ -896,12 +896,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractTypeOwner/" class="md-nav__link">
+      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractTypeOwner
+    AbstractPackageMember.ModifierSorter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AbstractPackageMember/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AbstractPackageMember
     
   </span>
   
@@ -1218,12 +1241,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModuleNode/" class="md-nav__link">
+      <a href="../ModuleMemberNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ModuleNode
+    ModuleMemberNode
     
   </span>
   
@@ -1241,12 +1264,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node.ModifierSorter/" class="md-nav__link">
+      <a href="../ModuleNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node.ModifierSorter
+    ModuleNode
     
   </span>
   
@@ -1310,29 +1333,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../PackageMember/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageMember
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../PackageNode/" class="md-nav__link">
         
   
@@ -1370,7 +1370,7 @@
   
   
   <span class="md-ellipsis">
-    PackageOwner
+    PackageOrTypeNode
     
   </span>
   
@@ -1383,7 +1383,7 @@
   
   
   <span class="md-ellipsis">
-    PackageOwner
+    PackageOrTypeNode
     
   </span>
   
@@ -1406,11 +1406,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#field-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#method-summary" class="md-nav__link">
     <span class="md-ellipsis">
       Method Summary
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1425,18 +1467,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getpackages" class="md-nav__link">
+  <a href="#addtype" class="md-nav__link">
     <span class="md-ellipsis">
-      getPackages
+      addType
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#addpackage" class="md-nav__link">
+  <a href="#gettypes" class="md-nav__link">
     <span class="md-ellipsis">
-      addPackage
+      getTypes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclasses" class="md-nav__link">
+    <span class="md-ellipsis">
+      getClasses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinterfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      getInterfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenums" class="md-nav__link">
+    <span class="md-ellipsis">
+      getEnums
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addclass" class="md-nav__link">
+    <span class="md-ellipsis">
+      addClass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      addInterface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addenum" class="md-nav__link">
+    <span class="md-ellipsis">
+      addEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
     </span>
   </a>
   
@@ -1451,6 +1574,52 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PackageOwnerInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PackageOwnerInterface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pair
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1663,29 +1832,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TypeOwner/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeOwner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1707,265 +1853,6 @@
           
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_6" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../structure/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Structure
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_3_1_6" id="__nav_2_3_1_6_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_1_6">
-            <span class="md-nav__icon md-icon"></span>
-            Structure
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/AbstractTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AbstractTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/FileTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/Icon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Icon
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/ModuleTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ModuleTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/NodeKind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    NodeKind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/Structures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structures
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/TreeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TreeNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/TreeSvgWriter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TreeSvgWriter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
         
       
         
@@ -1998,7 +1885,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -2015,14 +1902,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_3_1_7" id="__nav_2_3_1_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_3_1_6" id="__nav_2_3_1_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_1_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1_6">
             <span class="md-nav__icon md-icon"></span>
             Util
           </label>
@@ -2106,6 +1993,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../util/LinkFormatter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LinkFormatter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../util/LinkResolver/" class="md-nav__link">
         
   
@@ -2152,12 +2062,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/MarkdownParser.Segment/" class="md-nav__link">
+      <a href="../../util/MarkdownParser.Token/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    MarkdownParser.Segment
+    MarkdownParser.Token
     
   </span>
   
@@ -2175,12 +2085,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/MarkdownParser.SegmentKind/" class="md-nav__link">
+      <a href="../../util/MarkdownParser.TokenKind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    MarkdownParser.SegmentKind
+    MarkdownParser.TokenKind
     
   </span>
   
@@ -2396,11 +2306,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#field-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#method-summary" class="md-nav__link">
     <span class="md-ellipsis">
       Method Summary
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2415,18 +2367,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getpackages" class="md-nav__link">
+  <a href="#addtype" class="md-nav__link">
     <span class="md-ellipsis">
-      getPackages
+      addType
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#addpackage" class="md-nav__link">
+  <a href="#gettypes" class="md-nav__link">
     <span class="md-ellipsis">
-      addPackage
+      getTypes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getclasses" class="md-nav__link">
+    <span class="md-ellipsis">
+      getClasses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinterfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      getInterfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenums" class="md-nav__link">
+    <span class="md-ellipsis">
+      getEnums
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addclass" class="md-nav__link">
+    <span class="md-ellipsis">
+      addClass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      addInterface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addenum" class="md-nav__link">
+    <span class="md-ellipsis">
+      addEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      sort
     </span>
   </a>
   
@@ -2454,13 +2487,49 @@
 
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
-<h1 id="interface-packageowner">Interface PackageOwner</h1>
+<h1 id="class-packageortypenode">Class PackageOrTypeNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        io.github.sandydunlop.markista.model.PackageOwner<br/>
+        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+                <a href="../ModuleMemberNode/">io.github.sandydunlop.markista.model.ModuleMemberNode</a><br/>
+                        <a href="../AbstractPackageMember/">io.github.sandydunlop.markista.model.AbstractPackageMember</a><br/>
+                                io.github.sandydunlop.markista.model.PackageOrTypeNode<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public abstract Interface <strong>PackageOwner</strong></span></p>
-<p>Interface representing an owner of packages. public interface</p>
+<p><span style="font-family: monospace;">public abstract Class <strong>PackageOrTypeNode</strong></span></p>
+<p>An abstract class with a set of methods useful to other subclasses of <a href="../Node/">Node</a>
+that can be owners of types.</p>
+<h2 id="field-summary">Field Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Modifier and Type</th>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#types">types</a></td>
+<td>A list of types owned by this type owner</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructor-summary">Constructor Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Constructor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PackageOrTypeNode()</td>
+<td>Default constructor</td>
+</tr>
+</tbody>
+</table>
 <h2 id="method-summary">Method Summary</h2>
 <table>
 <thead>
@@ -2472,27 +2541,110 @@
 </thead>
 <tbody>
 <tr>
-<td>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt;</td>
-<td><a href="#getpackages">getPackages</a>()</td>
-<td>Returns the list of packages owned by this owner.</td>
+<td>public void</td>
+<td><a href="#addtype">addType</a>(<a href="../TypeNode/">TypeNode</a> typeNode)</td>
+<td>Adds a type to the list of types <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public abstract void</td>
-<td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/">PackageNode</a> packageNode)</td>
-<td>Adds a package to the owned packages.</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#gettypes">getTypes</a>()</td>
+<td>Gets the list of types <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#getclasses">getClasses</a>()</td>
+<td>Gets the list of classes <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#getinterfaces">getInterfaces</a>()</td>
+<td>Gets the list of interfaces <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#getenums">getEnums</a>()</td>
+<td>Gets the list of enums <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
+<td><a href="#getannotations">getAnnotations</a>()</td>
+<td>Gets the list of annotations <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addclass">addClass</a>(<a href="../ClassTypeNode/">ClassTypeNode</a> node)</td>
+<td>Adds a class to the list of classes <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addinterface">addInterface</a>(<a href="../InterfaceTypeNode/">InterfaceTypeNode</a> node)</td>
+<td>Adds a interface to the list of interfaces <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addenum">addEnum</a>(<a href="../EnumTypeNode/">EnumTypeNode</a> node)</td>
+<td>Adds a enum to the list of enums <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addannotation">addAnnotation</a>(<a href="../AnnotationTypeNode/">AnnotationTypeNode</a> node)</td>
+<td>Adds a annotation to the list of annotations <em>owned</em> by this instance.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#sort">sort</a>()</td>
+<td>Sorts the nodes owned by this instance into alphabetical order.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="method-details">Method Details</h2>
-<h3 id="getpackages">getPackages</h3>
-<p>public abstract <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageMember/">PackageMember</a>&gt; getPackages()</p>
-<p>Returns the list of packages owned by this owner.</p>
-<p><strong>Returns:</strong></p>
-<p>List of PackageMember objects representing owned packages.</p>
+<h2 id="field-details">Field Details</h2>
+<h3 id="types">types</h3>
+<p>A list of types owned by this type owner</p>
 <hr />
-<h3 id="addpackage">addPackage</h3>
-<p>public abstract void addPackage(<a href="../PackageNode/">PackageNode</a> packageNode)</p>
-<p>Adds a package to the owned packages.</p>
+<h2 id="method-details">Method Details</h2>
+<h3 id="addtype">addType</h3>
+<p>public void addType(<a href="../TypeNode/">TypeNode</a> typeNode)</p>
+<p>Adds a type to the list of types <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="gettypes">getTypes</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getTypes()</p>
+<p>Gets the list of types <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="getclasses">getClasses</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getClasses()</p>
+<p>Gets the list of classes <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="getinterfaces">getInterfaces</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getInterfaces()</p>
+<p>Gets the list of interfaces <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="getenums">getEnums</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getEnums()</p>
+<p>Gets the list of enums <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="getannotations">getAnnotations</h3>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; getAnnotations()</p>
+<p>Gets the list of annotations <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="addclass">addClass</h3>
+<p>public void addClass(<a href="../ClassTypeNode/">ClassTypeNode</a> node)</p>
+<p>Adds a class to the list of classes <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="addinterface">addInterface</h3>
+<p>public void addInterface(<a href="../InterfaceTypeNode/">InterfaceTypeNode</a> node)</p>
+<p>Adds a interface to the list of interfaces <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="addenum">addEnum</h3>
+<p>public void addEnum(<a href="../EnumTypeNode/">EnumTypeNode</a> node)</p>
+<p>Adds a enum to the list of enums <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="addannotation">addAnnotation</h3>
+<p>public void addAnnotation(<a href="../AnnotationTypeNode/">AnnotationTypeNode</a> node)</p>
+<p>Adds a annotation to the list of annotations <em>owned</em> by this instance.</p>
+<hr />
+<h3 id="sort">sort</h3>
+<p>public void sort()</p>
+<p>Sorts the nodes owned by this instance into alphabetical order.</p>
 <hr />
 
 

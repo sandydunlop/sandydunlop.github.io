@@ -16,7 +16,7 @@
         <link rel="prev" href="../TypeNode.Kind/">
       
       
-        <link rel="next" href="../TypeOwner/">
+        <link rel="next" href="../../util/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -398,8 +398,6 @@
       
         
           
-        
-      
         
       
         
@@ -849,6 +847,8 @@
       
         
       
+        
+      
     
     
     
@@ -896,12 +896,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractTypeOwner/" class="md-nav__link">
+      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractTypeOwner
+    AbstractPackageMember.ModifierSorter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AbstractPackageMember/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AbstractPackageMember
     
   </span>
   
@@ -1218,12 +1241,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModuleNode/" class="md-nav__link">
+      <a href="../ModuleMemberNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ModuleNode
+    ModuleMemberNode
     
   </span>
   
@@ -1241,12 +1264,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node.ModifierSorter/" class="md-nav__link">
+      <a href="../ModuleNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node.ModifierSorter
+    ModuleNode
     
   </span>
   
@@ -1310,29 +1333,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../PackageMember/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageMember
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../PackageNode/" class="md-nav__link">
         
   
@@ -1356,12 +1356,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../PackageOwner/" class="md-nav__link">
+      <a href="../PackageOrTypeNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    PackageOwner
+    PackageOrTypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PackageOwnerInterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PackageOwnerInterface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pair
     
   </span>
   
@@ -1650,15 +1696,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#qualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      qualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#sourcepath" class="md-nav__link">
     <span class="md-ellipsis">
       sourcePath
@@ -1671,6 +1708,15 @@
   <a href="#owner" class="md-nav__link">
     <span class="md-ellipsis">
       owner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      enclosingClassRef
     </span>
   </a>
   
@@ -1836,15 +1882,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsupertypes" class="md-nav__link">
-    <span class="md-ellipsis">
-      setSupertypes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getsupertypes" class="md-nav__link">
     <span class="md-ellipsis">
       getSupertypes
@@ -1875,42 +1912,6 @@
   <a href="#getowner" class="md-nav__link">
     <span class="md-ellipsis">
       getOwner
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setsimplename" class="md-nav__link">
-    <span class="md-ellipsis">
-      setSimpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getsimplename" class="md-nav__link">
-    <span class="md-ellipsis">
-      getSimpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      setQualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      getQualifiedName
     </span>
   </a>
   
@@ -2025,6 +2026,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setenclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      setEnclosingClassRef
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      getEnclosingClassRef
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getfield" class="md-nav__link">
     <span class="md-ellipsis">
       getField
@@ -2092,29 +2111,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TypeOwner/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeOwner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2136,265 +2132,6 @@
           
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_6" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../structure/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Structure
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_3_1_6" id="__nav_2_3_1_6_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_1_6">
-            <span class="md-nav__icon md-icon"></span>
-            Structure
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/AbstractTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AbstractTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/FileTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FileTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/Icon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Icon
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/ModuleTree/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ModuleTree
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/NodeKind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    NodeKind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/Structures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Structures
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/TreeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TreeNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../structure/TreeSvgWriter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TreeSvgWriter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
         
       
         
@@ -2427,7 +2164,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -2444,14 +2181,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_3_1_7" id="__nav_2_3_1_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_3_1_6" id="__nav_2_3_1_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_1_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1_6">
             <span class="md-nav__icon md-icon"></span>
             Util
           </label>
@@ -2535,6 +2272,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../util/LinkFormatter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LinkFormatter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../util/LinkResolver/" class="md-nav__link">
         
   
@@ -2581,12 +2341,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/MarkdownParser.Segment/" class="md-nav__link">
+      <a href="../../util/MarkdownParser.Token/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    MarkdownParser.Segment
+    MarkdownParser.Token
     
   </span>
   
@@ -2604,12 +2364,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/MarkdownParser.SegmentKind/" class="md-nav__link">
+      <a href="../../util/MarkdownParser.TokenKind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    MarkdownParser.SegmentKind
+    MarkdownParser.TokenKind
     
   </span>
   
@@ -2862,15 +2622,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#qualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      qualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#sourcepath" class="md-nav__link">
     <span class="md-ellipsis">
       sourcePath
@@ -2883,6 +2634,15 @@
   <a href="#owner" class="md-nav__link">
     <span class="md-ellipsis">
       owner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      enclosingClassRef
     </span>
   </a>
   
@@ -3048,15 +2808,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsupertypes" class="md-nav__link">
-    <span class="md-ellipsis">
-      setSupertypes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getsupertypes" class="md-nav__link">
     <span class="md-ellipsis">
       getSupertypes
@@ -3087,42 +2838,6 @@
   <a href="#getowner" class="md-nav__link">
     <span class="md-ellipsis">
       getOwner
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setsimplename" class="md-nav__link">
-    <span class="md-ellipsis">
-      setSimpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getsimplename" class="md-nav__link">
-    <span class="md-ellipsis">
-      getSimpleName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      setQualifiedName
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getqualifiedname" class="md-nav__link">
-    <span class="md-ellipsis">
-      getQualifiedName
     </span>
   </a>
   
@@ -3237,6 +2952,24 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setenclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      setEnclosingClassRef
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenclosingclassref" class="md-nav__link">
+    <span class="md-ellipsis">
+      getEnclosingClassRef
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getfield" class="md-nav__link">
     <span class="md-ellipsis">
       getField
@@ -3315,11 +3048,11 @@
 <h1 id="class-typenode">Class TypeNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
         <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractTypeOwner/">io.github.sandydunlop.markista.model.AbstractTypeOwner</a><br/>
-                        io.github.sandydunlop.markista.model.TypeNode<br/>
-<br/>
-All Implemented Interfaces:<br/>
-    <a href="../PackageMember/">io.github.sandydunlop.markista.model.PackageMember</a></p>
+                <a href="../ModuleMemberNode/">io.github.sandydunlop.markista.model.ModuleMemberNode</a><br/>
+                        <a href="../AbstractPackageMember/">io.github.sandydunlop.markista.model.AbstractPackageMember</a><br/>
+                                <a href="../PackageOrTypeNode/">io.github.sandydunlop.markista.model.PackageOrTypeNode</a><br/>
+                                        io.github.sandydunlop.markista.model.TypeNode<br/>
+<br/></p>
 <hr />
 <p><span style="font-family: monospace;">public Class <strong>TypeNode</strong></span></p>
 <p>Represents a type in the API model, including its kind (class, interface, enum, annotation),
@@ -3335,19 +3068,19 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </thead>
 <tbody>
 <tr>
-<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#qualifiedname">qualifiedName</a></td>
-<td>The canonical form of the type's name</td>
-</tr>
-<tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html">Path</a></td>
 <td><a href="#sourcepath">sourcePath</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../TypeOwner/">TypeOwner</a></td>
+<td>private <a href="../PackageOrTypeNode/">PackageOrTypeNode</a></td>
 <td><a href="#owner">owner</a></td>
 <td>The owner of this type, usually another type or module.</td>
+</tr>
+<tr>
+<td>private <a href="../Reference/">Reference</a></td>
+<td><a href="#enclosingclassref">enclosingClassRef</a></td>
+<td></td>
 </tr>
 <tr>
 <td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt;</td>
@@ -3355,12 +3088,12 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <td>List of annotations applied to this type.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt;</td>
 <td><a href="#implementedinterfaces">implementedInterfaces</a></td>
 <td>List of qualified names of interfaces implemented by this type.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Pair/">Pair</a>&lt;<a href="../Reference/">Reference</a>, <a href="../Text/">Text</a>&gt;&gt;</td>
 <td><a href="#supertypes">supertypes</a></td>
 <td>List of qualified names of this type's supertypes.</td>
 </tr>
@@ -3406,7 +3139,7 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </thead>
 <tbody>
 <tr>
-<td>TypeNode(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName, <a href="../PackageNode/">PackageNode</a> packageNode)</td>
+<td>TypeNode( qualifiedName,  simpleName,  packageNode)</td>
 <td>Constructs a TypeNode with the specified qualified name, simple name, and package.</td>
 </tr>
 </tbody>
@@ -3453,53 +3186,28 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setimplementedinterfaces">setImplementedInterfaces</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; implementedInterfaces)</td>
+<td><a href="#setimplementedinterfaces">setImplementedInterfaces</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; implementedInterfaces)</td>
 <td>Sets the list of implemented interfaces by qualified names.</td>
 </tr>
 <tr>
-<td>public void</td>
-<td><a href="#setsupertypes">setSupertypes</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; supertypes)</td>
-<td>Sets the list of supertypes by qualified names.</td>
-</tr>
-<tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Pair/">Pair</a>&lt;<a href="../Reference/">Reference</a>, <a href="../Text/">Text</a>&gt;&gt;</td>
 <td><a href="#getsupertypes">getSupertypes</a>()</td>
 <td>Returns the list of supertypes by qualified names.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt;</td>
 <td><a href="#getimplementedinterfaces">getImplementedInterfaces</a>()</td>
 <td>Returns the list of implemented interfaces by qualified names.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setowner">setOwner</a>(<a href="../TypeOwner/">TypeOwner</a> owner)</td>
+<td><a href="#setowner">setOwner</a>(<a href="../PackageOrTypeNode/">PackageOrTypeNode</a> owner)</td>
 <td>Sets the owner of this type.</td>
 </tr>
 <tr>
-<td>public <a href="../TypeOwner/">TypeOwner</a></td>
+<td>public <a href="../PackageOrTypeNode/">PackageOrTypeNode</a></td>
 <td><a href="#getowner">getOwner</a>()</td>
 <td>Returns the owner of this type.</td>
-</tr>
-<tr>
-<td>public void</td>
-<td><a href="#setsimplename">setSimpleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td>Sets the simple name of this type.</td>
-</tr>
-<tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#getsimplename">getSimpleName</a>()</td>
-<td>Returns the simple name of this type.</td>
-</tr>
-<tr>
-<td>public void</td>
-<td><a href="#setqualifiedname">setQualifiedName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td>Sets the qualified name of this type.</td>
-</tr>
-<tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#getqualifiedname">getQualifiedName</a>()</td>
-<td>Returns the qualified name of this type.</td>
 </tr>
 <tr>
 <td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
@@ -3562,6 +3270,16 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <td>Does this type have a <code>@Documented</code> meta-annotation?</td>
 </tr>
 <tr>
+<td>public void</td>
+<td><a href="#setenclosingclassref">setEnclosingClassRef</a>(<a href="../Reference/">Reference</a> ref)</td>
+<td></td>
+</tr>
+<tr>
+<td>public <a href="../Reference/">Reference</a></td>
+<td><a href="#getenclosingclassref">getEnclosingClassRef</a>()</td>
+<td></td>
+</tr>
+<tr>
 <td>public <a href="../FieldNode/">FieldNode</a></td>
 <td><a href="#getfield">getField</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
 <td>Retrieves a field by its simple name.</td>
@@ -3594,13 +3312,12 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
-<h3 id="qualifiedname">qualifiedName</h3>
-<p>The canonical form of the type's name</p>
-<hr />
 <h3 id="sourcepath">sourcePath</h3>
 <hr />
 <h3 id="owner">owner</h3>
 <p>The owner of this type, usually another type or module.</p>
+<hr />
+<h3 id="enclosingclassref">enclosingClassRef</h3>
 <hr />
 <h3 id="appliedannotations">appliedAnnotations</h3>
 <p>List of annotations applied to this type.</p>
@@ -3657,54 +3374,30 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p>list of applied annotations</p>
 <hr />
 <h3 id="setimplementedinterfaces">setImplementedInterfaces</h3>
-<p>public void setImplementedInterfaces(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; implementedInterfaces)</p>
+<p>public void setImplementedInterfaces(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; implementedInterfaces)</p>
 <p>Sets the list of implemented interfaces by qualified names.</p>
 <hr />
-<h3 id="setsupertypes">setSupertypes</h3>
-<p>public void setSupertypes(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; supertypes)</p>
-<p>Sets the list of supertypes by qualified names.</p>
-<hr />
 <h3 id="getsupertypes">getSupertypes</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getSupertypes()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Pair/">Pair</a>&lt;<a href="../Reference/">Reference</a>, <a href="../Text/">Text</a>&gt;&gt; getSupertypes()</p>
 <p>Returns the list of supertypes by qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>list of qualified supertype names.</p>
 <hr />
 <h3 id="getimplementedinterfaces">getImplementedInterfaces</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; getImplementedInterfaces()</p>
+<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; getImplementedInterfaces()</p>
 <p>Returns the list of implemented interfaces by qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>list of qualified interface names.</p>
 <hr />
 <h3 id="setowner">setOwner</h3>
-<p>public void setOwner(<a href="../TypeOwner/">TypeOwner</a> owner)</p>
+<p>public void setOwner(<a href="../PackageOrTypeNode/">PackageOrTypeNode</a> owner)</p>
 <p>Sets the owner of this type.</p>
 <hr />
 <h3 id="getowner">getOwner</h3>
-<p>public <a href="../TypeOwner/">TypeOwner</a> getOwner()</p>
+<p>public <a href="../PackageOrTypeNode/">PackageOrTypeNode</a> getOwner()</p>
 <p>Returns the owner of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>the TypeOwner that owns this type.</p>
-<hr />
-<h3 id="setsimplename">setSimpleName</h3>
-<p>public void setSimpleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
-<p>Sets the simple name of this type.</p>
-<hr />
-<h3 id="getsimplename">getSimpleName</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSimpleName()</p>
-<p>Returns the simple name of this type.</p>
-<p><strong>Returns:</strong></p>
-<p>the simple name.</p>
-<hr />
-<h3 id="setqualifiedname">setQualifiedName</h3>
-<p>public void setQualifiedName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
-<p>Sets the qualified name of this type.</p>
-<hr />
-<h3 id="getqualifiedname">getQualifiedName</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getQualifiedName()</p>
-<p>Returns the qualified name of this type.</p>
-<p><strong>Returns:</strong></p>
-<p>the qualified name.</p>
 <hr />
 <h3 id="getpackagename">getPackageName</h3>
 <p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName()</p>
@@ -3768,6 +3461,12 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p><strong>Returns:</strong></p>
 <p>True if it has a <code>@Documented</code> meta-annotation</p>
 <hr />
+<h3 id="setenclosingclassref">setEnclosingClassRef</h3>
+<p>public void setEnclosingClassRef(<a href="../Reference/">Reference</a> ref)</p>
+<hr />
+<h3 id="getenclosingclassref">getEnclosingClassRef</h3>
+<p>public <a href="../Reference/">Reference</a> getEnclosingClassRef()</p>
+<hr />
 <h3 id="getfield">getField</h3>
 <p>public <a href="../FieldNode/">FieldNode</a> getField(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</p>
 <p>Retrieves a field by its simple name.</p>
@@ -3791,16 +3490,12 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p>Returns the name of the type.</p>
 <p><strong>Returns:</strong></p>
 <p>the simple name.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
 <p>public <a href="../Text/">Text</a> getDescription()</p>
 <p>Returns the description of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>a Text object containing the first sentence or summary.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageMember/">PackageMember</a></p>
 <hr />
 <h3 id="getmodifiersstring">getModifiersString</h3>
 <p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModifiersString()</p>
@@ -3809,7 +3504,7 @@ The modifiers are sorted according to a predefined order.</p>
 <p><strong>Returns:</strong></p>
 <p>A string containing sorted modifiers separated by spaces.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="../Node/#getmodifiersstring">Node.getModifiersString</a> from <a href="../Node/">Node</a></p>
+<p><a href="../AbstractPackageMember/#getmodifiersstring">io.github.sandydunlop.markista.model.AbstractPackageMember.getModifiersString</a>.getModifiersString</p>
 <hr />
 
 
