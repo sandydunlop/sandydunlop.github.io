@@ -2463,6 +2463,29 @@
 <br/></p>
 <hr />
 <p><span style="font-family: monospace;">public interface <strong>DocService</strong></span></p>
+<p>This interface defines a service for processing a project's structure
+and documentation with the 
+<a href="https://sandydunlop.github.io/markista/">Markista markdown doclet</a>. 
+The DocService interface is part of the
+<a href="https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html">Service Provider Interface</a>
+(SPI) design pattern, which allows
+for the dynamic discovery and loading of service implementations at runtime.</p>
+<p>Implementations of this interface can be created to provide various
+algorithms or strategies for processing project structures and documentation.
+By adhering to this SPI, developers can extend the functionality of Markista
+without modifying its core codebase, promoting a modular and flexible architecture.</p>
+<p>Additionally, this interface is designed to work seamlessly with the
+<a href="https://openjdk.org/jeps/261">Java Platform Module System</a> (JPMS), which 
+enhances the modularity of Java
+applications. JPMS allows for better encapsulation and management of dependencies,
+enabling developers to create well-defined modules that can interact with
+the Markista framework. This modular approach facilitates the integration of
+third-party services and custom implementations, ensuring that they can be
+easily added or replaced as needed.</p>
+<p>When the structure (including documentation) is processed by Markista,
+it is subsequently passed into the DocService's <code>run</code> method, where
+custom processing logic can be executed. This design makes it easier to 
+maintain and extend the documentation processing capabilities of Markista.</p>
 <h2 id="method-summary">Method Summary</h2>
 <table>
 <thead>
@@ -2476,13 +2499,14 @@
 <tr>
 <td>public abstract void</td>
 <td><a href="#run">run</a>(<a href="../../model/Api/">Api</a> api, <a href="../../core/Context/">Context</a> context)</td>
-<td></td>
+<td>This method is called by Markista when executing a DocService extension.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="run">run</h3>
 <p>public abstract void run(<a href="../../model/Api/">Api</a> api, <a href="../../core/Context/">Context</a> context)</p>
+<p>This method is called by Markista when executing a DocService extension.</p>
 <hr />
 
 
