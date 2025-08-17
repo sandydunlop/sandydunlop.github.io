@@ -2560,36 +2560,37 @@ maintain and extend the documentation processing capabilities of Markista.</p>
 <tr>
 <td>public abstract boolean</td>
 <td><a href="#replacesdefault">replacesDefault</a>()</td>
-<td></td>
+<td>Returns true if this Docservice replaces the default DocService.</td>
 </tr>
 <tr>
 <td>public abstract boolean</td>
 <td><a href="#start">start</a>(<a href="../../model/Api/">Api</a> api, <a href="../../core/Context/">Context</a> ctx)</td>
-<td>Runs before the defaullt Markdown generator.</td>
+<td>Runs before the main Markdown DocService.</td>
 </tr>
 <tr>
 <td>public abstract boolean</td>
 <td><a href="#finish">finish</a>()</td>
-<td>Runs after the defaullt Markdown writer if it was allowed to run.</td>
+<td>Runs after the main Markdown DocService.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="replacesdefault">replacesDefault</h3>
 <p>public abstract boolean replacesDefault()</p>
+<p>Returns true if this Docservice replaces the default DocService.</p>
 <p><strong>Returns:</strong></p>
 <p>true if this DocService replaces the default Markdown one, false otherwise.</p>
 <hr />
 <h3 id="start">start</h3>
 <p>public abstract boolean start(<a href="../../model/Api/">Api</a> api, <a href="../../core/Context/">Context</a> ctx)</p>
-<p>Runs before the defaullt Markdown generator.
+<p>Runs before the main Markdown DocService.
 Initializes a DocService with the API model and a Context for file creation and reporting.</p>
 <p><strong>Returns:</strong></p>
 <p>true on success, otheriwse false</p>
 <hr />
 <h3 id="finish">finish</h3>
 <p>public abstract boolean finish()</p>
-<p>Runs after the defaullt Markdown writer if it was allowed to run.</p>
+<p>Runs after the main Markdown DocService.</p>
 <p><strong>Returns:</strong></p>
 <p>true on success, otheriwse false</p>
 <hr />
