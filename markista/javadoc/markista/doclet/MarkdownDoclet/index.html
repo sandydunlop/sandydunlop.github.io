@@ -1021,6 +1021,51 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#getmainserviceandextensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMainServiceAndExtensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populateextensionswithorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      populateExtensionsWithOrder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populateextensionswithoutorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      populateExtensionsWithoutOrder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addextensiontomap" class="md-nav__link">
+    <span class="md-ellipsis">
+      addExtensionToMap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handleextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      handleExtension
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1054,6 +1099,8 @@
       
         
           
+        
+      
         
       
         
@@ -1104,6 +1151,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../markdown/MarkdownService/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MarkdownService
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2753,6 +2823,51 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#getmainserviceandextensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMainServiceAndExtensions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populateextensionswithorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      populateExtensionsWithOrder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#populateextensionswithoutorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      populateExtensionsWithoutOrder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addextensiontomap" class="md-nav__link">
+    <span class="md-ellipsis">
+      addExtensionToMap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handleextension" class="md-nav__link">
+    <span class="md-ellipsis">
+      handleExtension
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2908,6 +3023,31 @@ All Implemented Interfaces:<br/>
 <td><a href="#run">run</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</td>
 <td>The <code>run</code> method is called by the Javadoc tool to begin running the doclet.</td>
 </tr>
+<tr>
+<td><a href="../../spi/DocService/">DocService</a></td>
+<td><a href="#getmainserviceandextensions">getMainServiceAndExtensions</a>(<a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions)</td>
+<td>Populates the list of extensions and determines the main DocService.</td>
+</tr>
+<tr>
+<td>private <a href="../../spi/DocService/">DocService</a></td>
+<td><a href="#populateextensionswithorder">populateExtensionsWithOrder</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="../../spi/DocService/">DocService</a></td>
+<td><a href="#populateextensionswithoutorder">populateExtensionsWithoutOrder</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</td>
+<td></td>
+</tr>
+<tr>
+<td>private void</td>
+<td><a href="#addextensiontomap">addExtensionToMap</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="../../spi/DocService/">DocService</a>&gt; extensions, <a href="../../spi/DocService/">DocService</a> extension)</td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="../../spi/DocService/">DocService</a></td>
+<td><a href="#handleextension">handleExtension</a>(<a href="../../spi/DocService/">DocService</a> mainDocService, <a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> extension)</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
@@ -2963,6 +3103,24 @@ without the Javadoc command. This is useful for debugging.</p>
 <p>The <code>run</code> method is called by the Javadoc tool to begin running the doclet.</p>
 <p><strong>Returns:</strong></p>
 <p>true if completed without errors, false if errors occurred.</p>
+<hr />
+<h3 id="getmainserviceandextensions">getMainServiceAndExtensions</h3>
+<p><a href="../../spi/DocService/">DocService</a> getMainServiceAndExtensions(<a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions)</p>
+<p>Populates the list of extensions and determines the main DocService.</p>
+<p><strong>Returns:</strong></p>
+<p>The DocService that is expected to output the main documentation files. Null if loading extensions failed.</p>
+<hr />
+<h3 id="populateextensionswithorder">populateExtensionsWithOrder</h3>
+<p>private <a href="../../spi/DocService/">DocService</a> populateExtensionsWithOrder(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</p>
+<hr />
+<h3 id="populateextensionswithoutorder">populateExtensionsWithoutOrder</h3>
+<p>private <a href="../../spi/DocService/">DocService</a> populateExtensionsWithoutOrder(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</p>
+<hr />
+<h3 id="addextensiontomap">addExtensionToMap</h3>
+<p>private void addExtensionToMap(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="../../spi/DocService/">DocService</a>&gt; extensions, <a href="../../spi/DocService/">DocService</a> extension)</p>
+<hr />
+<h3 id="handleextension">handleExtension</h3>
+<p>private <a href="../../spi/DocService/">DocService</a> handleExtension(<a href="../../spi/DocService/">DocService</a> mainDocService, <a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> extension)</p>
 <hr />
 
 

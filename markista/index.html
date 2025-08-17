@@ -826,6 +826,8 @@
       
         
       
+        
+      
     
     
     
@@ -864,6 +866,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="javadoc/markista/markdown/MarkdownService/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MarkdownService
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2483,7 +2508,7 @@ It was produced with the <code>-private</code> parameter which tells Markista to
 <p>Add Markista as a dependency under the configuration you just created.
 Markista is available in the <a href="https://central.sonatype.com/artifact/io.github.sandydunlop/markista">Maven Central</a> repository.</p>
 <div class="language-groovy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">markista</span><span class="o">(</span><span class="s2">&quot;io.github.sandydunlop:markista:0.1.17&quot;</span><span class="o">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">markista</span><span class="o">(</span><span class="s2">&quot;io.github.sandydunlop:markista:0.1.18&quot;</span><span class="o">)</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">}</span>
 </span></code></pre></div>
 <h3 id="step-3-configure-the-javadoc-task">Step 3: Configure the Javadoc Task</h3>
@@ -2500,32 +2525,38 @@ Markista is available in the <a href="https://central.sonatype.com/artifact/io.g
 </span></code></pre></div>
 <h2 id="command-line">Command Line</h2>
 <p>Markista can be used from the command line with the <code>javadoc</code> command as follows:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>javadoc<span class="w"> </span>-docletpath<span class="w"> </span>libs/markista-0.1.17.jar<span class="w"> </span>-doclet<span class="w"> </span>io.github.sandydunlop.markista.doclet.MarkdownDoclet<span class="w"> </span>src/main/java/my.package/Hello.java
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>javadoc<span class="w"> </span>-docletpath<span class="w"> </span>libs/markista-0.1.18.jar<span class="w"> </span>-doclet<span class="w"> </span>io.github.sandydunlop.markista.doclet.MarkdownDoclet<span class="w"> </span>src/main/java/my.package/Hello.java
 </span></code></pre></div>
 <h3 id="parameters">Parameters</h3>
 <dl>
 <dt><code>-d &lt;directory&gt;</code></dt>
-<dd>The directory to write the Markdown files to.</dd>
-<dt><code>-private</code></dt>
-<dd>Generate docs for private members. By default only public 
-and abstract members are documented.</dd>
+<dd>The directory where documentation will be written to.</dd>
+<dt><code>-d &lt;title&gt;</code></dt>
+<dd>The title of the API being documented.</dd>
+<dt><code>--extensions</code> <extensions></dt>
+<dd>Colon-seaparated ordered list of extensions to run. If extensions are available through SPI and this option is not specified, they will all be run.</dd>
 <dt><code>--flatten-modules</code></dt>
 <dd>Don't create individual module directories</dd>
 <dd>This option should be used if you have multiple modules in individual subprojects and want to be able to link between them in the docs</dd>
 <dt><code>--flatten-packages</code></dt>
-<dd>Don't create package directories that contain no classes</dd>
+<dd>Don't create package directories that contain no classes.</dd>
 <dt><code>-link</code></dt>
 <dd>Create links to classes defined outside of the API being 
-   documented (eg. <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">java.utils.String</a>)</dd>
+   documented (eg. <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">java.utils.String</a>).</dd>
 <dt><code>--link-modules</code></dt>
-<dd>Create links to modules outside of the API that are on the module-path</dd>
+<dd>Create links to modules outside of the API that are on the module-path.</dd>
+<dt><code>--module-path</code></dt>
+<dd>Colon-separated list that specifies where to find application modules.</dd>
+<dt><code>-private</code></dt>
+<dd>Generate docs for private members. By default only public 
+and abstract members are documented.</dd>
 <dt><code>-tabs</code></dt>
-<dd>Display summary tables in content tabs</dd>
+<dd>Display summary tables in content tabs.</dd>
 <dt><code>-verbose</code></dt>
-<dd>Display progress information</dd>
+<dd>Display progress information.</dd>
 </dl>
 <h2 id="download">Download</h2>
-<p>JAR files for version 0.1.17 are available to <a href="https://github.com/sandydunlop/markista/releases/tag/r0.1.17">download here</a>.</p>
+<p>JAR files for version 0.1.18 are available to <a href="https://github.com/sandydunlop/markista/releases/tag/r0.1.18">download here</a>.</p>
 <h2 id="source-code">Source Code</h2>
 <p>Markista's source code is available on <a href="https://github.com/sandydunlop/markista">Github</a> under the GPLv3 license.</p>
 <hr />
