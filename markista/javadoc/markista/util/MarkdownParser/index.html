@@ -2478,60 +2478,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#handleopenparenthesis_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleOpenParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handlecloseparenthesis_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleCloseParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savetoken_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      saveToken
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handleopenparenthesis_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleOpenParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handlecloseparenthesis_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleCloseParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savetoken_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      saveToken
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2982,60 +2928,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#handleopenparenthesis_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleOpenParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handlecloseparenthesis_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleCloseParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savetoken_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      saveToken
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handleopenparenthesis_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleOpenParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handlecloseparenthesis_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      handleCloseParenthesis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#savetoken_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      saveToken
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3159,14 +3051,6 @@ and END indicating the end of the sequence.</p>
 <td>MarkdownParser(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> md)</td>
 <td>Creates a new MarkdownParser and immediately parses the provided Markdown string.</td>
 </tr>
-<tr>
-<td>MarkdownParser(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> md)</td>
-<td>Creates a new MarkdownParser and immediately parses the provided Markdown string.</td>
-</tr>
-<tr>
-<td>MarkdownParser(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> md)</td>
-<td>Creates a new MarkdownParser and immediately parses the provided Markdown string.</td>
-</tr>
 </tbody>
 </table>
 <h2 id="method-summary">Method Summary</h2>
@@ -3228,36 +3112,6 @@ and END indicating the end of the sequence.</p>
 <td>public <a href="../MarkdownParser.Token/">MarkdownParser.Token</a></td>
 <td><a href="#firsttoken">firstToken</a>()</td>
 <td>Returns the first token in the parsed sequence.</td>
-</tr>
-<tr>
-<td>private boolean</td>
-<td><a href="#handleopenparenthesis">handleOpenParenthesis</a>(char prevChar)</td>
-<td>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</td>
-</tr>
-<tr>
-<td>private boolean</td>
-<td><a href="#handlecloseparenthesis">handleCloseParenthesis</a>(boolean parensFollowBrackets)</td>
-<td>Handles the close parenthesis ')' encountered.</td>
-</tr>
-<tr>
-<td>private void</td>
-<td><a href="#savetoken">saveToken</a>(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</td>
-<td>Adds the specified token to the list and links it to the previously saved token.</td>
-</tr>
-<tr>
-<td>private boolean</td>
-<td><a href="#handleopenparenthesis">handleOpenParenthesis</a>(char prevChar)</td>
-<td>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</td>
-</tr>
-<tr>
-<td>private boolean</td>
-<td><a href="#handlecloseparenthesis">handleCloseParenthesis</a>(boolean parensFollowBrackets)</td>
-<td>Handles the close parenthesis ')' encountered.</td>
-</tr>
-<tr>
-<td>private void</td>
-<td><a href="#savetoken">saveToken</a>(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</td>
-<td>Adds the specified token to the list and links it to the previously saved token.</td>
 </tr>
 </tbody>
 </table>
@@ -3332,40 +3186,6 @@ Does nothing if no text is available in that range.</p>
 If no tokens exist, returns an END kind token.</p>
 <p><strong>Returns:</strong></p>
 <p>The first token or an END token if none exist.</p>
-<hr />
-<h3 id="handleopenparenthesis_1">handleOpenParenthesis</h3>
-<p>private boolean handleOpenParenthesis(char prevChar)</p>
-<p>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</p>
-<p><strong>Returns:</strong></p>
-<p>true if parentheses follow brackets, false otherwise.</p>
-<hr />
-<h3 id="handlecloseparenthesis_1">handleCloseParenthesis</h3>
-<p>private boolean handleCloseParenthesis(boolean parensFollowBrackets)</p>
-<p>Handles the close parenthesis ')' encountered.
-If parentheses follow brackets, saves a parentheses-tag token.</p>
-<p><strong>Returns:</strong></p>
-<p>Always returns false to reset parsing state for parentheses.</p>
-<hr />
-<h3 id="savetoken_1">saveToken</h3>
-<p>private void saveToken(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</p>
-<p>Adds the specified token to the list and links it to the previously saved token.</p>
-<hr />
-<h3 id="handleopenparenthesis_2">handleOpenParenthesis</h3>
-<p>private boolean handleOpenParenthesis(char prevChar)</p>
-<p>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</p>
-<p><strong>Returns:</strong></p>
-<p>true if parentheses follow brackets, false otherwise.</p>
-<hr />
-<h3 id="handlecloseparenthesis_2">handleCloseParenthesis</h3>
-<p>private boolean handleCloseParenthesis(boolean parensFollowBrackets)</p>
-<p>Handles the close parenthesis ')' encountered.
-If parentheses follow brackets, saves a parentheses-tag token.</p>
-<p><strong>Returns:</strong></p>
-<p>Always returns false to reset parsing state for parentheses.</p>
-<hr />
-<h3 id="savetoken_2">saveToken</h3>
-<p>private void saveToken(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</p>
-<p>Adds the specified token to the list and links it to the previously saved token.</p>
 <hr />
 
 
