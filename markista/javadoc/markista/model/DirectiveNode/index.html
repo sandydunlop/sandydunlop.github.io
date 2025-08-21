@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1700,6 +1700,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1792,12 +1815,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1815,12 +1838,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2091,29 +2114,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
@@ -2280,8 +2280,6 @@
       
         
       
-        
-      
     
     
     
@@ -2335,29 +2333,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2513,12 +2488,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2939,7 +2914,7 @@
 All Implemented Interfaces:<br/>
     <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">java.io.Serializable</a></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>DirectiveNode</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>DirectiveNode</strong></span></p>
 <p>Represents a directive within a module declaration, such as requires, exports, or provides.
 Tracks the kind of directive, its name, whether it is transitive, associated packages,
 implementations, and related interface information.</p>
@@ -3083,80 +3058,88 @@ implementations, and related interface information.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="serialversionuid">serialVersionUID</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final long <strong>serialVersionUID</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="kind">kind</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a> <strong>kind</strong></span></p>
 <p>The kind of this directive (e.g. REQUIRES, EXPORTS).</p>
 <hr />
 <h3 id="name">name</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>name</strong></span></p>
 <p>The name associated with this directive.</p>
 <hr />
 <h3 id="reference">reference</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Reference/">Reference</a> <strong>reference</strong></span></p>
 <hr />
 <h3 id="transitive">transitive</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>transitive</strong></span></p>
 <p>Indicates whether this directive is transitive.</p>
 <hr />
 <h3 id="packages">packages</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; <strong>packages</strong></span></p>
 <p>List of package names associated with this directive.</p>
 <hr />
 <h3 id="implementations">implementations</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; <strong>implementations</strong></span></p>
 <p>List of implementation names associated with this directive.</p>
 <hr />
 <h3 id="interfacereference">interfaceReference</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Reference/">Reference</a> <strong>interfaceReference</strong></span></p>
 <p>The interface name associated with this directive, if any.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getkind">getKind</h3>
-<p>public <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a> getKind()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../DirectiveNode.Kind/">DirectiveNode.Kind</a> <strong>getKind</strong></span></p>
 <p>Returns the kind of this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the directive kind.</p>
 <hr />
 <h3 id="getname">getName</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getName</strong></span></p>
 <p>Returns the name associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the directive name.</p>
 <hr />
 <h3 id="getreference">getReference</h3>
-<p>public <a href="../Reference/">Reference</a> getReference()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Reference/">Reference</a> <strong>getReference</strong></span></p>
 <hr />
 <h3 id="istransitive">isTransitive</h3>
-<p>public boolean isTransitive()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>isTransitive</strong></span></p>
 <p>Indicates if this directive is transitive.</p>
 <p><strong>Returns:</strong></p>
 <p>true if transitive; false otherwise.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p>public void addPackage(<a href="../Reference/">Reference</a> reference)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addPackage</strong></span></p>
 <p>Adds a package reference to this directive's package list.</p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; getPackages()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; <strong>getPackages</strong></span></p>
 <p>Returns the list of package references associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>list of package names.</p>
 <hr />
 <h3 id="addimplementation">addImplementation</h3>
-<p>public void addImplementation(<a href="../Reference/">Reference</a> reference)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addImplementation</strong></span></p>
 <p>Adds the reference to an implementation associated with this directive.</p>
 <hr />
 <h3 id="getimplementations">getImplementations</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; getImplementations()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Reference/">Reference</a>&gt; <strong>getImplementations</strong></span></p>
 <p>Returns the list of implementations associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>list of implementation references.</p>
 <hr />
 <h3 id="setinterface">setInterface</h3>
-<p>public void setInterface(<a href="../Reference/">Reference</a> interfaceReference)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setInterface</strong></span></p>
 <p>Sets the interface name related to this directive.</p>
 <hr />
 <h3 id="tostring">toString</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>toString</strong></span></p>
 <hr />
 <h3 id="getinterface">getInterface</h3>
-<p>public <a href="../Reference/">Reference</a> getInterface()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Reference/">Reference</a> <strong>getInterface</strong></span></p>
 <p>Returns the interface name associated with this directive.</p>
 <p><strong>Returns:</strong></p>
 <p>the interface name, or an empty string if none set.</p>

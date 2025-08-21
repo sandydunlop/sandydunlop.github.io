@@ -1316,12 +1316,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1339,12 +1339,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1592,6 +1592,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1684,12 +1707,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1707,12 +1730,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1983,29 +2006,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2172,8 +2172,6 @@
       
         
       
-        
-      
     
     
     
@@ -2227,29 +2225,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2405,12 +2380,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2721,7 +2696,7 @@
         io.github.sandydunlop.markista.markdown.MarkdownTable<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>MarkdownTable</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>MarkdownTable</strong></span></p>
 <p>A utility class for creating tables in Markdown documents.</p>
 <p>This class allows adding columns with headings and rows with data.
 It automatically calculates column widths to align the table content.</p>
@@ -2814,31 +2789,33 @@ It automatically calculates column widths to align the table content.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="columns">columns</h3>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MarkdownTable.Column/">MarkdownTable.Column</a>&gt; <strong>columns</strong></span></p>
 <hr />
 <h3 id="rows">rows</h3>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[]&gt; <strong>rows</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addcolumn">addColumn</h3>
-<p>public <a href="./">MarkdownTable</a> addColumn(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> heading)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">MarkdownTable</a> <strong>addColumn</strong></span></p>
 <p>Adds a column with the specified heading to the table.</p>
 <p><strong>Returns:</strong></p>
 <p>The table (this) to allow method chaining.</p>
 <hr />
 <h3 id="addrow">addRow</h3>
-<p>public <a href="./">MarkdownTable</a> addRow([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] valueStrings)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">MarkdownTable</a> <strong>addRow</strong></span></p>
 <p>Adds a row of data to the table.
 The number of values should match or be less than the number of columns.</p>
 <p><strong>Returns:</strong></p>
 <p>The table (this) to allow method chaining.</p>
 <hr />
 <h3 id="render">render</h3>
-<p>public void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>render</strong></span></p>
 <p>Renders the table as Markdown text without any indentation.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="render_1">render</h3>
-<p>public void render(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> writer, int indent)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>render</strong></span></p>
 <p>Renders the table as Markdown text with a given indentation level (number of spaces).</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>

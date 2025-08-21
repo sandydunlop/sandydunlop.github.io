@@ -16,7 +16,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../LinkFormatter/">
+        <link rel="next" href="../LinkResolver/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -1152,12 +1152,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1175,12 +1175,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1428,6 +1428,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1520,12 +1543,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1543,12 +1566,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1819,29 +1842,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -1988,8 +1988,6 @@
       
         
           
-        
-      
         
       
         
@@ -2361,29 +2359,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../LinkResolver/" class="md-nav__link">
         
   
@@ -2522,12 +2497,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../TestREcord/" class="md-nav__link">
+      <a href="../TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2960,7 +2935,7 @@
                                                 io.github.sandydunlop.markista.util.ApiScanner<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>ApiScanner</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>ApiScanner</strong></span></p>
 <p>A scanner that walks the language model elements provided by the Javadoc doclet 
 environment and builds an Api model representing the discovered modules, packages,
 types, and members. The scanner delegates most element-to-model conversion logic
@@ -3110,26 +3085,32 @@ being populated and updates the Api instance as elements are encountered.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The shared Context singleton providing logging and configuration access.</p>
 <hr />
 <h3 id="api">api</h3>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="../../model/Api/">Api</a> <strong>api</strong></span></p>
 <p>The Api model being populated by this scanner.</p>
 <hr />
 <h3 id="environment">environment</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> <strong>environment</strong></span></p>
 <p>The doclet environment used to obtain Javadoc doc trees and element utilities.</p>
 <hr />
 <h3 id="unnamedmodule">unnamedModule</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../../model/ModuleNode/">ModuleNode</a> <strong>unnamedModule</strong></span></p>
 <p>The unnamed module node reprsenting package elements not in an explicit module.</p>
 <hr />
 <h3 id="currentmodule">currentModule</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../model/ModuleNode/">ModuleNode</a> <strong>currentModule</strong></span></p>
 <p>The module node currently being populated during a scan. private ModuleNode currentModule;</p>
 <hr />
 <h3 id="includednames">includedNames</h3>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashSet.html">HashSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>includedNames</strong></span></p>
 <p>A set of fully-qualified names (packages and types) included in the scan invocation.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="scan">scan</h3>
-<p>public <a href="../../model/Api/">Api</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../model/Api/">Api</a> <strong>scan</strong></span></p>
 <p>Scan the given set of top-level elements and return the built Api model.
 This method performs setup actions (register included elements, initialize
 TypeUtils with the Api and environment), executes the scan, performs some
@@ -3139,20 +3120,20 @@ computes the unnamed module source path and sorts the final Api model.</p>
 <p>the fully-populated Api model</p>
 <hr />
 <h3 id="processincludedelements">processIncludedElements</h3>
-<p>private void processIncludedElements(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>processIncludedElements</strong></span></p>
 <p>Populate the includedNames set from the provided element set.
 Only package and type elements contribute names. The set is used by
 isIncludedElement to quickly decide if an element should be processed.</p>
 <hr />
 <h3 id="isincludedelement">isIncludedElement</h3>
-<p>boolean isIncludedElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifiedName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">boolean <strong>isIncludedElement</strong></span></p>
 <p>Check whether an element with the given qualifiedName was explicitly included
 in the Javadoc invocation (via the elements set passed to the doclet).</p>
 <p><strong>Returns:</strong></p>
 <p>true if the qualifiedName is present in the includedNames set</p>
 <hr />
 <h3 id="isincludedelement_1">isIncludedElement</h3>
-<p>boolean isIncludedElement(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e)</p>
+<p><span style="font-family: monospace; font-size: 80%;">boolean <strong>isIncludedElement</strong></span></p>
 <p>Determine whether an Element should be treated as included by looking up
 the enclosing type name and checking the includedNames set.
 This overload is used for members whose direct qualified name is not directly
@@ -3161,70 +3142,70 @@ present in includedNames but whose enclosing type may have been included.</p>
 <p>true if the element's enclosing type was included in the elements set</p>
 <hr />
 <h3 id="calculateunnamedmodulesourcepath">calculateUnnamedModuleSourcePath</h3>
-<p>private void calculateUnnamedModuleSourcePath()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>calculateUnnamedModuleSourcePath</strong></span></p>
 <p>Derive an appropriate source root for the unnamed module by inspecting the
 source path of the first package contained in the unnamed module. If the
 unnamed module contains no packages this is a no-op.</p>
 <hr />
 <h3 id="scan_1">scan</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> scan(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>scan</strong></span></p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan">ElementScanner6.scan</a></p>
 <hr />
 <h3 id="visitmodule">visitModule</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html">ModuleElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitModule</strong></span></p>
 <p>Visit a module element and create or reuse a ModuleNode for it.
 The module's module-info.java presence and source path are discovered,
 directives are added, and the module is registered with the Api model.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html">ElementScanner9</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html#visitModule">ElementScanner9.visitModule</a></p>
 <hr />
 <h3 id="visitpackage">visitPackage</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/PackageElement.html">PackageElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitPackage</strong></span></p>
 <p>Visit a package element and, if it was included, create a PackageNode and
 attach it to the current module and to the Api model. Package source path
 and documentation are configured via TypeUtils helpers.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitPackage">ElementScanner6.visitPackage</a></p>
 <hr />
 <h3 id="visittype">visitType</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeElement.html">TypeElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitType</strong></span></p>
 <p>Visit a type element (class/interface/enum/annotation) and create a TypeNode
 representation if the type is included and TypeUtils considers it part of the API.
 This also records the source file path when available.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitType">ElementScanner6.visitType</a></p>
 <hr />
 <h3 id="visitexecutable">visitExecutable</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitExecutable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html">ExecutableElement</a> ee, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitExecutable</strong></span></p>
 <p>Visit an executable element (method or constructor), convert it to a MethodNode
 if included, and populate Javadoc-derived fields such as first sentence, body,
 return description, references and since information using TypeUtils helpers.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitExecutable">ElementScanner6.visitExecutable</a></p>
 <hr />
 <h3 id="visitvariable">visitVariable</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitVariable(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/VariableElement.html">VariableElement</a> ve, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitVariable</strong></span></p>
 <p>Visit a variable element and, if it is a field included in the API, convert it
 to a FieldNode, record any constant value, and populate documentation and modifiers.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html">ElementScanner7</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html#visitVariable">ElementScanner7.visitVariable</a></p>
 <hr />
 <h3 id="visittypeparameter">visitTypeParameter</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitTypeParameter(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html">TypeParameterElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitTypeParameter</strong></span></p>
 <p>Visit a type parameter. This method delegates to scanning of enclosed elements
 so that bounds and other nested elements are visited.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitTypeParameter">ElementScanner6.visitTypeParameter</a></p>
 <hr />
 <h3 id="visitrecordcomponent">visitRecordComponent</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> visitRecordComponent(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/RecordComponentElement.html">RecordComponentElement</a> e, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a> depth)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a> <strong>visitRecordComponent</strong></span></p>
 <p>Visit a record component.</p>
 <p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html">ElementScanner6</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Void.html">Void</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html">Integer</a>&gt;</p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent">ElementScanner6.visitRecordComponent</a></p>
 <hr />
 <h3 id="getmoduleinfofile">getModuleInfoFile</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> getModuleInfoFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html">ModuleElement</a> moduleElement)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> <strong>getModuleInfoFile</strong></span></p>
 <p>Retrieve the module-info.java file for the given ModuleElement if available.
 This helper inspects the JavaFileObject associated with the module and returns
 a File when the file name ends with "module-info.java".</p>

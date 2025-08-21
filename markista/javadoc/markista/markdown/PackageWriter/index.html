@@ -1325,12 +1325,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1348,12 +1348,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1601,6 +1601,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1693,12 +1716,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1716,12 +1739,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1992,29 +2015,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2181,8 +2181,6 @@
       
         
       
-        
-      
     
     
     
@@ -2236,29 +2234,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2414,12 +2389,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2739,7 +2714,7 @@
         io.github.sandydunlop.markista.markdown.PackageWriter<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>PackageWriter</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>PackageWriter</strong></span></p>
 <p>A class that outputs API package documentation as Markdown.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2822,14 +2797,17 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="text_class">TEXT_CLASS</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>TEXT_CLASS</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="text_description">TEXT_DESCRIPTION</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>TEXT_DESCRIPTION</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <blockquote>
@@ -2838,32 +2816,33 @@ Do not make this <code>final</code>. It will break tests with mocked <a href="..
 </blockquote>
 <hr />
 <h3 id="writer">writer</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> <strong>writer</strong></span></p>
 <p>The Writer used to output the generated markdown content for the current document.
 It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>
-<p>public void writeDocs(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>writeDocs</strong></span></p>
 <p>Output the documentation files for the specified API</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">java.nio.file.InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputpackagedoc">outputPackageDoc</h3>
-<p>void outputPackageDoc(<a href="../../model/PackageNode/">PackageNode</a> packageNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">void <strong>outputPackageDoc</strong></span></p>
 <p>Writes the Javadoc for a package as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">java.nio.file.InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputpackagememberpackages">outputPackageMemberPackages</h3>
-<p>private void outputPackageMemberPackages(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageNode/">PackageNode</a>&gt; members)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberPackages</strong></span></p>
 <p>Writes the Javadoc for a package's member packages as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputpackagemembertypes">outputPackageMemberTypes</h3>
-<p>private void outputPackageMemberTypes(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeView/">TypeView</a>&gt; members)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberTypes</strong></span></p>
 <p>Writes the Javadoc for a package's members as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>

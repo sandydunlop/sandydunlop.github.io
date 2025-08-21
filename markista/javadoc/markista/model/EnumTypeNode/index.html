@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1556,6 +1556,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1648,12 +1671,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1671,12 +1694,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1947,29 +1970,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
@@ -2136,8 +2136,6 @@
       
         
       
-        
-      
     
     
     
@@ -2191,29 +2189,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2369,12 +2344,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2647,13 +2622,13 @@
 <h1 id="class-enumtypenode">Class EnumTypeNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
         <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractPackageMember/">io.github.sandydunlop.markista.model.AbstractPackageMember</a><br/>
+                <a href="../AbstractMember/">io.github.sandydunlop.markista.model.AbstractMember</a><br/>
                         <a href="../PackageOrTypeNode/">io.github.sandydunlop.markista.model.PackageOrTypeNode</a><br/>
                                 <a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a><br/>
                                         io.github.sandydunlop.markista.model.EnumTypeNode<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>EnumTypeNode</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>EnumTypeNode</strong></span></p>
 <p>Represents an enum type node with its constants.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2711,14 +2686,15 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="constants">constants</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>constants</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="addconstant">addConstant</h3>
-<p>public void addConstant(<a href="../FieldNode/">FieldNode</a> constant)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addConstant</strong></span></p>
 <p>Adds a constant field to this enum.</p>
 <hr />
 <h3 id="getconstants">getConstants</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; getConstants()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>getConstants</strong></span></p>
 <p>Returns the list of enum constants.</p>
 <p><strong>Returns:</strong></p>
 <p>List of FieldNode constants.</p>

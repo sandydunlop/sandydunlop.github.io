@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/util/LinkResolver/">
       
       
-        <link rel="prev" href="../LinkFormatter/">
+        <link rel="prev" href="../ApiScanner/">
       
       
         <link rel="next" href="../Markdown/">
@@ -1152,12 +1152,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1175,12 +1175,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1428,6 +1428,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1520,12 +1543,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1543,12 +1566,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1819,29 +1842,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2010,8 +2010,6 @@
       
         
       
-        
-      
     
     
     
@@ -2065,29 +2063,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2792,12 +2767,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../TestREcord/" class="md-nav__link">
+      <a href="../TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -3495,7 +3470,7 @@
         io.github.sandydunlop.markista.util.LinkResolver<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>LinkResolver</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>LinkResolver</strong></span></p>
 <p><code>LinkResolver</code> calculates the paths for Markdown documents
 to link between different packages and to URLs of external
 packages and their contents.</p>
@@ -3798,72 +3773,87 @@ It also manages native Java documentation URLs for modules and packages.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="dot_class">DOT_CLASS</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>DOT_CLASS</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h3 id="dot_html">DOT_HTML</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>DOT_HTML</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="java_24_url">JAVA_24_URL</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>JAVA_24_URL</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="primitives">primitives</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>primitives</strong></span></p>
 <hr />
 <h3 id="modulelayer">moduleLayer</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ModuleLayer.html">ModuleLayer</a> <strong>moduleLayer</strong></span></p>
 <hr />
 <h3 id="nativemodulenames">nativeModuleNames</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>nativeModuleNames</strong></span></p>
 <hr />
 <h3 id="nativepackagenames">nativePackageNames</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>nativePackageNames</strong></span></p>
 <hr />
 <h3 id="suffix">suffix</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>suffix</strong></span></p>
 <hr />
 <h3 id="siblingmodules">siblingModules</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>siblingModules</strong></span></p>
 <hr />
 <h3 id="classtomodule">classToModule</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>classToModule</strong></span></p>
 <hr />
 <h3 id="siblingmodulename">siblingModuleName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>siblingModuleName</strong></span></p>
 <hr />
 <h3 id="siblingclassnames">siblingClassNames</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>siblingClassNames</strong></span></p>
 <hr />
 <h3 id="api">api</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="../../model/Api/">Api</a> <strong>api</strong></span></p>
 <p>The Api model representing the entire documented API structure,
 including modules, packages, types, and members used for cross-referencing and navigation.</p>
 <hr />
 <h3 id="flatteneddirectories">flattenedDirectories</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>flattenedDirectories</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="init">init</h3>
-<p>public static void init(<a href="../../model/Api/">Api</a> a, <a href="../../core/Context/">Context</a> c)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>init</strong></span></p>
 <p>Initializes the LinkResolver for the API being documented.</p>
 <hr />
 <h3 id="setflatteneddirectories">setFlattenedDirectories</h3>
-<p>public static void setFlattenedDirectories(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> sd)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setFlattenedDirectories</strong></span></p>
 <p>Sets the string used to adjust flattened directories in relative path calculations.</p>
 <hr />
 <h3 id="addnativemoduleurl">addNativeModuleUrl</h3>
-<p>public static void addNativeModuleUrl(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> baseUrl, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> s)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>addNativeModuleUrl</strong></span></p>
 <p>Adds a native module URL base for linking native Java modules and their packages.</p>
 <hr />
 <h3 id="getpackagename">getPackageName</h3>
-<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getPackageName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> id)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getPackageName</strong></span></p>
 <p>Extracts the package name part from an identifier string, assuming lowercase start for package.</p>
 <p><strong>Returns:</strong></p>
 <p>The package name portion or empty string if not a package.</p>
 <hr />
 <h3 id="getclassname">getClassName</h3>
-<p>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getClassName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> id)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getClassName</strong></span></p>
 <p>Extracts the class name part from an identifier string, assuming uppercase start for class.</p>
 <p><strong>Returns:</strong></p>
 <p>The class name portion or empty string if none found.</p>
 <hr />
 <h3 id="resolve">resolve</h3>
-<p>public static <a href="../../model/Reference/">Reference</a> resolve(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="../../model/Reference/">Reference</a> <strong>resolve</strong></span></p>
 <p>Resolves a link reference. The supplied <code>link</code> parameter must specify the
 target of the link: a class, a module, etc. If the link can be resolved, 
 the details of the type of link are set in the <code>link</code> object before it is
@@ -3873,155 +3863,155 @@ returned.</p>
 if the link was not able to be resolved.</p>
 <hr />
 <h3 id="resolveunsupported">resolveUnsupported</h3>
-<p>static <a href="../../model/Reference/">Reference</a> resolveUnsupported(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="../../model/Reference/">Reference</a> <strong>resolveUnsupported</strong></span></p>
 <p>Checks if the target is unsupported by the <code>LinkResolver</code>.</p>
 <p><strong>Returns:</strong></p>
 <p>A <code>Reference</code> with <code>Reference.Kind.UNKNOWN</code> if unsupported, else <code>Reference.Kind.NONE</code>.</p>
 <hr />
 <h3 id="resolveprimitiveorvoid">resolvePrimitiveOrVoid</h3>
-<p>static boolean resolvePrimitiveOrVoid(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolvePrimitiveOrVoid</strong></span></p>
 <p>Checks if the target is a primitive type or void.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to primitive or void, else false.</p>
 <hr />
 <h3 id="qualifytype">qualifyType</h3>
-<p>public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] qualifyType(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] <strong>qualifyType</strong></span></p>
 <p>Returns canonical package and class names for a given type name, ensuring both parts are qualified.</p>
 <p><strong>Returns:</strong></p>
 <p>A String array: {packageName, className}.</p>
 <hr />
 <h3 id="resolvenativepackageortype">resolveNativePackageOrType</h3>
-<p>static boolean resolveNativePackageOrType(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveNativePackageOrType</strong></span></p>
 <p>Resolves a native Java package or type to an external documentation URL.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a native package or type.</p>
 <hr />
 <h3 id="resolvenativepackagetypeinternal">resolveNativePackageTypeInternal</h3>
-<p>private static boolean resolveNativePackageTypeInternal(<a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>resolveNativePackageTypeInternal</strong></span></p>
 <hr />
 <h3 id="resolvelocalpackageortype">resolveLocalPackageOrType</h3>
-<p>static boolean resolveLocalPackageOrType(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveLocalPackageOrType</strong></span></p>
 <p>Resolves a local package or type within the documented API to a relative link.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a local package or type.</p>
 <hr />
 <h3 id="resolvelocalpackagetypeinternal">resolveLocalPackageTypeInternal</h3>
-<p>static boolean resolveLocalPackageTypeInternal(<a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveLocalPackageTypeInternal</strong></span></p>
 <hr />
 <h3 id="addclasstoreference">addClassToReference</h3>
-<p>static void addClassToReference(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>addClassToReference</strong></span></p>
 <p>Appends the class name to the URI on the Reference and sets kind TYPE if not URL.</p>
 <hr />
 <h3 id="resolvelocalmodule">resolveLocalModule</h3>
-<p>static boolean resolveLocalModule(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveLocalModule</strong></span></p>
 <p>Resolves a module reference by name to a Reference either local or native.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a local module.</p>
 <hr />
 <h3 id="resolvesiblingmodule">resolveSiblingModule</h3>
-<p>static boolean resolveSiblingModule(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveSiblingModule</strong></span></p>
 <p>Attempts to resolve the link as a sibling module relative to the current context.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a sibling module.</p>
 <hr />
 <h3 id="resolvesiblingtype">resolveSiblingType</h3>
-<p>static boolean resolveSiblingType(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveSiblingType</strong></span></p>
 <p>Attempts to resolve the link as a sibling type relative to the current context.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a sibling type.</p>
 <hr />
 <h3 id="getmodule">getModule</h3>
-<p>static <a href="../../model/ModuleNode/">ModuleNode</a> getModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="../../model/ModuleNode/">ModuleNode</a> <strong>getModule</strong></span></p>
 <p>Returns the ModuleNode for the named module in the current API.</p>
 <p><strong>Returns:</strong></p>
 <p>The ModuleNode if found, else null.</p>
 <hr />
 <h3 id="ispackagequalified">isPackageQualified</h3>
-<p>static boolean isPackageQualified(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>isPackageQualified</strong></span></p>
 <p>Checks if a package name is qualified (contains a dot).</p>
 <p><strong>Returns:</strong></p>
 <p>True if the name is qualified, false otherwise.</p>
 <hr />
 <h3 id="qualifypackage">qualifyPackage</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> qualifyPackage(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simpleName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>qualifyPackage</strong></span></p>
 <p>Qualifies a simple package name to its fully qualified name within the API, if exists.</p>
 <p><strong>Returns:</strong></p>
 <p>The fully qualified package name or empty string if not found.</p>
 <hr />
 <h3 id="relativize">relativize</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> relativize(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> to)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>relativize</strong></span></p>
 <p>Produces a relative path from the current package context to a target package.</p>
 <p><strong>Returns:</strong></p>
 <p>A relative filesystem path string.</p>
 <hr />
 <h3 id="relativizewithmodules">relativizeWithModules</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> relativizeWithModules(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> from, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> to)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>relativizeWithModules</strong></span></p>
 <p>Produces a relative path considering modules between two packages.
 If packages belong to different modules, the relative path includes module directories.</p>
 <p><strong>Returns:</strong></p>
 <p>The relative path string.</p>
 <hr />
 <h3 id="relativizewithsiblingmodule">relativizeWithSiblingModule</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> relativizeWithSiblingModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> from, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> to, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toModule)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>relativizeWithSiblingModule</strong></span></p>
 <p>Computes a relative path from the current package context, considering sibling modules.</p>
 <p><strong>Returns:</strong></p>
 <p>The relative path string including sibling module base if applicable.</p>
 <hr />
 <h3 id="relativize_1">relativize</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> relativize(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> from, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> to)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>relativize</strong></span></p>
 <p>Produces a relative path string from one package to another by splitting and comparing components.
 Supports flattened directories if set.</p>
 <p><strong>Returns:</strong></p>
 <p>The relative path string.</p>
 <hr />
 <h3 id="flattendirectory">flattenDirectory</h3>
-<p>static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> flattenDirectory(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> path)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>flattenDirectory</strong></span></p>
 <p>Removes prefix directories from a path if flattenedDirectories is set and matches.</p>
 <p><strong>Returns:</strong></p>
 <p>The adjusted path or original if no flattening applies.</p>
 <hr />
 <h3 id="findcommonindex">findCommonIndex</h3>
-<p>static int findCommonIndex([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] fromParts, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] toParts)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static int <strong>findCommonIndex</strong></span></p>
 <p>Finds the common prefix index between two string arrays.</p>
 <p><strong>Returns:</strong></p>
 <p>The number of common leading segments.</p>
 <hr />
 <h3 id="appendparentdirs">appendParentDirs</h3>
-<p>static void appendParentDirs(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StringBuilder.html">StringBuilder</a> rel, int count)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>appendParentDirs</strong></span></p>
 <p>Appends parent directory segments <code>..</code> to the relative path string builder.</p>
 <hr />
 <h3 id="appendtargetdirs">appendTargetDirs</h3>
-<p>static void appendTargetDirs(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StringBuilder.html">StringBuilder</a> rel, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] toParts, int start)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>appendTargetDirs</strong></span></p>
 <p>Appends target directory segments to the relative path string builder starting at index start.</p>
 <hr />
 <h3 id="configuresiblingmodules">configureSiblingModules</h3>
-<p>static void configureSiblingModules()</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>configureSiblingModules</strong></span></p>
 <p>Configures the known sibling modules for link resolution, typically loading their info.
 This method updates internal structures to recognize sibling modules for proper linking.</p>
 <hr />
 <h3 id="processdirectory">processDirectory</h3>
-<p>static void processDirectory(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>processDirectory</strong></span></p>
 <hr />
 <h3 id="processdirectoryurl">processDirectoryUrl</h3>
-<p>static void processDirectoryUrl(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, [URL](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URL.html)[] urls)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>processDirectoryUrl</strong></span></p>
 <hr />
 <h3 id="processclassfile">processClassFile</h3>
-<p>static void processClassFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> file, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URLClassLoader.html">URLClassLoader</a> classLoader)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>processClassFile</strong></span></p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="processjarfile">processJarFile</h3>
-<p>static void processJarFile(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarFile.html">JarFile</a> jarFile)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>processJarFile</strong></span></p>
 <p>Processes a JAR file to extract module and package information relevant for sibling module linking.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="addnativemodule">addNativeModule</h3>
-<p>static void addNativeModule(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>addNativeModule</strong></span></p>
 <p>Adds a native Java module URL for linking purposes using a standard Oracle Javadoc base URL.</p>
 <hr />
 <h3 id="addnativemodules">addNativeModules</h3>
-<p>public static void addNativeModules()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>addNativeModules</strong></span></p>
 <p>Adds known native modules for Java SE 24 to the resolver.
 This populates internal mappings for native module and package documentation URLs.</p>
 <hr />

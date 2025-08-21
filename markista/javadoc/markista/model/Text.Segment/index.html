@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1430,6 +1430,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1522,12 +1545,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1545,12 +1568,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2028,29 +2051,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
@@ -2217,8 +2217,6 @@
       
         
       
-        
-      
     
     
     
@@ -2272,29 +2270,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2450,12 +2425,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2815,7 +2790,7 @@ All Implemented Interfaces:<br/>
 <p>Enclosing Class:<br/>
     <a href="../Text/">io.github.sandydunlop.markista.model.Text</a></p>
 <hr />
-<p><span style="font-family: monospace;">public static class <strong>Text.Segment</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static class <strong>Text.Segment</strong></span></p>
 <p>Represents a segment of the Text with its kind, content, and optional link.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2918,64 +2893,68 @@ All Implemented Interfaces:<br/>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="serialversionuid">serialVersionUID</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final long <strong>serialVersionUID</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="kind">kind</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Text.SegmentKind/">Text.SegmentKind</a> <strong>kind</strong></span></p>
 <p>The kind/type of this segment.</p>
 <hr />
 <h3 id="text">text</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>text</strong></span></p>
 <p>The textual content of this segment.</p>
 <hr />
 <h3 id="link">link</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Reference/">Reference</a> <strong>link</strong></span></p>
 <p>The associated link if the segment represents a link.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="empty">empty</h3>
-<p>public static <a href="./">Text.Segment</a> empty()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="./">Text.Segment</a> <strong>empty</strong></span></p>
 <p>Creates an empty segment instance.</p>
 <p><strong>Returns:</strong></p>
 <p>A new empty Segment object.</p>
 <hr />
 <h3 id="setkind">setKind</h3>
-<p>public <a href="./">Text.Segment</a> setKind(<a href="../Text.SegmentKind/">Text.SegmentKind</a> k)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text.Segment</a> <strong>setKind</strong></span></p>
 <p>Sets the kind of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
-<p>public <a href="../Text.SegmentKind/">Text.SegmentKind</a> getKind()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text.SegmentKind/">Text.SegmentKind</a> <strong>getKind</strong></span></p>
 <p>Returns the kind of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The current SegmentKind.</p>
 <hr />
 <h3 id="tostring">toString</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>toString</strong></span></p>
 <p>Returns the string representation of this segment.
 If text is null or empty, returns the link value.</p>
 <p><strong>Returns:</strong></p>
 <p>The text or link of this segment.</p>
 <hr />
 <h3 id="settext">setText</h3>
-<p>public <a href="./">Text.Segment</a> setText(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text.Segment</a> <strong>setText</strong></span></p>
 <p>Sets the text content of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="gettext">getText</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getText()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getText</strong></span></p>
 <p>Returns the text content of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The text string.</p>
 <hr />
 <h3 id="setlink">setLink</h3>
-<p>public <a href="./">Text.Segment</a> setLink(<a href="../Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text.Segment</a> <strong>setLink</strong></span></p>
 <p>Sets the link value of this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>This Segment instance for chaining.</p>
 <hr />
 <h3 id="getlink">getLink</h3>
-<p>public <a href="../Reference/">Reference</a> getLink()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Reference/">Reference</a> <strong>getLink</strong></span></p>
 <p>Returns the link associated with this segment.</p>
 <p><strong>Returns:</strong></p>
 <p>The link reference.</p>

@@ -1152,12 +1152,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1175,12 +1175,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1428,6 +1428,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1520,12 +1543,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1543,12 +1566,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1819,29 +1842,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2010,8 +2010,6 @@
       
         
       
-        
-      
     
     
     
@@ -2065,29 +2063,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2486,12 +2461,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../TestREcord/" class="md-nav__link">
+      <a href="../TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2883,7 +2858,7 @@
         io.github.sandydunlop.markista.util.Markdown<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>Markdown</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>Markdown</strong></span></p>
 <p>A utility class for producing Markdown formatted text and resolving
 Markdown links to point to the correct file, directory, or web page.</p>
 <h2 id="field-summary">Field Summary</h2>
@@ -3007,87 +2982,89 @@ Markdown links to point to the correct file, directory, or web page.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="format_simple_link">FORMAT_SIMPLE_LINK</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>FORMAT_SIMPLE_LINK</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setcontext">setContext</h3>
-<p>public static void setContext(<a href="../../core/Context/">Context</a> c)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setContext</strong></span></p>
 <hr />
 <h3 id="fullsignature">fullSignature</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature(<a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>fullSignature</strong></span></p>
 <p>Formats the signature of a method as markdown.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text representing the method's signature</p>
 <hr />
 <h3 id="formatparams">formatParams</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatParams(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/">ParamNode</a>&gt; params)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatParams</strong></span></p>
 <p>Formats a list of <code>ParamNode</code> objects as markdown, identifying and linking type names.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text containing a link</p>
 <hr />
 <h3 id="formattext">formatText</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatText(<a href="../../model/Text/">Text</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatText</strong></span></p>
 <p>Formats text contained in a <code>Text</code> object as markdown.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text</p>
 <hr />
 <h3 id="formatlink">formatLink</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> formatLink(<a href="../../model/Text.Segment/">Text.Segment</a> segment)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatLink</strong></span></p>
 <p>Formats links contained in a text segment as markdown.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text with a resolved link</p>
 <hr />
 <h3 id="link">link</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> link(<a href="../../model/Reference/">Reference</a> reference, boolean useQualifiedName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong></span></p>
 <p>Create a markdown formatted link</p>
 <p><strong>Returns:</strong></p>
 <p>markdown formatted link</p>
 <hr />
 <h3 id="setdisplayname">setDisplayName</h3>
-<p>static void setDisplayName(<a href="../../model/Reference/">Reference</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> displayName, boolean isLocalMethod, boolean useQualifiedName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">static void <strong>setDisplayName</strong></span></p>
 <hr />
 <h3 id="canbesimplified">canBeSimplified</h3>
-<p>private static boolean canBeSimplified(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>canBeSimplified</strong></span></p>
 <hr />
 <h3 id="mdreflink">mdRefLink</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdRefLink(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLink</strong></span></p>
 <p>Creates a markdown formatted link from a <a href="../../model/Reference/">Reference</a> object.</p>
 <p><strong>Returns:</strong></p>
 <p>a markdown formatted link</p>
 <hr />
 <h3 id="mdreflinkmethod">mdRefLinkMethod</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdRefLinkMethod(<a href="../../model/Reference/">Reference</a> link)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLinkMethod</strong></span></p>
 <p>Creates a markdown formatted link from a <a href="../../model/Reference/">Reference</a> object.
 with the option of simplifying qualified type names.</p>
 <p><strong>Returns:</strong></p>
 <p>a markdown formatted link</p>
 <hr />
 <h3 id="mdanchor">mdAnchor</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAnchor(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdAnchor</strong></span></p>
 <p>Converts a string to the format required for use as a Markdown anchor.
 Converted strings will be lowercase and contain no spaces.</p>
 <p><strong>Returns:</strong></p>
 <p>The string converted to match the format required by Markdown anchor links</p>
 <hr />
 <h3 id="mdanchorlink">mdAnchorLink</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdAnchorLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> phrase)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdAnchorLink</strong></span></p>
 <p>Create a markdown formatted link to an anchor within the same markdown page.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text containing a correctly formatted anchor link</p>
 <hr />
 <h3 id="mddocumentlink">mdDocumentLink</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> mdDocumentLink(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> docName)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdDocumentLink</strong></span></p>
 <p>Creates a Markdown link to another Markdown document</p>
 <p><strong>Returns:</strong></p>
 <p>The Markdown formatted link</p>
 <hr />
 <h3 id="escape">escape</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> escape(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>escape</strong></span></p>
 <p>Escapes HTML <code>&lt;</code> and <code>&gt;</code> characters in a string with their corresponding
 HTML character entities, <code>&amp;lt;</code> and <code>&amp;gt;</code>.</p>
 <p><strong>Returns:</strong></p>

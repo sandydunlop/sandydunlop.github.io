@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/model/PackageNode/">
       
       
-        <link rel="prev" href="../OverriddenMethodNode/">
+        <link rel="prev" href="../Node/">
       
       
         <link rel="next" href="../PackageOrTypeNode/">
@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1430,6 +1430,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1522,12 +1545,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1545,12 +1568,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2037,29 +2060,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
@@ -2226,8 +2226,6 @@
       
         
       
-        
-      
     
     
     
@@ -2281,29 +2279,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2459,12 +2434,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2827,12 +2802,12 @@
 <h1 id="class-packagenode">Class PackageNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
         <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractPackageMember/">io.github.sandydunlop.markista.model.AbstractPackageMember</a><br/>
+                <a href="../AbstractMember/">io.github.sandydunlop.markista.model.AbstractMember</a><br/>
                         <a href="../PackageOrTypeNode/">io.github.sandydunlop.markista.model.PackageOrTypeNode</a><br/>
                                 io.github.sandydunlop.markista.model.PackageNode<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>PackageNode</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>PackageNode</strong></span></p>
 <p>Represents a Java package</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2940,51 +2915,55 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="modulename">moduleName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>moduleName</strong></span></p>
 <hr />
 <h3 id="sourcepath">sourcePath</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>sourcePath</strong></span></p>
 <hr />
 <h3 id="haspackageinfo">hasPackageInfo</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>hasPackageInfo</strong></span></p>
 <hr />
 <h3 id="packages">packages</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">PackageNode</a>&gt; <strong>packages</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setmodulename">setModuleName</h3>
-<p>public void setModuleName(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> module)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setModuleName</strong></span></p>
 <p>Sets the module for this package.</p>
 <hr />
 <h3 id="getmodulename">getModuleName</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModuleName()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getModuleName</strong></span></p>
 <p>Returns the module that owns this package.</p>
 <p><strong>Returns:</strong></p>
 <p>The ModuleNode instance.</p>
 <hr />
 <h3 id="setsourcepath">setSourcePath</h3>
-<p>public void setSourcePath(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> path)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setSourcePath</strong></span></p>
 <hr />
 <h3 id="getsourcepath">getSourcePath</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getSourcePath()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getSourcePath</strong></span></p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">PackageNode</a>&gt; getPackages()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">PackageNode</a>&gt; <strong>getPackages</strong></span></p>
 <p>Returns the list of package members owned by this package.</p>
 <p><strong>Returns:</strong></p>
 <p>List of PackageNode objects.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p>public void addPackage(<a href="./">PackageNode</a> packageNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addPackage</strong></span></p>
 <p>Adds a subpackage to this package.</p>
 <hr />
 <h3 id="getdescription">getDescription</h3>
-<p>public <a href="../Text/">Text</a> getDescription()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getDescription</strong></span></p>
 <p>Returns the description text for this package, typically the first sentence.</p>
 <p><strong>Returns:</strong></p>
 <p>The Text object representing the description.</p>
 <hr />
 <h3 id="sethaspackageinfo">setHasPackageInfo</h3>
-<p>public void setHasPackageInfo(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setHasPackageInfo</strong></span></p>
 <hr />
 <h3 id="haspackageinfo_1">hasPackageInfo</h3>
-<p>public boolean hasPackageInfo()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>hasPackageInfo</strong></span></p>
 <hr />
 
 

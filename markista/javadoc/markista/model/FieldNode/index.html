@@ -16,7 +16,7 @@
         <link rel="prev" href="../EnumTypeNode/">
       
       
-        <link rel="next" href="../InterfaceTypeNode/">
+        <link rel="next" href="../InheritedMethodRef/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1592,6 +1592,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1684,12 +1707,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1707,12 +1730,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1983,29 +2006,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TypeNode/" class="md-nav__link">
         
   
@@ -2172,8 +2172,6 @@
       
         
       
-        
-      
     
     
     
@@ -2227,29 +2225,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2405,12 +2380,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2719,12 +2694,12 @@
 <h1 id="class-fieldnode">Class FieldNode</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
         <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
-                <a href="../AbstractPackageMember/">io.github.sandydunlop.markista.model.AbstractPackageMember</a><br/>
+                <a href="../AbstractMember/">io.github.sandydunlop.markista.model.AbstractMember</a><br/>
                         <a href="../ParamNode/">io.github.sandydunlop.markista.model.ParamNode</a><br/>
                                 io.github.sandydunlop.markista.model.FieldNode<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>FieldNode</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>FieldNode</strong></span></p>
 <p>A class to hold information about fields within a class, interface, or enum.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -2802,29 +2777,31 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="constantvalue">constantValue</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> <strong>constantValue</strong></span></p>
 <p>The constant value assigned to this field, if any.</p>
 <hr />
 <h3 id="constantvaluereference">constantValueReference</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Reference/">Reference</a> <strong>constantValueReference</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getconstantvalue">getConstantValue</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> getConstantValue()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> <strong>getConstantValue</strong></span></p>
 <p>Returns the constant value of this field.</p>
 <p><strong>Returns:</strong></p>
 <p>The constant value of the field or null if none.</p>
 <hr />
 <h3 id="setconstantvalue">setConstantValue</h3>
-<p>public void setConstantValue(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a> constantValue)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setConstantValue</strong></span></p>
 <p>Sets the constant value of this field.</p>
 <hr />
 <h3 id="setconstantvaluereference">setConstantValueReference</h3>
-<p>public void setConstantValueReference(<a href="../Reference/">Reference</a> ref)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setConstantValueReference</strong></span></p>
 <hr />
 <h3 id="getconstantvaluereference">getConstantValueReference</h3>
-<p>public <a href="../Reference/">Reference</a> getConstantValueReference()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Reference/">Reference</a> <strong>getConstantValueReference</strong></span></p>
 <hr />
 <h3 id="fullsignature">fullSignature</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fullSignature()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>fullSignature</strong></span></p>
 <p>Returns the full signature of the field including modifiers and name.</p>
 <p><strong>Returns:</strong></p>
 <p>The string representing the full signature.</p>

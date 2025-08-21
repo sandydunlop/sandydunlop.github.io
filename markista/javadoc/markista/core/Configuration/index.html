@@ -1550,12 +1550,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1573,12 +1573,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1826,6 +1826,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1918,12 +1941,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1941,12 +1964,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2217,29 +2240,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2406,8 +2406,6 @@
       
         
       
-        
-      
     
     
     
@@ -2461,29 +2459,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2639,12 +2614,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -3189,7 +3164,7 @@
         io.github.sandydunlop.markista.core.Configuration<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>Configuration</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>Configuration</strong></span></p>
 <p>Utility class holding global configuration settings for the documentation generator.</p>
 <p>This class provides static getter and setter methods for various options that control the behavior
 of the documentation output, such as output directory, verbosity, and which members to include.</p>
@@ -3400,139 +3375,150 @@ of the documentation output, such as output directory, verbosity, and which memb
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="doctitle">docTitle</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>docTitle</strong></span></p>
 <p>The title of the API documentation being generated</p>
 <hr />
 <h3 id="createexternallinks">createExternalLinks</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>createExternalLinks</strong></span></p>
 <p>If true, links to types defined outside the API being documented will be generated</p>
 <hr />
 <h3 id="documentprivatemembers">documentPrivateMembers</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>documentPrivateMembers</strong></span></p>
 <p>If true, private members of packages and types will be included in the generated documentation</p>
 <hr />
 <h3 id="flattenpackages">flattenPackages</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>flattenPackages</strong></span></p>
 <p>If true, empty package directories will not be created, leading to a flatter directory structure</p>
 <hr />
 <h3 id="flattenmodules">flattenModules</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>flattenModules</strong></span></p>
 <p>If true, module directories will not be created, leading to a flatter directory structure</p>
 <hr />
 <h3 id="usecontenttabs">useContentTabs</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>useContentTabs</strong></span></p>
 <p>If true, summary tables will be created inside Markdown content tabs.
 See <a href="https://squidfunk.github.io/mkdocs-material/reference/content-tabs/">mkdocs-material</a> for more information.</p>
 <hr />
 <h3 id="verbose">verbose</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>verbose</strong></span></p>
 <p>If true, logging will include status information.</p>
 <hr />
 <h3 id="modulepathlist">modulePathList</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>modulePathList</strong></span></p>
 <p>The list of module paths passed in from the Javadoc command line</p>
 <hr />
 <h3 id="linkexternal">linkExternal</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>linkExternal</strong></span></p>
 <p>The list of modules that have local Javadoc that can be linked to</p>
 <hr />
 <h3 id="projectpath">projectPath</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>projectPath</strong></span></p>
 <hr />
 <h3 id="extensionsorder">extensionsOrder</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>extensionsOrder</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setdoctitle">setDocTitle</h3>
-<p>public static void setDocTitle(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setDocTitle</strong></span></p>
 <p>Sets the title used in the generated documentation</p>
 <hr />
 <h3 id="getdoctitle">getDocTitle</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getDocTitle()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getDocTitle</strong></span></p>
 <p>Returns the title used in the generated documentation</p>
 <p><strong>Returns:</strong></p>
 <p>The title to be used</p>
 <hr />
 <h3 id="setcreateexternallinks">setCreateExternalLinks</h3>
-<p>public static void setCreateExternalLinks(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setCreateExternalLinks</strong></span></p>
 <p>Sets whether to generate links to external documentation for referenced types and modules.</p>
 <hr />
 <h3 id="getcreateexternallinks">getCreateExternalLinks</h3>
-<p>public static boolean getCreateExternalLinks()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getCreateExternalLinks</strong></span></p>
 <p>Returns whether the documentation generator creates links to external documentation.</p>
 <p><strong>Returns:</strong></p>
 <p>true if external links should be created, false otherwise.</p>
 <hr />
 <h3 id="setdocumentprivatemembers">setDocumentPrivateMembers</h3>
-<p>public static void setDocumentPrivateMembers(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setDocumentPrivateMembers</strong></span></p>
 <p>Sets whether private members (fields, methods) should be included in the generated documentation.</p>
 <hr />
 <h3 id="getdocumentprivatemembers">getDocumentPrivateMembers</h3>
-<p>public static boolean getDocumentPrivateMembers()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getDocumentPrivateMembers</strong></span></p>
 <p>Returns whether private members are included in the documentation.</p>
 <p><strong>Returns:</strong></p>
 <p>true if private members are included, false otherwise.</p>
 <hr />
 <h3 id="setflattenpackages">setFlattenPackages</h3>
-<p>public static void setFlattenPackages(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setFlattenPackages</strong></span></p>
 <p>Sets whether to flatten package directory structure when generating the documentation output.</p>
 <hr />
 <h3 id="getflattenpackages">getFlattenPackages</h3>
-<p>public static boolean getFlattenPackages()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getFlattenPackages</strong></span></p>
 <p>Returns whether the documentation output package directory structure is flattened.</p>
 <p><strong>Returns:</strong></p>
 <p>true if package directories are flattened, false otherwise.</p>
 <hr />
 <h3 id="setflattenmodules">setFlattenModules</h3>
-<p>public static void setFlattenModules(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setFlattenModules</strong></span></p>
 <p>Sets whether to flatten module directory structure when generating the documentation output.</p>
 <hr />
 <h3 id="getflattenmodules">getFlattenModules</h3>
-<p>public static boolean getFlattenModules()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getFlattenModules</strong></span></p>
 <p>Returns whether the documentation output module directory structure is flattened.</p>
 <p><strong>Returns:</strong></p>
 <p>true if module directories are flattened, false otherwise.</p>
 <hr />
 <h3 id="setusecontenttabs">setUseContentTabs</h3>
-<p>public static void setUseContentTabs(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setUseContentTabs</strong></span></p>
 <p>Sets whether to use content tabs in the generated documentation.</p>
 <hr />
 <h3 id="getusecontenttabs">getUseContentTabs</h3>
-<p>public static boolean getUseContentTabs()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getUseContentTabs</strong></span></p>
 <p>Returns whether content tabs are used in documentation.</p>
 <p><strong>Returns:</strong></p>
 <p>true if content tabs are enabled, false otherwise.</p>
 <hr />
 <h3 id="setverbose">setVerbose</h3>
-<p>public static void setVerbose(boolean b)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setVerbose</strong></span></p>
 <p>Sets whether verbose logging or output should be enabled during documentation generation.</p>
 <hr />
 <h3 id="getverbose">getVerbose</h3>
-<p>public static boolean getVerbose()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>getVerbose</strong></span></p>
 <p>Returns whether verbose output is enabled.</p>
 <p><strong>Returns:</strong></p>
 <p>true if verbose output is enabled, false otherwise.</p>
 <hr />
 <h3 id="setlinkexternal">setLinkExternal</h3>
-<p>public static void setLinkExternal(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleList)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setLinkExternal</strong></span></p>
 <p>Sets the list of sibling modules that can be linked to</p>
 <hr />
 <h3 id="getlinkexternal">getLinkExternal</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getLinkExternal()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getLinkExternal</strong></span></p>
 <p>Gets the list of sibling modules that can be linked to</p>
 <p><strong>Returns:</strong></p>
 <p>a list of sibling modules that can be linked to</p>
 <hr />
 <h3 id="setmodulepaths">setModulePaths</h3>
-<p>public static void setModulePaths(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> modulePaths)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setModulePaths</strong></span></p>
 <p>Sets the directory containing modules.</p>
 <hr />
 <h3 id="getmodulepaths">getModulePaths</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getModulePaths()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getModulePaths</strong></span></p>
 <p>Gets the list of modules</p>
 <p><strong>Returns:</strong></p>
 <p>A list of the module paths</p>
 <hr />
 <h3 id="setprojectpath">setProjectPath</h3>
-<p>public static void setProjectPath(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> path)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setProjectPath</strong></span></p>
 <hr />
 <h3 id="getprojectpath">getProjectPath</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getProjectPath()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getProjectPath</strong></span></p>
 <hr />
 <h3 id="setextensionsorder">setExtensionsOrder</h3>
-<p>public static void setExtensionsOrder(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> order)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setExtensionsOrder</strong></span></p>
 <hr />
 <h3 id="getextensionsorder">getExtensionsOrder</h3>
-<p>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getExtensionsOrder()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getExtensionsOrder</strong></span></p>
 <hr />
 
 

@@ -16,7 +16,7 @@
         <link rel="prev" href="../Text.SegmentKind/">
       
       
-        <link rel="next" href="../TypeNode.Kind/">
+        <link rel="next" href="../TypeNode/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1177,12 +1177,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1430,6 +1430,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1522,12 +1545,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1545,12 +1568,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2025,6 +2048,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#subtext" class="md-nav__link">
+    <span class="md-ellipsis">
+      subtext
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtext_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      subtext
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2034,29 +2075,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2235,8 +2253,6 @@
       
         
       
-        
-      
     
     
     
@@ -2290,29 +2306,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2468,12 +2461,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2820,6 +2813,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#subtext" class="md-nav__link">
+    <span class="md-ellipsis">
+      subtext
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtext_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      subtext
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2849,7 +2860,7 @@
 All Implemented Interfaces:<br/>
     <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">java.io.Serializable</a></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>Text</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>Text</strong></span></p>
 <p>Represents a block of text. Text stores the text as a list of segments which
 can be of kind text, markdown, link, or code for easy retrieval and manipulation.</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
@@ -2971,77 +2982,95 @@ can be of kind text, markdown, link, or code for easy retrieval and manipulation
 <td><a href="#append">append</a>(<a href="./">Text</a> text)</td>
 <td>Appends all segments from another Text instance.</td>
 </tr>
+<tr>
+<td>public <a href="./">Text</a></td>
+<td><a href="#subtext">subtext</a>(int start)</td>
+<td></td>
+</tr>
+<tr>
+<td>public <a href="./">Text</a></td>
+<td><a href="#subtext">subtext</a>(int start, int end)</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="serialversionuid">serialVersionUID</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final long <strong>serialVersionUID</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="segments">segments</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt; <strong>segments</strong></span></p>
 <p>List of text segments composing this Text instance.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="empty">empty</h3>
-<p>public static <a href="./">Text</a> empty()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="./">Text</a> <strong>empty</strong></span></p>
 <p>Creates an empty Text instance.</p>
 <p><strong>Returns:</strong></p>
 <p>A new empty Text object.</p>
 <hr />
 <h3 id="of">of</h3>
-<p>public static <a href="./">Text</a> of(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> string)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="./">Text</a> <strong>of</strong></span></p>
 <p>Creates a Text object containing the supplied string value</p>
 <p><strong>Returns:</strong></p>
 <p>A Text object representing the string</p>
 <hr />
 <h3 id="of_1">of</h3>
-<p>public static <a href="./">Text</a> of(<a href="../Text.Segment/">Text.Segment</a> segment)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="./">Text</a> <strong>of</strong></span></p>
 <p>Creates a Text object containing the supplied segment value</p>
 <p><strong>Returns:</strong></p>
 <p>A Text object representing the segment</p>
 <hr />
 <h3 id="tostring">toString</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>toString</strong></span></p>
 <p>Returns the combined string representation of all segments.</p>
 <p><strong>Returns:</strong></p>
 <p>Concatenated string of all segment texts.</p>
 <hr />
 <h3 id="isempty">isEmpty</h3>
-<p>public boolean isEmpty()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>isEmpty</strong></span></p>
 <p>Checks whether this Text instance is empty.</p>
 <p><strong>Returns:</strong></p>
 <p>true if there are no segments or the segment list is null.</p>
 <hr />
 <h3 id="getsegments">getSegments</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt; getSegments()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Text.Segment/">Text.Segment</a>&gt; <strong>getSegments</strong></span></p>
 <p>Returns the list of segments composing this Text.</p>
 <p><strong>Returns:</strong></p>
 <p>List of Text.Segment objects.</p>
 <hr />
 <h3 id="getsegment">getSegment</h3>
-<p>public <a href="../Text.Segment/">Text.Segment</a> getSegment(int n)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text.Segment/">Text.Segment</a> <strong>getSegment</strong></span></p>
 <hr />
 <h3 id="set">set</h3>
-<p>public void set(<a href="./">Text</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>set</strong></span></p>
 <p>Sets the segments of this Text to match another Text.</p>
 <hr />
 <h3 id="append">append</h3>
-<p>public <a href="./">Text</a> append(<a href="../Text.Segment/">Text.Segment</a> segment)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text</a> <strong>append</strong></span></p>
 <p>Appends a single segment to this Text.</p>
 <p><strong>Returns:</strong></p>
 <p>This Text instance for chaining.</p>
 <hr />
 <h3 id="append_1">append</h3>
-<p>public <a href="./">Text</a> append(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text</a> <strong>append</strong></span></p>
 <p>Appends a single text segment to this Text.</p>
 <p><strong>Returns:</strong></p>
 <p>This Text instance for chaining.</p>
 <hr />
 <h3 id="append_2">append</h3>
-<p>public <a href="./">Text</a> append(<a href="./">Text</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text</a> <strong>append</strong></span></p>
 <p>Appends all segments from another Text instance.</p>
 <p><strong>Returns:</strong></p>
 <p>This Text instance for chaining.</p>
+<hr />
+<h3 id="subtext">subtext</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text</a> <strong>subtext</strong></span></p>
+<hr />
+<h3 id="subtext_1">subtext</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="./">Text</a> <strong>subtext</strong></span></p>
 <hr />
 
 

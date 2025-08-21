@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/model/TypeNode.Kind/">
+        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/model/AbstractMember/">
       
       
-        <link rel="prev" href="../Text/">
+        <link rel="prev" href="../AbstractMember.ModifierSorter/">
       
       
-        <link rel="next" href="../TypeNode/">
+        <link rel="next" href="../AnnotationElement/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>TypeNode.Kind - Sandy Dunlop</title>
+        <title>AbstractMember - Sandy Dunlop</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-class-typenodekind" class="md-skip">
+        <a href="#class-abstractmember" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TypeNode.Kind
+              AbstractMember
             
           </span>
         </div>
@@ -1154,12 +1154,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1174,20 +1174,281 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../AbstractPackageMember/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    AbstractMember
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nested-class-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Class Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      modifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplename" class="md-nav__link">
+    <span class="md-ellipsis">
+      simpleName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      qualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagename" class="md-nav__link">
+    <span class="md-ellipsis">
+      packageName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      appliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasdocumentedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      hasDocumentedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setsimplename" class="md-nav__link">
+    <span class="md-ellipsis">
+      setSimpleName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsimplename" class="md-nav__link">
+    <span class="md-ellipsis">
+      getSimpleName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      setQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmodifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      addModifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      getModifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addappliedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAppliedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getappliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAppliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethasdocumentedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      setHasDocumentedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasdocumentedannotation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      hasDocumentedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmodifiersstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      getModifiersString
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1430,6 +1691,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1522,12 +1806,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Node/" class="md-nav__link">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1545,12 +1829,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../OverriddenMethodNode/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1818,242 +2102,6 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enum-constants" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enum Constants
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#field-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Field Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constructor-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Constructor Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enum-constant-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enum Constant Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Enum Constant Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#none" class="md-nav__link">
-    <span class="md-ellipsis">
-      NONE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#class" class="md-nav__link">
-    <span class="md-ellipsis">
-      CLASS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      INTERFACE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#record" class="md-nav__link">
-    <span class="md-ellipsis">
-      RECORD
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ENUM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#annotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      ANNOTATION
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#field-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Field Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Field Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    <span class="md-ellipsis">
-      name
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Method Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#values" class="md-nav__link">
-    <span class="md-ellipsis">
-      values
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#valueof" class="md-nav__link">
-    <span class="md-ellipsis">
-      valueOf
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tostring" class="md-nav__link">
-    <span class="md-ellipsis">
-      toString
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
@@ -2223,8 +2271,6 @@
       
         
       
-        
-      
     
     
     
@@ -2278,29 +2324,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2456,12 +2479,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2631,9 +2654,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enum-constants" class="md-nav__link">
+  <a href="#nested-class-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Enum Constants
+      Nested Class Summary
     </span>
   </a>
   
@@ -2667,75 +2690,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#enum-constant-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enum Constant Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Enum Constant Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#none" class="md-nav__link">
-    <span class="md-ellipsis">
-      NONE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#class" class="md-nav__link">
-    <span class="md-ellipsis">
-      CLASS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      INTERFACE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#record" class="md-nav__link">
-    <span class="md-ellipsis">
-      RECORD
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ENUM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#annotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      ANNOTATION
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#field-details" class="md-nav__link">
     <span class="md-ellipsis">
       Field Details
@@ -2746,9 +2700,54 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
+  <a href="#modifiers" class="md-nav__link">
     <span class="md-ellipsis">
-      name
+      modifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplename" class="md-nav__link">
+    <span class="md-ellipsis">
+      simpleName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      qualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagename" class="md-nav__link">
+    <span class="md-ellipsis">
+      packageName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      appliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasdocumentedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      hasDocumentedAnnotation
     </span>
   </a>
   
@@ -2770,27 +2769,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#values" class="md-nav__link">
+  <a href="#setsimplename" class="md-nav__link">
     <span class="md-ellipsis">
-      values
+      setSimpleName
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#valueof" class="md-nav__link">
+  <a href="#getsimplename" class="md-nav__link">
     <span class="md-ellipsis">
-      valueOf
+      getSimpleName
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#tostring" class="md-nav__link">
+  <a href="#setqualifiedname" class="md-nav__link">
     <span class="md-ellipsis">
-      toString
+      setQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getqualifiedname" class="md-nav__link">
+    <span class="md-ellipsis">
+      getQualifiedName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmodifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      addModifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmodifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      getModifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addappliedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAppliedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getappliedannotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAppliedAnnotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethasdocumentedannotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      setHasDocumentedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasdocumentedannotation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      hasDocumentedAnnotation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmodifiersstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      getModifiersString
     </span>
   </a>
   
@@ -2818,48 +2889,27 @@
 
 
 <p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
-<h1 id="enum-class-typenodekind">Enum Class TypeNode.Kind</h1>
+<h1 id="class-abstractmember">Class AbstractMember</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">java.lang.Enum</a>&lt;<a href="./">io.github.sandydunlop.markista.model.TypeNode.Kind</a>&gt;<br/>
-                io.github.sandydunlop.markista.model.TypeNode.Kind<br/>
-<br/>
-Enclosing Class:<br/>
-    <a href="../TypeNode/">io.github.sandydunlop.markista.model.TypeNode</a></p>
+        <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
+                io.github.sandydunlop.markista.model.AbstractMember<br/>
+<br/></p>
 <hr />
-<p><span style="font-family: monospace;">public static final enum class <strong>TypeNode.Kind</strong></span></p>
-<p>Enumeration representing kinds of types: None, Class, Interface, Enum, Annotation.</p>
-<h2 id="enum-constants">Enum Constants</h2>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract class <strong>AbstractMember</strong></span></p>
+<h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
 <thead>
 <tr>
-<th>Enum Constant</th>
+<th>Modifier and Type</th>
+<th>Class</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#none">NONE</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="#class">CLASS</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="#interface">INTERFACE</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="#record">RECORD</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="#enum">ENUM</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="#annotation">ANNOTATION</a></td>
-<td></td>
+<td>public static</td>
+<td><a href="../AbstractMember.ModifierSorter/">AbstractMember.ModifierSorter</a></td>
+<td>Utility class to sort modifiers according to Java language conventions.</td>
 </tr>
 </tbody>
 </table>
@@ -2874,9 +2924,34 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#name">name</a></td>
-<td>The display name for the kind.</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
+<td><a href="#modifiers">modifiers</a></td>
+<td>A list of the modifiers a node has</td>
+</tr>
+<tr>
+<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#simplename">simpleName</a></td>
+<td>The simple form of the name</td>
+</tr>
+<tr>
+<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#qualifiedname">qualifiedName</a></td>
+<td>The qualified form of the name</td>
+</tr>
+<tr>
+<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#packagename">packageName</a></td>
+<td>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</td>
+</tr>
+<tr>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt;</td>
+<td><a href="#appliedannotations">appliedAnnotations</a></td>
+<td>List of annotations applied to this type.</td>
+</tr>
+<tr>
+<td>private boolean</td>
+<td><a href="#hasdocumentedannotation">hasDocumentedAnnotation</a></td>
+<td>Has the <code>@Documented</code> annotation applied</td>
 </tr>
 </tbody>
 </table>
@@ -2890,8 +2965,8 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>TypeNode.Kind(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> s)</td>
-<td>Constructor assigning the display name.</td>
+<td>AbstractMember()</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -2906,57 +2981,144 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>public static io.github.sandydunlop.markista.model.TypeNode.Kind[]</td>
-<td><a href="#values">values</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>public static <a href="./">TypeNode.Kind</a></td>
-<td><a href="#valueof">valueOf</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
-<td></td>
+<td>public void</td>
+<td><a href="#setsimplename">setSimpleName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the simple name of this type.</td>
 </tr>
 <tr>
 <td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#tostring">toString</a>()</td>
-<td>Returns the display name of the kind.</td>
+<td><a href="#getsimplename">getSimpleName</a>()</td>
+<td>Returns the simple name of this type.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#setqualifiedname">setQualifiedName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td>Sets the qualified name of this type.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#getqualifiedname">getQualifiedName</a>()</td>
+<td>Returns the qualified name of this type.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addmodifier">addModifier</a>(<a href="../Modifier/">Modifier</a> mod)</td>
+<td>Adds a modifier to the set of modifiers.</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
+<td><a href="#getmodifiers">getModifiers</a>()</td>
+<td>Returns the set of modifiers for this node.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#addappliedannotation">addAppliedAnnotation</a>(<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</td>
+<td>Adds an applied annotation to this type</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt;</td>
+<td><a href="#getappliedannotations">getAppliedAnnotations</a>()</td>
+<td>Returns the list of annotations applied to this type.</td>
+</tr>
+<tr>
+<td>public void</td>
+<td><a href="#sethasdocumentedannotation">setHasDocumentedAnnotation</a>(boolean b)</td>
+<td>Sets a flag indicating if this type as having a <code>@Documented</code> meta-annotation</td>
+</tr>
+<tr>
+<td>public boolean</td>
+<td><a href="#hasdocumentedannotation">hasDocumentedAnnotation</a>()</td>
+<td>Does this type have a <code>@Documented</code> meta-annotation?</td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#getmodifiersstring">getModifiersString</a>()</td>
+<td>Returns a string representation of modifiers.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="enum-constant-details">Enum Constant Details</h2>
-<h3 id="none">NONE</h3>
-<p>public static final NONE NONE</p>
-<hr />
-<h3 id="class">CLASS</h3>
-<p>public static final CLASS CLASS</p>
-<hr />
-<h3 id="interface">INTERFACE</h3>
-<p>public static final INTERFACE INTERFACE</p>
-<hr />
-<h3 id="record">RECORD</h3>
-<p>public static final RECORD RECORD</p>
-<hr />
-<h3 id="enum">ENUM</h3>
-<p>public static final ENUM ENUM</p>
-<hr />
-<h3 id="annotation">ANNOTATION</h3>
-<p>public static final ANNOTATION ANNOTATION</p>
-<hr />
 <h2 id="field-details">Field Details</h2>
-<h3 id="name">name</h3>
-<p>The display name for the kind.</p>
+<h3 id="modifiers">modifiers</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; <strong>modifiers</strong></span></p>
+<p>A list of the modifiers a node has</p>
+<hr />
+<h3 id="simplename">simpleName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>simpleName</strong></span></p>
+<p>The simple form of the name</p>
+<hr />
+<h3 id="qualifiedname">qualifiedName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>qualifiedName</strong></span></p>
+<p>The qualified form of the name</p>
+<hr />
+<h3 id="packagename">packageName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>packageName</strong></span></p>
+<p>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</p>
+<hr />
+<h3 id="appliedannotations">appliedAnnotations</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt; <strong>appliedAnnotations</strong></span></p>
+<p>List of annotations applied to this type.</p>
+<hr />
+<h3 id="hasdocumentedannotation">hasDocumentedAnnotation</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>hasDocumentedAnnotation</strong></span></p>
+<p>Has the <code>@Documented</code> annotation applied</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
-<h3 id="values">values</h3>
-<p>public static io.github.sandydunlop.markista.model.TypeNode.Kind[] values()</p>
+<h3 id="setsimplename">setSimpleName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setSimpleName</strong></span></p>
+<p>Sets the simple name of this type.</p>
 <hr />
-<h3 id="valueof">valueOf</h3>
-<p>public static <a href="./">TypeNode.Kind</a> valueOf(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</p>
+<h3 id="getsimplename">getSimpleName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getSimpleName</strong></span></p>
+<p>Returns the simple name of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the simple name.</p>
 <hr />
-<h3 id="tostring">toString</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toString()</p>
-<p>Returns the display name of the kind.</p>
-<p><strong>Overrides:</strong></p>
-<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html">Enum</a>&lt;<a href="./">TypeNode.Kind</a>&gt;</p>
+<h3 id="setqualifiedname">setQualifiedName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setQualifiedName</strong></span></p>
+<p>Sets the qualified name of this type.</p>
+<hr />
+<h3 id="getqualifiedname">getQualifiedName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getQualifiedName</strong></span></p>
+<p>Returns the qualified name of this type.</p>
+<p><strong>Returns:</strong></p>
+<p>the qualified name.</p>
+<hr />
+<h3 id="addmodifier">addModifier</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addModifier</strong></span></p>
+<p>Adds a modifier to the set of modifiers.</p>
+<hr />
+<h3 id="getmodifiers">getModifiers</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; <strong>getModifiers</strong></span></p>
+<p>Returns the set of modifiers for this node.</p>
+<p><strong>Returns:</strong></p>
+<p>Set of modifiers.</p>
+<hr />
+<h3 id="addappliedannotation">addAppliedAnnotation</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addAppliedAnnotation</strong></span></p>
+<p>Adds an applied annotation to this type</p>
+<hr />
+<h3 id="getappliedannotations">getAppliedAnnotations</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt; <strong>getAppliedAnnotations</strong></span></p>
+<p>Returns the list of annotations applied to this type.</p>
+<p><strong>Returns:</strong></p>
+<p>list of applied annotations</p>
+<hr />
+<h3 id="sethasdocumentedannotation">setHasDocumentedAnnotation</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setHasDocumentedAnnotation</strong></span></p>
+<p>Sets a flag indicating if this type as having a <code>@Documented</code> meta-annotation</p>
+<hr />
+<h3 id="hasdocumentedannotation_1">hasDocumentedAnnotation</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>hasDocumentedAnnotation</strong></span></p>
+<p>Does this type have a <code>@Documented</code> meta-annotation?</p>
+<p><strong>Returns:</strong></p>
+<p>True if it has a <code>@Documented</code> meta-annotation</p>
+<hr />
+<h3 id="getmodifiersstring">getModifiersString</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getModifiersString</strong></span></p>
+<p>Returns a string representation of modifiers.
+The modifiers are sorted according to a predefined order.</p>
+<p><strong>Returns:</strong></p>
+<p>A string containing sorted modifiers separated by spaces.</p>
 <hr />
 
 

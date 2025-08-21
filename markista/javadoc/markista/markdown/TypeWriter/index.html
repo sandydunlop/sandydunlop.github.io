@@ -1216,6 +1216,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#outputmethodorfielddeclaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputMethodOrFieldDeclaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#createannotationstring" class="md-nav__link">
     <span class="md-ellipsis">
       createAnnotationString
@@ -1469,12 +1478,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1492,12 +1501,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1745,6 +1754,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1837,12 +1869,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1860,12 +1892,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2136,29 +2168,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2325,8 +2334,6 @@
       
         
       
-        
-      
     
     
     
@@ -2380,29 +2387,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2558,12 +2542,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2893,6 +2877,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#outputmethodorfielddeclaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      outputMethodOrFieldDeclaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#createannotationstring" class="md-nav__link">
     <span class="md-ellipsis">
       createAnnotationString
@@ -3027,7 +3020,7 @@
         io.github.sandydunlop.markista.markdown.TypeWriter<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>TypeWriter</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>TypeWriter</strong></span></p>
 <p>A class that outputs API type documentation as Markdown.</p>
 <h2 id="field-summary">Field Summary</h2>
 <table>
@@ -3127,6 +3120,11 @@
 <td>Outputs the type declaration</td>
 </tr>
 <tr>
+<td>private void</td>
+<td><a href="#outputmethodorfielddeclaration">outputMethodOrFieldDeclaration</a>(<a href="../../model/AbstractMember/">AbstractMember</a> member)</td>
+<td>Outputs the type declaration</td>
+</tr>
+<tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#createannotationstring">createAnnotationString</a>(<a href="../../model/AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</td>
 <td>Creates a string of the elements within an annotation</td>
@@ -3190,24 +3188,30 @@
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="text_class">TEXT_CLASS</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>TEXT_CLASS</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="text_description">TEXT_DESCRIPTION</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>TEXT_DESCRIPTION</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="text_modifier_and_type">TEXT_MODIFIER_AND_TYPE</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>TEXT_MODIFIER_AND_TYPE</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="br">BR</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>BR</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="nbsp">NBSP</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>NBSP</strong></span></p>
 <hr />
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <blockquote>
@@ -3216,85 +3220,92 @@ Do not make this <code>final</code>. It will break tests with mocked <a href="..
 </blockquote>
 <hr />
 <h3 id="writer">writer</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html">Writer</a> <strong>writer</strong></span></p>
 <p>The Writer used to output the generated markdown content for the current document.
 It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="outputtypedoc">outputTypeDoc</h3>
-<p>public void outputTypeDoc(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>outputTypeDoc</strong></span></p>
 <p>Writes a Markdown file for the Javadoc of a type</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">java.nio.file.InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputsupertypes">outputSupertypes</h3>
-<p>private void outputSupertypes(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputSupertypes</strong></span></p>
 <p>Outputs the hierarchy of supertypes of a class</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputimplementedinterfaces">outputImplementedInterfaces</h3>
-<p>private void outputImplementedInterfaces(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputImplementedInterfaces</strong></span></p>
 <p>Outputs details of any interfaces that this class implements</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputenclosingclass">outputEnclosingClass</h3>
-<p>private void outputEnclosingClass(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputEnclosingClass</strong></span></p>
 <p>Outputs details of the class that encloses this one</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputdeclaration">outputDeclaration</h3>
-<p>private void outputDeclaration(<a href="../../model/TypeNode/">TypeNode</a> typeNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputDeclaration</strong></span></p>
+<p>Outputs the type declaration</p>
+<p><strong>Throws:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
+<hr />
+<h3 id="outputmethodorfielddeclaration">outputMethodOrFieldDeclaration</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputMethodOrFieldDeclaration</strong></span></p>
 <p>Outputs the type declaration</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="createannotationstring">createAnnotationString</h3>
-<p>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> createAnnotationString(<a href="../../model/AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>createAnnotationString</strong></span></p>
 <p>Creates a string of the elements within an annotation</p>
 <p><strong>Returns:</strong></p>
 <p>The string</p>
 <hr />
 <h3 id="outputnestedclasssummary">outputNestedClassSummary</h3>
-<p>private void outputNestedClassSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeView/">TypeView</a>&gt; nestedClasses)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputNestedClassSummary</strong></span></p>
 <p>Outputs a summary of nested classes within this one as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputenumconstantssummary">outputEnumConstantsSummary</h3>
-<p>private void outputEnumConstantsSummary(<a href="../../model/EnumTypeNode/">EnumTypeNode</a> enumNode)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputEnumConstantsSummary</strong></span></p>
 <p>Outputs as summary of an enum's constants as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputfieldsummary">outputFieldSummary</h3>
-<p>private void outputFieldSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; fields)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputFieldSummary</strong></span></p>
 <p>Outputs a summary of this class's fields as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputconstructorsummary">outputConstructorSummary</h3>
-<p>private void outputConstructorSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/MethodNode/">MethodNode</a>&gt; methods)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputConstructorSummary</strong></span></p>
 <p>Outputs a the summary of this class's constructors as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputmethodsummary">outputMethodSummary</h3>
-<p>private void outputMethodSummary(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/MethodNode/">MethodNode</a>&gt; methods)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputMethodSummary</strong></span></p>
 <p>Writes the markdown for a class's method summary table</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputenumconstantdetails">outputEnumConstantDetails</h3>
-<p>private void outputEnumConstantDetails(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/FieldNode/">FieldNode</a>&gt; constants)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputEnumConstantDetails</strong></span></p>
 <p>Outputs enum constant details as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputdetails">outputDetails</h3>
-<p>private void outputDetails(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Node/">Node</a>&gt; nodes)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputDetails</strong></span></p>
 <p>Writes the markdown for a class's method or field details.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
@@ -3305,25 +3316,25 @@ It handles writing text to the appropriate output file or stream.</p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">java.util.List</a></p>
 <hr />
 <h3 id="outputreferences">outputReferences</h3>
-<p>private void outputReferences(<a href="../../model/Node/">Node</a> node)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputReferences</strong></span></p>
 <p>Outputs references for a type member</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputmethoddetails">outputMethodDetails</h3>
-<p>private void outputMethodDetails(<a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputMethodDetails</strong></span></p>
 <p>Outputs the Javadoc of a method as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputmethodparams">outputMethodParams</h3>
-<p>private void outputMethodParams(<a href="../../model/MethodNode/">MethodNode</a> method)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputMethodParams</strong></span></p>
 <p>Outputs the parameters of a method as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>
 <hr />
 <h3 id="outputdeprecation">outputDeprecation</h3>
-<p>private void outputDeprecation(<a href="../../model/Deprecation/">Deprecation</a> status, <a href="../../model/Text/">Text</a> text)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputDeprecation</strong></span></p>
 <p>Outputs the deprecation status of this type as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">java.io.IOException</a></p>

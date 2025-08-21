@@ -1433,12 +1433,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1456,12 +1456,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1709,6 +1709,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1801,12 +1824,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1824,12 +1847,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -2100,29 +2123,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2289,8 +2289,6 @@
       
         
       
-        
-      
     
     
     
@@ -2344,29 +2342,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../util/LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2522,12 +2497,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../util/TestREcord/" class="md-nav__link">
+      <a href="../../util/TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2957,7 +2932,7 @@
 All Implemented Interfaces:<br/>
     <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Doclet.html">jdk.javadoc.doclet.Doclet</a></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>MarkdownDoclet</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>MarkdownDoclet</strong></span></p>
 <p>A doclet that renders javadoc comments as Markdown.</p>
 <p>For more information, see the <a href="https://sandydunlop.github.io/markista">Markista homepage</a>.</p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
@@ -3113,75 +3088,82 @@ All Implemented Interfaces:<br/>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="ctx">ctx</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h3 id="ok">OK</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public static final boolean <strong>OK</strong></span></p>
 <p>Indicates success</p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="failed">FAILED</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final boolean <strong>FAILED</strong></span></p>
 <p>Indicates failure</p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="docletargs">docletArgs</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] <strong>docletArgs</strong></span></p>
 <hr />
 <h3 id="javadocargs">javadocArgs</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>javadocArgs</strong></span></p>
 <hr />
 <h3 id="unused_option_description">UNUSED_OPTION_DESCRIPTION</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>UNUSED_OPTION_DESCRIPTION</strong></span></p>
 <p><strong>See Also:</strong></p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="options">options</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt; <strong>options</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="readjavadocoptions">readJavadocOptions</h3>
-<p>public static void readJavadocOptions(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> optionsPath)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>readJavadocOptions</strong></span></p>
 <p>Reads a javadoc.options file containing command line arguments for Javadoc.</p>
 <hr />
 <h3 id="main">main</h3>
-<p>public static void main([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] args)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>main</strong></span></p>
 <p>The starting point of Markista if it is being used
 without the Javadoc command. This is useful for debugging.</p>
 <hr />
 <h3 id="init">init</h3>
-<p>public void init(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Locale.html">Locale</a> locale, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/Reporter.html">Reporter</a> reporter)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>init</strong></span></p>
 <p>Initializes the doclet.</p>
 <hr />
 <h3 id="getname">getName</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> getName()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getName</strong></span></p>
 <hr />
 <h3 id="getsupportedoptions">getSupportedOptions</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt; getSupportedOptions()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="../MarkdownDoclet.Option/">MarkdownDoclet.Option</a>&gt; <strong>getSupportedOptions</strong></span></p>
 <hr />
 <h3 id="getsupportedsourceversion">getSupportedSourceVersion</h3>
-<p>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a> getSupportedSourceVersion()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/SourceVersion.html">SourceVersion</a> <strong>getSupportedSourceVersion</strong></span></p>
 <hr />
 <h3 id="run">run</h3>
-<p>public boolean run(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/jdk.javadoc/jdk/javadoc/doclet/DocletEnvironment.html">DocletEnvironment</a> environment)</p>
+<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>run</strong></span></p>
 <p>The <code>run</code> method is called by the Javadoc tool to begin running the doclet.</p>
 <p><strong>Returns:</strong></p>
 <p>true if completed without errors, false if errors occurred.</p>
 <hr />
 <h3 id="getmainserviceandextensions">getMainServiceAndExtensions</h3>
-<p><a href="../../spi/DocService/">DocService</a> getMainServiceAndExtensions(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions)</p>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="../../spi/DocService/">DocService</a> <strong>getMainServiceAndExtensions</strong></span></p>
 <p>Populates the list of extensions and determines the main DocService.</p>
 <p><strong>Returns:</strong></p>
 <p>The DocService that is expected to output the main documentation files. Null if loading extensions failed.</p>
 <hr />
 <h3 id="populateextensionswithorder">populateExtensionsWithOrder</h3>
-<p>private <a href="../../spi/DocService/">DocService</a> populateExtensionsWithOrder(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../spi/DocService/">DocService</a> <strong>populateExtensionsWithOrder</strong></span></p>
 <hr />
 <h3 id="populateextensionswithoutorder">populateExtensionsWithoutOrder</h3>
-<p>private <a href="../../spi/DocService/">DocService</a> populateExtensionsWithoutOrder(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ServiceLoader.html">ServiceLoader</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; loader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> defaultDocService)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../spi/DocService/">DocService</a> <strong>populateExtensionsWithoutOrder</strong></span></p>
 <hr />
 <h3 id="addextensiontomap">addExtensionToMap</h3>
-<p>private void addExtensionToMap(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="../../spi/DocService/">DocService</a>&gt; extensions, <a href="../../spi/DocService/">DocService</a> extension)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>addExtensionToMap</strong></span></p>
 <hr />
 <h3 id="handleextension">handleExtension</h3>
-<p>private <a href="../../spi/DocService/">DocService</a> handleExtension(<a href="../../spi/DocService/">DocService</a> mainDocService, <a href="../../spi/DocService/">DocService</a> defaultDocService, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../spi/DocService/">DocService</a>&gt; orderedExtensions, <a href="../../spi/DocService/">DocService</a> extension)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../spi/DocService/">DocService</a> <strong>handleExtension</strong></span></p>
 <hr />
 
 

@@ -1152,12 +1152,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember.ModifierSorter/" class="md-nav__link">
+      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember.ModifierSorter
+    AbstractMember.ModifierSorter
     
   </span>
   
@@ -1175,12 +1175,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractPackageMember/" class="md-nav__link">
+      <a href="../../model/AbstractMember/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    AbstractPackageMember
+    AbstractMember
     
   </span>
   
@@ -1428,6 +1428,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../model/InheritedMethodRef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    InheritedMethodRef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../model/InterfaceTypeNode/" class="md-nav__link">
         
   
@@ -1520,12 +1543,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../../model/Node.Kind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Node
+    Node.Kind
     
   </span>
   
@@ -1543,12 +1566,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/OverriddenMethodNode/" class="md-nav__link">
+      <a href="../../model/Node/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    OverriddenMethodNode
+    Node
     
   </span>
   
@@ -1819,29 +1842,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode.Kind/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeNode.Kind
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/TypeNode/" class="md-nav__link">
         
   
@@ -2010,8 +2010,6 @@
       
         
       
-        
-      
     
     
     
@@ -2065,29 +2063,6 @@
   
   <span class="md-ellipsis">
     ApiScanner
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LinkFormatter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LinkFormatter
     
   </span>
   
@@ -2522,12 +2497,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../TestREcord/" class="md-nav__link">
+      <a href="../TextAssembler/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TestREcord
+    TextAssembler
     
   </span>
   
@@ -2955,7 +2930,7 @@
         io.github.sandydunlop.markista.util.MarkdownParser<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace;">public class <strong>MarkdownParser</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>MarkdownParser</strong></span></p>
 <p>Parses a Markdown string into a sequence of tokens representing text and special markup such as brackets and parentheses.</p>
 <p>This parser is designed to tokenize the Markdown content by identifying textual parts and tokens enclosed in brackets <code>[]</code> and parentheses <code>()</code>.
 It also handles inline code spans denoted by backticks (`) to avoid parsing markup inside code.</p>
@@ -3117,71 +3092,80 @@ and END indicating the end of the sequence.</p>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="head">head</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private int <strong>head</strong></span></p>
 <hr />
 <h3 id="tail">tail</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private int <strong>tail</strong></span></p>
 <hr />
 <h3 id="openbracket">openBracket</h3>
+<p><span style="font-family: monospace; font-size: 80%;">int <strong>openBracket</strong></span></p>
 <hr />
 <h3 id="openparenthesis">openParenthesis</h3>
+<p><span style="font-family: monospace; font-size: 80%;">int <strong>openParenthesis</strong></span></p>
 <hr />
 <h3 id="closebracket">closeBracket</h3>
+<p><span style="font-family: monospace; font-size: 80%;">int <strong>closeBracket</strong></span></p>
 <hr />
 <h3 id="closeparenthesis">closeParenthesis</h3>
+<p><span style="font-family: monospace; font-size: 80%;">int <strong>closeParenthesis</strong></span></p>
 <hr />
 <h3 id="markdown">markdown</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>markdown</strong></span></p>
 <hr />
 <h3 id="tokens">tokens</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MarkdownParser.Token/">MarkdownParser.Token</a>&gt; <strong>tokens</strong></span></p>
 <hr />
 <h3 id="prev">prev</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../MarkdownParser.Token/">MarkdownParser.Token</a> <strong>prev</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="processcharingeneral">processCharInGeneral</h3>
-<p>private void processCharInGeneral()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>processCharInGeneral</strong></span></p>
 <p>Handles a character encountered when not in code or special markup.
 Currently a placeholder for any general character processing.</p>
 <hr />
 <h3 id="handleopenbracket">handleOpenBracket</h3>
-<p>private void handleOpenBracket()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>handleOpenBracket</strong></span></p>
 <p>Handles the open bracket 'Handles the open bracket '[' encountered in the markdown.
 Saves any preceding text token before marking the position of the open bracket.</p>
 <hr />
 <h3 id="handleopenparenthesis">handleOpenParenthesis</h3>
-<p>private boolean handleOpenParenthesis(char prevChar)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>handleOpenParenthesis</strong></span></p>
 <p>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</p>
 <p><strong>Returns:</strong></p>
 <p>true if parentheses follow brackets, false otherwise.</p>
 <hr />
 <h3 id="handleclosebracket">handleCloseBracket</h3>
-<p>private void handleCloseBracket()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>handleCloseBracket</strong></span></p>
 <p>Handles the close bracket '' encountered in the markdown.
 Records the position and saves a bracket-tag token.</p>
 <hr />
 <h3 id="handlecloseparenthesis">handleCloseParenthesis</h3>
-<p>private boolean handleCloseParenthesis(boolean parensFollowBrackets)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>handleCloseParenthesis</strong></span></p>
 <p>Handles the close parenthesis ')' encountered.
 If parentheses follow brackets, saves a parentheses-tag token.</p>
 <p><strong>Returns:</strong></p>
 <p>Always returns false to reset parsing state for parentheses.</p>
 <hr />
 <h3 id="savetext">saveText</h3>
-<p>private void saveText()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveText</strong></span></p>
 <p>Saves any text from the tail position up to the current head as a TEXT token.
 Does nothing if no text is available in that range.</p>
 <hr />
 <h3 id="savebracketstag">saveBracketsTag</h3>
-<p>private void saveBracketsTag()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveBracketsTag</strong></span></p>
 <p>Saves the content between the most recent pair of brackets as a BRACKETS_TAG token.</p>
 <hr />
 <h3 id="saveparenstag">saveParensTag</h3>
-<p>private void saveParensTag()</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveParensTag</strong></span></p>
 <p>Saves the content between the most recent pair of parentheses as a PARENS_TAG token.</p>
 <hr />
 <h3 id="savetoken">saveToken</h3>
-<p>private void saveToken(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveToken</strong></span></p>
 <p>Adds the specified token to the list and links it to the previously saved token.</p>
 <hr />
 <h3 id="firsttoken">firstToken</h3>
-<p>public <a href="../MarkdownParser.Token/">MarkdownParser.Token</a> firstToken()</p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../MarkdownParser.Token/">MarkdownParser.Token</a> <strong>firstToken</strong></span></p>
 <p>Returns the first token in the parsed sequence.
 If no tokens exist, returns an END kind token.</p>
 <p><strong>Returns:</strong></p>
