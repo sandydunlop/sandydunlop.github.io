@@ -589,6 +589,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,6 +631,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/JreTools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JreTools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1247,6 +1297,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1685,29 +1739,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/MethodReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MethodReference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/Modifier/" class="md-nav__link">
         
   
@@ -1806,29 +1837,6 @@
   
   <span class="md-ellipsis">
     PackageNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/PackageOrTypeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageOrTypeNode
     
   </span>
   
@@ -1990,6 +1998,98 @@
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Array
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Generic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Generic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence
     
   </span>
   
@@ -3190,12 +3290,12 @@ being populated and updates the Api instance as elements are encountered.</p>
 <tbody>
 <tr>
 <td>public <a href="../../model/Api/">Api</a></td>
-<td><a href="#scan">scan</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a> elements)</td>
+<td><a href="#scan">scan</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
 <td>Scan the given set of top-level elements and return the built Api model.</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#processincludedelements">processIncludedElements</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a> elements)</td>
+<td><a href="#processincludedelements">processIncludedElements</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</td>
 <td>Populate the includedNames set from the provided element set.</td>
 </tr>
 <tr>
@@ -3287,7 +3387,7 @@ being populated and updates the Api instance as elements are encountered.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="scan">scan</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../model/Api/">Api</a> <strong>scan</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a> elements)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../model/Api/">Api</a> <strong>scan</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</span></p>
 <p>Scan the given set of top-level elements and return the built Api model.
 This method performs setup actions (register included elements, initialize
 TypeUtils with the Api and environment), executes the scan, performs some
@@ -3297,7 +3397,7 @@ computes the unnamed module source path and sorts the final Api model.</p>
 <p>the fully-populated Api model</p>
 <hr />
 <h3 id="processincludedelements">processIncludedElements</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>processIncludedElements</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a> elements)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>processIncludedElements</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.compiler/javax/lang/model/element/Element.html">Element</a>&gt; elements)</span></p>
 <p>Populate the includedNames set from the provided element set.
 Only package and type elements contribute names. The set is used by
 isIncludedElement to quickly decide if an element should be processed.</p>

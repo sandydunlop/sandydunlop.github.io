@@ -16,7 +16,7 @@
         <link rel="prev" href="../Node/">
       
       
-        <link rel="next" href="../PackageOrTypeNode/">
+        <link rel="next" href="../Pair/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -589,6 +589,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,6 +631,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/JreTools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JreTools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1249,6 +1299,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1670,29 +1724,6 @@
   
   <span class="md-ellipsis">
     MethodNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MethodReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MethodReference
     
   </span>
   
@@ -2155,29 +2186,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../PackageOrTypeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageOrTypeNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../Pair/" class="md-nav__link">
         
   
@@ -2322,6 +2330,98 @@
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Array
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Generic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Generic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence
     
   </span>
   
@@ -3207,9 +3307,7 @@
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
         <a href="../Node/">io.github.sandydunlop.markista.model.Node</a><br/>
                 io.github.sandydunlop.markista.model.PackageNode<br/>
-<br/>
-All Implemented Interfaces:<br/>
-    <a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
+<br/></p>
 <hr />
 <p><span style="font-family: monospace; font-size: 80%;">public class <strong>PackageNode</strong><br/>extends <a href="../Node/">Node</a>
 </span></p>
@@ -3250,7 +3348,7 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>protected final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#types">types</a></td>
 <td></td>
 </tr>
@@ -3333,36 +3431,36 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addtype">addType</a>(<a href="../TypeView/">TypeView</a> typeNode)</td>
+<td><a href="#addtype">addType</a>(<a href="../TypeNode/">TypeNode</a> typeNode)</td>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#gettypes">getTypes</a>()</td>
 <td>Gets the list of types <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#getclasses">getClasses</a>()</td>
 <td>Gets the list of classes <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#getinterfaces">getInterfaces</a>()</td>
 <td>Gets the list of interfaces <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#getenums">getEnums</a>()</td>
 <td>Gets the list of enums <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#getrecords">getRecords</a>()</td>
 <td>Gets the list of records <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt;</td>
 <td><a href="#getannotations">getAnnotations</a>()</td>
 <td>Gets the list of annotations <em>owned</em> by this instance.</td>
 </tr>
@@ -3374,7 +3472,7 @@ All Implemented Interfaces:<br/>
 </tbody>
 </table>
 <h3 id="methods-inherited-from-iogithubsandydunlopmarkistamodelnode">Methods inherited from <a href="../Node/">io.github.sandydunlop.markista.model.Node</a></h3>
-<p><a href="../Node/#setreferences">setReferences</a>, <a href="../Node/#getreferences">getReferences</a>, <a href="../Node/#getkind">getKind</a>, <a href="../Node/#setdeprecationtext">setDeprecationText</a>, <a href="../Node/#getbody">getBody</a>, <a href="../Node/#getsince">getSince</a>, <a href="../Node/#setfullbody">setFullBody</a>, <a href="../Node/#setfirstsentence">setFirstSentence</a>, <a href="../Node/#setsince">setSince</a>, <a href="../Node/#setbody">setBody</a>, <a href="../Node/#setkind">setKind</a>, <a href="../Node/#setdeprecation">setDeprecation</a>, <a href="../Node/#getfirstsentence">getFirstSentence</a>, <a href="../Node/#getdeprecation">getDeprecation</a>, <a href="../Node/#getuuid">getUUID</a>, <a href="../Node/#getdeprecationtext">getDeprecationText</a>, <a href="../Node/#getfullbody">getFullBody</a></p>
+<p><a href="../Node/#setreferences">Node.setReferences</a>, <a href="../Node/#getreferences">Node.getReferences</a>, <a href="../Node/#getkind">Node.getKind</a>, <a href="../Node/#setdeprecationtext">Node.setDeprecationText</a>, <a href="../Node/#getbody">Node.getBody</a>, <a href="../Node/#getsince">Node.getSince</a>, <a href="../Node/#setfullbody">Node.setFullBody</a>, <a href="../Node/#setfirstsentence">Node.setFirstSentence</a>, <a href="../Node/#setsince">Node.setSince</a>, <a href="../Node/#setbody">Node.setBody</a>, <a href="../Node/#setdeprecation">Node.setDeprecation</a>, <a href="../Node/#getfirstsentence">Node.getFirstSentence</a>, <a href="../Node/#setkind">Node.setKind</a>, <a href="../Node/#getdeprecation">Node.getDeprecation</a>, <a href="../Node/#getuuid">Node.getUUID</a>, <a href="../Node/#getdeprecationtext">Node.getDeprecationText</a>, <a href="../Node/#getfullbody">Node.getFullBody</a></p>
 <h2 id="field-details">Field Details</h2>
 <h3 id="haspackageinfo">hasPackageInfo</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>hasPackageInfo</strong></span></p>
@@ -3392,7 +3490,7 @@ All Implemented Interfaces:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>sourcePath</strong></span></p>
 <hr />
 <h3 id="types">types</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>types</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>types</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="getname">getName</h3>
@@ -3437,51 +3535,35 @@ All Implemented Interfaces:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>hasPackageInfo</strong>()</span></p>
 <hr />
 <h3 id="addtype">addType</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addType</strong>(<a href="../TypeView/">TypeView</a> typeNode)</span></p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addType</strong>(<a href="../TypeNode/">TypeNode</a> typeNode)</span></p>
 <hr />
 <h3 id="gettypes">getTypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getTypes</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getTypes</strong>()</span></p>
 <p>Gets the list of types <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="getclasses">getClasses</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getClasses</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getClasses</strong>()</span></p>
 <p>Gets the list of classes <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="getinterfaces">getInterfaces</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getInterfaces</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getInterfaces</strong>()</span></p>
 <p>Gets the list of interfaces <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="getenums">getEnums</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getEnums</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getEnums</strong>()</span></p>
 <p>Gets the list of enums <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="getrecords">getRecords</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getRecords</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getRecords</strong>()</span></p>
 <p>Gets the list of records <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="getannotations">getAnnotations</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeView/">TypeView</a>&gt; <strong>getAnnotations</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeNode/">TypeNode</a>&gt; <strong>getAnnotations</strong>()</span></p>
 <p>Gets the list of annotations <em>owned</em> by this instance.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 <h3 id="sort">sort</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public void <strong>sort</strong>()</span></p>
 <p>Sorts the nodes owned by this instance into alphabetical order.</p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../PackageOrTypeNode/">PackageOrTypeNode</a></p>
 <hr />
 
 

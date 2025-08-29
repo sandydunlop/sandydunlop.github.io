@@ -589,6 +589,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,6 +631,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/JreTools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JreTools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1247,6 +1297,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1685,29 +1739,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/MethodReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MethodReference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/Modifier/" class="md-nav__link">
         
   
@@ -1806,29 +1837,6 @@
   
   <span class="md-ellipsis">
     PackageNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/PackageOrTypeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageOrTypeNode
     
   </span>
   
@@ -1990,6 +1998,98 @@
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Array
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Generic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Generic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence
     
   </span>
   
@@ -2465,9 +2565,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolvelocalpackagetypeinternal" class="md-nav__link">
+  <a href="#resolvelocalpackageortypeinternal" class="md-nav__link">
     <span class="md-ellipsis">
-      resolveLocalPackageTypeInternal
+      resolveLocalPackageOrTypeInternal
     </span>
   </a>
   
@@ -3413,9 +3513,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolvelocalpackagetypeinternal" class="md-nav__link">
+  <a href="#resolvelocalpackageortypeinternal" class="md-nav__link">
     <span class="md-ellipsis">
-      resolveLocalPackageTypeInternal
+      resolveLocalPackageOrTypeInternal
     </span>
   </a>
   
@@ -3654,7 +3754,7 @@ packages and their contents.</p>
 for types, packages, modules, and standard Java elements.</p>
 <p>It supports resolving primitives, void, standard Java modules and packages,
 and also local API model packages and types.</p>
-<p>LinkResolver must be initialized for the current API before use via <code>init(Api)</code>.
+<p>LinkResolver must be initialized for the current API before use via the <a href="#init">init</a> method: <code>init(Api)</code>.
 It provides multiple resolve methods for building appropriate links.</p>
 <p>The class supports relative path calculation for Markdown output.
 It also manages standard Java documentation URLs for modules and packages.</p>
@@ -3811,7 +3911,7 @@ It also manages standard Java documentation URLs for modules and packages.</p>
 <td>Checks if the target is a primitive type or void.</td>
 </tr>
 <tr>
-<td>public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[]</td>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[]</td>
 <td><a href="#qualifytype">qualifyType</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td>Returns canonical package and class names for a given type name, ensuring both parts are qualified.</td>
 </tr>
@@ -3832,7 +3932,7 @@ It also manages standard Java documentation URLs for modules and packages.</p>
 </tr>
 <tr>
 <td>static boolean</td>
-<td><a href="#resolvelocalpackagetypeinternal">resolveLocalPackageTypeInternal</a>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</td>
+<td><a href="#resolvelocalpackageortypeinternal">resolveLocalPackageOrTypeInternal</a>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</td>
 <td></td>
 </tr>
 <tr>
@@ -4031,7 +4131,7 @@ including configuration, current module/package/type names, and reporting utilit
 <h3 id="resolve">resolve</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public static <a href="../../model/Link/">Link</a> <strong>resolve</strong>(<a href="../../model/Link/">Link</a> link)</span></p>
 <p>Resolves a link reference. The supplied <code>link</code> parameter must specify the
-target of the link: a class, a module, etc. If the link can be resolved, 
+target of the link: a class, a module, etc. If the link can be resolved,
 the details of the type of link are set in the <code>link</code> object before it is
 returned.</p>
 <p><strong>Returns:</strong></p>
@@ -4051,7 +4151,7 @@ if the link was not able to be resolved.</p>
 <p>True if the reference resolved to primitive or void, else false.</p>
 <hr />
 <h3 id="qualifytype">qualifyType</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] <strong>qualifyType</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>[] <strong>qualifyType</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
 <p>Returns canonical package and class names for a given type name, ensuring both parts are qualified.</p>
 <p><strong>Returns:</strong></p>
 <p>A String array: {packageName, className}.</p>
@@ -4071,8 +4171,8 @@ if the link was not able to be resolved.</p>
 <p><strong>Returns:</strong></p>
 <p>True if the reference resolved to a local package or type.</p>
 <hr />
-<h3 id="resolvelocalpackagetypeinternal">resolveLocalPackageTypeInternal</h3>
-<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveLocalPackageTypeInternal</strong>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</span></p>
+<h3 id="resolvelocalpackageortypeinternal">resolveLocalPackageOrTypeInternal</h3>
+<p><span style="font-family: monospace; font-size: 80%;">static boolean <strong>resolveLocalPackageOrTypeInternal</strong>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toPackageName, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> toClassName)</span></p>
 <hr />
 <h3 id="addclasstoreference">addClassToReference</h3>
 <p><span style="font-family: monospace; font-size: 80%;">static void <strong>addClassToReference</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className, <a href="../../model/Link/">Link</a> link)</span></p>

@@ -589,6 +589,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,6 +631,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/JreTools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JreTools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1249,6 +1299,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1670,29 +1724,6 @@
   
   <span class="md-ellipsis">
     MethodNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MethodReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MethodReference
     
   </span>
   
@@ -2167,29 +2198,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../PackageOrTypeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageOrTypeNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../Pair/" class="md-nav__link">
         
   
@@ -2334,6 +2342,98 @@
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Array
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Generic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Generic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TypeReference.Sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence
     
   </span>
   
@@ -3332,7 +3432,7 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setkind">setKind</a>(Kind kind)</td>
+<td><a href="#setkind">setKind</a>(<a href="../Node.Kind/">Node.Kind</a> kind)</td>
 <td>Sets the kind (class, interface, enum, annotation) of this type.</td>
 </tr>
 <tr>
@@ -3402,7 +3502,7 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setreferences">setReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a> refs)</td>
+<td><a href="#setreferences">setReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; refs)</td>
 <td>Sets the list of references for this node.</td>
 </tr>
 <tr>
@@ -3459,7 +3559,7 @@ All Implemented Interfaces:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html">UUID</a> <strong>getUUID</strong>()</span></p>
 <hr />
 <h3 id="setkind">setKind</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setKind</strong>(Kind kind)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setKind</strong>(<a href="../Node.Kind/">Node.Kind</a> kind)</span></p>
 <p>Sets the kind (class, interface, enum, annotation) of this type.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
@@ -3529,7 +3629,7 @@ All Implemented Interfaces:<br/>
 <p>The full body text.</p>
 <hr />
 <h3 id="setreferences">setReferences</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setReferences</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a> refs)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setReferences</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; refs)</span></p>
 <p>Sets the list of references for this node.</p>
 <hr />
 <h3 id="getreferences">getReferences</h3>

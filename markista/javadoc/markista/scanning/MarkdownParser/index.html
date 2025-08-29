@@ -589,6 +589,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -627,6 +631,52 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/JreTools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JreTools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1247,6 +1297,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1685,29 +1739,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/MethodReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MethodReference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../model/Modifier/" class="md-nav__link">
         
   
@@ -1806,29 +1837,6 @@
   
   <span class="md-ellipsis">
     PackageNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/PackageOrTypeNode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    PackageOrTypeNode
     
   </span>
   
@@ -1990,6 +1998,98 @@
   
   <span class="md-ellipsis">
     TypeNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Array
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Generic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Generic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/TypeReference.Sequence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeReference.Sequence
     
   </span>
   
@@ -3222,22 +3322,22 @@ and END indicating the end of the sequence.</p>
 <tr>
 <td>private void</td>
 <td><a href="#handleopenbracket">handleOpenBracket</a>()</td>
-<td>Handles the open bracket 'Handles the open bracket '[' encountered in the markdown.</td>
+<td>Handles the open bracket <code>[</code> encountered in the markdown.</td>
 </tr>
 <tr>
 <td>private boolean</td>
 <td><a href="#handleopenparenthesis">handleOpenParenthesis</a>(char prevChar)</td>
-<td>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</td>
+<td>Handles an open parenthesis <code>(</code> encountered immediately after closing bracket <code>]</code>.</td>
 </tr>
 <tr>
 <td>private void</td>
 <td><a href="#handleclosebracket">handleCloseBracket</a>()</td>
-<td>Handles the close bracket '' encountered in the markdown.</td>
+<td>Handles the close bracket <code>]</code> encountered in the markdown.</td>
 </tr>
 <tr>
 <td>private boolean</td>
 <td><a href="#handlecloseparenthesis">handleCloseParenthesis</a>(boolean parensFollowBrackets)</td>
-<td>Handles the close parenthesis ')' encountered.</td>
+<td>Handles the close parenthesis <code>)</code> encountered.</td>
 </tr>
 <tr>
 <td>private void</td>
@@ -3256,7 +3356,7 @@ and END indicating the end of the sequence.</p>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#savetoken">saveToken</a>(Token token)</td>
+<td><a href="#savetoken">saveToken</a>(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</td>
 <td>Adds the specified token to the list and links it to the previously saved token.</td>
 </tr>
 <tr>
@@ -3302,23 +3402,23 @@ Currently a placeholder for any general character processing.</p>
 <hr />
 <h3 id="handleopenbracket">handleOpenBracket</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private void <strong>handleOpenBracket</strong>()</span></p>
-<p>Handles the open bracket 'Handles the open bracket '[' encountered in the markdown.
+<p>Handles the open bracket <code>[</code> encountered in the markdown.
 Saves any preceding text token before marking the position of the open bracket.</p>
 <hr />
 <h3 id="handleopenparenthesis">handleOpenParenthesis</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>handleOpenParenthesis</strong>(char prevChar)</span></p>
-<p>Handles an open parenthesis '(' encountered immediately after closing bracket ''.</p>
+<p>Handles an open parenthesis <code>(</code> encountered immediately after closing bracket <code>]</code>.</p>
 <p><strong>Returns:</strong></p>
 <p>true if parentheses follow brackets, false otherwise.</p>
 <hr />
 <h3 id="handleclosebracket">handleCloseBracket</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private void <strong>handleCloseBracket</strong>()</span></p>
-<p>Handles the close bracket '' encountered in the markdown.
+<p>Handles the close bracket <code>]</code> encountered in the markdown.
 Records the position and saves a bracket-tag token.</p>
 <hr />
 <h3 id="handlecloseparenthesis">handleCloseParenthesis</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>handleCloseParenthesis</strong>(boolean parensFollowBrackets)</span></p>
-<p>Handles the close parenthesis ')' encountered.
+<p>Handles the close parenthesis <code>)</code> encountered.
 If parentheses follow brackets, saves a parentheses-tag token.</p>
 <p><strong>Returns:</strong></p>
 <p>Always returns false to reset parsing state for parentheses.</p>
@@ -3337,7 +3437,7 @@ Does nothing if no text is available in that range.</p>
 <p>Saves the content between the most recent pair of parentheses as a PARENS_TAG token.</p>
 <hr />
 <h3 id="savetoken">saveToken</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveToken</strong>(Token token)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>saveToken</strong>(<a href="../MarkdownParser.Token/">MarkdownParser.Token</a> token)</span></p>
 <p>Adds the specified token to the list and links it to the previously saved token.</p>
 <hr />
 <h3 id="firsttoken">firstToken</h3>
