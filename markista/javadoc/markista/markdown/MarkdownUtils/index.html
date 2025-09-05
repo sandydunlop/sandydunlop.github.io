@@ -1491,8 +1491,6 @@
       
         
       
-        
-      
     
     
     
@@ -2328,29 +2326,6 @@
   
   <span class="md-ellipsis">
     TypeReference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/TypeView/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeView
     
   </span>
   
@@ -3420,7 +3395,7 @@ Markdown links to point to the correct file, directory, or web page.</p>
 <td></td>
 </tr>
 <tr>
-<td>private static <a href="../../core/Context/"></a></td>
+<td>private static <a href="../../core/Context/">Context</a></td>
 <td><a href="#ctx">ctx</a></td>
 <td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
@@ -3453,88 +3428,88 @@ Markdown links to point to the correct file, directory, or web page.</p>
 <tbody>
 <tr>
 <td>public static void</td>
-<td><a href="#setcontext">setContext</a>(<a href="../../core/Context/"></a> c)</td>
+<td><a href="#setcontext">setContext</a>(<a href="../../core/Context/">Context</a> c)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formatparams">formatParams</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/"></a>&gt; params)</td>
+<td><a href="#formatparams">formatParams</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/">ParamNode</a>&gt; params)</td>
 <td>Formats a list of <code>ParamNode</code> objects as markdown, identifying and linking type names.</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formattext">formatText</a>(<a href="../../model/Text/"></a> text)</td>
+<td><a href="#formattext">formatText</a>(<a href="../../model/Text/">Text</a> text)</td>
 <td>Formats text contained in a <code>Text</code> object as markdown.</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formattext">formatText</a>(<a href="../../model/Text/"></a> text, boolean qualifyType, boolean qualifyMember)</td>
+<td><a href="#formattext">formatText</a>(<a href="../../model/Text/">Text</a> text, boolean qualifyType, boolean qualifyMember)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formattyperef">formatTypeRef</a>(<a href="../../model/TypeReference/"></a> typeRef)</td>
+<td><a href="#formattyperef">formatTypeRef</a>(<a href="../../model/TypeReference/">TypeReference</a> typeRef)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formattyperef">formatTypeRef</a>(<a href="../../model/TypeReference/"></a> typeRef, boolean useQualifiedName)</td>
+<td><a href="#formattyperef">formatTypeRef</a>(<a href="../../model/TypeReference/">TypeReference</a> typeRef, boolean useQualifiedName)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formatlink">formatLink</a>(<a href="../../model/Text.Segment/"></a> segment, boolean qualifyType, boolean qualifyMember)</td>
+<td><a href="#formatlink">formatLink</a>(<a href="../../model/Text.Segment/">Text.Segment</a> segment, boolean qualifyType, boolean qualifyMember)</td>
 <td>Formats links contained in a text segment as markdown.</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#link">link</a>(<a href="../../model/Link/"></a> reference, boolean useQualifiedName)</td>
+<td><a href="#link">link</a>(<a href="../../model/Link/">Link</a> reference, boolean useQualifiedName)</td>
 <td>Create a markdown formatted link</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#link">link</a>(<a href="../../model/Link/"></a> reference, boolean useQualifiedName, boolean qualifyMember)</td>
+<td><a href="#link">link</a>(<a href="../../model/Link/">Link</a> reference, boolean useQualifiedName, boolean qualifyMember)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#link">link</a>(<a href="../../model/Link/"></a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</td>
+<td><a href="#link">link</a>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</td>
 <td></td>
 </tr>
 <tr>
 <td>private static void</td>
-<td><a href="#setlabelfortype">setLabelForType</a>(<a href="../../model/Link/"></a> link, boolean qualifyType)</td>
+<td><a href="#setlabelfortype">setLabelForType</a>(<a href="../../model/Link/">Link</a> link, boolean qualifyType)</td>
 <td></td>
 </tr>
 <tr>
 <td>private static void</td>
-<td><a href="#setlabelformethod">setLabelForMethod</a>(<a href="../../model/Link/"></a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</td>
+<td><a href="#setlabelformethod">setLabelForMethod</a>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</td>
 <td></td>
 </tr>
 <tr>
 <td>private static void</td>
-<td><a href="#setlabelforurl">setLabelForUrl</a>(<a href="../../model/Link/"></a> link, boolean qualifyType, boolean qualifyMember)</td>
+<td><a href="#setlabelforurl">setLabelForUrl</a>(<a href="../../model/Link/">Link</a> link, boolean qualifyType, boolean qualifyMember)</td>
 <td></td>
 </tr>
 <tr>
 <td>private static void</td>
-<td><a href="#setlabelforurlwithmethod">setLabelForUrlWithMethod</a>(<a href="../../model/Link/"></a> link, boolean qualifyType)</td>
+<td><a href="#setlabelforurlwithmethod">setLabelForUrlWithMethod</a>(<a href="../../model/Link/">Link</a> link, boolean qualifyType)</td>
 <td></td>
 </tr>
 <tr>
 <td>private static boolean</td>
-<td><a href="#canbesimplified">canBeSimplified</a>(<a href="../../model/Link/"></a> link)</td>
+<td><a href="#canbesimplified">canBeSimplified</a>(<a href="../../model/Link/">Link</a> link)</td>
 <td></td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#mdreflink">mdRefLink</a>(<a href="../../model/Link/"></a> link)</td>
-<td>Creates a markdown formatted link from a <a href="../../model/Link/"></a> object.</td>
+<td><a href="#mdreflink">mdRefLink</a>(<a href="../../model/Link/">Link</a> link)</td>
+<td>Creates a markdown formatted link from a <a href="../../model/Link/">Link</a> object.</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#mdreflinkmethod">mdRefLinkMethod</a>(<a href="../../model/Link/"></a> link)</td>
-<td>Creates a markdown formatted link from a <a href="../../model/Link/"></a> object.</td>
+<td><a href="#mdreflinkmethod">mdRefLinkMethod</a>(<a href="../../model/Link/">Link</a> link)</td>
+<td>Creates a markdown formatted link from a <a href="../../model/Link/">Link</a> object.</td>
 </tr>
 <tr>
 <td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
@@ -3575,77 +3550,77 @@ Markdown links to point to the correct file, directory, or web page.</p>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="ctx">ctx</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static <a href="../../core/Context/"></a> <strong>ctx</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="setcontext">setContext</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setContext</strong>(<a href="../../core/Context/"></a> c)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static void <strong>setContext</strong>(<a href="../../core/Context/">Context</a> c)</span></p>
 <hr />
 <h3 id="formatparams">formatParams</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatParams</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/"></a>&gt; params)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatParams</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/ParamNode/">ParamNode</a>&gt; params)</span></p>
 <p>Formats a list of <code>ParamNode</code> objects as markdown, identifying and linking type names.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text containing a link</p>
 <hr />
 <h3 id="formattext">formatText</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatText</strong>(<a href="../../model/Text/"></a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatText</strong>(<a href="../../model/Text/">Text</a> text)</span></p>
 <p>Formats text contained in a <code>Text</code> object as markdown.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text</p>
 <hr />
 <h3 id="formattext_1">formatText</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatText</strong>(<a href="../../model/Text/"></a> text, boolean qualifyType, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatText</strong>(<a href="../../model/Text/">Text</a> text, boolean qualifyType, boolean qualifyMember)</span></p>
 <hr />
 <h3 id="formattyperef">formatTypeRef</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatTypeRef</strong>(<a href="../../model/TypeReference/"></a> typeRef)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatTypeRef</strong>(<a href="../../model/TypeReference/">TypeReference</a> typeRef)</span></p>
 <hr />
 <h3 id="formattyperef_1">formatTypeRef</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatTypeRef</strong>(<a href="../../model/TypeReference/"></a> typeRef, boolean useQualifiedName)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatTypeRef</strong>(<a href="../../model/TypeReference/">TypeReference</a> typeRef, boolean useQualifiedName)</span></p>
 <hr />
 <h3 id="formatlink">formatLink</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatLink</strong>(<a href="../../model/Text.Segment/"></a> segment, boolean qualifyType, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatLink</strong>(<a href="../../model/Text.Segment/">Text.Segment</a> segment, boolean qualifyType, boolean qualifyMember)</span></p>
 <p>Formats links contained in a text segment as markdown.</p>
 <p><strong>Returns:</strong></p>
 <p>Markdown formatted text with a resolved link</p>
 <hr />
 <h3 id="link">link</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/"></a> reference, boolean useQualifiedName)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/">Link</a> reference, boolean useQualifiedName)</span></p>
 <p>Create a markdown formatted link</p>
 <p><strong>Returns:</strong></p>
 <p>markdown formatted link</p>
 <hr />
 <h3 id="link_1">link</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/"></a> reference, boolean useQualifiedName, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/">Link</a> reference, boolean useQualifiedName, boolean qualifyMember)</span></p>
 <hr />
 <h3 id="link_2">link</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/"></a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>link</strong>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</span></p>
 <hr />
 <h3 id="setlabelfortype">setLabelForType</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForType</strong>(<a href="../../model/Link/"></a> link, boolean qualifyType)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForType</strong>(<a href="../../model/Link/">Link</a> link, boolean qualifyType)</span></p>
 <hr />
 <h3 id="setlabelformethod">setLabelForMethod</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForMethod</strong>(<a href="../../model/Link/"></a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForMethod</strong>(<a href="../../model/Link/">Link</a> link, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> label, boolean qualifyType, boolean qualifyMember)</span></p>
 <hr />
 <h3 id="setlabelforurl">setLabelForUrl</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForUrl</strong>(<a href="../../model/Link/"></a> link, boolean qualifyType, boolean qualifyMember)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForUrl</strong>(<a href="../../model/Link/">Link</a> link, boolean qualifyType, boolean qualifyMember)</span></p>
 <hr />
 <h3 id="setlabelforurlwithmethod">setLabelForUrlWithMethod</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForUrlWithMethod</strong>(<a href="../../model/Link/"></a> link, boolean qualifyType)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static void <strong>setLabelForUrlWithMethod</strong>(<a href="../../model/Link/">Link</a> link, boolean qualifyType)</span></p>
 <hr />
 <h3 id="canbesimplified">canBeSimplified</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>canBeSimplified</strong>(<a href="../../model/Link/"></a> link)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>canBeSimplified</strong>(<a href="../../model/Link/">Link</a> link)</span></p>
 <hr />
 <h3 id="mdreflink">mdRefLink</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLink</strong>(<a href="../../model/Link/"></a> link)</span></p>
-<p>Creates a markdown formatted link from a <a href="../../model/Link/"></a> object.</p>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLink</strong>(<a href="../../model/Link/">Link</a> link)</span></p>
+<p>Creates a markdown formatted link from a <a href="../../model/Link/">Link</a> object.</p>
 <p><strong>Returns:</strong></p>
 <p>a markdown formatted link</p>
 <hr />
 <h3 id="mdreflinkmethod">mdRefLinkMethod</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLinkMethod</strong>(<a href="../../model/Link/"></a> link)</span></p>
-<p>Creates a markdown formatted link from a <a href="../../model/Link/"></a> object.
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>mdRefLinkMethod</strong>(<a href="../../model/Link/">Link</a> link)</span></p>
+<p>Creates a markdown formatted link from a <a href="../../model/Link/">Link</a> object.
 with the option of simplifying qualified type names.</p>
 <p><strong>Returns:</strong></p>
 <p>a markdown formatted link</p>

@@ -1509,8 +1509,6 @@
       
         
       
-        
-      
     
     
     
@@ -2346,29 +2344,6 @@
   
   <span class="md-ellipsis">
     TypeReference
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/TypeView/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeView
     
   </span>
   
@@ -3520,12 +3495,12 @@
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../model/Api/"></a></td>
+<td>private <a href="../../model/Api/">Api</a></td>
 <td><a href="#api">api</a></td>
 <td>The Api model representing the entire documented API structure, including modules, packages, types, and members used for cross-referencing and navigation.</td>
 </tr>
 <tr>
-<td>private <a href="../../core/Context/"></a></td>
+<td>private <a href="../../core/Context/">Context</a></td>
 <td><a href="#ctx">ctx</a></td>
 <td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
@@ -3546,7 +3521,7 @@
 </thead>
 <tbody>
 <tr>
-<td>ModuleWriter(<a href="../../core/Context/"></a> context)</td>
+<td>ModuleWriter(<a href="../../core/Context/">Context</a> context)</td>
 <td>Constructor that sets up the locations API documents will be written to.</td>
 </tr>
 </tbody>
@@ -3563,42 +3538,42 @@
 <tbody>
 <tr>
 <td>public void</td>
-<td><a href="#writedocs">writeDocs</a>(<a href="../../model/Api/"></a> api)</td>
+<td><a href="#writedocs">writeDocs</a>(<a href="../../model/Api/">Api</a> api)</td>
 <td>Output the documentation files for the specified API</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputmoduledoc">outputModuleDoc</a>(<a href="../../model/ModuleNode/"></a> moduleNode)</td>
+<td><a href="#outputmoduledoc">outputModuleDoc</a>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</td>
 <td>Outputs a single module's documentation as a Markdown file.</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputmoduledirectives">outputModuleDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/"></a>&gt; directives)</td>
+<td><a href="#outputmoduledirectives">outputModuleDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</td>
 <td>Outputs the directives declared in a module's <code>module-info.java</code> file.</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputmoduleprovidesdirectives">outputModuleProvidesDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/"></a>&gt; directives)</td>
+<td><a href="#outputmoduleprovidesdirectives">outputModuleProvidesDirectives</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</td>
 <td>Outputs the <code>provides</code> directives declared in a module's <code>module-info.java</code> file.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#multilink">multiLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Link/"></a>&gt; references)</td>
+<td><a href="#multilink">multiLink</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Link/">Link</a>&gt; references)</td>
 <td>Turns each member of a list of strings into a link to the documentation for the module, package, or type denoted by that list member.</td>
 </tr>
 <tr>
 <td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#formatdirectivepackagedoc">formatDirectivePackageDoc</a>(<a href="../../model/DirectiveNode/"></a> directive)</td>
-<td>Formats the first sentence of a <a href="../../model/DirectiveNode/"></a>'s documentation so that it uses only one line in the markdown output and links and code are rendered properly.</td>
+<td><a href="#formatdirectivepackagedoc">formatDirectivePackageDoc</a>(<a href="../../model/DirectiveNode/">DirectiveNode</a> directive)</td>
+<td>Formats the first sentence of a <a href="../../model/DirectiveNode/">DirectiveNode</a>'s documentation so that it uses only one line in the markdown output and links and code are rendered properly.</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputconstantvalues">outputConstantValues</a>(<a href="../../model/ModuleNode/"></a> moduleNode)</td>
+<td><a href="#outputconstantvalues">outputConstantValues</a>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</td>
 <td>Outputs the <em>Constant Field Values</em> page.</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputelementlist">outputElementList</a>(<a href="../../model/ModuleNode/"></a> moduleNode)</td>
+<td><a href="#outputelementlist">outputElementList</a>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</td>
 <td></td>
 </tr>
 <tr>
@@ -3685,17 +3660,17 @@
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="api">api</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../model/Api/"></a> <strong>api</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../model/Api/">Api</a> <strong>api</strong></span></p>
 <p>The Api model representing the entire documented API structure,
 including modules, packages, types, and members used for cross-referencing and navigation.</p>
 <hr />
 <h3 id="ctx">ctx</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/"></a> <strong>ctx</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <blockquote>
 <p><strong>Warning</strong><br/>
-Do not make this <code>final</code>. It will break tests with mocked <a href="../../core/Context/"></a>.</p>
+Do not make this <code>final</code>. It will break tests with mocked <a href="../../core/Context/">Context</a>.</p>
 </blockquote>
 <hr />
 <h3 id="writer">writer</h3>
@@ -3705,14 +3680,14 @@ It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>writeDocs</strong>(<a href="../../model/Api/"></a> api)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>writeDocs</strong>(<a href="../../model/Api/">Api</a> api)</span></p>
 <p>Output the documentation files for the specified API</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduledoc">outputModuleDoc</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleDoc</strong>(<a href="../../model/ModuleNode/"></a> moduleNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleDoc</strong>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</span></p>
 <p>Outputs a single module's documentation as a Markdown file.
 For each module, the documentation for each <a href="../../model/PackageNode/">package</a> it contains
 are then written.</p>
@@ -3721,37 +3696,37 @@ are then written.</p>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduledirectives">outputModuleDirectives</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleDirectives</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/"></a>&gt; directives)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleDirectives</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> kind, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</span></p>
 <p>Outputs the directives declared in a module's <code>module-info.java</code> file.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputmoduleprovidesdirectives">outputModuleProvidesDirectives</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleProvidesDirectives</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/"></a>&gt; directives)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputModuleProvidesDirectives</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/DirectiveNode/">DirectiveNode</a>&gt; directives)</span></p>
 <p>Outputs the <code>provides</code> directives declared in a module's <code>module-info.java</code> file.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="multilink">multiLink</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>multiLink</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Link/"></a>&gt; references)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>multiLink</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/Link/">Link</a>&gt; references)</span></p>
 <p>Turns each member of a list of strings into a link to the documentation
 for the module, package, or type denoted by that list member.</p>
 <hr />
 <h3 id="formatdirectivepackagedoc">formatDirectivePackageDoc</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatDirectivePackageDoc</strong>(<a href="../../model/DirectiveNode/"></a> directive)</span></p>
-<p>Formats the first sentence of a <a href="../../model/DirectiveNode/"></a>'s documentation so
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>formatDirectivePackageDoc</strong>(<a href="../../model/DirectiveNode/">DirectiveNode</a> directive)</span></p>
+<p>Formats the first sentence of a <a href="../../model/DirectiveNode/">DirectiveNode</a>'s documentation so
 that it uses only one line in the markdown output and links and
 code are rendered properly.</p>
 <hr />
 <h3 id="outputconstantvalues">outputConstantValues</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputConstantValues</strong>(<a href="../../model/ModuleNode/"></a> moduleNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputConstantValues</strong>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</span></p>
 <p>Outputs the <em>Constant Field Values</em> page.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputelementlist">outputElementList</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputElementList</strong>(<a href="../../model/ModuleNode/"></a> moduleNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputElementList</strong>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</span></p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>

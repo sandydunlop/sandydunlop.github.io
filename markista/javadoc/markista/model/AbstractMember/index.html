@@ -1167,8 +1167,6 @@
       
         
       
-        
-      
     
     
     
@@ -2335,29 +2333,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TypeView/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeView
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -3391,9 +3366,9 @@
                 io.github.sandydunlop.markista.model.AbstractMember<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    <a href="../MethodNode/"></a>, <a href="../ParamNode/"></a>, <a href="../TypeNode/"></a></p>
+    <a href="../MethodNode/">MethodNode</a>, <a href="../ParamNode/">ParamNode</a>, <a href="../TypeNode/">TypeNode</a></p>
 <hr />
-<p><span style="font-family: monospace; font-size: 80%;">public abstract class <strong>AbstractMember</strong><br/>extends <a href="../Node/"></a>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract class <strong>AbstractMember</strong><br/>extends <a href="../Node/">Node</a>
 </span></p>
 <h2 id="nested-class-summary">Nested Class Summary</h2>
 <table>
@@ -3423,12 +3398,12 @@ Direct Known Subtypes:<br/>
 </thead>
 <tbody>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/"></a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt;</td>
 <td><a href="#appliedannotations">appliedAnnotations</a></td>
 <td>List of annotations applied to this type.</td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/"></a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#modifiers">modifiers</a></td>
 <td>A list of the modifiers a node has</td>
 </tr>
@@ -3445,7 +3420,7 @@ Direct Known Subtypes:<br/>
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
 <td><a href="#packagename">packageName</a></td>
-<td>A <a href="../PackageNode/"></a> representing the package the node belongs to</td>
+<td>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</td>
 </tr>
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
@@ -3536,21 +3511,21 @@ Direct Known Subtypes:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addmodifier">addModifier</a>(<a href="../Modifier/"></a> mod)</td>
+<td><a href="#addmodifier">addModifier</a>(<a href="../Modifier/">Modifier</a> mod)</td>
 <td>Adds a modifier to the set of modifiers.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/"></a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt;</td>
 <td><a href="#getmodifiers">getModifiers</a>()</td>
 <td>Returns the set of modifiers for this node.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addappliedannotation">addAppliedAnnotation</a>(<a href="../AppliedAnnotationNode/"></a> annotation)</td>
+<td><a href="#addappliedannotation">addAppliedAnnotation</a>(<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</td>
 <td>Adds an applied annotation to this type</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/"></a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt;</td>
 <td><a href="#getappliedannotations">getAppliedAnnotations</a>()</td>
 <td>Returns the list of annotations applied to this type.</td>
 </tr>
@@ -3565,11 +3540,11 @@ Direct Known Subtypes:<br/>
 <p><a href="../Node/#setreferences">Node.setReferences</a>, <a href="../Node/#getreferences">Node.getReferences</a>, <a href="../Node/#getkind">Node.getKind</a>, <a href="../Node/#setdeprecationtext">Node.setDeprecationText</a>, <a href="../Node/#getbody">Node.getBody</a>, <a href="../Node/#getsince">Node.getSince</a>, <a href="../Node/#setfullbody">Node.setFullBody</a>, <a href="../Node/#setfirstsentence">Node.setFirstSentence</a>, <a href="../Node/#setsince">Node.setSince</a>, <a href="../Node/#setbody">Node.setBody</a>, <a href="../Node/#setdeprecation">Node.setDeprecation</a>, <a href="../Node/#getfirstsentence">Node.getFirstSentence</a>, <a href="../Node/#setkind">Node.setKind</a>, <a href="../Node/#getdeprecation">Node.getDeprecation</a>, <a href="../Node/#getuuid">Node.getUUID</a>, <a href="../Node/#getdeprecationtext">Node.getDeprecationText</a>, <a href="../Node/#getfullbody">Node.getFullBody</a></p>
 <h2 id="field-details">Field Details</h2>
 <h3 id="appliedannotations">appliedAnnotations</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/"></a>&gt; <strong>appliedAnnotations</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt; <strong>appliedAnnotations</strong></span></p>
 <p>List of annotations applied to this type.</p>
 <hr />
 <h3 id="modifiers">modifiers</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/"></a>&gt; <strong>modifiers</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; <strong>modifiers</strong></span></p>
 <p>A list of the modifiers a node has</p>
 <hr />
 <h3 id="name">name</h3>
@@ -3582,7 +3557,7 @@ Direct Known Subtypes:<br/>
 <hr />
 <h3 id="packagename">packageName</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>packageName</strong></span></p>
-<p>A <a href="../PackageNode/"></a> representing the package the node belongs to</p>
+<p>A <a href="../PackageNode/">PackageNode</a> representing the package the node belongs to</p>
 <hr />
 <h3 id="qualifiedname">qualifiedName</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>qualifiedName</strong></span></p>
@@ -3644,21 +3619,21 @@ Direct Known Subtypes:<br/>
 <p>the nested name.</p>
 <hr />
 <h3 id="addmodifier">addModifier</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addModifier</strong>(<a href="../Modifier/"></a> mod)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addModifier</strong>(<a href="../Modifier/">Modifier</a> mod)</span></p>
 <p>Adds a modifier to the set of modifiers.</p>
 <hr />
 <h3 id="getmodifiers">getModifiers</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/"></a>&gt; <strong>getModifiers</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="../Modifier/">Modifier</a>&gt; <strong>getModifiers</strong>()</span></p>
 <p>Returns the set of modifiers for this node.</p>
 <p><strong>Returns:</strong></p>
 <p>Set of modifiers.</p>
 <hr />
 <h3 id="addappliedannotation">addAppliedAnnotation</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addAppliedAnnotation</strong>(<a href="../AppliedAnnotationNode/"></a> annotation)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addAppliedAnnotation</strong>(<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a> annotation)</span></p>
 <p>Adds an applied annotation to this type</p>
 <hr />
 <h3 id="getappliedannotations">getAppliedAnnotations</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/"></a>&gt; <strong>getAppliedAnnotations</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>&gt; <strong>getAppliedAnnotations</strong>()</span></p>
 <p>Returns the list of annotations applied to this type.</p>
 <p><strong>Returns:</strong></p>
 <p>list of applied annotations</p>
