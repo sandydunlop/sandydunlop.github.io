@@ -1338,6 +1338,8 @@
       
         
       
+        
+      
     
     
     
@@ -1621,6 +1623,29 @@
   
   <span class="md-ellipsis">
     EnumNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ExternalLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ExternalLink
     
   </span>
   
@@ -3088,7 +3113,7 @@
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../../core/Context/">Context</a></td>
+<td>private <a href="../../core/Context/"></a></td>
 <td><a href="#ctx">ctx</a></td>
 <td>The Context singleton instance providing access to the current documentation generation context, including configuration, current module/package/type names, and reporting utilities.</td>
 </tr>
@@ -3109,7 +3134,7 @@
 </thead>
 <tbody>
 <tr>
-<td>PackageWriter(<a href="../../core/Context/">Context</a> context)</td>
+<td>PackageWriter(<a href="../../core/Context/"></a> context)</td>
 <td>Constructor that sets up the locations API documents will be written to.</td>
 </tr>
 </tbody>
@@ -3126,22 +3151,22 @@
 <tbody>
 <tr>
 <td>public void</td>
-<td><a href="#writedocs">writeDocs</a>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</td>
+<td><a href="#writedocs">writeDocs</a>(<a href="../../model/ModuleNode/"></a> moduleNode)</td>
 <td>Output the documentation files for the specified API</td>
 </tr>
 <tr>
 <td>void</td>
-<td><a href="#outputpackagedoc">outputPackageDoc</a>(<a href="../../model/PackageNode/">PackageNode</a> packageNode)</td>
+<td><a href="#outputpackagedoc">outputPackageDoc</a>(<a href="../../model/PackageNode/"></a> packageNode)</td>
 <td>Writes the Javadoc for a package as Markdown</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputpackagememberpackages">outputPackageMemberPackages</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageNode/">PackageNode</a>&gt; members)</td>
+<td><a href="#outputpackagememberpackages">outputPackageMemberPackages</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageNode/"></a>&gt; members)</td>
 <td>Writes the Javadoc for a package's member packages as Markdown</td>
 </tr>
 <tr>
 <td>private void</td>
-<td><a href="#outputpackagemembertypes">outputPackageMemberTypes</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeNode/">TypeNode</a>&gt; members)</td>
+<td><a href="#outputpackagemembertypes">outputPackageMemberTypes</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeNode/"></a>&gt; members)</td>
 <td>Writes the Javadoc for a package's members as Markdown</td>
 </tr>
 </tbody>
@@ -3158,12 +3183,12 @@
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="ctx">ctx</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../../core/Context/"></a> <strong>ctx</strong></span></p>
 <p>The Context singleton instance providing access to the current documentation generation context,
 including configuration, current module/package/type names, and reporting utilities.</p>
 <blockquote>
 <p><strong>Warning</strong><br/>
-Do not make this <code>final</code>. It will break tests with mocked <a href="../../core/Context/">Context</a>.</p>
+Do not make this <code>final</code>. It will break tests with mocked <a href="../../core/Context/"></a>.</p>
 </blockquote>
 <hr />
 <h3 id="writer">writer</h3>
@@ -3173,27 +3198,27 @@ It handles writing text to the appropriate output file or stream.</p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="writedocs">writeDocs</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>writeDocs</strong>(<a href="../../model/ModuleNode/">ModuleNode</a> moduleNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>writeDocs</strong>(<a href="../../model/ModuleNode/"></a> moduleNode)</span></p>
 <p>Output the documentation files for the specified API</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputpackagedoc">outputPackageDoc</h3>
-<p><span style="font-family: monospace; font-size: 80%;">void <strong>outputPackageDoc</strong>(<a href="../../model/PackageNode/">PackageNode</a> packageNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">void <strong>outputPackageDoc</strong>(<a href="../../model/PackageNode/"></a> packageNode)</span></p>
 <p>Writes the Javadoc for a package as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a>
 , <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputpackagememberpackages">outputPackageMemberPackages</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberPackages</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageNode/">PackageNode</a>&gt; members)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberPackages</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/PackageNode/"></a>&gt; members)</span></p>
 <p>Writes the Javadoc for a package's member packages as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>
 <hr />
 <h3 id="outputpackagemembertypes">outputPackageMemberTypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberTypes</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeNode/">TypeNode</a>&gt; members)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>outputPackageMemberTypes</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> title, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../model/TypeNode/"></a>&gt; members)</span></p>
 <p>Writes the Javadoc for a package's members as Markdown</p>
 <p><strong>Throws:</strong></p>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html">IOException</a></p>

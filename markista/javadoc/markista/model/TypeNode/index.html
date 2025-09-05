@@ -1167,6 +1167,8 @@
       
         
       
+        
+      
     
     
     
@@ -1450,6 +1452,29 @@
   
   <span class="md-ellipsis">
     EnumNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExternalLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ExternalLink
     
   </span>
   
@@ -3835,9 +3860,9 @@
                         io.github.sandydunlop.markista.model.TypeNode<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    <a href="../RecordNode/">RecordNode</a>, <a href="../AnnotationNode/">AnnotationNode</a>, <a href="../EnumNode/">EnumNode</a>, <a href="../InterfaceNode/">InterfaceNode</a>, <a href="../ClassNode/">ClassNode</a></p>
+    <a href="../RecordNode/"></a>, <a href="../AnnotationNode/"></a>, <a href="../EnumNode/"></a>, <a href="../InterfaceNode/"></a>, <a href="../ClassNode/"></a></p>
 <hr />
-<p><span style="font-family: monospace; font-size: 80%;">public class <strong>TypeNode</strong><br/>extends <a href="../AbstractMember/">AbstractMember</a>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>TypeNode</strong><br/>extends <a href="../AbstractMember/"></a>
 </span></p>
 <p>Represents a type in the API model, including its kind (class, interface, enum, annotation),
 supertypes, implemented interfaces, constructors, methods, fields, ownership, and relevant metadata.</p>
@@ -3852,17 +3877,17 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </thead>
 <tbody>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt;</td>
 <td><a href="#constructors">constructors</a></td>
 <td>List of constructor methods belonging to this type.</td>
 </tr>
 <tr>
-<td>private <a href="../Link/">Link</a></td>
+<td>private <a href="../Link/"></a></td>
 <td><a href="#enclosingclassref">enclosingClassRef</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt;</td>
 <td><a href="#fields">fields</a></td>
 <td>List of fields belonging to this type.</td>
 </tr>
@@ -3872,17 +3897,17 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <td>Has the <code>@Documented</code> annotation applied</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#implementedinterfaces">implementedInterfaces</a></td>
 <td>List of references to interfaces implemented by this type and text containing links.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="../TypeReference/">TypeReference</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="../TypeReference/"></a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;&gt;</td>
 <td><a href="#inheritedmethods">inheritedMethods</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt;</td>
 <td><a href="#methods">methods</a></td>
 <td>List of methods belonging to this type.</td>
 </tr>
@@ -3897,17 +3922,17 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <td></td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#subtypes">subtypes</a></td>
 <td>List of references to this type's subtypes and text containing links.</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#supertypes">supertypes</a></td>
 <td>List of references to this type's supertypes and text containing links.</td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#types">types</a></td>
 <td></td>
 </tr>
@@ -3979,22 +4004,22 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <td></td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#getimplementedinterfaces">getImplementedInterfaces</a>()</td>
 <td>Returns the list of implemented interfaces by qualified names.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#getsupertypes">getSupertypes</a>()</td>
 <td>Returns the list of supertype references and text.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt;</td>
 <td><a href="#getsubtypes">getSubtypes</a>()</td>
 <td>Returns the list of subtype references and text.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="../TypeReference/">TypeReference</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="../TypeReference/"></a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;&gt;</td>
 <td><a href="#getinheritedmethods">getInheritedMethods</a>()</td>
 <td>Returns the list of inherited methods organized by the type they are defined in.</td>
 </tr>
@@ -4010,31 +4035,31 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addmethod">addMethod</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
+<td><a href="#addmethod">addMethod</a>(<a href="../MethodNode/"></a> method)</td>
 <td>Adds a method to this type.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt;</td>
 <td><a href="#getmethods">getMethods</a>()</td>
 <td>Returns the list of methods of this type.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addconstructor">addConstructor</a>(<a href="../MethodNode/">MethodNode</a> constructor)</td>
+<td><a href="#addconstructor">addConstructor</a>(<a href="../MethodNode/"></a> constructor)</td>
 <td>Adds a constructor method to this type.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt;</td>
 <td><a href="#getconstructors">getConstructors</a>()</td>
 <td>Returns the list of constructors of this type.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addfield">addField</a>(<a href="../FieldNode/">FieldNode</a> field)</td>
+<td><a href="#addfield">addField</a>(<a href="../FieldNode/"></a> field)</td>
 <td>Adds a field to this type.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt;</td>
 <td><a href="#getfields">getFields</a>()</td>
 <td>Returns the list of fields of this type.</td>
 </tr>
@@ -4050,62 +4075,62 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setenclosingclassref">setEnclosingClassRef</a>(<a href="../Link/">Link</a> ref)</td>
+<td><a href="#setenclosingclassref">setEnclosingClassRef</a>(<a href="../Link/"></a> ref)</td>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="../Link/">Link</a></td>
+<td>public <a href="../Link/"></a></td>
 <td><a href="#getenclosingclassref">getEnclosingClassRef</a>()</td>
 <td></td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addtype">addType</a>(<a href="./">TypeNode</a> typeNode)</td>
+<td><a href="#addtype">addType</a>(<a href="./"></a> typeNode)</td>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#gettypes">getTypes</a>()</td>
 <td>Gets the list of types <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#getclasses">getClasses</a>()</td>
 <td>Gets the list of classes <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#getinterfaces">getInterfaces</a>()</td>
 <td>Gets the list of interfaces <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#getenums">getEnums</a>()</td>
 <td>Gets the list of enums <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#getrecords">getRecords</a>()</td>
 <td>Gets the list of records <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt;</td>
 <td><a href="#getannotations">getAnnotations</a>()</td>
 <td>Gets the list of annotations <em>owned</em> by this instance.</td>
 </tr>
 <tr>
-<td>public <a href="../FieldNode/">FieldNode</a></td>
+<td>public <a href="../FieldNode/"></a></td>
 <td><a href="#getfield">getField</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</td>
 <td>Retrieves a field by its simple name.</td>
 </tr>
 <tr>
-<td>public <a href="../MethodNode/">MethodNode</a></td>
-<td><a href="#getmethod">getMethod</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
+<td>public <a href="../MethodNode/"></a></td>
+<td><a href="#getmethod">getMethod</a>(<a href="../MethodNode/"></a> method)</td>
 <td>Retrieves a method matching the signature of a given MethodNode.</td>
 </tr>
 <tr>
-<td>public <a href="../MethodNode/">MethodNode</a></td>
-<td><a href="#getconstructor">getConstructor</a>(<a href="../MethodNode/">MethodNode</a> method)</td>
+<td>public <a href="../MethodNode/"></a></td>
+<td><a href="#getconstructor">getConstructor</a>(<a href="../MethodNode/"></a> method)</td>
 <td>Retrieves a constructor matching the signature of a given MethodNode.</td>
 </tr>
 <tr>
@@ -4126,14 +4151,14 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p><a href="../Node/#getreferences">Node.getReferences</a>, <a href="../Node/#setdeprecationtext">Node.setDeprecationText</a>, <a href="../Node/#getbody">Node.getBody</a>, <a href="../Node/#setfirstsentence">Node.setFirstSentence</a>, <a href="../Node/#setdeprecation">Node.setDeprecation</a>, <a href="../Node/#getdeprecation">Node.getDeprecation</a>, <a href="../Node/#getuuid">Node.getUUID</a>, <a href="../Node/#getfullbody">Node.getFullBody</a>, <a href="../Node/#setreferences">Node.setReferences</a>, <a href="../Node/#getkind">Node.getKind</a>, <a href="../Node/#getsince">Node.getSince</a>, <a href="../Node/#setfullbody">Node.setFullBody</a>, <a href="../Node/#setsince">Node.setSince</a>, <a href="../Node/#setbody">Node.setBody</a>, <a href="../Node/#getfirstsentence">Node.getFirstSentence</a>, <a href="../Node/#setkind">Node.setKind</a>, <a href="../Node/#getdeprecationtext">Node.getDeprecationText</a></p>
 <h2 id="field-details">Field Details</h2>
 <h3 id="constructors">constructors</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; <strong>constructors</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt; <strong>constructors</strong></span></p>
 <p>List of constructor methods belonging to this type.</p>
 <hr />
 <h3 id="enclosingclassref">enclosingClassRef</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Link/">Link</a> <strong>enclosingClassRef</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Link/"></a> <strong>enclosingClassRef</strong></span></p>
 <hr />
 <h3 id="fields">fields</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>fields</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt; <strong>fields</strong></span></p>
 <p>List of fields belonging to this type.</p>
 <hr />
 <h3 id="hasdocumentedannotation">hasDocumentedAnnotation</h3>
@@ -4141,14 +4166,14 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p>Has the <code>@Documented</code> annotation applied</p>
 <hr />
 <h3 id="implementedinterfaces">implementedInterfaces</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>implementedInterfaces</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>implementedInterfaces</strong></span></p>
 <p>List of references to interfaces implemented by this type and text containing links.</p>
 <hr />
 <h3 id="inheritedmethods">inheritedMethods</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="../TypeReference/">TypeReference</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;&gt; <strong>inheritedMethods</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/HashMap.html">HashMap</a>&lt;<a href="../TypeReference/"></a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;&gt; <strong>inheritedMethods</strong></span></p>
 <hr />
 <h3 id="methods">methods</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; <strong>methods</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt; <strong>methods</strong></span></p>
 <p>List of methods belonging to this type.</p>
 <hr />
 <h3 id="ownername">ownerName</h3>
@@ -4159,15 +4184,15 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>sourcePath</strong></span></p>
 <hr />
 <h3 id="subtypes">subtypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>subtypes</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>subtypes</strong></span></p>
 <p>List of references to this type's subtypes and text containing links.</p>
 <hr />
 <h3 id="supertypes">supertypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>supertypes</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>supertypes</strong></span></p>
 <p>List of references to this type's supertypes and text containing links.</p>
 <hr />
 <h3 id="types">types</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>types</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>types</strong></span></p>
 <hr />
 <h2 id="method-details">Method Details</h2>
 <h3 id="isclass">isClass</h3>
@@ -4195,25 +4220,25 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getSourcePath</strong>()</span></p>
 <hr />
 <h3 id="getimplementedinterfaces">getImplementedInterfaces</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>getImplementedInterfaces</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>getImplementedInterfaces</strong>()</span></p>
 <p>Returns the list of implemented interfaces by qualified names.</p>
 <p><strong>Returns:</strong></p>
 <p>list of qualified interface names.</p>
 <hr />
 <h3 id="getsupertypes">getSupertypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>getSupertypes</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>getSupertypes</strong>()</span></p>
 <p>Returns the list of supertype references and text.</p>
 <p><strong>Returns:</strong></p>
 <p>list of supertype references and text.</p>
 <hr />
 <h3 id="getsubtypes">getSubtypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/">TypeReference</a>&gt; <strong>getSubtypes</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../TypeReference/"></a>&gt; <strong>getSubtypes</strong>()</span></p>
 <p>Returns the list of subtype references and text.</p>
 <p><strong>Returns:</strong></p>
 <p>list of subtype references and text.</p>
 <hr />
 <h3 id="getinheritedmethods">getInheritedMethods</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="../TypeReference/">TypeReference</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;&gt; <strong>getInheritedMethods</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="../TypeReference/"></a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;&gt; <strong>getInheritedMethods</strong>()</span></p>
 <p>Returns the list of inherited methods organized by the type they are defined in.</p>
 <p><strong>Returns:</strong></p>
 <p>HashMap of types containing inherited methods to inherited methods.</p>
@@ -4229,31 +4254,31 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p>the TypeOwner that owns this type.</p>
 <hr />
 <h3 id="addmethod">addMethod</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addMethod</strong>(<a href="../MethodNode/">MethodNode</a> method)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addMethod</strong>(<a href="../MethodNode/"></a> method)</span></p>
 <p>Adds a method to this type.</p>
 <hr />
 <h3 id="getmethods">getMethods</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; <strong>getMethods</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt; <strong>getMethods</strong>()</span></p>
 <p>Returns the list of methods of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>list of MethodNode instances.</p>
 <hr />
 <h3 id="addconstructor">addConstructor</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addConstructor</strong>(<a href="../MethodNode/">MethodNode</a> constructor)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addConstructor</strong>(<a href="../MethodNode/"></a> constructor)</span></p>
 <p>Adds a constructor method to this type.</p>
 <hr />
 <h3 id="getconstructors">getConstructors</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/">MethodNode</a>&gt; <strong>getConstructors</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../MethodNode/"></a>&gt; <strong>getConstructors</strong>()</span></p>
 <p>Returns the list of constructors of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>list of MethodNode constructors.</p>
 <hr />
 <h3 id="addfield">addField</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addField</strong>(<a href="../FieldNode/">FieldNode</a> field)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addField</strong>(<a href="../FieldNode/"></a> field)</span></p>
 <p>Adds a field to this type.</p>
 <hr />
 <h3 id="getfields">getFields</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>getFields</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt; <strong>getFields</strong>()</span></p>
 <p>Returns the list of fields of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>list of FieldNode instances.</p>
@@ -4269,52 +4294,52 @@ supertypes, implemented interfaces, constructors, methods, fields, ownership, an
 <p>True if it has a <code>@Documented</code> meta-annotation</p>
 <hr />
 <h3 id="setenclosingclassref">setEnclosingClassRef</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setEnclosingClassRef</strong>(<a href="../Link/">Link</a> ref)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setEnclosingClassRef</strong>(<a href="../Link/"></a> ref)</span></p>
 <hr />
 <h3 id="getenclosingclassref">getEnclosingClassRef</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Link/">Link</a> <strong>getEnclosingClassRef</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Link/"></a> <strong>getEnclosingClassRef</strong>()</span></p>
 <hr />
 <h3 id="addtype">addType</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addType</strong>(<a href="./">TypeNode</a> typeNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addType</strong>(<a href="./"></a> typeNode)</span></p>
 <hr />
 <h3 id="gettypes">getTypes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getTypes</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getTypes</strong>()</span></p>
 <p>Gets the list of types <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getclasses">getClasses</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getClasses</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getClasses</strong>()</span></p>
 <p>Gets the list of classes <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getinterfaces">getInterfaces</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getInterfaces</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getInterfaces</strong>()</span></p>
 <p>Gets the list of interfaces <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getenums">getEnums</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getEnums</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getEnums</strong>()</span></p>
 <p>Gets the list of enums <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getrecords">getRecords</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getRecords</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getRecords</strong>()</span></p>
 <p>Gets the list of records <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getannotations">getAnnotations</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./">TypeNode</a>&gt; <strong>getAnnotations</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="./"></a>&gt; <strong>getAnnotations</strong>()</span></p>
 <p>Gets the list of annotations <em>owned</em> by this instance.</p>
 <hr />
 <h3 id="getfield">getField</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../FieldNode/">FieldNode</a> <strong>getField</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../FieldNode/"></a> <strong>getField</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> fieldName)</span></p>
 <p>Retrieves a field by its simple name.</p>
 <p><strong>Returns:</strong></p>
 <p>the FieldNode if found, otherwise null.</p>
 <hr />
 <h3 id="getmethod">getMethod</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../MethodNode/">MethodNode</a> <strong>getMethod</strong>(<a href="../MethodNode/">MethodNode</a> method)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../MethodNode/"></a> <strong>getMethod</strong>(<a href="../MethodNode/"></a> method)</span></p>
 <p>Retrieves a method matching the signature of a given MethodNode.</p>
 <p><strong>Returns:</strong></p>
 <p>the matching MethodNode if found, otherwise null.</p>
 <hr />
 <h3 id="getconstructor">getConstructor</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../MethodNode/">MethodNode</a> <strong>getConstructor</strong>(<a href="../MethodNode/">MethodNode</a> method)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../MethodNode/"></a> <strong>getConstructor</strong>(<a href="../MethodNode/"></a> method)</span></p>
 <p>Retrieves a constructor matching the signature of a given MethodNode.</p>
 <p><strong>Returns:</strong></p>
 <p>the matching constructor MethodNode if found, otherwise null.</p>

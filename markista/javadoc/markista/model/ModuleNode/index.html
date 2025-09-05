@@ -1167,6 +1167,8 @@
       
         
       
+        
+      
     
     
     
@@ -1450,6 +1452,29 @@
   
   <span class="md-ellipsis">
     EnumNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExternalLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ExternalLink
     
   </span>
   
@@ -3348,7 +3373,7 @@
                 io.github.sandydunlop.markista.model.ModuleNode<br/>
 <br/></p>
 <hr />
-<p><span style="font-family: monospace; font-size: 80%;">public class <strong>ModuleNode</strong><br/>extends <a href="../Node/">Node</a>
+<p><span style="font-family: monospace; font-size: 80%;">public class <strong>ModuleNode</strong><br/>extends <a href="../Node/"></a>
 </span></p>
 <p>Represents a module node that contains directives, packages, and constant values. 
 Implements the PackageOwner interface to manage contained packages.</p>
@@ -3363,12 +3388,12 @@ Implements the PackageOwner interface to manage contained packages.</p>
 </thead>
 <tbody>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt;</td>
 <td><a href="#constantvalues">constantValues</a></td>
 <td></td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#directives">directives</a></td>
 <td></td>
 </tr>
@@ -3383,7 +3408,7 @@ Implements the PackageOwner interface to manage contained packages.</p>
 <td></td>
 </tr>
 <tr>
-<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt;</td>
+<td>private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/"></a>&gt;</td>
 <td><a href="#packages">packages</a></td>
 <td></td>
 </tr>
@@ -3445,57 +3470,57 @@ Implements the PackageOwner interface to manage contained packages.</p>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/"></a>&gt;</td>
 <td><a href="#getpackages">getPackages</a>()</td>
 <td>Returns the list of packages contained in this module.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/">PackageNode</a> packageNode)</td>
+<td><a href="#addpackage">addPackage</a>(<a href="../PackageNode/"></a> packageNode)</td>
 <td>Adds a package to this module.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#adddirective">addDirective</a>(<a href="../DirectiveNode/">DirectiveNode</a> directive)</td>
+<td><a href="#adddirective">addDirective</a>(<a href="../DirectiveNode/"></a> directive)</td>
 <td>Adds a directive to this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getdirectives">getDirectives</a>()</td>
 <td>Returns the list of directives declared in this module.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#addconstantvalue">addConstantValue</a>(<a href="../FieldNode/">FieldNode</a> constant)</td>
+<td><a href="#addconstantvalue">addConstantValue</a>(<a href="../FieldNode/"></a> constant)</td>
 <td>Adds a constant field value to this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt;</td>
 <td><a href="#getconstantvalues">getConstantValues</a>()</td>
 <td>Returns the list of constant values defined in this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getexports">getExports</a>()</td>
 <td>Returns the list of 'exports' directives in this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getrequires">getRequires</a>()</td>
 <td>Returns the list of 'requires' directives in this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getopens">getOpens</a>()</td>
 <td>Returns the list of 'opens' directives in this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getuses">getUses</a>()</td>
 <td>Returns the list of 'uses' directives in this module.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt;</td>
 <td><a href="#getprovides">getProvides</a>()</td>
 <td>Returns the list of 'provides' directives in this module.</td>
 </tr>
@@ -3505,10 +3530,10 @@ Implements the PackageOwner interface to manage contained packages.</p>
 <p><a href="../Node/#setreferences">Node.setReferences</a>, <a href="../Node/#getreferences">Node.getReferences</a>, <a href="../Node/#getkind">Node.getKind</a>, <a href="../Node/#setdeprecationtext">Node.setDeprecationText</a>, <a href="../Node/#getbody">Node.getBody</a>, <a href="../Node/#getsince">Node.getSince</a>, <a href="../Node/#setfullbody">Node.setFullBody</a>, <a href="../Node/#setfirstsentence">Node.setFirstSentence</a>, <a href="../Node/#setsince">Node.setSince</a>, <a href="../Node/#setbody">Node.setBody</a>, <a href="../Node/#setdeprecation">Node.setDeprecation</a>, <a href="../Node/#getfirstsentence">Node.getFirstSentence</a>, <a href="../Node/#setkind">Node.setKind</a>, <a href="../Node/#getdeprecation">Node.getDeprecation</a>, <a href="../Node/#getuuid">Node.getUUID</a>, <a href="../Node/#getdeprecationtext">Node.getDeprecationText</a>, <a href="../Node/#getfullbody">Node.getFullBody</a></p>
 <h2 id="field-details">Field Details</h2>
 <h3 id="constantvalues">constantValues</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>constantValues</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt; <strong>constantValues</strong></span></p>
 <hr />
 <h3 id="directives">directives</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>directives</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>directives</strong></span></p>
 <hr />
 <h3 id="hasmoduleinfo">hasModuleInfo</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private boolean <strong>hasModuleInfo</strong></span></p>
@@ -3517,7 +3542,7 @@ Implements the PackageOwner interface to manage contained packages.</p>
 <p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>name</strong></span></p>
 <hr />
 <h3 id="packages">packages</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt; <strong>packages</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/"></a>&gt; <strong>packages</strong></span></p>
 <hr />
 <h3 id="sourcepath">sourcePath</h3>
 <p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>sourcePath</strong></span></p>
@@ -3542,61 +3567,61 @@ Implements the PackageOwner interface to manage contained packages.</p>
 <p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>hasModuleInfo</strong>()</span></p>
 <hr />
 <h3 id="getpackages">getPackages</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/">PackageNode</a>&gt; <strong>getPackages</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../PackageNode/"></a>&gt; <strong>getPackages</strong>()</span></p>
 <p>Returns the list of packages contained in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of PackageMember objects.</p>
 <hr />
 <h3 id="addpackage">addPackage</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addPackage</strong>(<a href="../PackageNode/">PackageNode</a> packageNode)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addPackage</strong>(<a href="../PackageNode/"></a> packageNode)</span></p>
 <p>Adds a package to this module.</p>
 <hr />
 <h3 id="adddirective">addDirective</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addDirective</strong>(<a href="../DirectiveNode/">DirectiveNode</a> directive)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addDirective</strong>(<a href="../DirectiveNode/"></a> directive)</span></p>
 <p>Adds a directive to this module.</p>
 <hr />
 <h3 id="getdirectives">getDirectives</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getDirectives</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getDirectives</strong>()</span></p>
 <p>Returns the list of directives declared in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects.</p>
 <hr />
 <h3 id="addconstantvalue">addConstantValue</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addConstantValue</strong>(<a href="../FieldNode/">FieldNode</a> constant)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>addConstantValue</strong>(<a href="../FieldNode/"></a> constant)</span></p>
 <p>Adds a constant field value to this module.</p>
 <hr />
 <h3 id="getconstantvalues">getConstantValues</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/">FieldNode</a>&gt; <strong>getConstantValues</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../FieldNode/"></a>&gt; <strong>getConstantValues</strong>()</span></p>
 <p>Returns the list of constant values defined in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of FieldNode objects.</p>
 <hr />
 <h3 id="getexports">getExports</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getExports</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getExports</strong>()</span></p>
 <p>Returns the list of 'exports' directives in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects filtered by EXPORTS kind.</p>
 <hr />
 <h3 id="getrequires">getRequires</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getRequires</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getRequires</strong>()</span></p>
 <p>Returns the list of 'requires' directives in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects filtered by REQUIRES kind.</p>
 <hr />
 <h3 id="getopens">getOpens</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getOpens</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getOpens</strong>()</span></p>
 <p>Returns the list of 'opens' directives in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects filtered by OPENS kind.</p>
 <hr />
 <h3 id="getuses">getUses</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getUses</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getUses</strong>()</span></p>
 <p>Returns the list of 'uses' directives in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects filtered by USES kind.</p>
 <hr />
 <h3 id="getprovides">getProvides</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/">DirectiveNode</a>&gt; <strong>getProvides</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../DirectiveNode/"></a>&gt; <strong>getProvides</strong>()</span></p>
 <p>Returns the list of 'provides' directives in this module.</p>
 <p><strong>Returns:</strong></p>
 <p>List of DirectiveNode objects filtered by PROVIDES kind.</p>

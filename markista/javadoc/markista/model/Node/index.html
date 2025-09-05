@@ -1167,6 +1167,8 @@
       
         
       
+        
+      
     
     
     
@@ -1450,6 +1452,29 @@
   
   <span class="md-ellipsis">
     EnumNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExternalLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ExternalLink
     
   </span>
   
@@ -3409,7 +3434,7 @@
 All Implemented Interfaces:<br/>
     <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Serializable.html">Serializable</a></p>
 <p>Direct Known Subtypes:<br/>
-    <a href="../AppliedAnnotationNode/">AppliedAnnotationNode</a>, <a href="../ModuleNode/">ModuleNode</a>, <a href="../PackageNode/">PackageNode</a>, <a href="../AnnotationElement/">AnnotationElement</a>, <a href="../AbstractMember/">AbstractMember</a>, <a href="../Api/">Api</a></p>
+    <a href="../AppliedAnnotationNode/"></a>, <a href="../ModuleNode/"></a>, <a href="../PackageNode/"></a>, <a href="../AnnotationElement/"></a>, <a href="../AbstractMember/"></a>, <a href="../Api/"></a></p>
 <hr />
 <p><span style="font-family: monospace; font-size: 80%;">public class <strong>Node</strong></span></p>
 <p>The base class for all types of nodes in the API model.</p>
@@ -3424,37 +3449,37 @@ All Implemented Interfaces:<br/>
 </thead>
 <tbody>
 <tr>
-<td>private final <a href="../Text/">Text</a></td>
+<td>private final <a href="../Text/"></a></td>
 <td><a href="#body">body</a></td>
 <td>The body text of the Javadoc for this node</td>
 </tr>
 <tr>
-<td>private <a href="../Deprecation/">Deprecation</a></td>
+<td>private <a href="../Deprecation/"></a></td>
 <td><a href="#deprecation">deprecation</a></td>
 <td>The deprecation status of the node</td>
 </tr>
 <tr>
-<td>private <a href="../Text/">Text</a></td>
+<td>private <a href="../Text/"></a></td>
 <td><a href="#deprecationtext">deprecationText</a></td>
 <td>Text describing the deprecation state of the node</td>
 </tr>
 <tr>
-<td>protected <a href="../Text/">Text</a></td>
+<td>protected <a href="../Text/"></a></td>
 <td><a href="#firstsentence">firstSentence</a></td>
 <td>The first sentence of the Javadoc for this node</td>
 </tr>
 <tr>
-<td>private final <a href="../Text/">Text</a></td>
+<td>private final <a href="../Text/"></a></td>
 <td><a href="#fullbody">fullBody</a></td>
 <td>The full text of the Javadoc for this node</td>
 </tr>
 <tr>
-<td>protected <a href="../Node.Kind/">Node.Kind</a></td>
+<td>protected <a href="../Node.Kind/"></a></td>
 <td><a href="#kind">kind</a></td>
 <td>The kind of this type (e.g., class, interface, enum, annotation).</td>
 </tr>
 <tr>
-<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;</td>
+<td>private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;</td>
 <td><a href="#references">references</a></td>
 <td>A list of references specified in this node's Javadoc</td>
 </tr>
@@ -3464,7 +3489,7 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>private <a href="../Text/">Text</a></td>
+<td>private <a href="../Text/"></a></td>
 <td><a href="#since">since</a></td>
 <td>Text showing when this node was added to the API</td>
 </tr>
@@ -3507,81 +3532,81 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setkind">setKind</a>(<a href="../Node.Kind/">Node.Kind</a> kind)</td>
+<td><a href="#setkind">setKind</a>(<a href="../Node.Kind/"></a> kind)</td>
 <td>Sets the kind (class, interface, enum, annotation) of this type.</td>
 </tr>
 <tr>
-<td>public <a href="../Node.Kind/">Node.Kind</a></td>
+<td>public <a href="../Node.Kind/"></a></td>
 <td><a href="#getkind">getKind</a>()</td>
 <td>Returns the kind of this type.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setdeprecation">setDeprecation</a>(<a href="../Deprecation/">Deprecation</a> deprecation)</td>
+<td><a href="#setdeprecation">setDeprecation</a>(<a href="../Deprecation/"></a> deprecation)</td>
 <td>Sets the deprecation status for this node.</td>
 </tr>
 <tr>
-<td>public <a href="../Deprecation/">Deprecation</a></td>
+<td>public <a href="../Deprecation/"></a></td>
 <td><a href="#getdeprecation">getDeprecation</a>()</td>
 <td>Retrieves the deprecation status of this node.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setdeprecationtext">setDeprecationText</a>(<a href="../Text/">Text</a> text)</td>
+<td><a href="#setdeprecationtext">setDeprecationText</a>(<a href="../Text/"></a> text)</td>
 <td>Sets the deprecation text.</td>
 </tr>
 <tr>
-<td>public <a href="../Text/">Text</a></td>
+<td>public <a href="../Text/"></a></td>
 <td><a href="#getdeprecationtext">getDeprecationText</a>()</td>
 <td>Returns the deprecation text.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setsince">setSince</a>(<a href="../Text/">Text</a> text)</td>
+<td><a href="#setsince">setSince</a>(<a href="../Text/"></a> text)</td>
 <td>Sets the 'since' documentation text.</td>
 </tr>
 <tr>
-<td>public <a href="../Text/">Text</a></td>
+<td>public <a href="../Text/"></a></td>
 <td><a href="#getsince">getSince</a>()</td>
 <td>Returns the 'since' documentation text.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setfirstsentence">setFirstSentence</a>(<a href="../Text/">Text</a> text)</td>
+<td><a href="#setfirstsentence">setFirstSentence</a>(<a href="../Text/"></a> text)</td>
 <td>Sets the first sentence of the documentation.</td>
 </tr>
 <tr>
-<td>public <a href="../Text/">Text</a></td>
+<td>public <a href="../Text/"></a></td>
 <td><a href="#getfirstsentence">getFirstSentence</a>()</td>
 <td>Returns the first sentence of the documentation.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setbody">setBody</a>(<a href="../Text/">Text</a> text)</td>
+<td><a href="#setbody">setBody</a>(<a href="../Text/"></a> text)</td>
 <td>Sets the main body documentation text.</td>
 </tr>
 <tr>
-<td>public <a href="../Text/">Text</a></td>
+<td>public <a href="../Text/"></a></td>
 <td><a href="#getbody">getBody</a>()</td>
 <td>Returns the main body documentation text.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setfullbody">setFullBody</a>(<a href="../Text/">Text</a> text)</td>
+<td><a href="#setfullbody">setFullBody</a>(<a href="../Text/"></a> text)</td>
 <td>Sets the full body documentation text including tags.</td>
 </tr>
 <tr>
-<td>public <a href="../Text/">Text</a></td>
+<td>public <a href="../Text/"></a></td>
 <td><a href="#getfullbody">getFullBody</a>()</td>
 <td>Returns the full body documentation text including tags.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#setreferences">setReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; refs)</td>
+<td><a href="#setreferences">setReferences</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt; refs)</td>
 <td>Sets the list of references for this node.</td>
 </tr>
 <tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt;</td>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt;</td>
 <td><a href="#getreferences">getReferences</a>()</td>
 <td>Returns the list of references associated with this node.</td>
 </tr>
@@ -3589,31 +3614,31 @@ All Implemented Interfaces:<br/>
 </table>
 <h2 id="field-details">Field Details</h2>
 <h3 id="body">body</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../Text/">Text</a> <strong>body</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../Text/"></a> <strong>body</strong></span></p>
 <p>The body text of the Javadoc for this node</p>
 <hr />
 <h3 id="deprecation">deprecation</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Deprecation/">Deprecation</a> <strong>deprecation</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Deprecation/"></a> <strong>deprecation</strong></span></p>
 <p>The deprecation status of the node</p>
 <hr />
 <h3 id="deprecationtext">deprecationText</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Text/">Text</a> <strong>deprecationText</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Text/"></a> <strong>deprecationText</strong></span></p>
 <p>Text describing the deprecation state of the node</p>
 <hr />
 <h3 id="firstsentence">firstSentence</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../Text/">Text</a> <strong>firstSentence</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../Text/"></a> <strong>firstSentence</strong></span></p>
 <p>The first sentence of the Javadoc for this node</p>
 <hr />
 <h3 id="fullbody">fullBody</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../Text/">Text</a> <strong>fullBody</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private final <a href="../Text/"></a> <strong>fullBody</strong></span></p>
 <p>The full text of the Javadoc for this node</p>
 <hr />
 <h3 id="kind">kind</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../Node.Kind/">Node.Kind</a> <strong>kind</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../Node.Kind/"></a> <strong>kind</strong></span></p>
 <p>The kind of this type (e.g., class, interface, enum, annotation).</p>
 <hr />
 <h3 id="references">references</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; <strong>references</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt; <strong>references</strong></span></p>
 <p>A list of references specified in this node's Javadoc</p>
 <hr />
 <h3 id="serialversionuid">serialVersionUID</h3>
@@ -3622,7 +3647,7 @@ All Implemented Interfaces:<br/>
 <p><a href="../../constant-values/">Constant Field Values</a></p>
 <hr />
 <h3 id="since">since</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Text/">Text</a> <strong>since</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../Text/"></a> <strong>since</strong></span></p>
 <p>Text showing when this node was added to the API</p>
 <hr />
 <h3 id="uuid">uuid</h3>
@@ -3634,81 +3659,81 @@ All Implemented Interfaces:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html">UUID</a> <strong>getUUID</strong>()</span></p>
 <hr />
 <h3 id="setkind">setKind</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setKind</strong>(<a href="../Node.Kind/">Node.Kind</a> kind)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setKind</strong>(<a href="../Node.Kind/"></a> kind)</span></p>
 <p>Sets the kind (class, interface, enum, annotation) of this type.</p>
 <hr />
 <h3 id="getkind">getKind</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Node.Kind/">Node.Kind</a> <strong>getKind</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Node.Kind/"></a> <strong>getKind</strong>()</span></p>
 <p>Returns the kind of this type.</p>
 <p><strong>Returns:</strong></p>
 <p>the Kind enum value.</p>
 <hr />
 <h3 id="setdeprecation">setDeprecation</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setDeprecation</strong>(<a href="../Deprecation/">Deprecation</a> deprecation)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setDeprecation</strong>(<a href="../Deprecation/"></a> deprecation)</span></p>
 <p>Sets the deprecation status for this node.</p>
 <hr />
 <h3 id="getdeprecation">getDeprecation</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Deprecation/">Deprecation</a> <strong>getDeprecation</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Deprecation/"></a> <strong>getDeprecation</strong>()</span></p>
 <p>Retrieves the deprecation status of this node.</p>
 <p><strong>Returns:</strong></p>
 <p>The deprecation enum value.</p>
 <hr />
 <h3 id="setdeprecationtext">setDeprecationText</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setDeprecationText</strong>(<a href="../Text/">Text</a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setDeprecationText</strong>(<a href="../Text/"></a> text)</span></p>
 <p>Sets the deprecation text.</p>
 <hr />
 <h3 id="getdeprecationtext">getDeprecationText</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getDeprecationText</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/"></a> <strong>getDeprecationText</strong>()</span></p>
 <p>Returns the deprecation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The deprecation descriptive text.</p>
 <hr />
 <h3 id="setsince">setSince</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setSince</strong>(<a href="../Text/">Text</a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setSince</strong>(<a href="../Text/"></a> text)</span></p>
 <p>Sets the 'since' documentation text.</p>
 <hr />
 <h3 id="getsince">getSince</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getSince</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/"></a> <strong>getSince</strong>()</span></p>
 <p>Returns the 'since' documentation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The since text.</p>
 <hr />
 <h3 id="setfirstsentence">setFirstSentence</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setFirstSentence</strong>(<a href="../Text/">Text</a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setFirstSentence</strong>(<a href="../Text/"></a> text)</span></p>
 <p>Sets the first sentence of the documentation.</p>
 <hr />
 <h3 id="getfirstsentence">getFirstSentence</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getFirstSentence</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/"></a> <strong>getFirstSentence</strong>()</span></p>
 <p>Returns the first sentence of the documentation.</p>
 <p><strong>Returns:</strong></p>
 <p>The first sentence text.</p>
 <hr />
 <h3 id="setbody">setBody</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setBody</strong>(<a href="../Text/">Text</a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setBody</strong>(<a href="../Text/"></a> text)</span></p>
 <p>Sets the main body documentation text.</p>
 <hr />
 <h3 id="getbody">getBody</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getBody</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/"></a> <strong>getBody</strong>()</span></p>
 <p>Returns the main body documentation text.</p>
 <p><strong>Returns:</strong></p>
 <p>The body text.</p>
 <hr />
 <h3 id="setfullbody">setFullBody</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setFullBody</strong>(<a href="../Text/">Text</a> text)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setFullBody</strong>(<a href="../Text/"></a> text)</span></p>
 <p>Sets the full body documentation text including tags.</p>
 <hr />
 <h3 id="getfullbody">getFullBody</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/">Text</a> <strong>getFullBody</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Text/"></a> <strong>getFullBody</strong>()</span></p>
 <p>Returns the full body documentation text including tags.</p>
 <p><strong>Returns:</strong></p>
 <p>The full body text.</p>
 <hr />
 <h3 id="setreferences">setReferences</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setReferences</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; refs)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>setReferences</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt; refs)</span></p>
 <p>Sets the list of references for this node.</p>
 <hr />
 <h3 id="getreferences">getReferences</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/">Link</a>&gt; <strong>getReferences</strong>()</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../Link/"></a>&gt; <strong>getReferences</strong>()</span></p>
 <p>Returns the list of references associated with this node.</p>
 <p><strong>Returns:</strong></p>
 <p>List of Reference objects.</p>

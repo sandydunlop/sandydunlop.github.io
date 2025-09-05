@@ -1165,6 +1165,8 @@
       
         
       
+        
+      
     
     
     
@@ -1448,6 +1450,29 @@
   
   <span class="md-ellipsis">
     EnumNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../model/ExternalLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ExternalLink
     
   </span>
   
@@ -2530,15 +2555,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getclasses" class="md-nav__link">
-    <span class="md-ellipsis">
-      getClasses
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getmoduleforclass" class="md-nav__link">
     <span class="md-ellipsis">
       getModuleForClass
@@ -3084,15 +3100,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getclasses" class="md-nav__link">
-    <span class="md-ellipsis">
-      getClasses
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getmoduleforclass" class="md-nav__link">
     <span class="md-ellipsis">
       getModuleForClass
@@ -3218,7 +3225,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="../../core/Context/">Context</a></td>
+<td><a href="../../core/Context/"></a></td>
 <td><a href="#ctx">ctx</a></td>
 <td></td>
 </tr>
@@ -3243,7 +3250,7 @@
 <td></td>
 </tr>
 <tr>
-<td>ModulePath(<a href="../../core/Context/">Context</a> c, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> modulePath)</td>
+<td>ModulePath(<a href="../../core/Context/"></a> c, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> modulePath)</td>
 <td></td>
 </tr>
 </tbody>
@@ -3261,11 +3268,6 @@
 <tr>
 <td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
 <td><a href="#getmodules">getModules</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt;</td>
-<td><a href="#getclasses">getClasses</a>()</td>
 <td></td>
 </tr>
 <tr>
@@ -3295,7 +3297,7 @@
 </tr>
 <tr>
 <td><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#processdirectoryurl">processDirectoryUrl</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, java.net.URL[][] urls, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</td>
+<td><a href="#processdirectoryurl">processDirectoryUrl</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URL.html">URL</a>[] urls, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</td>
 <td></td>
 </tr>
 <tr>
@@ -3323,7 +3325,7 @@
 <p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>classToModule</strong></span></p>
 <hr />
 <h3 id="ctx">ctx</h3>
-<p><span style="font-family: monospace; font-size: 80%;"><a href="../../core/Context/">Context</a> <strong>ctx</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="../../core/Context/"></a> <strong>ctx</strong></span></p>
 <hr />
 <h3 id="modulenames">moduleNames</h3>
 <p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>moduleNames</strong></span></p>
@@ -3331,9 +3333,6 @@
 <h2 id="method-details">Method Details</h2>
 <h3 id="getmodules">getModules</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>getModules</strong>()</span></p>
-<hr />
-<h3 id="getclasses">getClasses</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html">Set</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; <strong>getClasses</strong>()</span></p>
 <hr />
 <h3 id="getmoduleforclass">getModuleForClass</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getModuleForClass</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> className)</span></p>
@@ -3351,7 +3350,7 @@
 <p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>processDirectory</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</span></p>
 <hr />
 <h3 id="processdirectoryurl">processDirectoryUrl</h3>
-<p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>processDirectoryUrl</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, java.net.URL[][] urls, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>processDirectoryUrl</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URL.html">URL</a>[] urls, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</span></p>
 <hr />
 <h3 id="processclassfile">processClassFile</h3>
 <p><span style="font-family: monospace; font-size: 80%;"><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>processClassFile</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> directory, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html">File</a> file, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URLClassLoader.html">URLClassLoader</a> classLoader, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> moduleName)</span></p>
