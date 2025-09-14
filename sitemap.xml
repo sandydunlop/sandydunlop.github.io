@@ -2,318 +2,334 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sandydunlop.github.io/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/examples/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/structure/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/docagrams/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/constant-values/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/core/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/core/Configuration/</loc>
-         <lastmod>2025-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/core/Context.NameSimplifier/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/core/Context.WriterFactory/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/core/Context/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/doclet/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/doclet/MarkdownDoclet.Option/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/doclet/MarkdownDoclet/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/MarkdownService/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/MarkdownTable.Column/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/MarkdownTable/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/MarkdownUtils/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/ModuleWriter/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/PackageWriter/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/markdown/TypeWriter/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/AbstractMember.ModifierSorter/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/AbstractMember/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/AnnotationElement/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/AnnotationNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Api/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/AppliedAnnotationNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/ClassNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Deprecation/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/DirectiveNode.Kind/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/DirectiveNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/EnumNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/ExternalLink/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/FieldNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/FileLink/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/InterfaceNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Link.Kind/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Link.Scope/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Link/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/MethodNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/MethodReference/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Modifier/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/ModuleNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Name/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Node.Kind/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Node/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/PackageNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Pair/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/ParamNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/RecordNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Reference/</loc>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/SourceCodeLocation/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Text.Segment.Kind/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Text.Segment/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/Text/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeNode/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeReference.Generic/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.BoundingKind/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeReference.Sequence.SequenceIterator/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.Generic/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeReference.Sequence/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.Sequence.SequenceIterator/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeReference.TypeParameter/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.Sequence/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/TypeReference/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.TypeParameter/</loc>
+         <lastmod>2025-09-14</lastmod>
+    </url>
+    <url>
+         <loc>https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType/</loc>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/ElementModeller/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/MarkdownParser.Token/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/MarkdownParser.TokenKind/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/MarkdownParser/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/Modeller/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/modelling/StandardModeller/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/JreUtils/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/LinkResolver/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/ModelUtils/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/ModulePath/</loc>
-         <lastmod>2025-09-05</lastmod>
-    </url>
-    <url>
-         <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/Name/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/Relativizer/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/orchestration/TextAssembler/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/scanning/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/scanning/ApiScanner/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/spi/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/markista/javadoc/markista/spi/DocService/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
     <url>
          <loc>https://sandydunlop.github.io/newsfeed/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <lastmod>2025-09-14</lastmod>
     </url>
 </urlset>

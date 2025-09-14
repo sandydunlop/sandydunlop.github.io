@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/core/Context.NameSimplifier/">
+        <link rel="canonical" href="https://sandydunlop.github.io/markista/javadoc/markista/model/VariableType.Sequence/">
       
       
-        <link rel="prev" href="../Configuration/">
+        <link rel="prev" href="../VariableType.Sequence.SequenceIterator/">
       
       
-        <link rel="next" href="../Context.WriterFactory/">
+        <link rel="next" href="../VariableType.TypeParameter/">
       
       
       <link rel="icon" href="../../../../../assets/penguin.svg">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Context.NameSimplifier - Sandy Dunlop</title>
+        <title>VariableType.Sequence - Sandy Dunlop</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#class-contextnamesimplifier" class="md-skip">
+        <a href="#class-sequence" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Context.NameSimplifier
+              VariableType.Sequence
             
           </span>
         </div>
@@ -578,8 +578,6 @@
                 
   
   
-    
-  
   
   
     
@@ -595,21 +593,19 @@
       
         
       
-        
-      
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../core/" class="md-nav__link ">
               
   
   
@@ -628,7 +624,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5_1_3">
             <span class="md-nav__icon md-icon"></span>
             Core
@@ -644,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Configuration/" class="md-nav__link">
+      <a href="../../core/Configuration/" class="md-nav__link">
         
   
   
@@ -664,162 +660,10 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Context.NameSimplifier
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Context.NameSimplifier
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#constructor-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Constructor Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#method-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Method Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simplifynames" class="md-nav__link">
-    <span class="md-ellipsis">
-      simplifyNames
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#simplifynamesloop" class="md-nav__link">
-    <span class="md-ellipsis">
-      simplifyNamesLoop
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shouldreplacequalifiedwithsimple" class="md-nav__link">
-    <span class="md-ellipsis">
-      shouldReplaceQualifiedWithSimple
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#replacequalifiedwithsimple" class="md-nav__link">
-    <span class="md-ellipsis">
-      replaceQualifiedWithSimple
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isvalidsimplenamechar" class="md-nav__link">
-    <span class="md-ellipsis">
-      isValidSimpleNameChar
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isvalidqualifiednamechar" class="md-nav__link">
-    <span class="md-ellipsis">
-      isValidQualifiedNameChar
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../Context.WriterFactory/" class="md-nav__link">
+      <a href="../../core/Context.WriterFactory/" class="md-nav__link">
         
   
   
@@ -842,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Context/" class="md-nav__link">
+      <a href="../../core/Context/" class="md-nav__link">
         
   
   
@@ -1217,6 +1061,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1296,19 +1142,31 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_1_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../model/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1327,7 +1185,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_1_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_1_6">
             <span class="md-nav__icon md-icon"></span>
             Model
@@ -1343,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractMember.ModifierSorter/" class="md-nav__link">
+      <a href="../AbstractMember.ModifierSorter/" class="md-nav__link">
         
   
   
@@ -1366,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AbstractMember/" class="md-nav__link">
+      <a href="../AbstractMember/" class="md-nav__link">
         
   
   
@@ -1389,7 +1247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationElement/" class="md-nav__link">
+      <a href="../AnnotationElement/" class="md-nav__link">
         
   
   
@@ -1412,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AnnotationNode/" class="md-nav__link">
+      <a href="../AnnotationNode/" class="md-nav__link">
         
   
   
@@ -1435,7 +1293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Api/" class="md-nav__link">
+      <a href="../Api/" class="md-nav__link">
         
   
   
@@ -1458,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/AppliedAnnotationNode/" class="md-nav__link">
+      <a href="../AppliedAnnotationNode/" class="md-nav__link">
         
   
   
@@ -1481,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ClassNode/" class="md-nav__link">
+      <a href="../ClassNode/" class="md-nav__link">
         
   
   
@@ -1504,7 +1362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Deprecation/" class="md-nav__link">
+      <a href="../Deprecation/" class="md-nav__link">
         
   
   
@@ -1527,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/DirectiveNode.Kind/" class="md-nav__link">
+      <a href="../DirectiveNode.Kind/" class="md-nav__link">
         
   
   
@@ -1550,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/DirectiveNode/" class="md-nav__link">
+      <a href="../DirectiveNode/" class="md-nav__link">
         
   
   
@@ -1573,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/EnumNode/" class="md-nav__link">
+      <a href="../EnumNode/" class="md-nav__link">
         
   
   
@@ -1596,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ExternalLink/" class="md-nav__link">
+      <a href="../ExternalLink/" class="md-nav__link">
         
   
   
@@ -1619,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/FieldNode/" class="md-nav__link">
+      <a href="../FieldNode/" class="md-nav__link">
         
   
   
@@ -1642,7 +1500,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/InterfaceNode/" class="md-nav__link">
+      <a href="../FileLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FileLink
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InterfaceNode/" class="md-nav__link">
         
   
   
@@ -1665,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Link.Kind/" class="md-nav__link">
+      <a href="../Link.Kind/" class="md-nav__link">
         
   
   
@@ -1688,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Link.Scope/" class="md-nav__link">
+      <a href="../Link.Scope/" class="md-nav__link">
         
   
   
@@ -1711,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Link/" class="md-nav__link">
+      <a href="../Link/" class="md-nav__link">
         
   
   
@@ -1734,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/MethodNode/" class="md-nav__link">
+      <a href="../MethodNode/" class="md-nav__link">
         
   
   
@@ -1757,7 +1638,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Modifier/" class="md-nav__link">
+      <a href="../MethodReference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MethodReference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Modifier/" class="md-nav__link">
         
   
   
@@ -1780,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ModuleNode/" class="md-nav__link">
+      <a href="../ModuleNode/" class="md-nav__link">
         
   
   
@@ -1803,7 +1707,30 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node.Kind/" class="md-nav__link">
+      <a href="../Name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Name
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Node.Kind/" class="md-nav__link">
         
   
   
@@ -1826,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Node/" class="md-nav__link">
+      <a href="../Node/" class="md-nav__link">
         
   
   
@@ -1849,7 +1776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/PackageNode/" class="md-nav__link">
+      <a href="../PackageNode/" class="md-nav__link">
         
   
   
@@ -1872,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Pair/" class="md-nav__link">
+      <a href="../Pair/" class="md-nav__link">
         
   
   
@@ -1895,7 +1822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/ParamNode/" class="md-nav__link">
+      <a href="../ParamNode/" class="md-nav__link">
         
   
   
@@ -1918,7 +1845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/RecordNode/" class="md-nav__link">
+      <a href="../RecordNode/" class="md-nav__link">
         
   
   
@@ -1941,7 +1868,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Text.Segment.Kind/" class="md-nav__link">
+      <a href="../Reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SourceCodeLocation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SourceCodeLocation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Text.Segment.Kind/" class="md-nav__link">
         
   
   
@@ -1964,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Text.Segment/" class="md-nav__link">
+      <a href="../Text.Segment/" class="md-nav__link">
         
   
   
@@ -1987,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/Text/" class="md-nav__link">
+      <a href="../Text/" class="md-nav__link">
         
   
   
@@ -2010,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeNode/" class="md-nav__link">
+      <a href="../TypeNode/" class="md-nav__link">
         
   
   
@@ -2033,12 +2006,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeReference.Generic/" class="md-nav__link">
+      <a href="../VariableType.BoundingKind/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TypeReference.Generic
+    VariableType.BoundingKind
     
   </span>
   
@@ -2056,12 +2029,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeReference.Sequence.SequenceIterator/" class="md-nav__link">
+      <a href="../VariableType.Generic/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TypeReference.Sequence.SequenceIterator
+    VariableType.Generic
     
   </span>
   
@@ -2079,12 +2052,280 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeReference.Sequence/" class="md-nav__link">
+      <a href="../VariableType.Sequence.SequenceIterator/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TypeReference.Sequence
+    VariableType.Sequence.SequenceIterator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    VariableType.Sequence
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    VariableType.Sequence
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nested-class-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Class Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods-inherited-from-typeparameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods inherited from TypeParameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-inherited-from-variabletype" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods inherited from VariableType
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initial_capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      INITIAL_CAPACITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    <span class="md-ellipsis">
+      size
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resize" class="md-nav__link">
+    <span class="md-ellipsis">
+      resize
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      append
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      get
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfirst" class="md-nav__link">
+    <span class="md-ellipsis">
+      getFirst
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlast" class="md-nav__link">
+    <span class="md-ellipsis">
+      getLast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      iterator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VariableType.TypeParameter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VariableType.TypeParameter
     
   </span>
   
@@ -2102,35 +2343,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../model/TypeReference.TypeParameter/" class="md-nav__link">
+      <a href="../VariableType/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    TypeReference.TypeParameter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../model/TypeReference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TypeReference
+    VariableType
     
   </span>
   
@@ -2385,8 +2603,6 @@
       
         
       
-        
-      
     
     
     
@@ -2509,29 +2725,6 @@
   
   <span class="md-ellipsis">
     ModulePath
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../orchestration/Name/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Name
     
   </span>
   
@@ -2873,6 +3066,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nested-class-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Class Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#constructor-summary" class="md-nav__link">
     <span class="md-ellipsis">
       Constructor Summary
@@ -2888,6 +3099,72 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Method Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods-inherited-from-typeparameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods inherited from TypeParameter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-inherited-from-variabletype" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods inherited from VariableType
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initial_capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      INITIAL_CAPACITY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" class="md-nav__link">
+    <span class="md-ellipsis">
+      size
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2901,54 +3178,63 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#simplifynames" class="md-nav__link">
+  <a href="#resize" class="md-nav__link">
     <span class="md-ellipsis">
-      simplifyNames
+      resize
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#simplifynamesloop" class="md-nav__link">
+  <a href="#size_1" class="md-nav__link">
     <span class="md-ellipsis">
-      simplifyNamesLoop
+      size
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#shouldreplacequalifiedwithsimple" class="md-nav__link">
+  <a href="#append" class="md-nav__link">
     <span class="md-ellipsis">
-      shouldReplaceQualifiedWithSimple
+      append
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#replacequalifiedwithsimple" class="md-nav__link">
+  <a href="#get" class="md-nav__link">
     <span class="md-ellipsis">
-      replaceQualifiedWithSimple
+      get
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#isvalidsimplenamechar" class="md-nav__link">
+  <a href="#getfirst" class="md-nav__link">
     <span class="md-ellipsis">
-      isValidSimpleNameChar
+      getFirst
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#isvalidqualifiednamechar" class="md-nav__link">
+  <a href="#getlast" class="md-nav__link">
     <span class="md-ellipsis">
-      isValidQualifiedNameChar
+      getLast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      iterator
     </span>
   </a>
   
@@ -2975,15 +3261,64 @@
 
 
 
-<p>Package <a href="../">io.github.sandydunlop.markista.core</a></p>
-<h1 id="class-contextnamesimplifier">Class Context.NameSimplifier</h1>
+<p>Package <a href="../">io.github.sandydunlop.markista.model</a></p>
+<h1 id="class-sequence">Class Sequence</h1>
 <p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">java.lang.Object</a><br/>
-        io.github.sandydunlop.markista.core.Context.NameSimplifier<br/>
+        <a href="../VariableType/">io.github.sandydunlop.markista.model.VariableType</a><br/>
+                <a href="../VariableType.TypeParameter/">io.github.sandydunlop.markista.model.VariableType.TypeParameter</a><br/>
+                        io.github.sandydunlop.markista.model.VariableType.Sequence<br/>
 <br/>
-Enclosing Class:<br/>
-    <a href="../Context/">io.github.sandydunlop.markista.core.Context</a></p>
+All Implemented Interfaces:<br/>
+    <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html">java.lang.Iterable</a>&lt;<a href="../VariableType.TypeParameter/">io.github.sandydunlop.markista.model.VariableType.TypeParameter</a>&gt;</p>
+<p>Enclosing Class:<br/>
+    <a href="../VariableType/">io.github.sandydunlop.markista.model.VariableType</a></p>
 <hr />
-<p><span style="font-family: monospace; font-size: 80%;">public class <strong>Context.NameSimplifier</strong></span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public static class <strong>Sequence</strong><br/>extends <a href="../VariableType.TypeParameter/">TypeParameter</a>
+</span></p>
+<h2 id="nested-class-summary">Nested Class Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Modifier and Type</th>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>private</td>
+<td><a href="../VariableType.Sequence.SequenceIterator/">VariableType.Sequence.SequenceIterator</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="field-summary">Field Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Modifier and Type</th>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>private static final int</td>
+<td><a href="#initial_capacity">INITIAL_CAPACITY</a></td>
+<td></td>
+</tr>
+<tr>
+<td>private <a href="../VariableType.TypeParameter/">TypeParameter</a>[]</td>
+<td><a href="#elements">elements</a></td>
+<td></td>
+</tr>
+<tr>
+<td>private int</td>
+<td><a href="#size">size</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="constructor-summary">Constructor Summary</h2>
 <table>
 <thead>
@@ -2994,7 +3329,7 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>Context.NameSimplifier()</td>
+<td>Sequence()</td>
 <td></td>
 </tr>
 </tbody>
@@ -3010,64 +3345,81 @@ Enclosing Class:<br/>
 </thead>
 <tbody>
 <tr>
-<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#simplifynames">simplifyNames</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</td>
-<td>Changes all qualified names in a string into unqualified names.</td>
-</tr>
-<tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#simplifynamesloop">simplifyNamesLoop</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> input)</td>
+<td>private void</td>
+<td><a href="#resize">resize</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td>private static boolean</td>
-<td><a href="#shouldreplacequalifiedwithsimple">shouldReplaceQualifiedWithSimple</a>(int qualifiedStart, int simpleStart, int i, int length, char c)</td>
+<td>public int</td>
+<td><a href="#size">size</a>()</td>
 <td></td>
 </tr>
 <tr>
-<td>private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
-<td><a href="#replacequalifiedwithsimple">replaceQualifiedWithSimple</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</td>
+<td>public void</td>
+<td><a href="#append">append</a>(<a href="../VariableType.TypeParameter/">TypeParameter</a> element)</td>
 <td></td>
 </tr>
 <tr>
-<td>public static boolean</td>
-<td><a href="#isvalidsimplenamechar">isValidSimpleNameChar</a>(char c)</td>
-<td>Checks if the given character is valid in an unqualified name.</td>
+<td>public <a href="../VariableType.TypeParameter/">TypeParameter</a></td>
+<td><a href="#get">get</a>(int index)</td>
+<td></td>
 </tr>
 <tr>
-<td>public static boolean</td>
-<td><a href="#isvalidqualifiednamechar">isValidQualifiedNameChar</a>(char c)</td>
-<td>Checks if the given character is valid in a qualified name.</td>
+<td>public <a href="../VariableType.TypeParameter/">TypeParameter</a></td>
+<td><a href="#getfirst">getFirst</a>()</td>
+<td></td>
+</tr>
+<tr>
+<td>public <a href="../VariableType.TypeParameter/">TypeParameter</a></td>
+<td><a href="#getlast">getLast</a>()</td>
+<td></td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html">Iterator</a>&lt;<a href="../VariableType.TypeParameter/">TypeParameter</a>&gt;</td>
+<td><a href="#iterator">iterator</a>()</td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<h3 id="methods-inherited-from-typeparameter">Methods inherited from <a href="../VariableType.TypeParameter/">TypeParameter</a></h3>
+<p><a href="../VariableType.TypeParameter/#getboundingparameter">getBoundingParameter</a>, <a href="../VariableType.TypeParameter/#getboundingkind">getBoundingKind</a></p>
+<h3 id="methods-inherited-from-variabletype">Methods inherited from <a href="../VariableType/">VariableType</a></h3>
+<p><a href="../VariableType/#setfulltypename">setFullTypeName</a>, <a href="../VariableType/#tostring">toString</a>, <a href="../VariableType/#matchingclosingchevron">matchingClosingChevron</a>, <a href="../VariableType/#parseboundingconstraint">parseBoundingConstraint</a>, <a href="../VariableType/#arraydimensions">arrayDimensions</a>, <a href="../VariableType/#getlink">getLink</a>, <a href="../VariableType/#stringify">stringify</a>, <a href="../VariableType/#boundingconstraint">boundingConstraint</a>, <a href="../VariableType/#asgeneric">asGeneric</a>, <a href="../VariableType/#parse">parse</a>, <a href="../VariableType/#parsesequence">parseSequence</a>, <a href="../VariableType/#parsetype">parseType</a>, <a href="../VariableType/#getfulltypename">getFullTypeName</a>, <a href="../VariableType/#gettypeparameterdeclaration">getTypeParameterDeclaration</a>, <a href="../VariableType/#parsegeneric">parseGeneric</a>, <a href="../VariableType/#parsearray">parseArray</a>, <a href="../VariableType/#isarray">isArray</a>, <a href="../VariableType/#assequence">asSequence</a>, <a href="../VariableType/#getrawtypename">getRawTypeName</a></p>
+<h2 id="field-details">Field Details</h2>
+<h3 id="initial_capacity">INITIAL_CAPACITY</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private static final int <strong>INITIAL_CAPACITY</strong></span></p>
+<p><strong>See Also:</strong></p>
+<p><a href="../../constant-values/">Constant Field Values</a></p>
+<hr />
+<h3 id="elements">elements</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private <a href="../VariableType.TypeParameter/">TypeParameter</a>[] <strong>elements</strong></span></p>
+<hr />
+<h3 id="size">size</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private int <strong>size</strong></span></p>
+<hr />
 <h2 id="method-details">Method Details</h2>
-<h3 id="simplifynames">simplifyNames</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>simplifyNames</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> str)</span></p>
-<p>Changes all qualified names in a string into unqualified names.</p>
-<p><strong>Returns:</strong></p>
-<p>The input string, with all qualified names changed to unqualified names.</p>
+<h3 id="resize">resize</h3>
+<p><span style="font-family: monospace; font-size: 80%;">private void <strong>resize</strong>()</span></p>
 <hr />
-<h3 id="simplifynamesloop">simplifyNamesLoop</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>simplifyNamesLoop</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> input)</span></p>
+<h3 id="size_1">size</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public int <strong>size</strong>()</span></p>
 <hr />
-<h3 id="shouldreplacequalifiedwithsimple">shouldReplaceQualifiedWithSimple</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static boolean <strong>shouldReplaceQualifiedWithSimple</strong>(int qualifiedStart, int simpleStart, int i, int length, char c)</span></p>
+<h3 id="append">append</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>append</strong>(<a href="../VariableType.TypeParameter/">TypeParameter</a> element)</span></p>
 <hr />
-<h3 id="replacequalifiedwithsimple">replaceQualifiedWithSimple</h3>
-<p><span style="font-family: monospace; font-size: 80%;">private static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>replaceQualifiedWithSimple</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> simplified, int qualifiedStart, int simpleStart, int i)</span></p>
+<h3 id="get">get</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../VariableType.TypeParameter/">TypeParameter</a> <strong>get</strong>(int index)</span></p>
 <hr />
-<h3 id="isvalidsimplenamechar">isValidSimpleNameChar</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>isValidSimpleNameChar</strong>(char c)</span></p>
-<p>Checks if the given character is valid in an unqualified name.</p>
-<p><strong>Returns:</strong></p>
-<p>Whether or not the character is valid in an unqualified name.</p>
+<h3 id="getfirst">getFirst</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../VariableType.TypeParameter/">TypeParameter</a> <strong>getFirst</strong>()</span></p>
 <hr />
-<h3 id="isvalidqualifiednamechar">isValidQualifiedNameChar</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>isValidQualifiedNameChar</strong>(char c)</span></p>
-<p>Checks if the given character is valid in a qualified name.</p>
-<p><strong>Returns:</strong></p>
-<p>Whether or not the character is valid in a qualified name.</p>
+<h3 id="getlast">getLast</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../VariableType.TypeParameter/">TypeParameter</a> <strong>getLast</strong>()</span></p>
+<hr />
+<h3 id="iterator">iterator</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html">Iterator</a>&lt;<a href="../VariableType.TypeParameter/">TypeParameter</a>&gt; <strong>iterator</strong>()</span></p>
+<p><strong>Specified By:</strong></p>
+<p><a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html">Iterable</a></p>
 <hr />
 
 
