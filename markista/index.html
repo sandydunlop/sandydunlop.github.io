@@ -1148,6 +1148,8 @@
       
         
       
+        
+      
     
     
     
@@ -1776,6 +1778,29 @@
   
   <span class="md-ellipsis">
     PackageNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="javadoc/markista/model/PackageReference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PackageReference
     
   </span>
   
@@ -3003,7 +3028,7 @@ It was produced with the <code>-private</code> parameter which tells Markista to
 <p>Add Markista as a dependency under the configuration you just created.
 Markista is available in the <a href="https://central.sonatype.com/artifact/io.github.sandydunlop/markista">Maven Central</a> repository.</p>
 <div class="language-groovy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">markista</span><span class="o">(</span><span class="s2">&quot;io.github.sandydunlop:markista:0.3.0&quot;</span><span class="o">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">markista</span><span class="o">(</span><span class="s2">&quot;io.github.sandydunlop:markista:0.3.1&quot;</span><span class="o">)</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">}</span>
 </span></code></pre></div>
 <h3 id="step-3-configure-the-javadoc-task">Step 3: Configure the Javadoc Task</h3>
@@ -3052,7 +3077,7 @@ Markista is available in the <a href="https://central.sonatype.com/artifact/io.g
 </span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="nt">&lt;dependency&gt;</span>
 </span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">            </span><span class="nt">&lt;groupId&gt;</span>io.github.sandydunlop<span class="nt">&lt;/groupId&gt;</span>
 </span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">            </span><span class="nt">&lt;artifactId&gt;</span>markista<span class="nt">&lt;/artifactId&gt;</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">            </span><span class="nt">&lt;version&gt;</span>0.3.0<span class="nt">&lt;/version&gt;</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">            </span><span class="nt">&lt;version&gt;</span>0.3.1<span class="nt">&lt;/version&gt;</span>
 </span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">        </span><span class="nt">&lt;/dependency&gt;</span>
 </span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="nt">&lt;/dependencies&gt;</span>
 </span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
@@ -3087,7 +3112,7 @@ Markista is available in the <a href="https://central.sonatype.com/artifact/io.g
 </span></code></pre></div>
 <h2 id="command-line">Command Line</h2>
 <p>Markista can be used from the command line with the <code>javadoc</code> command as follows:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>javadoc<span class="w"> </span>-docletpath<span class="w"> </span>libs/markista-0.3.0.jar<span class="w"> </span>-doclet<span class="w"> </span>io.github.sandydunlop.markista.doclet.MarkdownDoclet<span class="w"> </span>src/main/java/my.package/Hello.java
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>javadoc<span class="w"> </span>-docletpath<span class="w"> </span>libs/markista-0.3.1.jar<span class="w"> </span>-doclet<span class="w"> </span>io.github.sandydunlop.markista.doclet.MarkdownDoclet<span class="w"> </span>src/main/java/my.package/Hello.java
 </span></code></pre></div>
 <h3 id="parameters">Parameters</h3>
 <dl>
@@ -3118,7 +3143,7 @@ and abstract members are documented.</dd>
 <dd>Display progress information.</dd>
 </dl>
 <h2 id="download">Download</h2>
-<p>JAR files for version 0.3.0 are available to <a href="https://github.com/sandydunlop/markista/releases/tag/r0.3.0">download here</a>.</p>
+<p>JAR files for version 0.3.1 are available to <a href="https://github.com/sandydunlop/markista/releases/tag/r0.3.1">download here</a>.</p>
 <h2 id="source-code">Source Code</h2>
 <p>Markista's source code is available on <a href="https://github.com/sandydunlop/markista">Github</a> under the GPLv3 license.</p>
 <hr />
