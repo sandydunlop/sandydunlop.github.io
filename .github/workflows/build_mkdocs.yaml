@@ -1,4 +1,5 @@
-name: Build GitHub Pages
+name: Build From Src
+
 on:
   push:
     branches:

@@ -18,8 +18,8 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 
 theme:
-  logo: assets/logo.png
-  # favicon: assets/penguin.svg
+  # logo: assets/logo.png
+  favicon: assets/penguin.svg
   name: material
   custom_dir: overrides
   font:
